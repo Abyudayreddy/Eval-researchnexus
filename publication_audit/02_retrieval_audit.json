@@ -1,0 +1,64 @@
+{
+  "retrieval_pipeline_audit": {
+    "ground_truth_status": "VERIFIED",
+    "exact_models": {
+      "dense_embedding_model": "BAAI/bge-base-en-v1.5 (768-dimensional float vectors)",
+      "sparse_keyword_model": "BM25Okapi (rank_bm25 package)",
+      "cross_encoder_reranker": "BAAI/bge-reranker-base (sentence-transformers CrossEncoder) with MockCrossEncoder fallback when USE_REAL_BGE != true"
+    },
+    "exact_parameters": {
+      "rrf_k": 60,
+      "bm25_candidate_top_k": 20,
+      "dense_candidate_top_k": 20,
+      "fused_candidate_top_k": 20,
+      "final_evidence_top_k": 5,
+      "bm25_tokenization": "lowercase, re.sub(r'[^\\w\\s-]', '', text).split()",
+      "dense_similarity_metric": "squared L2 distance / cosine (ChromaDB default)"
+    },
+    "scoring_functions": {
+      "bm25_score": "BM25Okapi term frequency-inverse document frequency formula",
+      "dense_distance": "ChromaDB vector distance (lower is closer)",
+      "rrf_score_formula": "RRF_score(chunk) = 1.0 / (60 + bm25_rank) + 1.0 / (60 + dense_rank)",
+      "pg_title_abstract_boost": "If paper title/abstract matches ilike query, adds 1.0 to RRF score",
+      "reranker_score": "CrossEncoder logit output from BAAI/bge-reranker-base"
+    },
+    "provenance_fields_preservation": {
+      "paper_id": { "status": "VERIFIED", "field": "paper_id", "source": "local_evidence.py" },
+      "source": { "status": "VERIFIED", "field": "source_type / retrieval_source", "source": "local_evidence.py" },
+      "bm25_rank": { "status": "VERIFIED", "field": "bm25_rank", "source": "local_evidence.py" },
+      "dense_rank": { "status": "VERIFIED", "field": "dense_rank", "source": "local_evidence.py" },
+      "rrf_score": { "status": "VERIFIED", "field": "rrf_score", "source": "local_evidence.py" },
+      "reranker_score": { "status": "VERIFIED", "field": "reranker_score / bge_score", "source": "local_evidence.py" },
+      "final_rank": { "status": "VERIFIED", "field": "rank", "source": "local_evidence.py" },
+      "evidence_ids": { "status": "VERIFIED", "field": "chunk_id", "source": "local_evidence.py" }
+    },
+    "missing_provenance_in_legacy_module": {
+      "file": "backend/app/services/retrieval.py",
+      "status": "PARTIAL",
+      "missing_fields": ["bm25_rank", "dense_rank", "post_rerank_rank"],
+      "impact": "Legacy retrieval.py returns rerank_score and rrf_score but drops explicit rank positions before diversification, whereas local_evidence.py preserves all rank fields."
+    },
+    "duplicate_handling": {
+      "method": "Per-paper diversification during rerank_and_build_evidence",
+      "rule": "Iterates sorted candidate chunks, selects first chunk for each unique paper_id, discards duplicate paper chunks until top_k_evidence (5) unique papers are assembled."
+    },
+    "latency_instrumentation": {
+      "stages_instrumented": [
+        "query_analysis",
+        "postgres",
+        "bm25",
+        "dense",
+        "rrf",
+        "filter",
+        "diversification",
+        "rerank_build"
+      ],
+      "status": "VERIFIED",
+      "total_latency_measured": true
+    },
+    "online_connectors_and_fallbacks": {
+      "connectors_implemented": ["arXiv", "PubMed Central", "NASA ADS", "OpenAlex", "Crossref"],
+      "degradation_policy": "Fallback to local KB if dynamic connector fails or exceeds rate limits; status marked as LOCAL_ONLY_FALLBACK."
+    }
+  }
+}

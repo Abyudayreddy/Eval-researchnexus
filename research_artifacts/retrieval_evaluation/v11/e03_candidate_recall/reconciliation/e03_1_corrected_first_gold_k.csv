@@ -1,0 +1,101 @@
+query_id,split,gold_paper_ids,B1_Dense_first_gold_rank,B1_Dense_first_gold_k,B1_Dense_matched_gold_paper_id,B2_BM25_first_gold_rank,B2_BM25_first_gold_k,B2_BM25_matched_gold_paper_id,B3_Hybrid_RRF_first_gold_rank,B3_Hybrid_RRF_first_gold_k,B3_Hybrid_RRF_matched_gold_paper_id
+item_v11_001,DEVELOPMENT,"[""paper_res_001""]",null,never,N/A,1,5,paper_res_001,1,5,paper_res_001
+item_v11_002,DEVELOPMENT,"[""paper_res_002""]",null,never,N/A,1,5,paper_res_002,1,5,paper_res_002
+item_v11_003,DEVELOPMENT,"[""paper_res_003""]",null,never,N/A,1,5,paper_res_003,1,5,paper_res_003
+item_v11_004,DEVELOPMENT,"[""paper_res_004""]",null,never,N/A,1,5,paper_res_004,1,5,paper_res_004
+item_v11_005,DEVELOPMENT,"[""paper_res_005""]",null,never,N/A,2,5,paper_res_005,3,5,paper_res_005
+item_v11_006,DEVELOPMENT,"[""paper_res_006""]",null,never,N/A,2,5,paper_res_006,3,5,paper_res_006
+item_v11_007,DEVELOPMENT,"[""paper_res_007""]",null,never,N/A,2,5,paper_res_007,3,5,paper_res_007
+item_v11_008,DEVELOPMENT,"[""paper_res_008""]",null,never,N/A,2,5,paper_res_008,3,5,paper_res_008
+item_v11_009,DEVELOPMENT,"[""paper_res_009""]",null,never,N/A,3,5,paper_res_009,5,5,paper_res_009
+item_v11_010,DEVELOPMENT,"[""paper_res_010""]",null,never,N/A,3,5,paper_res_010,5,5,paper_res_010
+item_v11_011,DEVELOPMENT,"[""paper_res_011""]",null,never,N/A,3,5,paper_res_011,5,5,paper_res_011
+item_v11_012,DEVELOPMENT,"[""paper_res_012""]",null,never,N/A,3,5,paper_res_012,5,5,paper_res_012
+item_v11_013,DEVELOPMENT,"[""paper_res_013""]",null,never,N/A,4,5,paper_res_013,7,10,paper_res_013
+item_v11_014,DEVELOPMENT,"[""paper_res_014""]",null,never,N/A,4,5,paper_res_014,7,10,paper_res_014
+item_v11_015,DEVELOPMENT,"[""paper_res_015""]",null,never,N/A,4,5,paper_res_015,7,10,paper_res_015
+item_v11_016,DEVELOPMENT,"[""paper_res_016""]",null,never,N/A,4,5,paper_res_016,7,10,paper_res_016
+item_v11_017,DEVELOPMENT,"[""paper_res_017""]",null,never,N/A,5,5,paper_res_017,9,10,paper_res_017
+item_v11_018,DEVELOPMENT,"[""paper_res_018""]",null,never,N/A,5,5,paper_res_018,9,10,paper_res_018
+item_v11_019,DEVELOPMENT,"[""paper_res_019""]",null,never,N/A,5,5,paper_res_019,9,10,paper_res_019
+item_v11_020,DEVELOPMENT,"[""paper_res_020""]",null,never,N/A,5,5,paper_res_020,9,10,paper_res_020
+item_v11_021,DEVELOPMENT,"[""paper_res_007""]",null,never,N/A,2,5,paper_res_007,3,5,paper_res_007
+item_v11_022,DEVELOPMENT,"[""paper_res_008""]",null,never,N/A,2,5,paper_res_008,3,5,paper_res_008
+item_v11_023,DEVELOPMENT,"[""paper_res_009""]",null,never,N/A,3,5,paper_res_009,5,5,paper_res_009
+item_v11_024,DEVELOPMENT,"[""paper_res_010""]",null,never,N/A,3,5,paper_res_010,5,5,paper_res_010
+item_v11_025,DEVELOPMENT,"[""paper_res_011""]",null,never,N/A,3,5,paper_res_011,5,5,paper_res_011
+item_v11_026,DEVELOPMENT,"[""paper_res_012""]",null,never,N/A,3,5,paper_res_012,5,5,paper_res_012
+item_v11_027,DEVELOPMENT,"[""paper_res_013""]",null,never,N/A,4,5,paper_res_013,7,10,paper_res_013
+item_v11_028,DEVELOPMENT,"[""paper_res_014""]",null,never,N/A,4,5,paper_res_014,7,10,paper_res_014
+item_v11_029,DEVELOPMENT,"[""paper_res_015""]",null,never,N/A,4,5,paper_res_015,7,10,paper_res_015
+item_v11_030,DEVELOPMENT,"[""paper_res_016""]",null,never,N/A,4,5,paper_res_016,7,10,paper_res_016
+item_v11_031,DEVELOPMENT,"[""paper_res_017""]",null,never,N/A,5,5,paper_res_017,9,10,paper_res_017
+item_v11_032,DEVELOPMENT,"[""paper_res_018""]",null,never,N/A,5,5,paper_res_018,9,10,paper_res_018
+item_v11_033,DEVELOPMENT,"[""paper_res_019""]",null,never,N/A,5,5,paper_res_019,9,10,paper_res_019
+item_v11_034,DEVELOPMENT,"[""paper_res_020""]",null,never,N/A,5,5,paper_res_020,9,10,paper_res_020
+item_v11_035,DEVELOPMENT,"[""paper_res_021""]",null,never,N/A,6,10,paper_res_021,11,20,paper_res_021
+item_v11_036,DEVELOPMENT,"[""paper_res_022""]",null,never,N/A,6,10,paper_res_022,11,20,paper_res_022
+item_v11_037,DEVELOPMENT,"[""paper_res_023""]",null,never,N/A,6,10,paper_res_023,11,20,paper_res_023
+item_v11_038,DEVELOPMENT,"[""paper_res_024""]",null,never,N/A,6,10,paper_res_024,11,20,paper_res_024
+item_v11_039,DEVELOPMENT,"[""paper_res_025""]",null,never,N/A,7,10,paper_res_025,13,20,paper_res_025
+item_v11_040,DEVELOPMENT,"[""paper_res_026""]",null,never,N/A,7,10,paper_res_026,13,20,paper_res_026
+item_v11_041,DEVELOPMENT,"[""paper_res_012""]",null,never,N/A,3,5,paper_res_012,5,5,paper_res_012
+item_v11_042,DEVELOPMENT,"[""paper_res_013""]",null,never,N/A,4,5,paper_res_013,7,10,paper_res_013
+item_v11_043,DEVELOPMENT,"[""paper_res_014""]",null,never,N/A,4,5,paper_res_014,7,10,paper_res_014
+item_v11_044,DEVELOPMENT,"[""paper_res_015""]",null,never,N/A,4,5,paper_res_015,7,10,paper_res_015
+item_v11_045,DEVELOPMENT,"[""paper_res_016""]",null,never,N/A,4,5,paper_res_016,7,10,paper_res_016
+item_v11_046,DEVELOPMENT,"[""paper_res_017""]",null,never,N/A,5,5,paper_res_017,9,10,paper_res_017
+item_v11_047,DEVELOPMENT,"[""paper_res_018""]",null,never,N/A,5,5,paper_res_018,9,10,paper_res_018
+item_v11_048,DEVELOPMENT,"[""paper_res_019""]",null,never,N/A,5,5,paper_res_019,9,10,paper_res_019
+item_v11_049,DEVELOPMENT,"[""paper_res_020""]",null,never,N/A,5,5,paper_res_020,9,10,paper_res_020
+item_v11_050,DEVELOPMENT,"[""paper_res_021""]",null,never,N/A,6,10,paper_res_021,11,20,paper_res_021
+item_v11_051,DEVELOPMENT,"[""paper_res_022""]",null,never,N/A,6,10,paper_res_022,11,20,paper_res_022
+item_v11_052,DEVELOPMENT,"[""paper_res_023""]",null,never,N/A,6,10,paper_res_023,11,20,paper_res_023
+item_v11_053,DEVELOPMENT,"[""paper_res_024""]",null,never,N/A,6,10,paper_res_024,11,20,paper_res_024
+item_v11_054,DEVELOPMENT,"[""paper_res_025""]",null,never,N/A,7,10,paper_res_025,13,20,paper_res_025
+item_v11_055,DEVELOPMENT,"[""paper_res_026""]",null,never,N/A,7,10,paper_res_026,13,20,paper_res_026
+item_v11_056,DEVELOPMENT,"[""paper_res_017""]",null,never,N/A,5,5,paper_res_017,9,10,paper_res_017
+item_v11_057,DEVELOPMENT,"[""paper_res_018""]",null,never,N/A,5,5,paper_res_018,9,10,paper_res_018
+item_v11_058,DEVELOPMENT,"[""paper_res_019""]",null,never,N/A,5,5,paper_res_019,9,10,paper_res_019
+item_v11_059,DEVELOPMENT,"[""paper_res_020""]",null,never,N/A,5,5,paper_res_020,9,10,paper_res_020
+item_v11_060,DEVELOPMENT,"[""paper_res_021""]",null,never,N/A,6,10,paper_res_021,11,20,paper_res_021
+item_v11_061,DEVELOPMENT,"[""paper_res_022""]",null,never,N/A,6,10,paper_res_022,11,20,paper_res_022
+item_v11_062,DEVELOPMENT,"[""paper_res_023""]",null,never,N/A,6,10,paper_res_023,11,20,paper_res_023
+item_v11_063,DEVELOPMENT,"[""paper_res_024""]",null,never,N/A,6,10,paper_res_024,11,20,paper_res_024
+item_v11_064,DEVELOPMENT,"[""paper_res_025""]",null,never,N/A,7,10,paper_res_025,13,20,paper_res_025
+item_v11_065,DEVELOPMENT,"[""paper_res_026""]",null,never,N/A,7,10,paper_res_026,13,20,paper_res_026
+item_v11_066,DEVELOPMENT,"[""paper_res_027""]",null,never,N/A,7,10,paper_res_027,13,20,paper_res_027
+item_v11_067,DEVELOPMENT,"[""paper_res_028""]",null,never,N/A,7,10,paper_res_028,13,20,paper_res_028
+item_v11_068,DEVELOPMENT,"[""paper_res_029""]",null,never,N/A,8,10,paper_res_029,15,20,paper_res_029
+item_v11_069,DEVELOPMENT,"[""paper_res_030""]",null,never,N/A,8,10,paper_res_030,15,20,paper_res_030
+item_v11_070,DEVELOPMENT,"[""paper_res_031""]",null,never,N/A,8,10,paper_res_031,15,20,paper_res_031
+item_v11_071,VALIDATION,"[""paper_res_001"", ""paper_res_002""]",null,never,N/A,1,5,paper_res_001,1,5,paper_res_001
+item_v11_072,VALIDATION,"[""paper_res_003"", ""paper_res_004""]",null,never,N/A,1,5,paper_res_004,1,5,paper_res_004
+item_v11_073,VALIDATION,"[""paper_res_005"", ""paper_res_006""]",null,never,N/A,2,5,paper_res_005,3,5,paper_res_005
+item_v11_074,VALIDATION,"[""paper_res_007"", ""paper_res_008""]",null,never,N/A,2,5,paper_res_008,3,5,paper_res_008
+item_v11_075,VALIDATION,"[""paper_res_009"", ""paper_res_010""]",null,never,N/A,3,5,paper_res_009,5,5,paper_res_009
+item_v11_076,VALIDATION,"[""paper_res_011"", ""paper_res_012""]",null,never,N/A,3,5,paper_res_012,5,5,paper_res_012
+item_v11_077,VALIDATION,"[""paper_res_013"", ""paper_res_014""]",null,never,N/A,4,5,paper_res_013,7,10,paper_res_013
+item_v11_078,VALIDATION,"[""paper_res_015"", ""paper_res_016""]",null,never,N/A,4,5,paper_res_016,7,10,paper_res_016
+item_v11_079,VALIDATION,"[""paper_res_017"", ""paper_res_018""]",null,never,N/A,5,5,paper_res_017,9,10,paper_res_017
+item_v11_080,VALIDATION,"[""paper_res_019"", ""paper_res_020""]",null,never,N/A,5,5,paper_res_020,9,10,paper_res_020
+item_v11_081,VALIDATION,"[""paper_res_027""]",null,never,N/A,7,10,paper_res_027,13,20,paper_res_027
+item_v11_082,VALIDATION,"[""paper_res_028""]",null,never,N/A,7,10,paper_res_028,13,20,paper_res_028
+item_v11_083,VALIDATION,"[""paper_res_029""]",null,never,N/A,8,10,paper_res_029,15,20,paper_res_029
+item_v11_084,VALIDATION,"[""paper_res_030""]",null,never,N/A,8,10,paper_res_030,15,20,paper_res_030
+item_v11_085,VALIDATION,"[""paper_res_031""]",null,never,N/A,8,10,paper_res_031,15,20,paper_res_031
+item_v11_086,TEST,"[""paper_res_032""]",null,never,N/A,8,10,paper_res_032,15,20,paper_res_032
+item_v11_087,TEST,"[""paper_res_033""]",null,never,N/A,9,10,paper_res_033,17,20,paper_res_033
+item_v11_088,TEST,"[""paper_res_034""]",null,never,N/A,9,10,paper_res_034,17,20,paper_res_034
+item_v11_089,TEST,"[""paper_res_035""]",null,never,N/A,9,10,paper_res_035,17,20,paper_res_035
+item_v11_090,TEST,"[""paper_res_036""]",null,never,N/A,9,10,paper_res_036,17,20,paper_res_036
+item_v11_091,TEST,"[""paper_res_032""]",null,never,N/A,8,10,paper_res_032,15,20,paper_res_032
+item_v11_092,TEST,"[""paper_res_033""]",null,never,N/A,9,10,paper_res_033,17,20,paper_res_033
+item_v11_093,TEST,"[""paper_res_034""]",null,never,N/A,9,10,paper_res_034,17,20,paper_res_034
+item_v11_094,TEST,"[""paper_res_035""]",null,never,N/A,9,10,paper_res_035,17,20,paper_res_035
+item_v11_095,TEST,"[""paper_res_036""]",null,never,N/A,9,10,paper_res_036,17,20,paper_res_036
+item_v11_096,TEST,[],null,never,N/A,null,never,N/A,null,never,N/A
+item_v11_097,TEST,[],null,never,N/A,null,never,N/A,null,never,N/A
+item_v11_098,TEST,[],null,never,N/A,null,never,N/A,null,never,N/A
+item_v11_099,TEST,[],null,never,N/A,null,never,N/A,null,never,N/A
+item_v11_100,TEST,[],null,never,N/A,null,never,N/A,null,never,N/A

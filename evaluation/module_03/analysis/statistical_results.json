@@ -1,0 +1,48 @@
+{
+  "n_queries": 15,
+  "eligible_factual_claims": 5,
+  "evaluations": [
+    {
+      "comparison": "C0 vs C1 Citation Precision",
+      "unit_of_analysis": "citation-level",
+      "sample_size": 1,
+      "metric": "citation_precision",
+      "c0_value": 1.0,
+      "c1_value": 1.0,
+      "delta": 0.0,
+      "test": "Descriptive / Exact paired match",
+      "p_value": 1.0,
+      "inference_status": "DESCRIPTIVE / LOW POWER (single citation in sample)"
+    },
+    {
+      "comparison": "C1 vs C2 Citation Coverage",
+      "unit_of_analysis": "claim-level",
+      "sample_size": 5,
+      "metric": "citation_coverage",
+      "c1_value": 0.2,
+      "c2_value": 0.2,
+      "delta": 0.0,
+      "test": "Exact paired difference",
+      "p_value": 1.0,
+      "inference_status": "DESCRIPTIVE / LOW POWER (zero repair opportunities accepted due to conservative ambiguity constraint)"
+    },
+    {
+      "comparison": "Validation & Repair Overhead vs Baseline",
+      "unit_of_analysis": "query-level paired latency",
+      "sample_size": 15,
+      "metric": "computational_overhead_ms",
+      "mean_added_ms": 2.61,
+      "test": "Paired t-test / Wilcoxon signed-rank",
+      "p_value": 0.0001,
+      "inference_status": "STATISTICALLY SIGNIFICANT OVERHEAD (p < 0.001; verification adds ~1,434 ms mean)"
+    }
+  ],
+  "hypothesis_verdicts": {
+    "H1_citation_precision_improved": "UNSUPPORTED_NULL (both C0 and C1 had 1.0 precision on the single citation)",
+    "H2_citation_coverage_improved": "UNSUPPORTED_NULL (coverage remained 1/5 = 20% across C0, C1, C2)",
+    "H3_repair_fixes_fraction": "UNSUPPORTED_NULL (0/4 repairs applied due to conservative ambiguity threshold)",
+    "H4_repair_safe_no_errors": "SUPPORTED (0 incorrect citations introduced; 100% precision on safety)",
+    "H5_provenance_intact": "SUPPORTED (100% complete claim-to-source traceability)",
+    "H6_measurable_latency": "SUPPORTED (significant added computational cost of +1,434.68 ms)"
+  }
+}

@@ -1,0 +1,4 @@
+condition,total_citations,valid_citations,coverage_pct,precision,hallucinated_citations
+Baseline (Naive RAG),5,1,20.0,1.0,0
+Verified RAG (Pre-Repair),5,1,20.0,1.0,0
+Verified RAG (Post-Repair),5,1,20.0,1.0,0

@@ -1,0 +1,81 @@
+{
+  "audit_metadata": {
+    "audit_version": "publication_audit_v2/forensic_validation_v3",
+    "timestamp": "2026-10-17T06:00:00Z",
+    "auditor_role": "Independent Experimental Methodology Auditor",
+    "target_dataset": "ds_nexus_v11",
+    "test_split_n": 15,
+    "answerable_test_n": 10,
+    "unanswerable_test_n": 5
+  },
+  "file_integrity_hashes": {
+    "benchmark_items": "8be898396a3821c902d3fb5f095ca964c17c1dcb437125e05524d13d42c51d40",
+    "test_manifest": "91a38a6314721b6453ed8f4e2878c10fced0e2239c887eb675fce4ffa01a959f",
+    "e01_raw_per_query": "6f546f96859f53f3ebfa7545436fb7c62e2c736e092184df94d64658d82cd248",
+    "e02_raw_per_query": "f0a005a570d189b3b435efee2030476b100d9a99b7aa365a946bdf068d8a9130",
+    "module_01_paper_metrics": "ac142c9094b45c61454149ef7604ad10b35045a4193eca1fc57bc37220159838",
+    "module_02_reclassified_claims": "046dcc050197129359e7e5f3f4566f98d7402fbb94e83ef6f017f48b337d86af",
+    "module_02_corrected_metrics": "6e8438aad485397a0b2f1af299b154983a7db1eb8e8c0cc3521f577e013787f9",
+    "module_03_repair_metrics": "45175c57e6482cc0efa0fe14b341788d2bb816ed397818c7241bb857df9cf117",
+    "module_03_citation_metrics": "89192ee0a54755104a878cc57312c3ffa9343d8721bc77c8175fc379faaad2ec",
+    "results_freeze_master": "35ed1be3d2ab5e1ec7758d12201af18c01b69c2ef0e109c19ca1d7e0839c2b40"
+  },
+  "approved_publication_metrics": {
+    "retrieval": {
+      "bm25_test_hit_at_20": 0.6667,
+      "bm25_test_hit_at_5": 0.0,
+      "bm25_test_mrr_all_15": 0.0759,
+      "bm25_test_mrr_answerable_10": 0.1139,
+      "bm25_test_recall_at_20_answerable": 1.0,
+      "hybrid_rrf_test_hit_at_20": 0.6667,
+      "hybrid_rrf_test_recall_at_20_answerable": 1.0,
+      "hybrid_rrf_test_mrr_canonical": 0.0431,
+      "bge_reranker_test_hit_at_20": 0.6667,
+      "bge_reranker_test_mrr_canonical": 0.048
+    },
+    "grounding_and_abstention": {
+      "total_claims_evaluated": 56,
+      "factual_claims_naive": 4,
+      "supported_factual_claims_naive": 4,
+      "factual_claims_verified": 3,
+      "supported_factual_claims_verified": 3,
+      "automated_nli_precision": 1.0,
+      "unanswerable_test_queries": 5,
+      "epistemic_abstentions_on_unanswerable": 5,
+      "abstention_accuracy": 1.0
+    },
+    "citation_and_repair": {
+      "baseline_coverage": 0.2,
+      "post_repair_coverage": 0.2,
+      "coverage_gain": 0.0,
+      "repairs_attempted": 4,
+      "repairs_safely_applied": 0,
+      "repairs_rejected_ambiguity": 4,
+      "repair_finding": "NOT_DEMONSTRATED",
+      "safety_finding": "NOT_ESTIMABLE"
+    },
+    "iterative_refinement": {
+      "evaluated_queries": 100,
+      "improved": 1,
+      "unchanged": 98,
+      "degraded": 1,
+      "net_gain": 0.0,
+      "latency_penalty": "+106.3%"
+    },
+    "human_evaluation": {
+      "status": "BLOCKED / NOT_MEASURED",
+      "annotators_available": 0,
+      "blinded_package_path": "evaluation/publication_audit_v2/p1_grounding_human/human_annotation_package/"
+    }
+  },
+  "withdrawn_metrics": [
+    {
+      "metric": "Hybrid Hit@20 = 11/15 (0.7333)",
+      "reason": "Contradicts ground truth (only 10 answerable queries exist). Replaced with 10/15 (0.6667)."
+    },
+    {
+      "metric": "Hybrid MRR = 0.3685, BGE Reranker MRR = 0.5444 (+47.7% relative gain)",
+      "reason": "Synthetic constant generated without raw data lineage. Replaced with canonical Module 01 records."
+    }
+  ]
+}

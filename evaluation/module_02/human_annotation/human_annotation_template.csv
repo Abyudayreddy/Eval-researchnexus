@@ -1,0 +1,3 @@
+query_id,condition,claim_id,claim_text,citation_ids,human_grounding_label,annotator_notes
+item_v11_086,A,claim_01,"Based on the provided evidence, there is no mention of a ""92.4% Precision@5"" metric associated with adaptive gradient scheduling in Dense Retrieval & Reranking Models.",[],"PENDING_HUMAN_LABEL",""
+item_v11_086,B,claim_01,"Based on the provided evidence, there is no mention of a ""92.4% Precision@5"" metric related to adaptive gradient scheduling or Dense Retrieval & Reranking Models.",[],"PENDING_HUMAN_LABEL",""

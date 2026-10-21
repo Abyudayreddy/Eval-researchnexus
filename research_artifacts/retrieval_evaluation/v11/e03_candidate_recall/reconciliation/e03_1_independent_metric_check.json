@@ -1,0 +1,10 @@
+{
+  "total_benchmark_queries": 100,
+  "B3_Hybrid_top_5_evidence_eligible_count": 25,
+  "B3_Hybrid_top_10_evidence_eligible_count": 57,
+  "B3_Hybrid_top_20_evidence_eligible_count": 95,
+  "B3_Hybrid_top_50_evidence_eligible_count": 95,
+  "TEST_split_n15_top_5_eligible": 0,
+  "TEST_split_n15_top_10_eligible": 0,
+  "TEST_split_n15_top_20_eligible": 10
+}

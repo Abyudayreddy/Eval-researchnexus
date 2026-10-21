@@ -1,0 +1,14 @@
+[
+  {
+    "citation_id": "item_v11_089_claim_01_[1]",
+    "query_id": "item_v11_089",
+    "claim_id": "claim_01",
+    "citation_marker": "[1]",
+    "evidence_id": "paper_res_003_chunk_001",
+    "paper_id": "paper_res_003",
+    "paper_title": "Paper 003: Advanced Study on Multimodal Representation Learning and Empirical Validation",
+    "validation_status": "VALID",
+    "validation_method": "stage_a_and_b_entailment",
+    "provenance_intact": true
+  }
+]

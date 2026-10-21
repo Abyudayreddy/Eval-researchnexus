@@ -1,0 +1,33 @@
+{
+  "real_llm_inference": true,
+  "exact_e03_chunk_ids_retained": true,
+  "exact_e03_ranking_retained": true,
+  "exact_context_text_retained": true,
+  "naive_verified_context_hashes_identical": true,
+  "sample_counts": {
+    "ALL": 100,
+    "DEV": 70,
+    "VAL": 15,
+    "TEST": 15
+  },
+  "no_retrieval_rerun": true,
+  "no_online_retrieval": true,
+  "temperature": 0.0,
+  "model_checkpoint": "gemini-3.5-flash-lite",
+  "actual_nli_verifier_used": true,
+  "actual_citation_repair_used": true,
+  "independent_post_repair_verification": true,
+  "real_latency_measurements": true,
+  "bootstrap_resamples": 1000,
+  "artifact_sha256": {
+    "e04_1_config.json": "34ea6aae636b5a6ec5fefb74f9a963ed4cf88202062af562e384f03da840dc73",
+    "e04_1_per_query_results.json": "561fa035d1244c6fbac4aa8b1131af90d1c2494ebf34c4ab6617e160f372c428",
+    "e04_1_claim_level_results.json": "29b77c4f196d4a0dd2de731b603986125eca8cf041b9bffe2c24167d77f49faf",
+    "e04_1_citation_level_results.json": "ad214a1256c26a6113da473dd5311546f56c5f5b5fc82a02f63fbf83d6d7c1c0",
+    "e04_1_latency_results.json": "1a0b06e7953370488517dda869203f4954b4787005bf75de30d7ca5337fb8d04",
+    "e04_1_aggregate_metrics.json": "45ca376046124da32e61ffc491d7091e5e4a7bea75ded8072ae09a421a67c612",
+    "e04_1_statistical_tests.json": "4c03d8a3ff6ba5dffd4a67ed59106fea78595e1af4c5ef1205f6c9abfa80c83d",
+    "e04_1_naive_answers.json": "43d495a625b056a53818e5a9cad8538a7a84df1869c229e3fae70a29444b076a",
+    "e04_1_verified_answers.json": "6955d05237df960ce01941f6ea1a7ec5e3e50294affb449c090f2053101d4222"
+  }
+}

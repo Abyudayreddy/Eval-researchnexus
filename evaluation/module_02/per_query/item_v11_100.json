@@ -1,0 +1,35 @@
+{
+  "query_id": "item_v11_100",
+  "split": "TEST",
+  "question": "What non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors?",
+  "context_hash_naive": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+  "context_hash_verified": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+  "context_hash_match": true,
+  "evidence_count": 20,
+  "naive_metrics": {
+    "supported_claim_count": 0,
+    "partially_supported_claim_count": 0,
+    "insufficient_claim_count": 0,
+    "unsupported_claim_count": 1,
+    "citation_precision": 0.0,
+    "citation_coverage": 0.0,
+    "claim_support_rate": 0.0,
+    "unsupported_claim_rate": 1.0
+  },
+  "verified_metrics": {
+    "supported_claim_count": 0,
+    "partially_supported_claim_count": 0,
+    "insufficient_claim_count": 0,
+    "unsupported_claim_count": 1,
+    "citation_precision": 0.0,
+    "citation_coverage": 0.0,
+    "claim_support_rate": 0.0,
+    "unsupported_claim_rate": 1.0
+  },
+  "naive_has_unsupported": true,
+  "verified_has_unsupported": true,
+  "naive_latency_ms": 4277.49,
+  "verified_latency_ms": 4781.82,
+  "snapshot_hash": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+  "hash_verified": true
+}

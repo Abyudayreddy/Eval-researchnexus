@@ -1,0 +1,92 @@
+[
+  {
+    "query_id": "item_v11_001",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_02",
+    "evidence_id": "paper_res_001_chunk_001",
+    "paper_id": "paper_res_001",
+    "retrieval_rank": 1,
+    "status": "VALID",
+    "reason": "Claim evidence ID perfectly matches canonical chunk, paper ID, and E03.3 retrieval rank."
+  },
+  {
+    "query_id": "item_v11_012",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_01",
+    "evidence_id": "paper_res_004_chunk_001",
+    "paper_id": "paper_res_004",
+    "retrieval_rank": 1,
+    "status": "VALID",
+    "reason": "Claim evidence ID perfectly matches canonical chunk, paper ID, and E03.3 retrieval rank."
+  },
+  {
+    "query_id": "item_v11_012",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_02",
+    "evidence_id": "paper_res_004_chunk_001",
+    "paper_id": "paper_res_004",
+    "retrieval_rank": 1,
+    "status": "VALID",
+    "reason": "Claim evidence ID perfectly matches canonical chunk, paper ID, and E03.3 retrieval rank."
+  },
+  {
+    "query_id": "item_v11_015",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_01",
+    "evidence_id": "paper_res_003_chunk_001",
+    "paper_id": "paper_res_003",
+    "retrieval_rank": 1,
+    "status": "VALID",
+    "reason": "Claim evidence ID perfectly matches canonical chunk, paper ID, and E03.3 retrieval rank."
+  },
+  {
+    "query_id": "item_v11_015",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_02",
+    "evidence_id": "paper_res_003_chunk_001",
+    "paper_id": "paper_res_003",
+    "retrieval_rank": 1,
+    "status": "VALID",
+    "reason": "Claim evidence ID perfectly matches canonical chunk, paper ID, and E03.3 retrieval rank."
+  },
+  {
+    "query_id": "item_v11_019",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_01",
+    "evidence_id": "paper_res_003_chunk_001",
+    "paper_id": "paper_res_003",
+    "retrieval_rank": 1,
+    "status": "VALID",
+    "reason": "Claim evidence ID perfectly matches canonical chunk, paper ID, and E03.3 retrieval rank."
+  },
+  {
+    "query_id": "item_v11_019",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_02",
+    "evidence_id": "paper_res_003_chunk_001",
+    "paper_id": "paper_res_003",
+    "retrieval_rank": 1,
+    "status": "VALID",
+    "reason": "Claim evidence ID perfectly matches canonical chunk, paper ID, and E03.3 retrieval rank."
+  },
+  {
+    "query_id": "item_v11_051",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_02",
+    "evidence_id": "paper_res_002_chunk_001",
+    "paper_id": "paper_res_002",
+    "retrieval_rank": 1,
+    "status": "VALID",
+    "reason": "Claim evidence ID perfectly matches canonical chunk, paper ID, and E03.3 retrieval rank."
+  },
+  {
+    "query_id": "item_v11_059",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_01",
+    "evidence_id": "paper_res_004_chunk_001",
+    "paper_id": "paper_res_004",
+    "retrieval_rank": 1,
+    "status": "VALID",
+    "reason": "Claim evidence ID perfectly matches canonical chunk, paper ID, and E03.3 retrieval rank."
+  }
+]

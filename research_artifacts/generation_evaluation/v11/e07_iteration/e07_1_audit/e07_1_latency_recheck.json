@@ -1,0 +1,19 @@
+{
+  "N": 100,
+  "no_iteration": {
+    "mean_ms": 5691.35,
+    "p50_ms": 4899.07,
+    "p95_ms": 8514.65,
+    "min_ms": 3702.94,
+    "max_ms": 21893.99
+  },
+  "with_iteration": {
+    "mean_ms": 12655.7,
+    "p50_ms": 11064.67,
+    "p95_ms": 18509.97,
+    "min_ms": 9097.19,
+    "max_ms": 21894.05
+  },
+  "p50_overhead_ms": 6165.6,
+  "mean_overhead_ms": 6964.35
+}

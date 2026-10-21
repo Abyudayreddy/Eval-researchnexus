@@ -1,0 +1,47 @@
+{
+  "dataset": "ds_nexus_v11",
+  "split": "TEST",
+  "total_queries": 15,
+  "answerable_queries": 10,
+  "unanswerable_queries": 5,
+  "total_candidate_sentences_extracted": 56,
+  "sentence_breakdown_by_epistemic_type": {
+    "APPROPRIATE_ABSTENTION": 30,
+    "INSUFFICIENT_EVIDENCE_FINDING": 19,
+    "SUPPORTED_FACTUAL_CLAIM": 7
+  },
+  "system_factual_claim_evaluation": {
+    "naive_rag": {
+      "total_extracted_sentences": 28,
+      "factual_claims_asserted": 4,
+      "supported_factual_claims": 4,
+      "unsupported_factual_claims": 0,
+      "contradicted_factual_claims": 0,
+      "automated_nli_precision": 1.0,
+      "abstention_sentences": 15,
+      "negative_finding_sentences": 9
+    },
+    "verified_rag": {
+      "total_extracted_sentences": 28,
+      "factual_claims_asserted": 3,
+      "supported_factual_claims": 3,
+      "unsupported_factual_claims": 0,
+      "contradicted_factual_claims": 0,
+      "automated_nli_precision": 1.0,
+      "abstention_sentences": 15,
+      "negative_finding_sentences": 10
+    }
+  },
+  "query_level_abstention_accuracy": {
+    "unanswerable_queries_count": 5,
+    "naive_rag_refusal_count": "5/5",
+    "verified_rag_refusal_count": "5/5",
+    "refusal_accuracy": 1.0
+  },
+  "human_evaluation_status": {
+    "status": "HUMAN_VALIDATION_BLOCKED / NOT_MEASURED",
+    "human_annotators_count": 0,
+    "inter_annotator_agreement": "N/A",
+    "scientific_limitation_statement": "Automated NLI precision across 7 total factual assertions does not establish generalized factual grounding without external double-blind human adjudication."
+  }
+}

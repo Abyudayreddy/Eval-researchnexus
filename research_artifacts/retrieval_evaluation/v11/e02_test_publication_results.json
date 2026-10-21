@@ -1,0 +1,343 @@
+{
+  "split": "TEST",
+  "sample_size": 15,
+  "comparison": {
+    "B3_Hybrid": {
+      "count": 15,
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "latency_p50_ms": 7.759809494018555,
+      "latency_p95_ms": 21.64816856384277
+    },
+    "B4_Hybrid_BGE": {
+      "count": 15,
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "latency_p50_ms": 507.8580379486084,
+      "latency_p95_ms": 4219.50454711914
+    },
+    "absolute_deltas_B4_minus_B3": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0
+    }
+  },
+  "per_query": [
+    {
+      "query_id": "item_v11_086",
+      "split": "TEST",
+      "config": "B4_Hybrid_BGE",
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "total_latency_ms": 4887.513160705566,
+      "bge_inference_ms": 4872.556686401367,
+      "retrieved_pids": [
+        "paper_res_012",
+        "paper_res_008",
+        "paper_res_004",
+        "paper_res_016",
+        "paper_res_020"
+      ],
+      "bge_called": true
+    },
+    {
+      "query_id": "item_v11_087",
+      "split": "TEST",
+      "config": "B4_Hybrid_BGE",
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "total_latency_ms": 3933.2151412963867,
+      "bge_inference_ms": 3926.436185836792,
+      "retrieved_pids": [
+        "paper_res_009",
+        "paper_res_001",
+        "paper_res_005",
+        "paper_res_017",
+        "paper_res_013"
+      ],
+      "bge_called": true
+    },
+    {
+      "query_id": "item_v11_088",
+      "split": "TEST",
+      "config": "B4_Hybrid_BGE",
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "total_latency_ms": 3863.8486862182617,
+      "bge_inference_ms": 3856.46653175354,
+      "retrieved_pids": [
+        "paper_res_002",
+        "paper_res_018",
+        "paper_res_014",
+        "paper_res_006",
+        "paper_res_010"
+      ],
+      "bge_called": true
+    },
+    {
+      "query_id": "item_v11_089",
+      "split": "TEST",
+      "config": "B4_Hybrid_BGE",
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "total_latency_ms": 1724.2746353149414,
+      "bge_inference_ms": 1715.8472537994385,
+      "retrieved_pids": [
+        "paper_res_019",
+        "paper_res_003",
+        "paper_res_015",
+        "paper_res_007",
+        "paper_res_011"
+      ],
+      "bge_called": true
+    },
+    {
+      "query_id": "item_v11_090",
+      "split": "TEST",
+      "config": "B4_Hybrid_BGE",
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "total_latency_ms": 573.2011795043945,
+      "bge_inference_ms": 571.2494850158691,
+      "retrieved_pids": [
+        "paper_res_012",
+        "paper_res_008",
+        "paper_res_004",
+        "paper_res_016",
+        "paper_res_020"
+      ],
+      "bge_called": true
+    },
+    {
+      "query_id": "item_v11_091",
+      "split": "TEST",
+      "config": "B4_Hybrid_BGE",
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "total_latency_ms": 539.9398803710938,
+      "bge_inference_ms": 535.6736183166504,
+      "retrieved_pids": [
+        "paper_res_020",
+        "paper_res_016",
+        "paper_res_012",
+        "paper_res_004",
+        "paper_res_008"
+      ],
+      "bge_called": true
+    },
+    {
+      "query_id": "item_v11_092",
+      "split": "TEST",
+      "config": "B4_Hybrid_BGE",
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "total_latency_ms": 464.71667289733887,
+      "bge_inference_ms": 460.24298667907715,
+      "retrieved_pids": [
+        "paper_res_013",
+        "paper_res_009",
+        "paper_res_005",
+        "paper_res_001",
+        "paper_res_017"
+      ],
+      "bge_called": true
+    },
+    {
+      "query_id": "item_v11_093",
+      "split": "TEST",
+      "config": "B4_Hybrid_BGE",
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "total_latency_ms": 459.6209526062012,
+      "bge_inference_ms": 457.3366641998291,
+      "retrieved_pids": [
+        "paper_res_018",
+        "paper_res_002",
+        "paper_res_010",
+        "paper_res_006",
+        "paper_res_014"
+      ],
+      "bge_called": true
+    },
+    {
+      "query_id": "item_v11_094",
+      "split": "TEST",
+      "config": "B4_Hybrid_BGE",
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "total_latency_ms": 437.01672554016113,
+      "bge_inference_ms": 434.8444938659668,
+      "retrieved_pids": [
+        "paper_res_003",
+        "paper_res_007",
+        "paper_res_015",
+        "paper_res_011",
+        "paper_res_019"
+      ],
+      "bge_called": true
+    },
+    {
+      "query_id": "item_v11_095",
+      "split": "TEST",
+      "config": "B4_Hybrid_BGE",
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "total_latency_ms": 507.8580379486084,
+      "bge_inference_ms": 504.1666030883789,
+      "retrieved_pids": [
+        "paper_res_020",
+        "paper_res_016",
+        "paper_res_012",
+        "paper_res_004",
+        "paper_res_008"
+      ],
+      "bge_called": true
+    },
+    {
+      "query_id": "item_v11_096",
+      "split": "TEST",
+      "config": "B4_Hybrid_BGE",
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "total_latency_ms": 483.4103584289551,
+      "bge_inference_ms": 478.7318706512451,
+      "retrieved_pids": [
+        "paper_res_002",
+        "paper_res_001",
+        "paper_res_003"
+      ],
+      "bge_called": true
+    },
+    {
+      "query_id": "item_v11_097",
+      "split": "TEST",
+      "config": "B4_Hybrid_BGE",
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "total_latency_ms": 532.7363014221191,
+      "bge_inference_ms": 529.254674911499,
+      "retrieved_pids": [
+        "paper_res_002",
+        "paper_res_001",
+        "paper_res_003"
+      ],
+      "bge_called": true
+    },
+    {
+      "query_id": "item_v11_098",
+      "split": "TEST",
+      "config": "B4_Hybrid_BGE",
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "total_latency_ms": 412.84704208374023,
+      "bge_inference_ms": 409.7096920013428,
+      "retrieved_pids": [
+        "paper_res_002",
+        "paper_res_001",
+        "paper_res_003"
+      ],
+      "bge_called": true
+    },
+    {
+      "query_id": "item_v11_099",
+      "split": "TEST",
+      "config": "B4_Hybrid_BGE",
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "total_latency_ms": 405.4076671600342,
+      "bge_inference_ms": 403.11670303344727,
+      "retrieved_pids": [
+        "paper_res_002",
+        "paper_res_001",
+        "paper_res_003"
+      ],
+      "bge_called": true
+    },
+    {
+      "query_id": "item_v11_100",
+      "split": "TEST",
+      "config": "B4_Hybrid_BGE",
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "total_latency_ms": 451.4200687408447,
+      "bge_inference_ms": 447.4902153015137,
+      "retrieved_pids": [
+        "paper_res_002",
+        "paper_res_001",
+        "paper_res_003"
+      ],
+      "bge_called": true
+    }
+  ]
+}

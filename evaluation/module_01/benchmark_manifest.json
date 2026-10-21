@@ -1,0 +1,221 @@
+{
+  "benchmark_version": "ds_nexus_v11",
+  "split": "TEST",
+  "number_of_queries": 15,
+  "number_with_paper_gold": 10,
+  "number_with_evidence_gold": 10,
+  "average_gold_papers": 0.6666666666666666,
+  "average_gold_evidence": 1.0,
+  "queries": [
+    {
+      "query_id": "item_v11_086",
+      "query_text": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Dense Retrieval & Reranking Models.",
+      "domain": "Artificial Intelligence",
+      "question_type": "SYNTHESIS",
+      "difficulty": "HARD",
+      "expected_paper_ids": [
+        "paper_res_032"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_032_chunk_001",
+        "paper_res_032_chunk_002"
+      ],
+      "split": "TEST",
+      "benchmark_version": "ds_nexus_v11"
+    },
+    {
+      "query_id": "item_v11_087",
+      "query_text": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Deep Learning & Neural Architectures.",
+      "domain": "Artificial Intelligence",
+      "question_type": "SYNTHESIS",
+      "difficulty": "HARD",
+      "expected_paper_ids": [
+        "paper_res_033"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_033_chunk_001",
+        "paper_res_033_chunk_002"
+      ],
+      "split": "TEST",
+      "benchmark_version": "ds_nexus_v11"
+    },
+    {
+      "query_id": "item_v11_088",
+      "query_text": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Large Language Models & Evaluation.",
+      "domain": "Artificial Intelligence",
+      "question_type": "SYNTHESIS",
+      "difficulty": "HARD",
+      "expected_paper_ids": [
+        "paper_res_034"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_034_chunk_001",
+        "paper_res_034_chunk_002"
+      ],
+      "split": "TEST",
+      "benchmark_version": "ds_nexus_v11"
+    },
+    {
+      "query_id": "item_v11_089",
+      "query_text": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Multimodal Representation Learning.",
+      "domain": "Artificial Intelligence",
+      "question_type": "SYNTHESIS",
+      "difficulty": "HARD",
+      "expected_paper_ids": [
+        "paper_res_035"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_035_chunk_001",
+        "paper_res_035_chunk_002"
+      ],
+      "split": "TEST",
+      "benchmark_version": "ds_nexus_v11"
+    },
+    {
+      "query_id": "item_v11_090",
+      "query_text": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Dense Retrieval & Reranking Models.",
+      "domain": "Artificial Intelligence",
+      "question_type": "SYNTHESIS",
+      "difficulty": "HARD",
+      "expected_paper_ids": [
+        "paper_res_036"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_036_chunk_001",
+        "paper_res_036_chunk_002"
+      ],
+      "split": "TEST",
+      "benchmark_version": "ds_nexus_v11"
+    },
+    {
+      "query_id": "item_v11_091",
+      "query_text": "Does the study on Dense Retrieval & Reranking Models claim a 99.9% accuracy score with zero latency overhead?",
+      "domain": "Artificial Intelligence",
+      "question_type": "ADVERSARIAL",
+      "difficulty": "HARD",
+      "expected_paper_ids": [
+        "paper_res_032"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_032_chunk_002"
+      ],
+      "split": "TEST",
+      "benchmark_version": "ds_nexus_v11"
+    },
+    {
+      "query_id": "item_v11_092",
+      "query_text": "Does the study on Deep Learning & Neural Architectures claim a 99.9% accuracy score with zero latency overhead?",
+      "domain": "Artificial Intelligence",
+      "question_type": "ADVERSARIAL",
+      "difficulty": "HARD",
+      "expected_paper_ids": [
+        "paper_res_033"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_033_chunk_002"
+      ],
+      "split": "TEST",
+      "benchmark_version": "ds_nexus_v11"
+    },
+    {
+      "query_id": "item_v11_093",
+      "query_text": "Does the study on Large Language Models & Evaluation claim a 99.9% accuracy score with zero latency overhead?",
+      "domain": "Artificial Intelligence",
+      "question_type": "ADVERSARIAL",
+      "difficulty": "HARD",
+      "expected_paper_ids": [
+        "paper_res_034"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_034_chunk_002"
+      ],
+      "split": "TEST",
+      "benchmark_version": "ds_nexus_v11"
+    },
+    {
+      "query_id": "item_v11_094",
+      "query_text": "Does the study on Multimodal Representation Learning claim a 99.9% accuracy score with zero latency overhead?",
+      "domain": "Artificial Intelligence",
+      "question_type": "ADVERSARIAL",
+      "difficulty": "HARD",
+      "expected_paper_ids": [
+        "paper_res_035"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_035_chunk_002"
+      ],
+      "split": "TEST",
+      "benchmark_version": "ds_nexus_v11"
+    },
+    {
+      "query_id": "item_v11_095",
+      "query_text": "Does the study on Dense Retrieval & Reranking Models claim a 99.9% accuracy score with zero latency overhead?",
+      "domain": "Artificial Intelligence",
+      "question_type": "ADVERSARIAL",
+      "difficulty": "HARD",
+      "expected_paper_ids": [
+        "paper_res_036"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_036_chunk_002"
+      ],
+      "split": "TEST",
+      "benchmark_version": "ds_nexus_v11"
+    },
+    {
+      "query_id": "item_v11_096",
+      "query_text": "What non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors?",
+      "domain": "Artificial Intelligence",
+      "question_type": "UNANSWERABLE",
+      "difficulty": "HARD",
+      "expected_paper_ids": [],
+      "expected_evidence_ids": [],
+      "split": "TEST",
+      "benchmark_version": "ds_nexus_v11"
+    },
+    {
+      "query_id": "item_v11_097",
+      "query_text": "What non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors?",
+      "domain": "Artificial Intelligence",
+      "question_type": "UNANSWERABLE",
+      "difficulty": "HARD",
+      "expected_paper_ids": [],
+      "expected_evidence_ids": [],
+      "split": "TEST",
+      "benchmark_version": "ds_nexus_v11"
+    },
+    {
+      "query_id": "item_v11_098",
+      "query_text": "What non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors?",
+      "domain": "Artificial Intelligence",
+      "question_type": "UNANSWERABLE",
+      "difficulty": "HARD",
+      "expected_paper_ids": [],
+      "expected_evidence_ids": [],
+      "split": "TEST",
+      "benchmark_version": "ds_nexus_v11"
+    },
+    {
+      "query_id": "item_v11_099",
+      "query_text": "What non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors?",
+      "domain": "Artificial Intelligence",
+      "question_type": "UNANSWERABLE",
+      "difficulty": "HARD",
+      "expected_paper_ids": [],
+      "expected_evidence_ids": [],
+      "split": "TEST",
+      "benchmark_version": "ds_nexus_v11"
+    },
+    {
+      "query_id": "item_v11_100",
+      "query_text": "What non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors?",
+      "domain": "Artificial Intelligence",
+      "question_type": "UNANSWERABLE",
+      "difficulty": "HARD",
+      "expected_paper_ids": [],
+      "expected_evidence_ids": [],
+      "split": "TEST",
+      "benchmark_version": "ds_nexus_v11"
+    }
+  ]
+}

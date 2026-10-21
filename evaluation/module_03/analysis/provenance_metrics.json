@@ -1,0 +1,13 @@
+{
+  "n_citations_evaluated": 1,
+  "provenance_chains_intact": 1,
+  "provenance_chains_broken": 0,
+  "provenance_completeness_rate": 1.0,
+  "traceability_verification": {
+    "claim_to_citation_resolved": true,
+    "citation_to_evidence_resolved": true,
+    "evidence_to_paper_resolved": true,
+    "paper_to_source_resolved": true
+  },
+  "cryptographic_integrity": "100% of evaluated evidence chunks preserve invariant SHA-256 context hashes."
+}

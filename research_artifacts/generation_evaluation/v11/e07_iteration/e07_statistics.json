@@ -1,0 +1,84 @@
+{
+  "csr": {
+    "metric": "CSR",
+    "sample_size": 100,
+    "mean_delta": -0.0017,
+    "median_delta": 0.0,
+    "ci_95": [
+      -0.015,
+      0.01
+    ],
+    "statistical_test": "Exact paired permutation (insufficient discordant pairs)",
+    "statistic": 0.0,
+    "p_value": 1.0,
+    "statistically_significant": false
+  },
+  "ucr": {
+    "metric": "UCR",
+    "sample_size": 100,
+    "mean_delta": 0.0017,
+    "median_delta": 0.0,
+    "ci_95": [
+      -0.01,
+      0.015
+    ],
+    "statistical_test": "Exact paired permutation (insufficient discordant pairs)",
+    "statistic": 0.0,
+    "p_value": 1.0,
+    "statistically_significant": false
+  },
+  "cp": {
+    "metric": "CP",
+    "sample_size": 100,
+    "mean_delta": 0.0,
+    "median_delta": 0.0,
+    "ci_95": [
+      -0.03,
+      0.03
+    ],
+    "statistical_test": "Exact paired permutation (insufficient discordant pairs)",
+    "statistic": 0.0,
+    "p_value": 1.0,
+    "statistically_significant": false
+  },
+  "cc": {
+    "metric": "CC",
+    "sample_size": 100,
+    "mean_delta": 0.0,
+    "median_delta": 0.0,
+    "ci_95": [
+      0.0,
+      0.0
+    ],
+    "statistical_test": "Exact paired permutation (insufficient discordant pairs)",
+    "statistic": 0.0,
+    "p_value": 1.0,
+    "statistically_significant": false
+  },
+  "cov": {
+    "metric": "COV",
+    "sample_size": 100,
+    "mean_delta": -0.01,
+    "median_delta": 0.0,
+    "ci_95": [
+      -0.0283,
+      0.005
+    ],
+    "statistical_test": "Exact paired permutation (insufficient discordant pairs)",
+    "statistic": 0.0,
+    "p_value": 1.0,
+    "statistically_significant": false
+  },
+  "convergence": {
+    "min_iterations": 0,
+    "max_iterations": 2,
+    "mean_iterations": 1.23,
+    "median_iterations": 1.0,
+    "termination_reasons": {
+      "no_further_change": 3,
+      "successful_refinement": 0,
+      "anti_oscillation": 71,
+      "maximum_iteration_limit": 26
+    }
+  }
+}

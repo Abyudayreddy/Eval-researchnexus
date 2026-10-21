@@ -1,0 +1,21 @@
+{
+  "run_id": "run_module_02_authoritative_test",
+  "timestamp": "2026-10-13T15:15:00+05:30",
+  "module": "module_02",
+  "benchmark": "ds_nexus_v11",
+  "split": "TEST",
+  "n_queries": 15,
+  "files_generated": [
+    "evaluation/module_02/raw/condition_a_naive_raw.json",
+    "evaluation/module_02/raw/condition_b_verified_raw.json",
+    "evaluation/module_02/raw/claims_raw.json",
+    "evaluation/module_02/raw/citations_raw.json",
+    "evaluation/module_02/per_query/all_per_query_results.json",
+    "evaluation/module_02/metrics/aggregate_metrics.json",
+    "evaluation/module_02/statistics/statistical_tests.json",
+    "evaluation/module_02/latency/latency_metrics.json",
+    "evaluation/module_02/fairness/fairness_audit.json",
+    "evaluation/module_02/consistency/consistency_audit.json",
+    "evaluation/module_02/error_analysis/error_analysis.json"
+  ]
+}

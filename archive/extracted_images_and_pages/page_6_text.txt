@@ -1,0 +1,88 @@
+the interface computes cryptographic SHA256 hashes of the 
+input query, context window, and generated output. This 
+guarantees complete auditability, allowing peer reviewers and 
+regulatory bodies to verify the empirical provenance of any 
+claim. 
+ 
+Fig. 7. ResearchNexus AI Explainability Dashboard: Granular claim-
+level provenance ledger with SHA256 cryptographic trace links. 
+VI. CONCLUSION AND FUTURE WORK 
+This paper presented ResearchNexus AI, an explainable, 
+multi-stage RAG framework designed for verified scientific 
+literature synthesis. By uniting BM25 and dense vector 
+search through Reciprocal Rank Fusion, the system achieves 
+high candidate recall (Hit@20 = 1.0000 on test queries) in 
+7.83 ms median latency. BGE cross-encoder reranking 
+prioritizes relevant evidence, and the automated provenance 
+graph delivers 100% end-to-end auditability across all 202 
+evaluated claims. 
+Our empirical findings on ds_nexus_v11 provide practical 
+guidance for scientific AI systems. Conservative citation 
+repair successfully prevents false-positive attributions, while 
+iterative refinement adds a 2.2x latency overhead without 
+meaningful grounding recovery when gold context is diluted 
+by 
+distractors. 
+Reliable 
+scientific 
+synthesis 
+requires 
+disciplined context filtering rather than blind iterative 
+revision. 
+Future research will explore: (1) dynamic context pruning 
+based on cross-encoder logit margins to eliminate distracting 
+passages; (2) domain-specific NLI verifiers tuned on 
+academic corpora to differentiate cautious hedging from 
+factual hallucinations; and (3) active multi-hop re-querying 
+when initial evidence pools exhibit information gaps. 
+REFERENCES 
+[1] P. Lewis et al., "Retrieval-Augmented Generation for Knowledge-
+Intensive NLP Tasks," Adv. Neural Inf. Process. Syst. (NeurIPS), vol. 
+33, pp. 9459-9474, 2020. 
+[2] V. Karpukhin et al., "Dense Passage Retrieval for Open-Domain 
+Question Answering," in Proc. EMNLP 2020, pp. 6769-6781, 2020. 
+[3] N. F. Liu, T. Zhang, and P. Liang, "Evaluating Verifiability in Generative 
+Search Engines," in Findings of EMNLP 2023, pp. 7001-7025, 2023. 
+[4] S. Robertson and H. Zaragoza, "The Probabilistic Relevance Framework: 
+BM25 and Beyond," Found. Trends Inf. Retr., vol. 3, no. 4, pp. 333-389, 
+2009. 
+[5] J. Menick et al., "Teaching Language Models to Support Answers with 
+Verified Quotes," arXiv:2203.11147, 2022. 
+[6] G. V. Cormack, C. L. A. Clarke, and S. Büttcher, "Reciprocal Rank 
+Fusion Outperforms Condorcet," in Proc. SIGIR 2009, pp. 758-759, 
+2009. 
+[7] R. Nogueira and K. Cho, "Passage Re-ranking with BERT," 
+arXiv:1901.04085, 2019. 
+[8] K. Lo et al., "S2ORC: The Semantic Scholar Open Research Corpus," in 
+Proc. ACL 2020, pp. 4969-4983, 2020. 
+[9] J. Lála et al., "PaperQA: A Retrieval-Augmented Generative Agent for 
+Scientific Research," arXiv:2312.07559, 2023. 
+[10] Y. Zheng et al., "OpenResearcher: Unleashing AI for Accelerated 
+Scientific Research," in Proc. EMNLP 2024 Demo, pp. 209-218, 2024. 
+[11] S. Agarwal et al., "LitLLM: A Toolkit for Scientific Literature Review," 
+arXiv:2402.01788, 2024. 
+[12] L. Gao et al., "RARR: Researching and Revising What Language 
+Models Say," in Proc. ACL 2023, pp. 16477-16508, 2023. 
+[13] A. Asai et al., "Self-RAG: Learning to Retrieve, Generate, and 
+Critique," in Proc. ICLR 2024, 2024. 
+[14] A. Asai et al., "Synthesizing Scientific Literature with Retrieval-
+Augmented Language Models," Nature, vol. 650, pp. 857-863, 2026. 
+[15] Z. Shi et al., "Towards a Unified Framework for Reference Retrieval 
+and Related Work Generation," in Findings of EMNLP 2023, pp. 5785-
+5799, 2023. 
+[16] M. D. Skarlinski et al., "Language Agents Achieve Superhuman 
+Synthesis of Scientific Knowledge," arXiv:2409.13740, 2024. 
+[17] S. Lin and P. A. Beling, "An End-to-End Optimal Trade Execution 
+Framework based on PPO," in Proc. IEEE CIFEr, 2023. 
+[18] D. Araci, "FinBERT: Financial Sentiment Analysis with Pre-trained 
+Language Models," arXiv:1908.10063, 2019. 
+[19] A. Vaswani et al., "Attention Is All You Need," Adv. Neural Inf. 
+Process. Syst. (NeurIPS), vol. 30, pp. 5998-6008, 2017. 
+[20] H. Wang, Z. Xie, D. K. W. Chiu, and K. K. W. Ho, "Multimodal Market 
+Information Fusion for Stock Price Trend Prediction," Applied 
+Intelligence, vol. 55, no. 1, pp. 77-90, 2024. 
+[21] Y. Li, M. Zhuang, J. Wang, and J. Zhou, "Leveraging Multi-Time-Span 
+Sequences for Improved Stock Trend Prediction," Neurocomputing, vol. 
+620, p. 129218, 2025. 
+[22] T.-V. Pricope, "Deep Reinforcement Learning in Quantitative 
+Algorithmic Trading: A Review," arXiv:2106.00123, 2021. 

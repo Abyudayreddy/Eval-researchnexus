@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ResearchNexus Publication Tables (Word Compatible)</title>
+<style>
+body { font-family: "Times New Roman", Times, serif; font-size: 10pt; line-height: 1.3; margin: 20px; }
+table { border-collapse: collapse; width: 100%; margin-bottom: 25px; page-break-inside: avoid; }
+th, td { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 5px 8px; text-align: left; }
+th { font-weight: bold; background-color: #f2f2f2; }
+caption { font-weight: bold; font-size: 11pt; margin-bottom: 6px; text-align: left; }
+.note { font-size: 9pt; font-style: italic; margin-top: 4px; }
+.center { text-align: center; }
+.right { text-align: right; }
+</style>
+</head>
+<body>
+
+<h2>ResearchNexus Publication Tables (IEEE Format Ready)</h2>
+<p><b>Dataset</b>: <code>ds_nexus_v11</code> (N=100: DEV=70, VAL=15, TEST=15) | <b>Status</b>: Authoritative Results Freeze</p>
+
+<!-- TABLE I -->
+<table>
+<caption>TABLE I: DATASET SPECIFICATION AND EVALUATION PROTOCOL</caption>
+<tr><th>Characteristic</th><th>Value / Configuration</th></tr>
+<tr><td>Benchmark Dataset</td><td><code>ds_nexus_v11</code> (Total N=100 queries)</td></tr>
+<tr><td>Split Partition</td><td>DEV = 70, VAL = 15, TEST = 15</td></tr>
+<tr><td>Target Corpus</td><td>40 scientific papers, 80 extracted passages (AI, NLP, CV, IR)</td></tr>
+<tr><td>Query Types</td><td>Factual (20), Methodological (20), Numerical (15), Causal (15), Comparative (10), Synthesis (10), Adversarial (5), Probe (5)</td></tr>
+<tr><td>Candidate Retrieval (E03.3)</td><td>Hybrid RRF (k=60) over Lexical (BM25) and Dense (Chroma)</td></tr>
+<tr><td>Generation Grounding (E04.1)</td><td>Naive RAG vs. Verified RAG using Gemini 2.5 Flash</td></tr>
+<tr><td>Human Ground Truth (E05)</td><td><b>NOT MEASURED</b> (Human expert ground-truth annotations unavailable)</td></tr>
+<tr><td>Citation Repair (E06.1)</td><td>Deterministic substring matching (191 opportunities)</td></tr>
+<tr><td>Iterative Refinement (E07.1)</td><td>Multi-pass resynthesis feedback loop</td></tr>
+<tr><td>Provenance Audit (E08)</td><td>Automated bidirectional verification of links and offsets (N=202)</td></tr>
+<tr><td>Latency Profiling (E09)</td><td>Granular stage decomposition (p50 / p95)</td></tr>
+<tr><td>Component Ablation (E10)</td><td>Controlled single-factor deletions (A0–A6)</td></tr>
+<tr><td>Error Taxonomy (E11)</td><td>14-category multi-label error audit on TEST (N=15)</td></tr>
+</table>
+
+<!-- TABLE II -->
+<table>
+<caption>TABLE II: CANDIDATE CONTEXT RETRIEVAL PERFORMANCE (HYBRID RRF)</caption>
+<tr><th class="center">Candidate Pool (k)</th><th class="center">Recall@k</th><th class="center">Hit@k</th></tr>
+<tr><td class="center">5</td><td class="center">0.2700</td><td class="center">0.3000</td></tr>
+<tr><td class="center">10</td><td class="center">0.5700</td><td class="center">0.6200</td></tr>
+<tr><td class="center">20</td><td class="center">0.9500</td><td class="center">1.0000</td></tr>
+<tr><td class="center">50</td><td class="center">1.0000</td><td class="center">1.0000</td></tr>
+</table>
+<div class="note">Note: Evaluated on ALL N=100 queries. TEST (N=15): all 10 answerable targets are present within the canonical k=20 pool; 5 additional TEST queries are unanswerable probe queries.</div>
+
+<!-- TABLE III -->
+<table>
+<caption>TABLE III: GENERATION GROUNDING: NAIVE VS. VERIFIED RAG</caption>
+<tr><th>Metric</th><th class="center">Naive RAG</th><th class="center">Verified RAG</th><th class="center">Direction</th></tr>
+<tr><td>Claim Support Ratio (CSR)</td><td class="center">0.0533</td><td class="center">0.0350</td><td class="center">&uarr; better</td></tr>
+<tr><td>Unsupported Claim Ratio (UCR)</td><td class="center">0.9467</td><td class="center">0.9650</td><td class="center">&darr; better</td></tr>
+<tr><td>Citation Precision (CP)</td><td class="center">0.0600</td><td class="center">0.0400</td><td class="center">&uarr; better</td></tr>
+<tr><td>Citation Coverage (COV)</td><td class="center">0.0617</td><td class="center">0.0433</td><td class="center">&uarr; better</td></tr>
+</table>
+<div class="note">Statistical Test: McNemar paired test statistic = 0.1667, p = 0.6831. No statistically significant grounding improvement was observed on the evaluated benchmark.</div>
+
+<!-- TABLE IV -->
+<table>
+<caption>TABLE IV: SYSTEM LATENCY AND ITERATIVE REFINEMENT</caption>
+<tr><th colspan="3">Part A: Disaggregated Pre-Generation Latency (E09, N=100)</th></tr>
+<tr><th>Processing Stage</th><th class="right">p50 (ms)</th><th class="right">p95 (ms)</th></tr>
+<tr><td>Hybrid Retrieval (BM25 + Dense)</td><td class="right">6.56</td><td class="right">19.12</td></tr>
+<tr><td>Pure BGE Cross-Encoder Inference</td><td class="right">531.41</td><td class="right">4246.05</td></tr>
+<tr><td>Hybrid + BGE Combined Stage</td><td class="right">535.06</td><td class="right">4251.51</td></tr>
+<tr><th colspan="3">Part B: Iterative Refinement Tradeoff (E07.1, N=100)</th></tr>
+<tr><th>Configuration</th><th class="right">Mean Latency</th><th>Outcomes (Improved / Unchanged / Degraded)</th></tr>
+<tr><td>Iteration OFF (Single Pass)</td><td class="right">5691.35 ms</td><td>&mdash;</td></tr>
+<tr><td>Iteration ON (Refined Loop)</td><td class="right">12655.70 ms</td><td>1 improved / 98 unchanged / 1 degraded</td></tr>
+<tr><td colspan="3" class="note">&Delta;CSR = -0.0017, exact paired permutation p = 1.0000; 2.22x latency multiplier.</td></tr>
+<tr><th colspan="3">Part C: Automated XAI Provenance Integrity (E08, N=202 Claims)</th></tr>
+<tr><th colspan="2">Verification Metric</th><th class="right">Audit Adherence</th></tr>
+<tr><td colspan="2">Trace Completeness</td><td class="right">1.0000 (100.0%)</td></tr>
+<tr><td colspan="2">Claim-to-Evidence Accuracy</td><td class="right">1.0000 (100.0%)</td></tr>
+<tr><td colspan="2">Citation-to-Evidence Accuracy</td><td class="right">1.0000 (100.0%)</td></tr>
+<tr><td colspan="2">Offset Resolution Accuracy</td><td class="right">1.0000 (100.0%)</td></tr>
+</table>
+<div class="note">Note: Part C reflects automated provenance-audit verification across 202 algorithmic trace links, not human subject explainability measures.</div>
+
+<!-- TABLE V -->
+<table>
+<caption>TABLE V: ARCHITECTURAL COMPONENT ABLATION STUDY (N=100)</caption>
+<tr><th>ID</th><th>Configuration</th><th class="center">CSR</th><th class="right">Mean Latency (ms)</th><th class="center">Latency Status</th></tr>
+<tr><td>A0</td><td>Full Pipeline</td><td class="center">0.0333</td><td class="right">12655.70</td><td class="center">Direct</td></tr>
+<tr><td>A1</td><td>Minus Iteration</td><td class="center">0.0350</td><td class="right">5691.35</td><td class="center">Direct</td></tr>
+<tr><td>A2</td><td>Minus Citation Repair*</td><td class="center">0.0533</td><td class="right">12610.70</td><td class="center">DERIVED</td></tr>
+<tr><td>A3</td><td>Naive RAG Baseline</td><td class="center">0.0533</td><td class="right">5767.46</td><td class="center">Direct</td></tr>
+<tr><td>A4</td><td>Minus BGE Cross-Encoder*</td><td class="center">0.0333</td><td class="right">12124.29</td><td class="center">DERIVED</td></tr>
+<tr><td>A5</td><td>Dense Only Baseline</td><td class="center">0.0000</td><td class="right">8.46</td><td class="center">Direct</td></tr>
+<tr><td>A6</td><td>BM25 Only Baseline</td><td class="center">0.0333</td><td class="right">0.98</td><td class="center">Direct</td></tr>
+</table>
+<div class="note">*Footnote: A2 and A4 latency values are mathematically derived component decompositions rather than independent end-to-end wall-clock runs.</div>
+
+<!-- TABLE VI -->
+<table>
+<caption>TABLE VI: ERROR TAXONOMY ANALYSIS (E11, TEST SPLIT N=15, 28 CLAIMS)</caption>
+<tr><th>Category</th><th class="center">Count</th><th class="center">Level</th><th>Interpretation / Status</th></tr>
+<tr><th colspan="4">Measured Failure Categories</th></tr>
+<tr><td>UNSUPPORTED_CLAIM</td><td class="center">28</td><td class="center">Claim</td><td>100.0% of TEST claims (28/28)</td></tr>
+<tr><td>MISSING_CITATION</td><td class="center">28</td><td class="center">Claim</td><td>100.0% of TEST claims (28/28)</td></tr>
+<tr><td>CITATION_REPAIR_FAILURE</td><td class="center">27</td><td class="center">Citation</td><td>100.0% of repair attempts (27/27)</td></tr>
+<tr><td>ITERATION_FAILURE</td><td class="center">15</td><td class="center">Query</td><td>100.0% of TEST queries (15/15)</td></tr>
+<tr><th colspan="4">Zero Measured Categories (0 events at canonical k=20)</th></tr>
+<tr><td>RETRIEVAL_MISS</td><td class="center">0</td><td class="center">Query</td><td>0 misses (Hit@20 = 1.00)</td></tr>
+<tr><td>CANDIDATE_POOL_MISS</td><td class="center">0</td><td class="center">Query</td><td>0 pool misses (Hit@20 = 1.00)</td></tr>
+<tr><td>RERANKING_ERROR</td><td class="center">0</td><td class="center">Query</td><td>Top-20 context preserved</td></tr>
+<tr><td>EVIDENCE_SELECTION_ERROR</td><td class="center">0</td><td class="center">Query</td><td>Verified selection</td></tr>
+<tr><td>CONTRADICTED_CLAIM</td><td class="center">0</td><td class="center">Claim</td><td>No direct contradictions</td></tr>
+<tr><td>WRONG_CITATION</td><td class="center">0</td><td class="center">Claim</td><td>0 incorrect pointer links</td></tr>
+<tr><td>ONLINE_RETRIEVAL_FAILURE</td><td class="center">0</td><td class="center">Query</td><td>Local corpus execution</td></tr>
+<tr><td>XAI_PROVENANCE_FAILURE</td><td class="center">0</td><td class="center">Claim</td><td>Complete deterministic trace</td></tr>
+<tr><th colspan="4">Unmeasured Categories</th></tr>
+<tr><td>VERIFICATION_FALSE_POSITIVE</td><td class="center"><i>NOT MEASURED</i></td><td class="center">Claim</td><td>E05 human ground truth unavailable</td></tr>
+<tr><td>VERIFICATION_FALSE_NEGATIVE</td><td class="center"><i>NOT MEASURED</i></td><td class="center">Claim</td><td>E05 human ground truth unavailable</td></tr>
+</table>
+<div class="note">Total Categorized Events = 98 multi-label failure events across 15 TEST queries.</div>
+
+</body>
+</html>

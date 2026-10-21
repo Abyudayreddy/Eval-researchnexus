@@ -1,0 +1,48 @@
+{
+  "overall": {
+    "trace_completeness": 1.0,
+    "claim_evidence_accuracy": 1.0,
+    "citation_evidence_accuracy": 1.0,
+    "offset_resolution_accuracy": 1.0,
+    "total_claims_evaluated": 202,
+    "failed_traces": 0
+  },
+  "splits": {
+    "ALL": {
+      "total_claims": 202,
+      "complete_traces": 202,
+      "incomplete_traces": 0,
+      "trace_completeness": 1.0,
+      "claim_evidence_accuracy": 1.0,
+      "citation_evidence_accuracy": 1.0,
+      "offset_resolution_accuracy": 1.0
+    },
+    "DEVELOPMENT": {
+      "total_claims": 134,
+      "complete_traces": 134,
+      "incomplete_traces": 0,
+      "trace_completeness": 1.0,
+      "claim_evidence_accuracy": 1.0,
+      "citation_evidence_accuracy": 1.0,
+      "offset_resolution_accuracy": 1.0
+    },
+    "VALIDATION": {
+      "total_claims": 40,
+      "complete_traces": 40,
+      "incomplete_traces": 0,
+      "trace_completeness": 1.0,
+      "claim_evidence_accuracy": 1.0,
+      "citation_evidence_accuracy": 1.0,
+      "offset_resolution_accuracy": 1.0
+    },
+    "TEST": {
+      "total_claims": 28,
+      "complete_traces": 28,
+      "incomplete_traces": 0,
+      "trace_completeness": 1.0,
+      "claim_evidence_accuracy": 1.0,
+      "citation_evidence_accuracy": 1.0,
+      "offset_resolution_accuracy": 1.0
+    }
+  }
+}

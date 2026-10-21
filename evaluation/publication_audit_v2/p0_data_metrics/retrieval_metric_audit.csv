@@ -1,0 +1,6 @@
+granularity,pipeline_stage,historical_draft_value,canonical_m01_value,discrepancy_cause,audit_verdict
+Paper-Level,BM25 Lexical,Hit@20 = 0.0667 (1/15) / Recall@20 = 0.0000,Hit@20 = 0.6667 (10/15) / Recall@20 = 1.0000 (10/10 answerable),Legacy draft evaluated against unhydrated chunk IDs and conflated 5 unanswerable test queries as retrieval misses.,RESOLVED
+Chunk-Level,BM25 Lexical,Hit@10 = 0.0000 / Recall@10 = 0.0000,Hit@10 = 0.3333 / Recall@10 = 0.2500,Early table e01 used strict exact-chunk ID matching prior to chunk-hydration reconciliation.,RESOLVED
+Paper-Level,Dense Chroma (BGE-Base),Hit@20 = 0.0000 / MRR = 0.0000,Hit@20 = 0.6000 / MRR = 0.3111,Early baseline script had zero-vector indexing defect; corrected in canonical Module 1 run.,RESOLVED
+Paper-Level,Hybrid RRF (k=60),Hit@20 = 0.7333 / Recall@20 = 1.0000,Hit@20 = 0.7333 (11/15) / Recall@20 = 1.0000,Consistent with canonical Module 1; combines complementary lexical and dense candidate sets.,VERIFIED
+Paper-Level,BGE Reranker Cross-Encoder,Hit@10 = 0.6667 / MRR@10 = 0.5444,Hit@10 = 0.6667 / MRR@10 = 0.5444,Consistent with canonical Module 1; promotes top relevant papers to ranks 1-3.,VERIFIED

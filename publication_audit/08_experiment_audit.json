@@ -1,0 +1,99 @@
+{
+  "experiment_audit": {
+    "ground_truth_status": "CONFLICTING",
+    "experiments": {
+      "E01": {
+        "research_question": "Does hybrid RRF retrieval outperform individual dense (ChromaDB) and sparse (BM25) retrievers?",
+        "baseline": "B1 Dense RAG, B2 BM25 RAG",
+        "intervention": "B3 Hybrid RAG (BM25 + Dense + RRF k=60)",
+        "frozen_variables": "Indexed corpus chunks, query strings, candidate pool size K=10, no LLM calls",
+        "dataset": "ds_nexus_v10",
+        "split": "Full 100 items & TEST split (15 items)",
+        "sample_size_N": "100 items (full) / 15 items (test)",
+        "metrics": ["Hit@1", "Hit@5", "Recall@5", "Precision@5", "MRR", "nDCG@5", "P50 Latency", "P95 Latency"],
+        "statistical_test": "Wilcoxon signed-rank test (statistic=142.5, p=0.0002) & 95% Bootstrap CI [+0.072, +0.154]",
+        "raw_artifact": "evaluation_stage1_benchmark_e01_report.md",
+        "aggregate_artifact": "MODULE_3_IMPLEMENTATION_RESULTS_PUBLICATION_PROGRESS_REPORT.md",
+        "configuration_artifact": "backend/app/services/evaluation_service.py",
+        "figure_table_source": "evaluation_stage1_benchmark_e01_report.md Section 7",
+        "reproducibility_status": "PARTIAL (Evaluation runner in evaluation_service.py uses mock simulated retriever logic rather than real execution)"
+      },
+      "E02": {
+        "research_question": "Does BGE cross-encoder reranking improve retrieval quality over Hybrid RAG (B3), and what is the latency cost?",
+        "baseline": "B3 Hybrid RAG",
+        "intervention": "B4 Hybrid RAG + BAAI/bge-reranker-base",
+        "frozen_variables": "TEST split items (15), B3 candidate pool generator, query strings, gold annotations",
+        "dataset": "ds_nexus_v10",
+        "split": "Frozen TEST split (15 items)",
+        "sample_size_N": 15,
+        "metrics": ["Hit@1", "Hit@5", "Recall@5", "Precision@5", "MRR", "nDCG@5", "Evidence Recall@5", "P50 Latency", "P95 Latency"],
+        "statistical_test": "Wilcoxon signed-rank test (p=0.0381 for MRR) & 95% Bootstrap CI [+0.018, +0.130]",
+        "raw_artifact": "evaluation_stage2_E02_BGE_reranking_report.md",
+        "aggregate_artifact": "MODULE_3_IMPLEMENTATION_RESULTS_PUBLICATION_PROGRESS_REPORT.md",
+        "configuration_artifact": "backend/app/services/evaluation_service.py",
+        "figure_table_source": "evaluation_stage2_E02_BGE_reranking_report.md Section 8",
+        "reproducibility_status": "PARTIAL (Requires USE_REAL_BGE=true; evaluation_service.py uses simulation)"
+      },
+      "E03": {
+        "research_question": "Does Enhanced RAG context bounding improve citation precision and claim support over conventional RAG using identical evidence?",
+        "baseline": "B5R Conventional RAG",
+        "intervention": "B5E Enhanced RAG (evidence eligibility, deduplication, structured context binding, citation mapping)",
+        "frozen_variables": "Frozen B4 retrieved evidence, Gemini 2.5 Flash model, temperature=0.0, max_tokens=1024, single_pass mode",
+        "dataset": "ds_nexus_v10",
+        "split": "Frozen TEST split (15 items)",
+        "sample_size_N": 15,
+        "metrics": ["Citation Precision", "Citation Coverage", "Claim Support Rate", "Unsupported Claim Rate", "Evidence Coverage", "P50 Latency", "Model Calls"],
+        "statistical_test": "Wilcoxon signed-rank test (p=0.0120 for Citation Precision) & 95% Bootstrap CI [+0.080, +0.240]",
+        "raw_artifact": "evaluation_stage3_E03_enhanced_rag_report.md",
+        "aggregate_artifact": "MODULE_3_IMPLEMENTATION_RESULTS_PUBLICATION_PROGRESS_REPORT.md",
+        "configuration_artifact": "backend/app/services/evaluation_service.py",
+        "figure_table_source": "evaluation_stage3_E03_enhanced_rag_report.md Section 9",
+        "reproducibility_status": "CONFLICTING & SIMULATED"
+      },
+      "E04": {
+        "research_question": "Does Phase 3.4 Claim Verification and Citation Repair improve citation correctness and claim support over unverified Enhanced RAG generation?",
+        "baseline": "B6A Enhanced RAG Without Verification",
+        "intervention": "B6V Enhanced RAG + Stage A/B Claim Verification + Citation Repair",
+        "frozen_variables": "Frozen B4 evidence, identical initial B5E generation, Gemini 2.5 Flash, temperature=0.0, single_pass mode",
+        "dataset": "ds_nexus_v10",
+        "split": "Frozen TEST split (15 items)",
+        "sample_size_N": 15,
+        "metrics": ["Citation Precision", "Citation Coverage", "Claim Support Rate", "Unsupported Claim Rate", "Evidence Coverage", "Repaired Citations Count", "P50 Latency"],
+        "statistical_test": "Wilcoxon signed-rank test (p=0.0080 for Citation Precision) & 95% Bootstrap CI [+0.120, +0.280]",
+        "raw_artifact": "evaluation_stage4_E04_claim_verification_report.md",
+        "aggregate_artifact": "MODULE_3_IMPLEMENTATION_RESULTS_PUBLICATION_PROGRESS_REPORT.md",
+        "configuration_artifact": "backend/app/services/evaluation_service.py",
+        "figure_table_source": "evaluation_stage4_E04_claim_verification_report.md Section 10",
+        "reproducibility_status": "PARTIAL (Simulated in evaluation_service.py)"
+      },
+      "E05": {
+        "research_question": "Does multi-cycle iterative refinement with targeted re-retrieval improve final answer scientific grounding over single-pass verified RAG?",
+        "baseline": "B7A Single-Pass Verified Answer",
+        "intervention": "B7R Multi-Cycle Iterative Refinement (Max 2 cycles)",
+        "frozen_variables": "ResolvedContext boundaries, self-feedback evaluation taxonomy, Gemini 2.5 Flash",
+        "dataset": "ds_nexus_v10",
+        "split": "Frozen TEST split (15 items)",
+        "sample_size_N": 15,
+        "metrics": ["Citation Precision", "Citation Coverage", "Claim Support Rate", "Unsupported Claim Rate", "Evidence Coverage", "P50 Latency", "Model Calls"],
+        "statistical_test": "Wilcoxon signed-rank test (p=0.0035 for Citation Precision)",
+        "raw_artifact": "MODULE_3_IMPLEMENTATION_RESULTS_PUBLICATION_PROGRESS_REPORT.md Part 13",
+        "aggregate_artifact": "MODULE_3_IMPLEMENTATION_RESULTS_PUBLICATION_PROGRESS_REPORT.md",
+        "configuration_artifact": "backend/app/services/evaluation_service.py",
+        "figure_table_source": "MODULE_3_IMPLEMENTATION_RESULTS_PUBLICATION_PROGRESS_REPORT.md Part 13 Table",
+        "reproducibility_status": "SIMULATED (No standalone evaluation_stage5_report.md file found)"
+      }
+    },
+    "conflicting_values_report": {
+      "conflict_1_e01_vs_e02_baseline_mrr": {
+        "source_a": "evaluation_stage1_benchmark_e01_report.md Section 3.1 reports B3 Hybrid MRR on TEST split (N=15) is 0.812 (and 0.898 on full N=100).",
+        "source_b": "evaluation_stage2_E02_BGE_reranking_report.md Section 2 reports B3 Hybrid MRR on TEST split (N=15) is 0.900.",
+        "source_c": "MODULE_3_IMPLEMENTATION_RESULTS_PUBLICATION_PROGRESS_REPORT.md Line 327 reports B3 TEST MRR = 0.812, while Line 348 reports B3 TEST MRR = 0.900.",
+        "status": "CONFLICTING"
+      },
+      "conflict_2_simulated_vs_live_eval": {
+        "finding": "backend/app/services/evaluation_service.py contains hardcoded _simulate_retriever and hardcoded metric return values (e.g. 0.733, 0.947, 0.940, 0.780), meaning running the evaluation suite via API triggers mock simulations rather than live model execution.",
+        "status": "BROKEN"
+      }
+    }
+  }
+}

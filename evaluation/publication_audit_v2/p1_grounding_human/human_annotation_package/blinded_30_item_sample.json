@@ -1,0 +1,212 @@
+[
+  {
+    "item_id": "BLIND_001",
+    "query_topic": "Topic_1",
+    "claim_text": "Sample scientific claim statement 1 for independent validation.",
+    "evidence_passage_id": "PASSAGE_007",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_002",
+    "query_topic": "Topic_2",
+    "claim_text": "Sample scientific claim statement 2 for independent validation.",
+    "evidence_passage_id": "PASSAGE_014",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_003",
+    "query_topic": "Topic_3",
+    "claim_text": "Sample scientific claim statement 3 for independent validation.",
+    "evidence_passage_id": "PASSAGE_021",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_004",
+    "query_topic": "Topic_4",
+    "claim_text": "Sample scientific claim statement 4 for independent validation.",
+    "evidence_passage_id": "PASSAGE_003",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_005",
+    "query_topic": "Topic_5",
+    "claim_text": "Sample scientific claim statement 5 for independent validation.",
+    "evidence_passage_id": "PASSAGE_010",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_006",
+    "query_topic": "Topic_1",
+    "claim_text": "Sample scientific claim statement 6 for independent validation.",
+    "evidence_passage_id": "PASSAGE_017",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_007",
+    "query_topic": "Topic_2",
+    "claim_text": "Sample scientific claim statement 7 for independent validation.",
+    "evidence_passage_id": "PASSAGE_024",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_008",
+    "query_topic": "Topic_3",
+    "claim_text": "Sample scientific claim statement 8 for independent validation.",
+    "evidence_passage_id": "PASSAGE_006",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_009",
+    "query_topic": "Topic_4",
+    "claim_text": "Sample scientific claim statement 9 for independent validation.",
+    "evidence_passage_id": "PASSAGE_013",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_010",
+    "query_topic": "Topic_5",
+    "claim_text": "Sample scientific claim statement 10 for independent validation.",
+    "evidence_passage_id": "PASSAGE_020",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_011",
+    "query_topic": "Topic_1",
+    "claim_text": "Sample scientific claim statement 11 for independent validation.",
+    "evidence_passage_id": "PASSAGE_002",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_012",
+    "query_topic": "Topic_2",
+    "claim_text": "Sample scientific claim statement 12 for independent validation.",
+    "evidence_passage_id": "PASSAGE_009",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_013",
+    "query_topic": "Topic_3",
+    "claim_text": "Sample scientific claim statement 13 for independent validation.",
+    "evidence_passage_id": "PASSAGE_016",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_014",
+    "query_topic": "Topic_4",
+    "claim_text": "Sample scientific claim statement 14 for independent validation.",
+    "evidence_passage_id": "PASSAGE_023",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_015",
+    "query_topic": "Topic_5",
+    "claim_text": "Sample scientific claim statement 15 for independent validation.",
+    "evidence_passage_id": "PASSAGE_005",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_016",
+    "query_topic": "Topic_1",
+    "claim_text": "Sample scientific claim statement 16 for independent validation.",
+    "evidence_passage_id": "PASSAGE_012",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_017",
+    "query_topic": "Topic_2",
+    "claim_text": "Sample scientific claim statement 17 for independent validation.",
+    "evidence_passage_id": "PASSAGE_019",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_018",
+    "query_topic": "Topic_3",
+    "claim_text": "Sample scientific claim statement 18 for independent validation.",
+    "evidence_passage_id": "PASSAGE_001",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_019",
+    "query_topic": "Topic_4",
+    "claim_text": "Sample scientific claim statement 19 for independent validation.",
+    "evidence_passage_id": "PASSAGE_008",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_020",
+    "query_topic": "Topic_5",
+    "claim_text": "Sample scientific claim statement 20 for independent validation.",
+    "evidence_passage_id": "PASSAGE_015",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_021",
+    "query_topic": "Topic_1",
+    "claim_text": "Sample scientific claim statement 21 for independent validation.",
+    "evidence_passage_id": "PASSAGE_022",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_022",
+    "query_topic": "Topic_2",
+    "claim_text": "Sample scientific claim statement 22 for independent validation.",
+    "evidence_passage_id": "PASSAGE_004",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_023",
+    "query_topic": "Topic_3",
+    "claim_text": "Sample scientific claim statement 23 for independent validation.",
+    "evidence_passage_id": "PASSAGE_011",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_024",
+    "query_topic": "Topic_4",
+    "claim_text": "Sample scientific claim statement 24 for independent validation.",
+    "evidence_passage_id": "PASSAGE_018",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_025",
+    "query_topic": "Topic_5",
+    "claim_text": "Sample scientific claim statement 25 for independent validation.",
+    "evidence_passage_id": "PASSAGE_000",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_026",
+    "query_topic": "Topic_1",
+    "claim_text": "Sample scientific claim statement 26 for independent validation.",
+    "evidence_passage_id": "PASSAGE_007",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_027",
+    "query_topic": "Topic_2",
+    "claim_text": "Sample scientific claim statement 27 for independent validation.",
+    "evidence_passage_id": "PASSAGE_014",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_028",
+    "query_topic": "Topic_3",
+    "claim_text": "Sample scientific claim statement 28 for independent validation.",
+    "evidence_passage_id": "PASSAGE_021",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_029",
+    "query_topic": "Topic_4",
+    "claim_text": "Sample scientific claim statement 29 for independent validation.",
+    "evidence_passage_id": "PASSAGE_003",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  },
+  {
+    "item_id": "BLIND_030",
+    "query_topic": "Topic_5",
+    "claim_text": "Sample scientific claim statement 30 for independent validation.",
+    "evidence_passage_id": "PASSAGE_010",
+    "evidence_snippet": "Context passage excerpt corresponding to the retrieved scientific paper."
+  }
+]

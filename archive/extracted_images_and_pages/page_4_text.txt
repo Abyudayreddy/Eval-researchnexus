@@ -1,0 +1,156 @@
+RRF 
+VAL 
+0.2000 
+0.9333 
+1.0000 
+6.82 
+RRF 
+TEST 
+0.2667 
+1.0000 
+1.0000 
+8.11 
+RRF 
+ALL 
+0.2700 
+0.9500 
+1.0000 
+7.83 
+ 
+Fig. 2. Candidate recall curves comparing BM25, Dense, and Hybrid 
+RRF across candidate depths k=5, 10, 20. 
+B. Component Latency Decomposition 
+Table II breaks down latency across each architectural 
+component. First-stage hybrid retrieval finishes in 7.83 ms 
+median time. The BGE cross-encoder represents the primary 
+pre-generation computational overhead (median 531.41 ms, 
+p95 4,246.05 ms). Generation and verification take 4,899 ms 
+median time, while iterative refinement escalates latency to 
+11,065 ms (2.2x increase). 
+TABLE II: COMPONENT-LEVEL LATENCY DECOMPOSITION 
+Component 
+Scope 
+p50 (ms) 
+Mean (ms) 
+BM25 Lexical 
+TEST 
+0.69 
+0.74 
+Dense Chroma 
+TEST 
+13.51 
+14.20 
+Hybrid RRF 
+N=100 
+7.83 
+8.05 
+BGE Reranker 
+100 Runs 
+531.41 
+1,024.18 
+Generation (Pass 1) 
+N=100 
+4,659.00 
+5,691.00 
+Verified Pipeline 
+N=100 
+4,899.00 
+6,102.00 
+Iterative Refinement N=100 
+11,065.00 
+12,656.00 
+ 
+Fig. 3. End-to-end latency decomposition across pipeline stages 
+(retrieval, reranking, and generation). 
+C. Generation Grounding and Verification Evaluation 
+Table III compares generation grounding between Naive 
+RAG and Verified RAG across all benchmark splits. 
+Evaluating Naive RAG against Verified RAG yielded Claim 
+Support Rates of 0.0533 vs. 0.0350 (McNemar p = 0.6831). 
+In specialized scientific tasks, conservative refusal statements 
+(e.g., 'insufficient evidence') are classified as ungrounded 
+under standard extraction, reflecting model caution rather 
+than hallucination. 
+TABLE III: GENERATION GROUNDING METRICS ON 
+BENCHMARK SPLITS 
+Architecture 
+Split 
+CSR ↑ 
+UCR ↓ 
+CP ↑ 
+CC ↑ 
+Naive RAG 
+ALL 
+0.0533 
+0.9467 
+0.0533 
+0.9700 
+Verified RAG 
+ALL 
+0.0350 
+0.9650 
+0.0350 
+0.9600 
+Verified RAG 
+DEV 
+0.0357 
+0.9643 
+0.0357 
+0.9571 
+Verified RAG 
+VAL 
+0.0333 
+0.9667 
+0.0333 
+0.9333 
+Verified RAG 
+TEST 
+0.0333 
+0.9667 
+0.0333 
+1.0000 
+D. Conservative Citation Repair 
+Out of 191 repair opportunities, 0 repairs were committed 
+because candidate passages failed strict substring or high-
+confidence NLI entailment thresholds. This conservative 
+policy 
+successfully 
+avoids 
+false-positive 
+academic 
+attributions. 
+E. Iterative Refinement Outcomes and Trade-Offs 
+Table IV displays empirical outcomes from iterative 
+refinement across all 100 queries. Iterative refinement left 98 
+unchanged, improved 1, and degraded 1 (permutation p = 
+1.000). Enabling refinement doubled latency (2.2x) without 
+improving grounding. This proves that when relevant 
+evidence is positioned at lower ranks (ranks 15-17), iterative 
+prompting cannot overcome context distraction. Pre-
+generation filtering is therefore far more critical than post-
+generation prompt loops. 
+TABLE IV: EMPIRICAL OUTCOMES OF ITERATIVE 
+REFINEMENT (N=100) 
+Outcome Category 
+Queries 
+Share (%) 
+Significance 
+Unchanged 
+98 
+98.0% 
+— 
+Improved 
+Grounding 
+1 
+1.0% 
+p = 1.000 
+(Permutation) 
+Degraded 
+Grounding 
+1 
+1.0% 
+Not Significant 
+Total Evaluated 
+100 
+100.0% 
+— 

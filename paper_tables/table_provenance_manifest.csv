@@ -1,0 +1,7 @@
+table_id,table_title,paper_section,primary_source_artifact,sample_size,validation_status,audit_notes
+Table_I,Dataset and Evaluation Protocol,Section IV-A,ds_nexus_v11.json,N=100 (DEV=70 VAL=15 TEST=15),VALID,Standardized scientific benchmark specification; E05 recorded as unmeasured
+Table_II,Candidate Retrieval Performance,Section IV-B,e03_3_canonical_results_live.json,N=100 (ALL),VALID,Canonical live E03.3 Hybrid RRF candidate recall (Hit@20=1.00; Recall@20=0.95); TEST N=15 note added
+Table_III,Naive vs. Verified RAG,Section IV-D,e04_1_aggregate_metrics.json,N=100 (ALL),VALID,CSR UCR CP COV; McNemar test p=0.6831 shows no statistically significant improvement
+Table_IV,Latency and Iterative Refinement,Section IV-C & IV-G & IV-H,table_latency.csv / e07_statistics.json / e08_metrics.json,N=100 / N=202,VALID,E09 latency decomposition; E07.1 refinement tradeoff (p=1.000); E08 automated audit
+Table_V,Component Ablation Study,Section IV-I,e10_aggregate_metrics.json,N=100 (ALL),VALID,A0-A6 controlled single-factor deletions; A2 and A4 latencies explicitly marked DERIVED
+Table_VI,Error Taxonomy Analysis,Section IV-J,e11_summary_report.md,N=15 TEST (28 claims),VALID,98 total events; 0 candidate pool miss at canonical k=20; E05 unmeasured

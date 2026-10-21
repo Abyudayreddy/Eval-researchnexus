@@ -1,0 +1,25 @@
+{
+  "n_queries": 15,
+  "C0_baseline_unverified_ms": {
+    "mean": 4570.44,
+    "p50": 4330.6,
+    "p95": 5742.64
+  },
+  "C1_validation_only_ms": {
+    "mean": 4570.79,
+    "p50": 4330.98,
+    "p95": 5743.67
+  },
+  "C2_validation_and_repair_ms": {
+    "mean": 4573.06,
+    "p50": 4332.24,
+    "p95": 5750.66
+  },
+  "overhead_breakdown_ms": {
+    "validation_stage_mean": 0.34,
+    "repair_stage_mean": 2.27,
+    "total_overhead_mean": 2.61,
+    "total_overhead_p50": 1.08,
+    "total_overhead_p95": 9.68
+  }
+}

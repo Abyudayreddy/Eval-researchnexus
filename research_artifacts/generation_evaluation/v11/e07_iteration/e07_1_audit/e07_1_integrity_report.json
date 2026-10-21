@@ -1,0 +1,14 @@
+{
+  "dataset": "ds_nexus_v11",
+  "n_total": 100,
+  "dev_n": 70,
+  "val_n": 15,
+  "test_n": 15,
+  "improved_plus_unchanged_plus_degraded_equals_100": true,
+  "all_7_subcategories_reconciled": true,
+  "no_llm_rerun": true,
+  "no_raw_e07_overwritten": true,
+  "metrics_recalculated_directly_from_per_query_data": true,
+  "bootstrap_1000_verified": true,
+  "overall_audit_status": "AUDIT_PASSED"
+}

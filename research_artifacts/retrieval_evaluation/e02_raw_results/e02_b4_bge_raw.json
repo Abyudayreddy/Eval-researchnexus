@@ -1,0 +1,2417 @@
+[
+  {
+    "item_id": "item_v10_001",
+    "split": "DEVELOPMENT",
+    "question": "What is the primary contribution reported in paper local:Artificial_Intelligence:01f1d4464589c4a578c4905fc5af1ec4 regarding neural architecture design?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:01f1d4464589c4a578c4905fc5af1ec4"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.85
+  },
+  {
+    "item_id": "item_v10_002",
+    "split": "DEVELOPMENT",
+    "question": "What is the primary contribution reported in paper local:Artificial_Intelligence:095f7500466de3db81c119f0a57ae54e regarding neural architecture design?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:095f7500466de3db81c119f0a57ae54e"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.38
+  },
+  {
+    "item_id": "item_v10_003",
+    "split": "DEVELOPMENT",
+    "question": "What is the primary contribution reported in paper local:Artificial_Intelligence:442ae354e90588d1778a985c07239c24 regarding neural architecture design?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:442ae354e90588d1778a985c07239c24"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.62
+  },
+  {
+    "item_id": "item_v10_004",
+    "split": "DEVELOPMENT",
+    "question": "What is the primary contribution reported in paper local:Artificial_Intelligence:4604c81bae629e71ee67f7107a75821e regarding neural architecture design?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:4604c81bae629e71ee67f7107a75821e"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.94
+  },
+  {
+    "item_id": "item_v10_005",
+    "split": "DEVELOPMENT",
+    "question": "What is the primary contribution reported in paper local:Artificial_Intelligence:4a28b668af8884b469dc11aa281e90eb regarding neural architecture design?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:4a28b668af8884b469dc11aa281e90eb"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.61
+  },
+  {
+    "item_id": "item_v10_006",
+    "split": "DEVELOPMENT",
+    "question": "What is the primary contribution reported in paper local:Artificial_Intelligence:4d7c51efb22a7d038a60cf9b8ef49efe regarding neural architecture design?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:4d7c51efb22a7d038a60cf9b8ef49efe"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.03
+  },
+  {
+    "item_id": "item_v10_007",
+    "split": "DEVELOPMENT",
+    "question": "What is the primary contribution reported in paper local:Artificial_Intelligence:504de897a95bf302dd2579bfbaf0f5b0 regarding neural architecture design?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:504de897a95bf302dd2579bfbaf0f5b0"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.95
+  },
+  {
+    "item_id": "item_v10_008",
+    "split": "DEVELOPMENT",
+    "question": "What is the primary contribution reported in paper local:Artificial_Intelligence:71933e507897621e3d46b7857364cc21 regarding neural architecture design?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:71933e507897621e3d46b7857364cc21"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.02
+  },
+  {
+    "item_id": "item_v10_009",
+    "split": "DEVELOPMENT",
+    "question": "What is the primary contribution reported in paper local:Artificial_Intelligence:8fdc15662ca9a9d55b12d125858d0e64 regarding neural architecture design?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:8fdc15662ca9a9d55b12d125858d0e64"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.69
+  },
+  {
+    "item_id": "item_v10_010",
+    "split": "DEVELOPMENT",
+    "question": "What is the primary contribution reported in paper local:Artificial_Intelligence:b46b3c9ad60ee308db6787028e86c9a7 regarding neural architecture design?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:b46b3c9ad60ee308db6787028e86c9a7"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.56
+  },
+  {
+    "item_id": "item_v10_011",
+    "split": "DEVELOPMENT",
+    "question": "What is the primary contribution reported in paper local:Artificial_Intelligence:bbc8a906a174e3d4a8e40876102b516d regarding neural architecture design?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:bbc8a906a174e3d4a8e40876102b516d"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.51
+  },
+  {
+    "item_id": "item_v10_012",
+    "split": "DEVELOPMENT",
+    "question": "What is the primary contribution reported in paper local:Artificial_Intelligence:bec2d2ef3f6cbd44cbf0bc28c7d329ea regarding neural architecture design?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:bec2d2ef3f6cbd44cbf0bc28c7d329ea"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.83
+  },
+  {
+    "item_id": "item_v10_013",
+    "split": "DEVELOPMENT",
+    "question": "What is the primary contribution reported in paper local:Artificial_Intelligence:d4efc07ead8348745b4e9b0ccd8a6d34 regarding neural architecture design?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:d4efc07ead8348745b4e9b0ccd8a6d34"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.15
+  },
+  {
+    "item_id": "item_v10_014",
+    "split": "DEVELOPMENT",
+    "question": "What is the primary contribution reported in paper local:Artificial_Intelligence:d76fadde6daf062e2e30aa6e37b489b3 regarding neural architecture design?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:d76fadde6daf062e2e30aa6e37b489b3"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.08
+  },
+  {
+    "item_id": "item_v10_015",
+    "split": "DEVELOPMENT",
+    "question": "What is the primary contribution reported in paper local:Artificial_Intelligence:edc3c74aa97985222773e2d28da1dd5d regarding neural architecture design?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:edc3c74aa97985222773e2d28da1dd5d"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.52
+  },
+  {
+    "item_id": "item_v10_016",
+    "split": "DEVELOPMENT",
+    "question": "How do the algorithmic strategies of paper local:Artificial_Intelligence:01f1d4464589c4a578c4905fc5af1ec4 and paper local:Artificial_Intelligence:095f7500466de3db81c119f0a57ae54e compare in scaling efficiency?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:095f7500466de3db81c119f0a57ae54e",
+      "local:Artificial_Intelligence:01f1d4464589c4a578c4905fc5af1ec4"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.87
+  },
+  {
+    "item_id": "item_v10_017",
+    "split": "DEVELOPMENT",
+    "question": "How do the algorithmic strategies of paper local:Artificial_Intelligence:442ae354e90588d1778a985c07239c24 and paper local:Artificial_Intelligence:4604c81bae629e71ee67f7107a75821e compare in scaling efficiency?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:4604c81bae629e71ee67f7107a75821e",
+      "local:Artificial_Intelligence:442ae354e90588d1778a985c07239c24"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.85
+  },
+  {
+    "item_id": "item_v10_018",
+    "split": "DEVELOPMENT",
+    "question": "How do the algorithmic strategies of paper local:Artificial_Intelligence:4a28b668af8884b469dc11aa281e90eb and paper local:Artificial_Intelligence:4d7c51efb22a7d038a60cf9b8ef49efe compare in scaling efficiency?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:4a28b668af8884b469dc11aa281e90eb",
+      "local:Artificial_Intelligence:4d7c51efb22a7d038a60cf9b8ef49efe"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.25
+  },
+  {
+    "item_id": "item_v10_019",
+    "split": "DEVELOPMENT",
+    "question": "How do the algorithmic strategies of paper local:Artificial_Intelligence:504de897a95bf302dd2579bfbaf0f5b0 and paper local:Artificial_Intelligence:71933e507897621e3d46b7857364cc21 compare in scaling efficiency?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:504de897a95bf302dd2579bfbaf0f5b0",
+      "local:Artificial_Intelligence:71933e507897621e3d46b7857364cc21"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.55
+  },
+  {
+    "item_id": "item_v10_020",
+    "split": "DEVELOPMENT",
+    "question": "How do the algorithmic strategies of paper local:Artificial_Intelligence:8fdc15662ca9a9d55b12d125858d0e64 and paper local:Artificial_Intelligence:b46b3c9ad60ee308db6787028e86c9a7 compare in scaling efficiency?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:b46b3c9ad60ee308db6787028e86c9a7",
+      "local:Artificial_Intelligence:8fdc15662ca9a9d55b12d125858d0e64"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.13
+  },
+  {
+    "item_id": "item_v10_021",
+    "split": "DEVELOPMENT",
+    "question": "How do the algorithmic strategies of paper local:Artificial_Intelligence:bbc8a906a174e3d4a8e40876102b516d and paper local:Artificial_Intelligence:bec2d2ef3f6cbd44cbf0bc28c7d329ea compare in scaling efficiency?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:bec2d2ef3f6cbd44cbf0bc28c7d329ea",
+      "local:Artificial_Intelligence:bbc8a906a174e3d4a8e40876102b516d"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.91
+  },
+  {
+    "item_id": "item_v10_022",
+    "split": "DEVELOPMENT",
+    "question": "How do the algorithmic strategies of paper local:Artificial_Intelligence:d4efc07ead8348745b4e9b0ccd8a6d34 and paper local:Artificial_Intelligence:d76fadde6daf062e2e30aa6e37b489b3 compare in scaling efficiency?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:d76fadde6daf062e2e30aa6e37b489b3",
+      "local:Artificial_Intelligence:d4efc07ead8348745b4e9b0ccd8a6d34"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.61
+  },
+  {
+    "item_id": "item_v10_023",
+    "split": "DEVELOPMENT",
+    "question": "How do the algorithmic strategies of paper local:Artificial_Intelligence:edc3c74aa97985222773e2d28da1dd5d and paper local:Artificial_Intelligence:178558cf95342ec023fb86f6d232b4f9 compare in scaling efficiency?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:178558cf95342ec023fb86f6d232b4f9",
+      "local:Artificial_Intelligence:edc3c74aa97985222773e2d28da1dd5d"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.57
+  },
+  {
+    "item_id": "item_v10_024",
+    "split": "DEVELOPMENT",
+    "question": "How do the algorithmic strategies of paper local:Artificial_Intelligence:197ea8653fc29cc744bc7164ea73df17 and paper local:Artificial_Intelligence:4108deebe983b60fd43d41589edd6ac9 compare in scaling efficiency?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:4108deebe983b60fd43d41589edd6ac9",
+      "local:Artificial_Intelligence:197ea8653fc29cc744bc7164ea73df17"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.41
+  },
+  {
+    "item_id": "item_v10_025",
+    "split": "DEVELOPMENT",
+    "question": "How do the algorithmic strategies of paper local:Artificial_Intelligence:4e76815a2a1b058184a50f4ebd78f223 and paper local:Artificial_Intelligence:4e8ca774ef6ccaab34e0e706bb2df86d compare in scaling efficiency?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:4e8ca774ef6ccaab34e0e706bb2df86d",
+      "local:Artificial_Intelligence:4e76815a2a1b058184a50f4ebd78f223"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.61
+  },
+  {
+    "item_id": "item_v10_026",
+    "split": "DEVELOPMENT",
+    "question": "How do the algorithmic strategies of paper local:Artificial_Intelligence:71300a3dabad669a22010bff67d048c7 and paper local:Artificial_Intelligence:72563290a86794fbb7fab662583dfc08 compare in scaling efficiency?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:71300a3dabad669a22010bff67d048c7",
+      "local:Artificial_Intelligence:72563290a86794fbb7fab662583dfc08"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.84
+  },
+  {
+    "item_id": "item_v10_027",
+    "split": "DEVELOPMENT",
+    "question": "How do the algorithmic strategies of paper local:Artificial_Intelligence:7c6dc2039b90d31d1225249899dba18e and paper local:Artificial_Intelligence:848b3acf734887d1486f5199c320d534 compare in scaling efficiency?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:848b3acf734887d1486f5199c320d534",
+      "local:Artificial_Intelligence:7c6dc2039b90d31d1225249899dba18e"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.76
+  },
+  {
+    "item_id": "item_v10_028",
+    "split": "DEVELOPMENT",
+    "question": "How do the algorithmic strategies of paper local:Artificial_Intelligence:912bbf5f92a698c3ccdfdeacbd27f484 and paper local:Artificial_Intelligence:9e0467c473133cfc666013a63dd9b025 compare in scaling efficiency?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:912bbf5f92a698c3ccdfdeacbd27f484",
+      "local:Artificial_Intelligence:9e0467c473133cfc666013a63dd9b025"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.66
+  },
+  {
+    "item_id": "item_v10_029",
+    "split": "DEVELOPMENT",
+    "question": "How do the algorithmic strategies of paper local:Artificial_Intelligence:a319cd336cc9c25de9d4581e2accad0d and paper local:Artificial_Intelligence:ae3b88a24d90fcc64c4a399423caf013 compare in scaling efficiency?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:ae3b88a24d90fcc64c4a399423caf013",
+      "local:Artificial_Intelligence:a319cd336cc9c25de9d4581e2accad0d"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.84
+  },
+  {
+    "item_id": "item_v10_030",
+    "split": "DEVELOPMENT",
+    "question": "How do the algorithmic strategies of paper local:Artificial_Intelligence:afae91b1a7af80eb941e4b154e6ad84d and paper local:Artificial_Intelligence:b0f961c24cdfbc19ce55956276e57032 compare in scaling efficiency?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:b0f961c24cdfbc19ce55956276e57032",
+      "local:Artificial_Intelligence:afae91b1a7af80eb941e4b154e6ad84d"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.3
+  },
+  {
+    "item_id": "item_v10_031",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are detailed in paper local:Artificial_Intelligence:504de897a95bf302dd2579bfbaf0f5b0?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:504de897a95bf302dd2579bfbaf0f5b0"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.55
+  },
+  {
+    "item_id": "item_v10_032",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are detailed in paper local:Artificial_Intelligence:71933e507897621e3d46b7857364cc21?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:71933e507897621e3d46b7857364cc21"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 2.24
+  },
+  {
+    "item_id": "item_v10_033",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are detailed in paper local:Artificial_Intelligence:8fdc15662ca9a9d55b12d125858d0e64?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:8fdc15662ca9a9d55b12d125858d0e64"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.27
+  },
+  {
+    "item_id": "item_v10_034",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are detailed in paper local:Artificial_Intelligence:b46b3c9ad60ee308db6787028e86c9a7?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:b46b3c9ad60ee308db6787028e86c9a7"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.02
+  },
+  {
+    "item_id": "item_v10_035",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are detailed in paper local:Artificial_Intelligence:bbc8a906a174e3d4a8e40876102b516d?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:bbc8a906a174e3d4a8e40876102b516d"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.0
+  },
+  {
+    "item_id": "item_v10_036",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are detailed in paper local:Artificial_Intelligence:bec2d2ef3f6cbd44cbf0bc28c7d329ea?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:bec2d2ef3f6cbd44cbf0bc28c7d329ea"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.37
+  },
+  {
+    "item_id": "item_v10_037",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are detailed in paper local:Artificial_Intelligence:d4efc07ead8348745b4e9b0ccd8a6d34?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:d4efc07ead8348745b4e9b0ccd8a6d34"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.98
+  },
+  {
+    "item_id": "item_v10_038",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are detailed in paper local:Artificial_Intelligence:d76fadde6daf062e2e30aa6e37b489b3?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:d76fadde6daf062e2e30aa6e37b489b3"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.23
+  },
+  {
+    "item_id": "item_v10_039",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are detailed in paper local:Artificial_Intelligence:edc3c74aa97985222773e2d28da1dd5d?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:edc3c74aa97985222773e2d28da1dd5d"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 2.04
+  },
+  {
+    "item_id": "item_v10_040",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are detailed in paper local:Artificial_Intelligence:178558cf95342ec023fb86f6d232b4f9?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:178558cf95342ec023fb86f6d232b4f9"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.55
+  },
+  {
+    "item_id": "item_v10_041",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are detailed in paper local:Artificial_Intelligence:197ea8653fc29cc744bc7164ea73df17?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:197ea8653fc29cc744bc7164ea73df17"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.84
+  },
+  {
+    "item_id": "item_v10_042",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are detailed in paper local:Artificial_Intelligence:4108deebe983b60fd43d41589edd6ac9?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:4108deebe983b60fd43d41589edd6ac9"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.95
+  },
+  {
+    "item_id": "item_v10_043",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are detailed in paper local:Artificial_Intelligence:4e76815a2a1b058184a50f4ebd78f223?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:4e76815a2a1b058184a50f4ebd78f223"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.3
+  },
+  {
+    "item_id": "item_v10_044",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are detailed in paper local:Artificial_Intelligence:4e8ca774ef6ccaab34e0e706bb2df86d?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:4e8ca774ef6ccaab34e0e706bb2df86d"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.97
+  },
+  {
+    "item_id": "item_v10_045",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are detailed in paper local:Artificial_Intelligence:71300a3dabad669a22010bff67d048c7?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:71300a3dabad669a22010bff67d048c7"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.1
+  },
+  {
+    "item_id": "item_v10_046",
+    "split": "DEVELOPMENT",
+    "question": "What quantitative benchmark score and percentage error reduction is achieved in paper local:Artificial_Intelligence:72563290a86794fbb7fab662583dfc08?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:72563290a86794fbb7fab662583dfc08"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 2.19
+  },
+  {
+    "item_id": "item_v10_047",
+    "split": "DEVELOPMENT",
+    "question": "What quantitative benchmark score and percentage error reduction is achieved in paper local:Artificial_Intelligence:7c6dc2039b90d31d1225249899dba18e?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:7c6dc2039b90d31d1225249899dba18e"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.69
+  },
+  {
+    "item_id": "item_v10_048",
+    "split": "DEVELOPMENT",
+    "question": "What quantitative benchmark score and percentage error reduction is achieved in paper local:Artificial_Intelligence:848b3acf734887d1486f5199c320d534?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:848b3acf734887d1486f5199c320d534"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.57
+  },
+  {
+    "item_id": "item_v10_049",
+    "split": "DEVELOPMENT",
+    "question": "What quantitative benchmark score and percentage error reduction is achieved in paper local:Artificial_Intelligence:912bbf5f92a698c3ccdfdeacbd27f484?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:912bbf5f92a698c3ccdfdeacbd27f484"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.65
+  },
+  {
+    "item_id": "item_v10_050",
+    "split": "DEVELOPMENT",
+    "question": "What quantitative benchmark score and percentage error reduction is achieved in paper local:Artificial_Intelligence:9e0467c473133cfc666013a63dd9b025?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:9e0467c473133cfc666013a63dd9b025"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 2.85
+  },
+  {
+    "item_id": "item_v10_051",
+    "split": "DEVELOPMENT",
+    "question": "What quantitative benchmark score and percentage error reduction is achieved in paper local:Artificial_Intelligence:a319cd336cc9c25de9d4581e2accad0d?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:a319cd336cc9c25de9d4581e2accad0d"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.21
+  },
+  {
+    "item_id": "item_v10_052",
+    "split": "DEVELOPMENT",
+    "question": "What quantitative benchmark score and percentage error reduction is achieved in paper local:Artificial_Intelligence:ae3b88a24d90fcc64c4a399423caf013?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:ae3b88a24d90fcc64c4a399423caf013"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.42
+  },
+  {
+    "item_id": "item_v10_053",
+    "split": "DEVELOPMENT",
+    "question": "What quantitative benchmark score and percentage error reduction is achieved in paper local:Artificial_Intelligence:afae91b1a7af80eb941e4b154e6ad84d?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:afae91b1a7af80eb941e4b154e6ad84d"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 2.07
+  },
+  {
+    "item_id": "item_v10_054",
+    "split": "DEVELOPMENT",
+    "question": "What quantitative benchmark score and percentage error reduction is achieved in paper local:Artificial_Intelligence:b0f961c24cdfbc19ce55956276e57032?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:b0f961c24cdfbc19ce55956276e57032"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.56
+  },
+  {
+    "item_id": "item_v10_055",
+    "split": "DEVELOPMENT",
+    "question": "What quantitative benchmark score and percentage error reduction is achieved in paper local:Artificial_Intelligence:c54687b8d24149dbbeaa89dd08132d59?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:c54687b8d24149dbbeaa89dd08132d59"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.72
+  },
+  {
+    "item_id": "item_v10_056",
+    "split": "DEVELOPMENT",
+    "question": "Which specific empirical evidence supports the stability claim in paper local:Artificial_Intelligence:d268870c8814367f11c1e2fcbc6c8e41?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:d268870c8814367f11c1e2fcbc6c8e41"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.25
+  },
+  {
+    "item_id": "item_v10_057",
+    "split": "DEVELOPMENT",
+    "question": "Which specific empirical evidence supports the stability claim in paper local:Artificial_Intelligence:ed8760ace71f3de704711b5cc03a127a?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:ed8760ace71f3de704711b5cc03a127a"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.7
+  },
+  {
+    "item_id": "item_v10_058",
+    "split": "DEVELOPMENT",
+    "question": "Which specific empirical evidence supports the stability claim in paper local:Artificial_Intelligence:fc1ad7ac4246b762d7ec3b0f067cd954?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:fc1ad7ac4246b762d7ec3b0f067cd954"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 2.44
+  },
+  {
+    "item_id": "item_v10_059",
+    "split": "DEVELOPMENT",
+    "question": "Which specific empirical evidence supports the stability claim in paper local:Artificial_Intelligence:0d39dca92b2bc88927fc8eff4bcd3eef?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:0d39dca92b2bc88927fc8eff4bcd3eef"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.59
+  },
+  {
+    "item_id": "item_v10_060",
+    "split": "DEVELOPMENT",
+    "question": "Which specific empirical evidence supports the stability claim in paper local:Artificial_Intelligence:17a494fcbae75d24eb3a9999126f971f?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:17a494fcbae75d24eb3a9999126f971f"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 2.86
+  },
+  {
+    "item_id": "item_v10_061",
+    "split": "DEVELOPMENT",
+    "question": "Which specific empirical evidence supports the stability claim in paper local:Artificial_Intelligence:1c7a4c0c224e4f2b4654c07efe85f823?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:1c7a4c0c224e4f2b4654c07efe85f823"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.02
+  },
+  {
+    "item_id": "item_v10_062",
+    "split": "DEVELOPMENT",
+    "question": "Which specific empirical evidence supports the stability claim in paper local:Artificial_Intelligence:26aa4fdfb5f00a6d7d75b39317752590?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:26aa4fdfb5f00a6d7d75b39317752590"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.79
+  },
+  {
+    "item_id": "item_v10_063",
+    "split": "DEVELOPMENT",
+    "question": "Which specific empirical evidence supports the stability claim in paper local:Artificial_Intelligence:2965c7f9e84c6720f8bf23cff1c2df07?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:2965c7f9e84c6720f8bf23cff1c2df07"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.49
+  },
+  {
+    "item_id": "item_v10_064",
+    "split": "DEVELOPMENT",
+    "question": "Which specific empirical evidence supports the stability claim in paper local:Artificial_Intelligence:3a137345fdf754aa3cc9173dd6d334ac?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:3a137345fdf754aa3cc9173dd6d334ac"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.31
+  },
+  {
+    "item_id": "item_v10_065",
+    "split": "DEVELOPMENT",
+    "question": "Which specific empirical evidence supports the stability claim in paper local:Artificial_Intelligence:40c05dbc1570269b8193f86ee99c12fb?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:40c05dbc1570269b8193f86ee99c12fb"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.84
+  },
+  {
+    "item_id": "item_v10_066",
+    "split": "DEVELOPMENT",
+    "question": "What are the primary differences in memory complexity between paper local:Artificial_Intelligence:47ba62de1816c53ba5170ee4e7d75a60 and paper local:Artificial_Intelligence:70080b7a36c242c038937c39b2c3f350?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:70080b7a36c242c038937c39b2c3f350",
+      "local:Artificial_Intelligence:47ba62de1816c53ba5170ee4e7d75a60"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.31
+  },
+  {
+    "item_id": "item_v10_067",
+    "split": "DEVELOPMENT",
+    "question": "What are the primary differences in memory complexity between paper local:Artificial_Intelligence:58c799a2bda12c6e896dd2ae9f17d196 and paper local:Artificial_Intelligence:723889836835992e968e6da27e56fb21?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:58c799a2bda12c6e896dd2ae9f17d196",
+      "local:Artificial_Intelligence:723889836835992e968e6da27e56fb21"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.76
+  },
+  {
+    "item_id": "item_v10_068",
+    "split": "DEVELOPMENT",
+    "question": "What are the primary differences in memory complexity between paper local:Artificial_Intelligence:597ed37422d95d4c5d549661d503d861 and paper local:Artificial_Intelligence:79e55e61047249ffeb260d077244c3bc?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:79e55e61047249ffeb260d077244c3bc",
+      "local:Artificial_Intelligence:597ed37422d95d4c5d549661d503d861"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.96
+  },
+  {
+    "item_id": "item_v10_069",
+    "split": "DEVELOPMENT",
+    "question": "What are the primary differences in memory complexity between paper local:Artificial_Intelligence:5c75cdf0167f686a21eb46b0ee675492 and paper local:Artificial_Intelligence:80e9eb4dcd18fa0d56a878eda84954c7?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:80e9eb4dcd18fa0d56a878eda84954c7",
+      "local:Artificial_Intelligence:5c75cdf0167f686a21eb46b0ee675492"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.61
+  },
+  {
+    "item_id": "item_v10_070",
+    "split": "DEVELOPMENT",
+    "question": "What are the primary differences in memory complexity between paper local:Artificial_Intelligence:64f94a1abde5d0e445411e01d1c427b5 and paper local:Artificial_Intelligence:8a28f319b812178591ef5e7c476c27db?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:8a28f319b812178591ef5e7c476c27db",
+      "local:Artificial_Intelligence:64f94a1abde5d0e445411e01d1c427b5"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.85
+  },
+  {
+    "item_id": "item_v10_071",
+    "split": "VALIDATION",
+    "question": "What are the primary differences in memory complexity between paper local:Artificial_Intelligence:70080b7a36c242c038937c39b2c3f350 and paper local:Artificial_Intelligence:a6491e929ceb9af0db1f063a6a69fb61?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:70080b7a36c242c038937c39b2c3f350",
+      "local:Artificial_Intelligence:a6491e929ceb9af0db1f063a6a69fb61"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.68
+  },
+  {
+    "item_id": "item_v10_072",
+    "split": "VALIDATION",
+    "question": "What are the primary differences in memory complexity between paper local:Artificial_Intelligence:723889836835992e968e6da27e56fb21 and paper local:Artificial_Intelligence:b1130e9db9ec407eb002b5517fa52241?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:b1130e9db9ec407eb002b5517fa52241",
+      "local:Artificial_Intelligence:723889836835992e968e6da27e56fb21"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.78
+  },
+  {
+    "item_id": "item_v10_073",
+    "split": "VALIDATION",
+    "question": "What are the primary differences in memory complexity between paper local:Artificial_Intelligence:79e55e61047249ffeb260d077244c3bc and paper local:Artificial_Intelligence:b20d411468e56f594eb806f6fa197552?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:79e55e61047249ffeb260d077244c3bc",
+      "local:Artificial_Intelligence:b20d411468e56f594eb806f6fa197552"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.4
+  },
+  {
+    "item_id": "item_v10_074",
+    "split": "VALIDATION",
+    "question": "What are the primary differences in memory complexity between paper local:Artificial_Intelligence:80e9eb4dcd18fa0d56a878eda84954c7 and paper local:Artificial_Intelligence:b63e3512a887fad049394036bf25be7b?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:b63e3512a887fad049394036bf25be7b",
+      "local:Artificial_Intelligence:80e9eb4dcd18fa0d56a878eda84954c7"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.11
+  },
+  {
+    "item_id": "item_v10_075",
+    "split": "VALIDATION",
+    "question": "What are the primary differences in memory complexity between paper local:Artificial_Intelligence:8a28f319b812178591ef5e7c476c27db and paper local:Artificial_Intelligence:b8624ba6215bcbdf5fbd0071bbd3eccf?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:8a28f319b812178591ef5e7c476c27db",
+      "local:Artificial_Intelligence:b8624ba6215bcbdf5fbd0071bbd3eccf"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.41
+  },
+  {
+    "item_id": "item_v10_076",
+    "split": "VALIDATION",
+    "question": "Synthesize the joint theoretical consensus established by paper local:Artificial_Intelligence:a6491e929ceb9af0db1f063a6a69fb61 and paper local:Artificial_Intelligence:bd47426f5fb8ec26e6d27ff5d1dad201 on representation learning.",
+    "expected_papers": [
+      "local:Artificial_Intelligence:bd47426f5fb8ec26e6d27ff5d1dad201",
+      "local:Artificial_Intelligence:a6491e929ceb9af0db1f063a6a69fb61"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.55
+  },
+  {
+    "item_id": "item_v10_077",
+    "split": "VALIDATION",
+    "question": "Synthesize the joint theoretical consensus established by paper local:Artificial_Intelligence:b1130e9db9ec407eb002b5517fa52241 and paper local:Artificial_Intelligence:c2ccdc39a587534ba2363dfd5f523202 on representation learning.",
+    "expected_papers": [
+      "local:Artificial_Intelligence:c2ccdc39a587534ba2363dfd5f523202",
+      "local:Artificial_Intelligence:b1130e9db9ec407eb002b5517fa52241"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.17
+  },
+  {
+    "item_id": "item_v10_078",
+    "split": "VALIDATION",
+    "question": "Synthesize the joint theoretical consensus established by paper local:Artificial_Intelligence:b20d411468e56f594eb806f6fa197552 and paper local:Artificial_Intelligence:c520a3f7e4bf417be3eeae5f28d9bc1d on representation learning.",
+    "expected_papers": [
+      "local:Artificial_Intelligence:b20d411468e56f594eb806f6fa197552",
+      "local:Artificial_Intelligence:c520a3f7e4bf417be3eeae5f28d9bc1d"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.37
+  },
+  {
+    "item_id": "item_v10_079",
+    "split": "VALIDATION",
+    "question": "Synthesize the joint theoretical consensus established by paper local:Artificial_Intelligence:b63e3512a887fad049394036bf25be7b and paper local:Artificial_Intelligence:de55b88d9d82fde8bf37a7797f0639ac on representation learning.",
+    "expected_papers": [
+      "local:Artificial_Intelligence:b63e3512a887fad049394036bf25be7b",
+      "local:Artificial_Intelligence:de55b88d9d82fde8bf37a7797f0639ac"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 2.08
+  },
+  {
+    "item_id": "item_v10_080",
+    "split": "VALIDATION",
+    "question": "Synthesize the joint theoretical consensus established by paper local:Artificial_Intelligence:b8624ba6215bcbdf5fbd0071bbd3eccf and paper local:Artificial_Intelligence:dedcb46ba80dd59fcb2e77e07372bd6b on representation learning.",
+    "expected_papers": [
+      "local:Artificial_Intelligence:b8624ba6215bcbdf5fbd0071bbd3eccf",
+      "local:Artificial_Intelligence:dedcb46ba80dd59fcb2e77e07372bd6b"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.74
+  },
+  {
+    "item_id": "item_v10_081",
+    "split": "VALIDATION",
+    "question": "Synthesize the joint theoretical consensus established by paper local:Artificial_Intelligence:bd47426f5fb8ec26e6d27ff5d1dad201 and paper local:Artificial_Intelligence:e0362d41595ec1e864f5ceb541555582 on representation learning.",
+    "expected_papers": [
+      "local:Artificial_Intelligence:bd47426f5fb8ec26e6d27ff5d1dad201",
+      "local:Artificial_Intelligence:e0362d41595ec1e864f5ceb541555582"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.69
+  },
+  {
+    "item_id": "item_v10_082",
+    "split": "VALIDATION",
+    "question": "Synthesize the joint theoretical consensus established by paper local:Artificial_Intelligence:c2ccdc39a587534ba2363dfd5f523202 and paper local:Artificial_Intelligence:fef817ed23387f139fa1219d7f8f71ca on representation learning.",
+    "expected_papers": [
+      "local:Artificial_Intelligence:c2ccdc39a587534ba2363dfd5f523202",
+      "local:Artificial_Intelligence:fef817ed23387f139fa1219d7f8f71ca"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.61
+  },
+  {
+    "item_id": "item_v10_083",
+    "split": "VALIDATION",
+    "question": "Synthesize the joint theoretical consensus established by paper local:Artificial_Intelligence:c520a3f7e4bf417be3eeae5f28d9bc1d and paper local:Artificial_Intelligence:15f0a6b924bf807d76184e6e3f1d20e4 on representation learning.",
+    "expected_papers": [
+      "local:Artificial_Intelligence:c520a3f7e4bf417be3eeae5f28d9bc1d",
+      "local:Artificial_Intelligence:15f0a6b924bf807d76184e6e3f1d20e4"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.58
+  },
+  {
+    "item_id": "item_v10_084",
+    "split": "VALIDATION",
+    "question": "Synthesize the joint theoretical consensus established by paper local:Artificial_Intelligence:de55b88d9d82fde8bf37a7797f0639ac and paper local:Artificial_Intelligence:24527c85bf609cd758b9e8c7bd8512a6 on representation learning.",
+    "expected_papers": [
+      "local:Artificial_Intelligence:24527c85bf609cd758b9e8c7bd8512a6",
+      "local:Artificial_Intelligence:de55b88d9d82fde8bf37a7797f0639ac"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 2.08
+  },
+  {
+    "item_id": "item_v10_085",
+    "split": "VALIDATION",
+    "question": "Synthesize the joint theoretical consensus established by paper local:Artificial_Intelligence:dedcb46ba80dd59fcb2e77e07372bd6b and paper local:Artificial_Intelligence:2e5d67a4dfc9a1ecdfd611817ab5291c on representation learning.",
+    "expected_papers": [
+      "local:Artificial_Intelligence:2e5d67a4dfc9a1ecdfd611817ab5291c",
+      "local:Artificial_Intelligence:dedcb46ba80dd59fcb2e77e07372bd6b"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.6
+  },
+  {
+    "item_id": "item_v10_086",
+    "split": "TEST",
+    "question": "What quantum hardware calibration parameters were used in paper quantum_nonexistent_01 for 1000-qubit execution?",
+    "expected_papers": [],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.15
+  },
+  {
+    "item_id": "item_v10_087",
+    "split": "TEST",
+    "question": "What quantum hardware calibration parameters were used in paper quantum_nonexistent_02 for 1000-qubit execution?",
+    "expected_papers": [],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.85
+  },
+  {
+    "item_id": "item_v10_088",
+    "split": "TEST",
+    "question": "What quantum hardware calibration parameters were used in paper quantum_nonexistent_03 for 1000-qubit execution?",
+    "expected_papers": [],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.6
+  },
+  {
+    "item_id": "item_v10_089",
+    "split": "TEST",
+    "question": "What quantum hardware calibration parameters were used in paper quantum_nonexistent_04 for 1000-qubit execution?",
+    "expected_papers": [],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 2.35
+  },
+  {
+    "item_id": "item_v10_090",
+    "split": "TEST",
+    "question": "What quantum hardware calibration parameters were used in paper quantum_nonexistent_05 for 1000-qubit execution?",
+    "expected_papers": [],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.53
+  },
+  {
+    "item_id": "item_v10_091",
+    "split": "TEST",
+    "question": "What quantum hardware calibration parameters were used in paper quantum_nonexistent_06 for 1000-qubit execution?",
+    "expected_papers": [],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 5.87
+  },
+  {
+    "item_id": "item_v10_092",
+    "split": "TEST",
+    "question": "What quantum hardware calibration parameters were used in paper quantum_nonexistent_07 for 1000-qubit execution?",
+    "expected_papers": [],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.85
+  },
+  {
+    "item_id": "item_v10_093",
+    "split": "TEST",
+    "question": "What quantum hardware calibration parameters were used in paper quantum_nonexistent_08 for 1000-qubit execution?",
+    "expected_papers": [],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.6
+  },
+  {
+    "item_id": "item_v10_094",
+    "split": "TEST",
+    "question": "What quantum hardware calibration parameters were used in paper quantum_nonexistent_09 for 1000-qubit execution?",
+    "expected_papers": [],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.0
+  },
+  {
+    "item_id": "item_v10_095",
+    "split": "TEST",
+    "question": "What quantum hardware calibration parameters were used in paper quantum_nonexistent_10 for 1000-qubit execution?",
+    "expected_papers": [],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.68
+  },
+  {
+    "item_id": "item_v10_096",
+    "split": "TEST",
+    "question": "Within the context of paper local:Artificial_Intelligence:e0362d41595ec1e864f5ceb541555582, what hyperparameter settings were used for paper local:Artificial_Intelligence:40f16e053b547d0ee4318f191262bf99's specialized benchmark?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:40f16e053b547d0ee4318f191262bf99"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 2.06
+  },
+  {
+    "item_id": "item_v10_097",
+    "split": "TEST",
+    "question": "Within the context of paper local:Artificial_Intelligence:fef817ed23387f139fa1219d7f8f71ca, what hyperparameter settings were used for paper local:Artificial_Intelligence:5f04a2c9257ffb472f447afaa62b4c90's specialized benchmark?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:5f04a2c9257ffb472f447afaa62b4c90"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.56
+  },
+  {
+    "item_id": "item_v10_098",
+    "split": "TEST",
+    "question": "Within the context of paper local:Artificial_Intelligence:15f0a6b924bf807d76184e6e3f1d20e4, what hyperparameter settings were used for paper local:Artificial_Intelligence:78075117615884f0db81a2ec693e530f's specialized benchmark?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:78075117615884f0db81a2ec693e530f"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.61
+  },
+  {
+    "item_id": "item_v10_099",
+    "split": "TEST",
+    "question": "Within the context of paper local:Artificial_Intelligence:24527c85bf609cd758b9e8c7bd8512a6, what hyperparameter settings were used for paper local:Artificial_Intelligence:b01a2b03ef181c4f984cab024634903d's specialized benchmark?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:b01a2b03ef181c4f984cab024634903d"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 0.8
+  },
+  {
+    "item_id": "item_v10_100",
+    "split": "TEST",
+    "question": "Within the context of paper local:Artificial_Intelligence:2e5d67a4dfc9a1ecdfd611817ab5291c, what hyperparameter settings were used for paper local:Artificial_Intelligence:d699af0607807cfc2bea5befca174aef's specialized benchmark?",
+    "expected_papers": [
+      "local:Artificial_Intelligence:d699af0607807cfc2bea5befca174aef"
+    ],
+    "pre_rerank_papers": [],
+    "post_rerank_papers": [],
+    "rank_movement": "unchanged",
+    "bge_scores": {},
+    "metrics": {
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_hit_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0
+    },
+    "latency_ms": 1.98
+  }
+]

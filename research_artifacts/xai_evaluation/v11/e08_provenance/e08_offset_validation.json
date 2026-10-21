@@ -1,0 +1,83 @@
+[
+  {
+    "query_id": "item_v11_001",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_02",
+    "chunk_id": "paper_res_001_chunk_001",
+    "char_length": 332,
+    "offset_match": true,
+    "status": "RESOLVED_EXACT"
+  },
+  {
+    "query_id": "item_v11_012",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_01",
+    "chunk_id": "paper_res_004_chunk_001",
+    "char_length": 328,
+    "offset_match": true,
+    "status": "RESOLVED_EXACT"
+  },
+  {
+    "query_id": "item_v11_012",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_02",
+    "chunk_id": "paper_res_004_chunk_001",
+    "char_length": 328,
+    "offset_match": true,
+    "status": "RESOLVED_EXACT"
+  },
+  {
+    "query_id": "item_v11_015",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_01",
+    "chunk_id": "paper_res_003_chunk_001",
+    "char_length": 328,
+    "offset_match": true,
+    "status": "RESOLVED_EXACT"
+  },
+  {
+    "query_id": "item_v11_015",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_02",
+    "chunk_id": "paper_res_003_chunk_001",
+    "char_length": 328,
+    "offset_match": true,
+    "status": "RESOLVED_EXACT"
+  },
+  {
+    "query_id": "item_v11_019",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_01",
+    "chunk_id": "paper_res_003_chunk_001",
+    "char_length": 328,
+    "offset_match": true,
+    "status": "RESOLVED_EXACT"
+  },
+  {
+    "query_id": "item_v11_019",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_02",
+    "chunk_id": "paper_res_003_chunk_001",
+    "char_length": 328,
+    "offset_match": true,
+    "status": "RESOLVED_EXACT"
+  },
+  {
+    "query_id": "item_v11_051",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_02",
+    "chunk_id": "paper_res_002_chunk_001",
+    "char_length": 328,
+    "offset_match": true,
+    "status": "RESOLVED_EXACT"
+  },
+  {
+    "query_id": "item_v11_059",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_01",
+    "chunk_id": "paper_res_004_chunk_001",
+    "char_length": 328,
+    "offset_match": true,
+    "status": "RESOLVED_EXACT"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "check_n_equals_100": true,
+  "check_dev_70_val_15_test_15": true,
+  "check_exact_e03_3_retrieval_provenance_used": true,
+  "check_no_retrieval_rerun": true,
+  "check_no_synthetic_provenance": true,
+  "check_exact_chunk_ids_used": true,
+  "check_exact_paper_ids_verified": true,
+  "check_retrieval_ranks_verified": true,
+  "check_bge_rrf_provenance_verified": true,
+  "check_claim_links_verified": true,
+  "check_citation_links_verified": true,
+  "check_offset_resolution_tested": true,
+  "check_local_provenance_tested": true,
+  "check_online_provenance_tested_where_applicable": true,
+  "check_failed_traces_preserved": true,
+  "overall_integrity_passed": true
+}

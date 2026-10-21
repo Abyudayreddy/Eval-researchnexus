@@ -1,0 +1,35 @@
+{
+  "query_id": "item_v11_087",
+  "split": "TEST",
+  "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Deep Learning & Neural Architectures.",
+  "context_hash_naive": "62aabc97c2c48a0787d4162a55b18a69aa5513ea9c1b256e3b0c22b5b67725c6",
+  "context_hash_verified": "62aabc97c2c48a0787d4162a55b18a69aa5513ea9c1b256e3b0c22b5b67725c6",
+  "context_hash_match": true,
+  "evidence_count": 20,
+  "naive_metrics": {
+    "supported_claim_count": 0,
+    "partially_supported_claim_count": 0,
+    "insufficient_claim_count": 0,
+    "unsupported_claim_count": 2,
+    "citation_precision": 0.0,
+    "citation_coverage": 0.0,
+    "claim_support_rate": 0.0,
+    "unsupported_claim_rate": 1.0
+  },
+  "verified_metrics": {
+    "supported_claim_count": 0,
+    "partially_supported_claim_count": 0,
+    "insufficient_claim_count": 0,
+    "unsupported_claim_count": 2,
+    "citation_precision": 0.0,
+    "citation_coverage": 0.0,
+    "claim_support_rate": 0.0,
+    "unsupported_claim_rate": 1.0
+  },
+  "naive_has_unsupported": true,
+  "verified_has_unsupported": true,
+  "naive_latency_ms": 3926.12,
+  "verified_latency_ms": 4914.76,
+  "snapshot_hash": "62aabc97c2c48a0787d4162a55b18a69aa5513ea9c1b256e3b0c22b5b67725c6",
+  "hash_verified": true
+}

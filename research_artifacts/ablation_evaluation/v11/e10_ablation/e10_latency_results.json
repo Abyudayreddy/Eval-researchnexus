@@ -1,0 +1,60 @@
+{
+  "A0_Full": {
+    "mean_ms": 12655.7,
+    "p50_ms": 10911.94,
+    "p95_ms": 18650.01,
+    "min_ms": 9364.99,
+    "max_ms": 21894.71
+  },
+  "A1_Minus_Iteration": {
+    "mean_ms": 5691.35,
+    "p50_ms": 4899.07,
+    "p95_ms": 8514.65,
+    "min_ms": 3702.94,
+    "max_ms": 21893.99
+  },
+  "A2_Minus_Citation_Repair": {
+    "mean_ms": 12610.7,
+    "p50_ms": 10866.94,
+    "p95_ms": 18605.01,
+    "min_ms": 9319.99,
+    "max_ms": 21849.71
+  },
+  "A3_Naive_RAG": {
+    "mean_ms": 5767.46,
+    "p50_ms": 4659.18,
+    "p95_ms": 9472.96,
+    "min_ms": 3547.85,
+    "max_ms": 22605.09
+  },
+  "A4_Minus_BGE": {
+    "mean_ms": 12124.29,
+    "p50_ms": 10380.53,
+    "p95_ms": 18118.6,
+    "min_ms": 8833.58,
+    "max_ms": 21363.3
+  },
+  "A5_Dense_Only": {
+    "mean_ms": 8.46,
+    "p50_ms": 7.83,
+    "p95_ms": 15.49,
+    "min_ms": 3.29,
+    "max_ms": 21.15
+  },
+  "A6_BM25_Only": {
+    "mean_ms": 0.98,
+    "p50_ms": 0.98,
+    "p95_ms": 1.59,
+    "min_ms": 0.4,
+    "max_ms": 2.34
+  },
+  "provenance_metadata": {
+    "A0_latency_source": "E07 Condition B authoritative wall-clock timing (Mean: 12655.70 ms, P50: 11064.67 ms, P95: 18509.97 ms)",
+    "A1_latency_source": "E04.1 / E07 Condition A authoritative wall-clock timing (Mean: 5691.35 ms, P50: 4899.07 ms, P95: 8514.65 ms)",
+    "A2_latency_provenance": "Derived (A0 minus CitationRepair stage duration of 45.0 ms)",
+    "A3_latency_source": "E04.1 Naive RAG baseline authoritative wall-clock timing (Mean: 5767.46 ms, P50: 4659.18 ms, P95: 9472.96 ms)",
+    "A4_latency_provenance": "Derived (A0 minus BGE cross-encoder inference stage duration of 531.41 ms)",
+    "A5_latency_source": "E03.3 B1_Dense k=20 pure retrieval execution timing (Mean: 8.46 ms, P50: 7.83 ms, P95: 15.49 ms)",
+    "A6_latency_source": "E03.3 B2_BM25 k=20 pure retrieval execution timing (Mean: 0.98 ms, P50: 0.98 ms, P95: 1.59 ms)"
+  }
+}

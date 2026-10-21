@@ -1,0 +1,179 @@
+{
+  "total_queries": 15,
+  "unanswerable_queries": [
+    "item_v11_096",
+    "item_v11_097",
+    "item_v11_098",
+    "item_v11_099",
+    "item_v11_100"
+  ],
+  "queries_where_dense_missed_completely": [
+    "item_v11_086",
+    "item_v11_087",
+    "item_v11_088",
+    "item_v11_089",
+    "item_v11_090",
+    "item_v11_091",
+    "item_v11_092",
+    "item_v11_093",
+    "item_v11_094",
+    "item_v11_095"
+  ],
+  "queries_where_bm25_retrieved_in_top10": [
+    "item_v11_086",
+    "item_v11_087",
+    "item_v11_088",
+    "item_v11_089",
+    "item_v11_090",
+    "item_v11_091",
+    "item_v11_092",
+    "item_v11_093",
+    "item_v11_094",
+    "item_v11_095"
+  ],
+  "queries_where_rrf_placed_gold_in_top20": [
+    "item_v11_086",
+    "item_v11_087",
+    "item_v11_088",
+    "item_v11_089",
+    "item_v11_090",
+    "item_v11_091",
+    "item_v11_092",
+    "item_v11_093",
+    "item_v11_094",
+    "item_v11_095"
+  ],
+  "queries_where_bge_promoted_gold_rank": [
+    "item_v11_088",
+    "item_v11_089",
+    "item_v11_092",
+    "item_v11_093"
+  ],
+  "queries_where_bge_demoted_gold_rank": [
+    "item_v11_086",
+    "item_v11_090",
+    "item_v11_091",
+    "item_v11_095"
+  ],
+  "queries_where_bge_rank_unchanged": [
+    "item_v11_087",
+    "item_v11_094"
+  ],
+  "detailed_rank_table": [
+    {
+      "query_id": "item_v11_086",
+      "gold_paper": "paper_res_032",
+      "gold_evidence": [
+        "paper_res_032_chunk_001",
+        "paper_res_032_chunk_002"
+      ],
+      "bm25_rank": 8,
+      "dense_rank": null,
+      "rrf_rank": 15,
+      "bge_rank": 18
+    },
+    {
+      "query_id": "item_v11_087",
+      "gold_paper": "paper_res_033",
+      "gold_evidence": [
+        "paper_res_033_chunk_001",
+        "paper_res_033_chunk_002"
+      ],
+      "bm25_rank": 9,
+      "dense_rank": null,
+      "rrf_rank": 17,
+      "bge_rank": 17
+    },
+    {
+      "query_id": "item_v11_088",
+      "gold_paper": "paper_res_034",
+      "gold_evidence": [
+        "paper_res_034_chunk_001",
+        "paper_res_034_chunk_002"
+      ],
+      "bm25_rank": 9,
+      "dense_rank": null,
+      "rrf_rank": 17,
+      "bge_rank": 12
+    },
+    {
+      "query_id": "item_v11_089",
+      "gold_paper": "paper_res_035",
+      "gold_evidence": [
+        "paper_res_035_chunk_001",
+        "paper_res_035_chunk_002"
+      ],
+      "bm25_rank": 9,
+      "dense_rank": null,
+      "rrf_rank": 17,
+      "bge_rank": 11
+    },
+    {
+      "query_id": "item_v11_090",
+      "gold_paper": "paper_res_036",
+      "gold_evidence": [
+        "paper_res_036_chunk_001",
+        "paper_res_036_chunk_002"
+      ],
+      "bm25_rank": 9,
+      "dense_rank": null,
+      "rrf_rank": 17,
+      "bge_rank": 19
+    },
+    {
+      "query_id": "item_v11_091",
+      "gold_paper": "paper_res_032",
+      "gold_evidence": [
+        "paper_res_032_chunk_002"
+      ],
+      "bm25_rank": 8,
+      "dense_rank": null,
+      "rrf_rank": 15,
+      "bge_rank": 17
+    },
+    {
+      "query_id": "item_v11_092",
+      "gold_paper": "paper_res_033",
+      "gold_evidence": [
+        "paper_res_033_chunk_002"
+      ],
+      "bm25_rank": 9,
+      "dense_rank": null,
+      "rrf_rank": 17,
+      "bge_rank": 13
+    },
+    {
+      "query_id": "item_v11_093",
+      "gold_paper": "paper_res_034",
+      "gold_evidence": [
+        "paper_res_034_chunk_002"
+      ],
+      "bm25_rank": 9,
+      "dense_rank": null,
+      "rrf_rank": 17,
+      "bge_rank": 12
+    },
+    {
+      "query_id": "item_v11_094",
+      "gold_paper": "paper_res_035",
+      "gold_evidence": [
+        "paper_res_035_chunk_002"
+      ],
+      "bm25_rank": 9,
+      "dense_rank": null,
+      "rrf_rank": 17,
+      "bge_rank": 17
+    },
+    {
+      "query_id": "item_v11_095",
+      "gold_paper": "paper_res_036",
+      "gold_evidence": [
+        "paper_res_036_chunk_002"
+      ],
+      "bm25_rank": 9,
+      "dense_rank": null,
+      "rrf_rank": 17,
+      "bge_rank": 18
+    }
+  ]
+}

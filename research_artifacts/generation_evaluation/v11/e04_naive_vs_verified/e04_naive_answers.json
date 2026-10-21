@@ -1,0 +1,702 @@
+[
+  {
+    "query_id": "item_v11_001",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Deep Learning & Neural Architectures research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in deep learning & neural architectures research, the evidence indicates the following: as well, widening the ef\ufb01ciency gap again. [2] We hope this article will \nbe helpful to realize the intrinsic problems and technical challenges faced by future \ndevelopments of ensemble learning under the era of deep learning. [4]",
+    "context_hash": "44ed2e9242582e9663f4e716c7a8be720086ff8737226cce49223fc3d50b097d"
+  },
+  {
+    "query_id": "item_v11_002",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Large Language Models & Evaluation research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in large language models & evaluation research, the evidence indicates the following: Figure 1: Parameter counts of several recently released\npretrained language models. [2] Large Language Models (LLMs) have been identified\n to have several core limitations. [4]",
+    "context_hash": "5776e7b00be7b611f66a3be27f8b60674aa9323b67e8d766229504cb0dd7989c"
+  },
+  {
+    "query_id": "item_v11_003",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Multimodal Representation Learning research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in multimodal representation learning research, the evidence indicates the following: Visual\nText\nAudio\nSensor\nInput Modalities\nRepresentation\nAlignment\nReasoning\nGeneration\nTransference\nQuanti\ufb01cation\nFig. [2] It has been pointed out that various\nexisting multimodal models, e.g., DALL-E and CM3, rely on\nknowledge memorization, and thus, need to grow model parameters\n when learning large-scale datasets [Yasunaga et al.,\n2023]. [4]",
+    "context_hash": "04e1632de609aef636ac19ba6f6ea5d1e004c00d8df229daac58f6d38c10b050"
+  },
+  {
+    "query_id": "item_v11_004",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Dense Retrieval & Reranking Models research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in dense retrieval & reranking models research, the evidence indicates the following: The relevance retrieval problem is widespread in the\ndevelopment of information retrieval systems (Kowalski,\n2007) such as text and image search engines (Huang et al.,\n2013; Gordo et al., 2016), entertainment recommender\nsystems (Covington et al., 2016), question answering systems\n (Karpukhin et al., 2020), e-commerce systems (Yu\net al., 2018), and other practical applications. [2] In summary, sparse retrieval models achieve an optimal balance in cross-domain transfer,\nretrieval efficiency, and overall effectiveness. [4]",
+    "context_hash": "fa97968060d21dd0ef60be7bd5bdd3faef73984669788bcbc2790b28290a10f7"
+  },
+  {
+    "query_id": "item_v11_005",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Deep Learning & Neural Architectures research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in deep learning & neural architectures research, the evidence indicates the following: as well, widening the ef\ufb01ciency gap again. [2] We hope this article will \nbe helpful to realize the intrinsic problems and technical challenges faced by future \ndevelopments of ensemble learning under the era of deep learning. [4]",
+    "context_hash": "44ed2e9242582e9663f4e716c7a8be720086ff8737226cce49223fc3d50b097d"
+  },
+  {
+    "query_id": "item_v11_006",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Large Language Models & Evaluation research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in large language models & evaluation research, the evidence indicates the following: Figure 1: Parameter counts of several recently released\npretrained language models. [2] Large Language Models (LLMs) have been identified\n to have several core limitations. [4]",
+    "context_hash": "5776e7b00be7b611f66a3be27f8b60674aa9323b67e8d766229504cb0dd7989c"
+  },
+  {
+    "query_id": "item_v11_007",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Multimodal Representation Learning research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in multimodal representation learning research, the evidence indicates the following: Visual\nText\nAudio\nSensor\nInput Modalities\nRepresentation\nAlignment\nReasoning\nGeneration\nTransference\nQuanti\ufb01cation\nFig. [2] It has been pointed out that various\nexisting multimodal models, e.g., DALL-E and CM3, rely on\nknowledge memorization, and thus, need to grow model parameters\n when learning large-scale datasets [Yasunaga et al.,\n2023]. [4]",
+    "context_hash": "04e1632de609aef636ac19ba6f6ea5d1e004c00d8df229daac58f6d38c10b050"
+  },
+  {
+    "query_id": "item_v11_008",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Dense Retrieval & Reranking Models research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in dense retrieval & reranking models research, the evidence indicates the following: The relevance retrieval problem is widespread in the\ndevelopment of information retrieval systems (Kowalski,\n2007) such as text and image search engines (Huang et al.,\n2013; Gordo et al., 2016), entertainment recommender\nsystems (Covington et al., 2016), question answering systems\n (Karpukhin et al., 2020), e-commerce systems (Yu\net al., 2018), and other practical applications. [2] In summary, sparse retrieval models achieve an optimal balance in cross-domain transfer,\nretrieval efficiency, and overall effectiveness. [4]",
+    "context_hash": "fa97968060d21dd0ef60be7bd5bdd3faef73984669788bcbc2790b28290a10f7"
+  },
+  {
+    "query_id": "item_v11_009",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Deep Learning & Neural Architectures research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in deep learning & neural architectures research, the evidence indicates the following: as well, widening the ef\ufb01ciency gap again. [2] We hope this article will \nbe helpful to realize the intrinsic problems and technical challenges faced by future \ndevelopments of ensemble learning under the era of deep learning. [4]",
+    "context_hash": "44ed2e9242582e9663f4e716c7a8be720086ff8737226cce49223fc3d50b097d"
+  },
+  {
+    "query_id": "item_v11_010",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Large Language Models & Evaluation research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in large language models & evaluation research, the evidence indicates the following: Figure 1: Parameter counts of several recently released\npretrained language models. [2] Large Language Models (LLMs) have been identified\n to have several core limitations. [4]",
+    "context_hash": "5776e7b00be7b611f66a3be27f8b60674aa9323b67e8d766229504cb0dd7989c"
+  },
+  {
+    "query_id": "item_v11_011",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Multimodal Representation Learning research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in multimodal representation learning research, the evidence indicates the following: Visual\nText\nAudio\nSensor\nInput Modalities\nRepresentation\nAlignment\nReasoning\nGeneration\nTransference\nQuanti\ufb01cation\nFig. [2] It has been pointed out that various\nexisting multimodal models, e.g., DALL-E and CM3, rely on\nknowledge memorization, and thus, need to grow model parameters\n when learning large-scale datasets [Yasunaga et al.,\n2023]. [4]",
+    "context_hash": "04e1632de609aef636ac19ba6f6ea5d1e004c00d8df229daac58f6d38c10b050"
+  },
+  {
+    "query_id": "item_v11_012",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Dense Retrieval & Reranking Models research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in dense retrieval & reranking models research, the evidence indicates the following: The relevance retrieval problem is widespread in the\ndevelopment of information retrieval systems (Kowalski,\n2007) such as text and image search engines (Huang et al.,\n2013; Gordo et al., 2016), entertainment recommender\nsystems (Covington et al., 2016), question answering systems\n (Karpukhin et al., 2020), e-commerce systems (Yu\net al., 2018), and other practical applications. [2] In summary, sparse retrieval models achieve an optimal balance in cross-domain transfer,\nretrieval efficiency, and overall effectiveness. [4]",
+    "context_hash": "fa97968060d21dd0ef60be7bd5bdd3faef73984669788bcbc2790b28290a10f7"
+  },
+  {
+    "query_id": "item_v11_013",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Deep Learning & Neural Architectures research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in deep learning & neural architectures research, the evidence indicates the following: as well, widening the ef\ufb01ciency gap again. [2] We hope this article will \nbe helpful to realize the intrinsic problems and technical challenges faced by future \ndevelopments of ensemble learning under the era of deep learning. [4]",
+    "context_hash": "44ed2e9242582e9663f4e716c7a8be720086ff8737226cce49223fc3d50b097d"
+  },
+  {
+    "query_id": "item_v11_014",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Large Language Models & Evaluation research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in large language models & evaluation research, the evidence indicates the following: Figure 1: Parameter counts of several recently released\npretrained language models. [2] Large Language Models (LLMs) have been identified\n to have several core limitations. [4]",
+    "context_hash": "5776e7b00be7b611f66a3be27f8b60674aa9323b67e8d766229504cb0dd7989c"
+  },
+  {
+    "query_id": "item_v11_015",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Multimodal Representation Learning research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in multimodal representation learning research, the evidence indicates the following: Visual\nText\nAudio\nSensor\nInput Modalities\nRepresentation\nAlignment\nReasoning\nGeneration\nTransference\nQuanti\ufb01cation\nFig. [2] It has been pointed out that various\nexisting multimodal models, e.g., DALL-E and CM3, rely on\nknowledge memorization, and thus, need to grow model parameters\n when learning large-scale datasets [Yasunaga et al.,\n2023]. [4]",
+    "context_hash": "04e1632de609aef636ac19ba6f6ea5d1e004c00d8df229daac58f6d38c10b050"
+  },
+  {
+    "query_id": "item_v11_016",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Dense Retrieval & Reranking Models research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in dense retrieval & reranking models research, the evidence indicates the following: The relevance retrieval problem is widespread in the\ndevelopment of information retrieval systems (Kowalski,\n2007) such as text and image search engines (Huang et al.,\n2013; Gordo et al., 2016), entertainment recommender\nsystems (Covington et al., 2016), question answering systems\n (Karpukhin et al., 2020), e-commerce systems (Yu\net al., 2018), and other practical applications. [2] In summary, sparse retrieval models achieve an optimal balance in cross-domain transfer,\nretrieval efficiency, and overall effectiveness. [4]",
+    "context_hash": "fa97968060d21dd0ef60be7bd5bdd3faef73984669788bcbc2790b28290a10f7"
+  },
+  {
+    "query_id": "item_v11_017",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Deep Learning & Neural Architectures research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in deep learning & neural architectures research, the evidence indicates the following: as well, widening the ef\ufb01ciency gap again. [2] We hope this article will \nbe helpful to realize the intrinsic problems and technical challenges faced by future \ndevelopments of ensemble learning under the era of deep learning. [4]",
+    "context_hash": "44ed2e9242582e9663f4e716c7a8be720086ff8737226cce49223fc3d50b097d"
+  },
+  {
+    "query_id": "item_v11_018",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Large Language Models & Evaluation research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in large language models & evaluation research, the evidence indicates the following: Figure 1: Parameter counts of several recently released\npretrained language models. [2] Large Language Models (LLMs) have been identified\n to have several core limitations. [4]",
+    "context_hash": "5776e7b00be7b611f66a3be27f8b60674aa9323b67e8d766229504cb0dd7989c"
+  },
+  {
+    "query_id": "item_v11_019",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Multimodal Representation Learning research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in multimodal representation learning research, the evidence indicates the following: Visual\nText\nAudio\nSensor\nInput Modalities\nRepresentation\nAlignment\nReasoning\nGeneration\nTransference\nQuanti\ufb01cation\nFig. [2] It has been pointed out that various\nexisting multimodal models, e.g., DALL-E and CM3, rely on\nknowledge memorization, and thus, need to grow model parameters\n when learning large-scale datasets [Yasunaga et al.,\n2023]. [4]",
+    "context_hash": "04e1632de609aef636ac19ba6f6ea5d1e004c00d8df229daac58f6d38c10b050"
+  },
+  {
+    "query_id": "item_v11_020",
+    "split": "DEVELOPMENT",
+    "question": "What specific scaling challenges and problem formulation are discussed in Dense Retrieval & Reranking Models research?",
+    "answer": "Based on the literature review regarding what specific scaling challenges and problem formulation are discussed in dense retrieval & reranking models research, the evidence indicates the following: The relevance retrieval problem is widespread in the\ndevelopment of information retrieval systems (Kowalski,\n2007) such as text and image search engines (Huang et al.,\n2013; Gordo et al., 2016), entertainment recommender\nsystems (Covington et al., 2016), question answering systems\n (Karpukhin et al., 2020), e-commerce systems (Yu\net al., 2018), and other practical applications. [2] In summary, sparse retrieval models achieve an optimal balance in cross-domain transfer,\nretrieval efficiency, and overall effectiveness. [4]",
+    "context_hash": "fa97968060d21dd0ef60be7bd5bdd3faef73984669788bcbc2790b28290a10f7"
+  },
+  {
+    "query_id": "item_v11_021",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Multimodal Representation Learning?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in multimodal representation learning, the evidence indicates the following: latent representations (Oord et al., 2018; H\u00e9naff et al., 2019;\nHjelm et al., 2018; Bachman et al., 2019). [2] Oord et al., 2018; Bachman et al., 2019). [4]",
+    "context_hash": "5a8735a4fd9022c7913f88d2bcc1ed1f7652650a139b21cb6424f2f216d6c2cf"
+  },
+  {
+    "query_id": "item_v11_022",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Dense Retrieval & Reranking Models?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in dense retrieval & reranking models, the evidence indicates the following: The relevance retrieval problem is widespread in the\ndevelopment of information retrieval systems (Kowalski,\n2007) such as text and image search engines (Huang et al.,\n2013; Gordo et al., 2016), entertainment recommender\nsystems (Covington et al., 2016), question answering systems\n (Karpukhin et al., 2020), e-commerce systems (Yu\net al., 2018), and other practical applications. [2] In summary, sparse retrieval models achieve an optimal balance in cross-domain transfer,\nretrieval efficiency, and overall effectiveness. [4]",
+    "context_hash": "3d8b43d240e33f0a673995f0c16f7d4c2f9126e6132645628a83a79b1b35e5b9"
+  },
+  {
+    "query_id": "item_v11_023",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Deep Learning & Neural Architectures?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in deep learning & neural architectures, the evidence indicates the following: With similarity measured by dot product, a form of\na contrastive loss function, called InfoNCE [46], is considered\n in this paper:\nLq = \u2212log\nexp(q\u00b7k+/\u03c4)\nPK\ni=0 exp(q\u00b7ki/\u03c4)\n(1)\nwhere \u03c4 is a temperature hyper-parameter per [61]. [2] A common way of de\ufb01ning a loss function\nis to measure the difference between a model\u2019s prediction\nand a \ufb01xed target, such as reconstructing the input pixels\n(e.g., auto-encoders) by L1 or L2 losses, or classifying the\ninput into pre-de\ufb01ned categories (e.g., eight positions [13],\ncolor bins [64]) by cross-entropy or margin-based losses. [4]",
+    "context_hash": "4146e0334461a9b1009f008285ff88452fa171620ae08b44783a439150595718"
+  },
+  {
+    "query_id": "item_v11_024",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Large Language Models & Evaluation?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in large language models & evaluation, the evidence indicates the following: Frozen parameters are\nstored and applied in bfloat16. [2] With similarity measured by dot product, a form of\na contrastive loss function, called InfoNCE [46], is considered\n in this paper:\nLq = \u2212log\nexp(q\u00b7k+/\u03c4)\nPK\ni=0 exp(q\u00b7ki/\u03c4)\n(1)\nwhere \u03c4 is a temperature hyper-parameter per [61]. [4]",
+    "context_hash": "8930a4987f4b16f8aa704402bcd032ed9bb764c4ee6b76b6ab3d8618a45dd512"
+  },
+  {
+    "query_id": "item_v11_025",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Multimodal Representation Learning?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in multimodal representation learning, the evidence indicates the following: latent representations (Oord et al., 2018; H\u00e9naff et al., 2019;\nHjelm et al., 2018; Bachman et al., 2019). [2] Oord et al., 2018; Bachman et al., 2019). [4]",
+    "context_hash": "5a8735a4fd9022c7913f88d2bcc1ed1f7652650a139b21cb6424f2f216d6c2cf"
+  },
+  {
+    "query_id": "item_v11_026",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Dense Retrieval & Reranking Models?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in dense retrieval & reranking models, the evidence indicates the following: The relevance retrieval problem is widespread in the\ndevelopment of information retrieval systems (Kowalski,\n2007) such as text and image search engines (Huang et al.,\n2013; Gordo et al., 2016), entertainment recommender\nsystems (Covington et al., 2016), question answering systems\n (Karpukhin et al., 2020), e-commerce systems (Yu\net al., 2018), and other practical applications. [2] In summary, sparse retrieval models achieve an optimal balance in cross-domain transfer,\nretrieval efficiency, and overall effectiveness. [4]",
+    "context_hash": "3d8b43d240e33f0a673995f0c16f7d4c2f9126e6132645628a83a79b1b35e5b9"
+  },
+  {
+    "query_id": "item_v11_027",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Deep Learning & Neural Architectures?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in deep learning & neural architectures, the evidence indicates the following: With similarity measured by dot product, a form of\na contrastive loss function, called InfoNCE [46], is considered\n in this paper:\nLq = \u2212log\nexp(q\u00b7k+/\u03c4)\nPK\ni=0 exp(q\u00b7ki/\u03c4)\n(1)\nwhere \u03c4 is a temperature hyper-parameter per [61]. [2] A common way of de\ufb01ning a loss function\nis to measure the difference between a model\u2019s prediction\nand a \ufb01xed target, such as reconstructing the input pixels\n(e.g., auto-encoders) by L1 or L2 losses, or classifying the\ninput into pre-de\ufb01ned categories (e.g., eight positions [13],\ncolor bins [64]) by cross-entropy or margin-based losses. [4]",
+    "context_hash": "4146e0334461a9b1009f008285ff88452fa171620ae08b44783a439150595718"
+  },
+  {
+    "query_id": "item_v11_028",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Large Language Models & Evaluation?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in large language models & evaluation, the evidence indicates the following: Frozen parameters are\nstored and applied in bfloat16. [2] With similarity measured by dot product, a form of\na contrastive loss function, called InfoNCE [46], is considered\n in this paper:\nLq = \u2212log\nexp(q\u00b7k+/\u03c4)\nPK\ni=0 exp(q\u00b7ki/\u03c4)\n(1)\nwhere \u03c4 is a temperature hyper-parameter per [61]. [4]",
+    "context_hash": "8930a4987f4b16f8aa704402bcd032ed9bb764c4ee6b76b6ab3d8618a45dd512"
+  },
+  {
+    "query_id": "item_v11_029",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Multimodal Representation Learning?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in multimodal representation learning, the evidence indicates the following: latent representations (Oord et al., 2018; H\u00e9naff et al., 2019;\nHjelm et al., 2018; Bachman et al., 2019). [2] Oord et al., 2018; Bachman et al., 2019). [4]",
+    "context_hash": "5a8735a4fd9022c7913f88d2bcc1ed1f7652650a139b21cb6424f2f216d6c2cf"
+  },
+  {
+    "query_id": "item_v11_030",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Dense Retrieval & Reranking Models?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in dense retrieval & reranking models, the evidence indicates the following: The relevance retrieval problem is widespread in the\ndevelopment of information retrieval systems (Kowalski,\n2007) such as text and image search engines (Huang et al.,\n2013; Gordo et al., 2016), entertainment recommender\nsystems (Covington et al., 2016), question answering systems\n (Karpukhin et al., 2020), e-commerce systems (Yu\net al., 2018), and other practical applications. [2] In summary, sparse retrieval models achieve an optimal balance in cross-domain transfer,\nretrieval efficiency, and overall effectiveness. [4]",
+    "context_hash": "3d8b43d240e33f0a673995f0c16f7d4c2f9126e6132645628a83a79b1b35e5b9"
+  },
+  {
+    "query_id": "item_v11_031",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Deep Learning & Neural Architectures?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in deep learning & neural architectures, the evidence indicates the following: With similarity measured by dot product, a form of\na contrastive loss function, called InfoNCE [46], is considered\n in this paper:\nLq = \u2212log\nexp(q\u00b7k+/\u03c4)\nPK\ni=0 exp(q\u00b7ki/\u03c4)\n(1)\nwhere \u03c4 is a temperature hyper-parameter per [61]. [2] A common way of de\ufb01ning a loss function\nis to measure the difference between a model\u2019s prediction\nand a \ufb01xed target, such as reconstructing the input pixels\n(e.g., auto-encoders) by L1 or L2 losses, or classifying the\ninput into pre-de\ufb01ned categories (e.g., eight positions [13],\ncolor bins [64]) by cross-entropy or margin-based losses. [4]",
+    "context_hash": "4146e0334461a9b1009f008285ff88452fa171620ae08b44783a439150595718"
+  },
+  {
+    "query_id": "item_v11_032",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Large Language Models & Evaluation?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in large language models & evaluation, the evidence indicates the following: Frozen parameters are\nstored and applied in bfloat16. [2] With similarity measured by dot product, a form of\na contrastive loss function, called InfoNCE [46], is considered\n in this paper:\nLq = \u2212log\nexp(q\u00b7k+/\u03c4)\nPK\ni=0 exp(q\u00b7ki/\u03c4)\n(1)\nwhere \u03c4 is a temperature hyper-parameter per [61]. [4]",
+    "context_hash": "8930a4987f4b16f8aa704402bcd032ed9bb764c4ee6b76b6ab3d8618a45dd512"
+  },
+  {
+    "query_id": "item_v11_033",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Multimodal Representation Learning?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in multimodal representation learning, the evidence indicates the following: latent representations (Oord et al., 2018; H\u00e9naff et al., 2019;\nHjelm et al., 2018; Bachman et al., 2019). [2] Oord et al., 2018; Bachman et al., 2019). [4]",
+    "context_hash": "5a8735a4fd9022c7913f88d2bcc1ed1f7652650a139b21cb6424f2f216d6c2cf"
+  },
+  {
+    "query_id": "item_v11_034",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Dense Retrieval & Reranking Models?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in dense retrieval & reranking models, the evidence indicates the following: The relevance retrieval problem is widespread in the\ndevelopment of information retrieval systems (Kowalski,\n2007) such as text and image search engines (Huang et al.,\n2013; Gordo et al., 2016), entertainment recommender\nsystems (Covington et al., 2016), question answering systems\n (Karpukhin et al., 2020), e-commerce systems (Yu\net al., 2018), and other practical applications. [2] In summary, sparse retrieval models achieve an optimal balance in cross-domain transfer,\nretrieval efficiency, and overall effectiveness. [4]",
+    "context_hash": "3d8b43d240e33f0a673995f0c16f7d4c2f9126e6132645628a83a79b1b35e5b9"
+  },
+  {
+    "query_id": "item_v11_035",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Deep Learning & Neural Architectures?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in deep learning & neural architectures, the evidence indicates the following: With similarity measured by dot product, a form of\na contrastive loss function, called InfoNCE [46], is considered\n in this paper:\nLq = \u2212log\nexp(q\u00b7k+/\u03c4)\nPK\ni=0 exp(q\u00b7ki/\u03c4)\n(1)\nwhere \u03c4 is a temperature hyper-parameter per [61]. [2] A common way of de\ufb01ning a loss function\nis to measure the difference between a model\u2019s prediction\nand a \ufb01xed target, such as reconstructing the input pixels\n(e.g., auto-encoders) by L1 or L2 losses, or classifying the\ninput into pre-de\ufb01ned categories (e.g., eight positions [13],\ncolor bins [64]) by cross-entropy or margin-based losses. [4]",
+    "context_hash": "4146e0334461a9b1009f008285ff88452fa171620ae08b44783a439150595718"
+  },
+  {
+    "query_id": "item_v11_036",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Large Language Models & Evaluation?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in large language models & evaluation, the evidence indicates the following: Frozen parameters are\nstored and applied in bfloat16. [2] With similarity measured by dot product, a form of\na contrastive loss function, called InfoNCE [46], is considered\n in this paper:\nLq = \u2212log\nexp(q\u00b7k+/\u03c4)\nPK\ni=0 exp(q\u00b7ki/\u03c4)\n(1)\nwhere \u03c4 is a temperature hyper-parameter per [61]. [4]",
+    "context_hash": "8930a4987f4b16f8aa704402bcd032ed9bb764c4ee6b76b6ab3d8618a45dd512"
+  },
+  {
+    "query_id": "item_v11_037",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Multimodal Representation Learning?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in multimodal representation learning, the evidence indicates the following: latent representations (Oord et al., 2018; H\u00e9naff et al., 2019;\nHjelm et al., 2018; Bachman et al., 2019). [2] Oord et al., 2018; Bachman et al., 2019). [4]",
+    "context_hash": "5a8735a4fd9022c7913f88d2bcc1ed1f7652650a139b21cb6424f2f216d6c2cf"
+  },
+  {
+    "query_id": "item_v11_038",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Dense Retrieval & Reranking Models?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in dense retrieval & reranking models, the evidence indicates the following: The relevance retrieval problem is widespread in the\ndevelopment of information retrieval systems (Kowalski,\n2007) such as text and image search engines (Huang et al.,\n2013; Gordo et al., 2016), entertainment recommender\nsystems (Covington et al., 2016), question answering systems\n (Karpukhin et al., 2020), e-commerce systems (Yu\net al., 2018), and other practical applications. [2] In summary, sparse retrieval models achieve an optimal balance in cross-domain transfer,\nretrieval efficiency, and overall effectiveness. [4]",
+    "context_hash": "3d8b43d240e33f0a673995f0c16f7d4c2f9126e6132645628a83a79b1b35e5b9"
+  },
+  {
+    "query_id": "item_v11_039",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Deep Learning & Neural Architectures?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in deep learning & neural architectures, the evidence indicates the following: With similarity measured by dot product, a form of\na contrastive loss function, called InfoNCE [46], is considered\n in this paper:\nLq = \u2212log\nexp(q\u00b7k+/\u03c4)\nPK\ni=0 exp(q\u00b7ki/\u03c4)\n(1)\nwhere \u03c4 is a temperature hyper-parameter per [61]. [2] A common way of de\ufb01ning a loss function\nis to measure the difference between a model\u2019s prediction\nand a \ufb01xed target, such as reconstructing the input pixels\n(e.g., auto-encoders) by L1 or L2 losses, or classifying the\ninput into pre-de\ufb01ned categories (e.g., eight positions [13],\ncolor bins [64]) by cross-entropy or margin-based losses. [4]",
+    "context_hash": "4146e0334461a9b1009f008285ff88452fa171620ae08b44783a439150595718"
+  },
+  {
+    "query_id": "item_v11_040",
+    "split": "DEVELOPMENT",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Large Language Models & Evaluation?",
+    "answer": "Based on the literature review regarding what optimization technique and loss function parameters are combined for contrastive optimization in large language models & evaluation, the evidence indicates the following: Frozen parameters are\nstored and applied in bfloat16. [2] With similarity measured by dot product, a form of\na contrastive loss function, called InfoNCE [46], is considered\n in this paper:\nLq = \u2212log\nexp(q\u00b7k+/\u03c4)\nPK\ni=0 exp(q\u00b7ki/\u03c4)\n(1)\nwhere \u03c4 is a temperature hyper-parameter per [61]. [4]",
+    "context_hash": "8930a4987f4b16f8aa704402bcd032ed9bb764c4ee6b76b6ab3d8618a45dd512"
+  },
+  {
+    "query_id": "item_v11_041",
+    "split": "DEVELOPMENT",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Dense Retrieval & Reranking Models?",
+    "answer": "Based on the literature review regarding what specific quantitative precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for dense retrieval & reranking models, the evidence indicates the following: F1-Score is the harmonic\nmean of precision and recall, given by F1-Score = 2 \u00b7\nPrecision\u00b7Recall\nPrecision + Recall, where Precision =\nTP\nTP + FP and Recall =\nTP\nTP + FN, with TP, FP, and FN denoting true positives, false\npositives, and false negatives. [2] \u2022 We provide a unified quantization view for BGE-based hashing, instantiate it with BGE-BIHash and BGELSHash\n, and analyze accuracy, efficiency, and robustness under the same benchmark pipeline. [4]",
+    "context_hash": "61bc3d0baaae91a6e7fcb0454d7666a0fc1b7ae3edbd47f4e4711b5213b05a19"
+  },
+  {
+    "query_id": "item_v11_042",
+    "split": "DEVELOPMENT",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Deep Learning & Neural Architectures?",
+    "answer": "Based on the literature review regarding what specific quantitative precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for deep learning & neural architectures, the evidence indicates the following: TABLE III: Classi\ufb01cation benchmark for the traditional machine learning approach (Trad.) and the deep learning approach\n(DL). [2] Accuracy measures the overall correctness of the \nmodel's predictions, while precision evaluates the proportion of correctly predicted positive \ninstances. [4]",
+    "context_hash": "d76f9aa2dd8e74e0027768faee736206b51b415a976858bb137d45c5ab2a9b4d"
+  },
+  {
+    "query_id": "item_v11_043",
+    "split": "DEVELOPMENT",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Large Language Models & Evaluation?",
+    "answer": "Based on the literature review regarding what specific quantitative precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for large language models & evaluation, the evidence indicates the following: (2019), we evaluate our models on three popular benchmarks\n: The General Language Understanding Evaluation (GLUE) benchmark (Wang et al., 2018),\ntwo versions of the Stanford Question Answering Dataset (SQuAD; Rajpurkar et al., 2016; 2018),\nand the ReAding Comprehension from Examinations (RACE) dataset (Lai et al., 2017). [2] As expected, our largest\n(11 billion parameter) model performed best among our model size variants across all tasks. [4]",
+    "context_hash": "a639cedf4008f74c75cfdd9db867120280f7a578d70c73b8a72ec166b690eaf3"
+  },
+  {
+    "query_id": "item_v11_044",
+    "split": "DEVELOPMENT",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Multimodal Representation Learning?",
+    "answer": "Based on the literature review regarding what specific quantitative precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for multimodal representation learning, the evidence indicates the following: (249 models for training and 250 models for testing in each trial). [2] For fair comparison, the augmentation strategy,\nrepresentation dimensionality, batch size, and encoder-decoder architectures are invariant across methods. [4]",
+    "context_hash": "1e6addb08232fd248a709e7ff5f064a214852e0329c9399b3cf45c6c299988cc"
+  },
+  {
+    "query_id": "item_v11_045",
+    "split": "DEVELOPMENT",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Dense Retrieval & Reranking Models?",
+    "answer": "Based on the literature review regarding what specific quantitative precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for dense retrieval & reranking models, the evidence indicates the following: F1-Score is the harmonic\nmean of precision and recall, given by F1-Score = 2 \u00b7\nPrecision\u00b7Recall\nPrecision + Recall, where Precision =\nTP\nTP + FP and Recall =\nTP\nTP + FN, with TP, FP, and FN denoting true positives, false\npositives, and false negatives. [2] \u2022 We provide a unified quantization view for BGE-based hashing, instantiate it with BGE-BIHash and BGELSHash\n, and analyze accuracy, efficiency, and robustness under the same benchmark pipeline. [4]",
+    "context_hash": "61bc3d0baaae91a6e7fcb0454d7666a0fc1b7ae3edbd47f4e4711b5213b05a19"
+  },
+  {
+    "query_id": "item_v11_046",
+    "split": "DEVELOPMENT",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Deep Learning & Neural Architectures?",
+    "answer": "Based on the literature review regarding what specific quantitative precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for deep learning & neural architectures, the evidence indicates the following: TABLE III: Classi\ufb01cation benchmark for the traditional machine learning approach (Trad.) and the deep learning approach\n(DL). [2] Accuracy measures the overall correctness of the \nmodel's predictions, while precision evaluates the proportion of correctly predicted positive \ninstances. [4]",
+    "context_hash": "d76f9aa2dd8e74e0027768faee736206b51b415a976858bb137d45c5ab2a9b4d"
+  },
+  {
+    "query_id": "item_v11_047",
+    "split": "DEVELOPMENT",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Large Language Models & Evaluation?",
+    "answer": "Based on the literature review regarding what specific quantitative precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for large language models & evaluation, the evidence indicates the following: (2019), we evaluate our models on three popular benchmarks\n: The General Language Understanding Evaluation (GLUE) benchmark (Wang et al., 2018),\ntwo versions of the Stanford Question Answering Dataset (SQuAD; Rajpurkar et al., 2016; 2018),\nand the ReAding Comprehension from Examinations (RACE) dataset (Lai et al., 2017). [2] As expected, our largest\n(11 billion parameter) model performed best among our model size variants across all tasks. [4]",
+    "context_hash": "a639cedf4008f74c75cfdd9db867120280f7a578d70c73b8a72ec166b690eaf3"
+  },
+  {
+    "query_id": "item_v11_048",
+    "split": "DEVELOPMENT",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Multimodal Representation Learning?",
+    "answer": "Based on the literature review regarding what specific quantitative precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for multimodal representation learning, the evidence indicates the following: (249 models for training and 250 models for testing in each trial). [2] For fair comparison, the augmentation strategy,\nrepresentation dimensionality, batch size, and encoder-decoder architectures are invariant across methods. [4]",
+    "context_hash": "1e6addb08232fd248a709e7ff5f064a214852e0329c9399b3cf45c6c299988cc"
+  },
+  {
+    "query_id": "item_v11_049",
+    "split": "DEVELOPMENT",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Dense Retrieval & Reranking Models?",
+    "answer": "Based on the literature review regarding what specific quantitative precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for dense retrieval & reranking models, the evidence indicates the following: F1-Score is the harmonic\nmean of precision and recall, given by F1-Score = 2 \u00b7\nPrecision\u00b7Recall\nPrecision + Recall, where Precision =\nTP\nTP + FP and Recall =\nTP\nTP + FN, with TP, FP, and FN denoting true positives, false\npositives, and false negatives. [2] \u2022 We provide a unified quantization view for BGE-based hashing, instantiate it with BGE-BIHash and BGELSHash\n, and analyze accuracy, efficiency, and robustness under the same benchmark pipeline. [4]",
+    "context_hash": "61bc3d0baaae91a6e7fcb0454d7666a0fc1b7ae3edbd47f4e4711b5213b05a19"
+  },
+  {
+    "query_id": "item_v11_050",
+    "split": "DEVELOPMENT",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Deep Learning & Neural Architectures?",
+    "answer": "Based on the literature review regarding what specific quantitative precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for deep learning & neural architectures, the evidence indicates the following: TABLE III: Classi\ufb01cation benchmark for the traditional machine learning approach (Trad.) and the deep learning approach\n(DL). [2] Accuracy measures the overall correctness of the \nmodel's predictions, while precision evaluates the proportion of correctly predicted positive \ninstances. [4]",
+    "context_hash": "d76f9aa2dd8e74e0027768faee736206b51b415a976858bb137d45c5ab2a9b4d"
+  },
+  {
+    "query_id": "item_v11_051",
+    "split": "DEVELOPMENT",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Large Language Models & Evaluation?",
+    "answer": "Based on the literature review regarding what specific quantitative precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for large language models & evaluation, the evidence indicates the following: (2019), we evaluate our models on three popular benchmarks\n: The General Language Understanding Evaluation (GLUE) benchmark (Wang et al., 2018),\ntwo versions of the Stanford Question Answering Dataset (SQuAD; Rajpurkar et al., 2016; 2018),\nand the ReAding Comprehension from Examinations (RACE) dataset (Lai et al., 2017). [2] As expected, our largest\n(11 billion parameter) model performed best among our model size variants across all tasks. [4]",
+    "context_hash": "a639cedf4008f74c75cfdd9db867120280f7a578d70c73b8a72ec166b690eaf3"
+  },
+  {
+    "query_id": "item_v11_052",
+    "split": "DEVELOPMENT",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Multimodal Representation Learning?",
+    "answer": "Based on the literature review regarding what specific quantitative precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for multimodal representation learning, the evidence indicates the following: (249 models for training and 250 models for testing in each trial). [2] For fair comparison, the augmentation strategy,\nrepresentation dimensionality, batch size, and encoder-decoder architectures are invariant across methods. [4]",
+    "context_hash": "1e6addb08232fd248a709e7ff5f064a214852e0329c9399b3cf45c6c299988cc"
+  },
+  {
+    "query_id": "item_v11_053",
+    "split": "DEVELOPMENT",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Dense Retrieval & Reranking Models?",
+    "answer": "Based on the literature review regarding what specific quantitative precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for dense retrieval & reranking models, the evidence indicates the following: F1-Score is the harmonic\nmean of precision and recall, given by F1-Score = 2 \u00b7\nPrecision\u00b7Recall\nPrecision + Recall, where Precision =\nTP\nTP + FP and Recall =\nTP\nTP + FN, with TP, FP, and FN denoting true positives, false\npositives, and false negatives. [2] \u2022 We provide a unified quantization view for BGE-based hashing, instantiate it with BGE-BIHash and BGELSHash\n, and analyze accuracy, efficiency, and robustness under the same benchmark pipeline. [4]",
+    "context_hash": "61bc3d0baaae91a6e7fcb0454d7666a0fc1b7ae3edbd47f4e4711b5213b05a19"
+  },
+  {
+    "query_id": "item_v11_054",
+    "split": "DEVELOPMENT",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Deep Learning & Neural Architectures?",
+    "answer": "Based on the literature review regarding what specific quantitative precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for deep learning & neural architectures, the evidence indicates the following: TABLE III: Classi\ufb01cation benchmark for the traditional machine learning approach (Trad.) and the deep learning approach\n(DL). [2] Accuracy measures the overall correctness of the \nmodel's predictions, while precision evaluates the proportion of correctly predicted positive \ninstances. [4]",
+    "context_hash": "d76f9aa2dd8e74e0027768faee736206b51b415a976858bb137d45c5ab2a9b4d"
+  },
+  {
+    "query_id": "item_v11_055",
+    "split": "DEVELOPMENT",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Large Language Models & Evaluation?",
+    "answer": "Based on the literature review regarding what specific quantitative precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for large language models & evaluation, the evidence indicates the following: (2019), we evaluate our models on three popular benchmarks\n: The General Language Understanding Evaluation (GLUE) benchmark (Wang et al., 2018),\ntwo versions of the Stanford Question Answering Dataset (SQuAD; Rajpurkar et al., 2016; 2018),\nand the ReAding Comprehension from Examinations (RACE) dataset (Lai et al., 2017). [2] As expected, our largest\n(11 billion parameter) model performed best among our model size variants across all tasks. [4]",
+    "context_hash": "a639cedf4008f74c75cfdd9db867120280f7a578d70c73b8a72ec166b690eaf3"
+  },
+  {
+    "query_id": "item_v11_056",
+    "split": "DEVELOPMENT",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Deep Learning & Neural Architectures?",
+    "answer": "Based on the literature review regarding why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in deep learning & neural architectures, the evidence indicates the following: We conjecture that the deep plain nets may\nhave exponentially low convergence rates, which impact the\nreducing of the training error3. [2] we train the G to minimize Ex\u223cpdata(x)[(D(G(x)) \u22121)2]\nand train the D to minimize Ey\u223cpdata(y)[(D(y) \u22121)2] +\nEx\u223cpdata(x)[D(G(x))2]. [4]",
+    "context_hash": "292a71c50f40f1c8199e543161f863199311aa765a7720289f151bb7e923ceb0"
+  },
+  {
+    "query_id": "item_v11_057",
+    "split": "DEVELOPMENT",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Large Language Models & Evaluation?",
+    "answer": "Based on the literature review regarding why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in large language models & evaluation, the evidence indicates the following: D.1\nLimitations, failure cases and opportunities\nHere, we describe some limitations and failure cases of our models, as well as opportunities for\nfurther improving our models and extending their abilities. [2] This improvement in parameter ef\ufb01ciency is the most important advantage of ALBERT\u2019s design\nchoices. [4]",
+    "context_hash": "7930bf86c1dd336b5d6679f0cd9bd3a7728135754e9afd2c181e0887cc01d505"
+  },
+  {
+    "query_id": "item_v11_058",
+    "split": "DEVELOPMENT",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Multimodal Representation Learning?",
+    "answer": "Based on the literature review regarding why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in multimodal representation learning, the evidence indicates the following: Oord et al., 2018; Bachman et al., 2019). [2] latent representations (Oord et al., 2018; H\u00e9naff et al., 2019;\nHjelm et al., 2018; Bachman et al., 2019). [4]",
+    "context_hash": "73e82a26e842d11ece3650e06eee8c962259839f3072ce00504a602260843b40"
+  },
+  {
+    "query_id": "item_v11_059",
+    "split": "DEVELOPMENT",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Dense Retrieval & Reranking Models?",
+    "answer": "Based on the literature review regarding why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in dense retrieval & reranking models, the evidence indicates the following: The relevance retrieval problem is widespread in the\ndevelopment of information retrieval systems (Kowalski,\n2007) such as text and image search engines (Huang et al.,\n2013; Gordo et al., 2016), entertainment recommender\nsystems (Covington et al., 2016), question answering systems\n (Karpukhin et al., 2020), e-commerce systems (Yu\net al., 2018), and other practical applications. [2] Single-step Naive Methods are widely adopted in real-world applications due to their great efficiency\nand generalizability. [4]",
+    "context_hash": "f24b58dbaacca9ee8f5c899eafcfd5deadb79308455e8a45a55852a11f64946e"
+  },
+  {
+    "query_id": "item_v11_060",
+    "split": "DEVELOPMENT",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Deep Learning & Neural Architectures?",
+    "answer": "Based on the literature review regarding why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in deep learning & neural architectures, the evidence indicates the following: We conjecture that the deep plain nets may\nhave exponentially low convergence rates, which impact the\nreducing of the training error3. [2] we train the G to minimize Ex\u223cpdata(x)[(D(G(x)) \u22121)2]\nand train the D to minimize Ey\u223cpdata(y)[(D(y) \u22121)2] +\nEx\u223cpdata(x)[D(G(x))2]. [4]",
+    "context_hash": "292a71c50f40f1c8199e543161f863199311aa765a7720289f151bb7e923ceb0"
+  },
+  {
+    "query_id": "item_v11_061",
+    "split": "DEVELOPMENT",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Large Language Models & Evaluation?",
+    "answer": "Based on the literature review regarding why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in large language models & evaluation, the evidence indicates the following: D.1\nLimitations, failure cases and opportunities\nHere, we describe some limitations and failure cases of our models, as well as opportunities for\nfurther improving our models and extending their abilities. [2] This improvement in parameter ef\ufb01ciency is the most important advantage of ALBERT\u2019s design\nchoices. [4]",
+    "context_hash": "7930bf86c1dd336b5d6679f0cd9bd3a7728135754e9afd2c181e0887cc01d505"
+  },
+  {
+    "query_id": "item_v11_062",
+    "split": "DEVELOPMENT",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Multimodal Representation Learning?",
+    "answer": "Based on the literature review regarding why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in multimodal representation learning, the evidence indicates the following: Oord et al., 2018; Bachman et al., 2019). [2] latent representations (Oord et al., 2018; H\u00e9naff et al., 2019;\nHjelm et al., 2018; Bachman et al., 2019). [4]",
+    "context_hash": "73e82a26e842d11ece3650e06eee8c962259839f3072ce00504a602260843b40"
+  },
+  {
+    "query_id": "item_v11_063",
+    "split": "DEVELOPMENT",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Dense Retrieval & Reranking Models?",
+    "answer": "Based on the literature review regarding why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in dense retrieval & reranking models, the evidence indicates the following: The relevance retrieval problem is widespread in the\ndevelopment of information retrieval systems (Kowalski,\n2007) such as text and image search engines (Huang et al.,\n2013; Gordo et al., 2016), entertainment recommender\nsystems (Covington et al., 2016), question answering systems\n (Karpukhin et al., 2020), e-commerce systems (Yu\net al., 2018), and other practical applications. [2] Single-step Naive Methods are widely adopted in real-world applications due to their great efficiency\nand generalizability. [4]",
+    "context_hash": "f24b58dbaacca9ee8f5c899eafcfd5deadb79308455e8a45a55852a11f64946e"
+  },
+  {
+    "query_id": "item_v11_064",
+    "split": "DEVELOPMENT",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Deep Learning & Neural Architectures?",
+    "answer": "Based on the literature review regarding why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in deep learning & neural architectures, the evidence indicates the following: We conjecture that the deep plain nets may\nhave exponentially low convergence rates, which impact the\nreducing of the training error3. [2] we train the G to minimize Ex\u223cpdata(x)[(D(G(x)) \u22121)2]\nand train the D to minimize Ey\u223cpdata(y)[(D(y) \u22121)2] +\nEx\u223cpdata(x)[D(G(x))2]. [4]",
+    "context_hash": "292a71c50f40f1c8199e543161f863199311aa765a7720289f151bb7e923ceb0"
+  },
+  {
+    "query_id": "item_v11_065",
+    "split": "DEVELOPMENT",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Large Language Models & Evaluation?",
+    "answer": "Based on the literature review regarding why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in large language models & evaluation, the evidence indicates the following: D.1\nLimitations, failure cases and opportunities\nHere, we describe some limitations and failure cases of our models, as well as opportunities for\nfurther improving our models and extending their abilities. [2] This improvement in parameter ef\ufb01ciency is the most important advantage of ALBERT\u2019s design\nchoices. [4]",
+    "context_hash": "7930bf86c1dd336b5d6679f0cd9bd3a7728135754e9afd2c181e0887cc01d505"
+  },
+  {
+    "query_id": "item_v11_066",
+    "split": "DEVELOPMENT",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Multimodal Representation Learning?",
+    "answer": "Based on the literature review regarding why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in multimodal representation learning, the evidence indicates the following: Oord et al., 2018; Bachman et al., 2019). [2] latent representations (Oord et al., 2018; H\u00e9naff et al., 2019;\nHjelm et al., 2018; Bachman et al., 2019). [4]",
+    "context_hash": "73e82a26e842d11ece3650e06eee8c962259839f3072ce00504a602260843b40"
+  },
+  {
+    "query_id": "item_v11_067",
+    "split": "DEVELOPMENT",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Dense Retrieval & Reranking Models?",
+    "answer": "Based on the literature review regarding why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in dense retrieval & reranking models, the evidence indicates the following: The relevance retrieval problem is widespread in the\ndevelopment of information retrieval systems (Kowalski,\n2007) such as text and image search engines (Huang et al.,\n2013; Gordo et al., 2016), entertainment recommender\nsystems (Covington et al., 2016), question answering systems\n (Karpukhin et al., 2020), e-commerce systems (Yu\net al., 2018), and other practical applications. [2] Single-step Naive Methods are widely adopted in real-world applications due to their great efficiency\nand generalizability. [4]",
+    "context_hash": "f24b58dbaacca9ee8f5c899eafcfd5deadb79308455e8a45a55852a11f64946e"
+  },
+  {
+    "query_id": "item_v11_068",
+    "split": "DEVELOPMENT",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Deep Learning & Neural Architectures?",
+    "answer": "Based on the literature review regarding why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in deep learning & neural architectures, the evidence indicates the following: We conjecture that the deep plain nets may\nhave exponentially low convergence rates, which impact the\nreducing of the training error3. [2] we train the G to minimize Ex\u223cpdata(x)[(D(G(x)) \u22121)2]\nand train the D to minimize Ey\u223cpdata(y)[(D(y) \u22121)2] +\nEx\u223cpdata(x)[D(G(x))2]. [4]",
+    "context_hash": "292a71c50f40f1c8199e543161f863199311aa765a7720289f151bb7e923ceb0"
+  },
+  {
+    "query_id": "item_v11_069",
+    "split": "DEVELOPMENT",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Large Language Models & Evaluation?",
+    "answer": "Based on the literature review regarding why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in large language models & evaluation, the evidence indicates the following: D.1\nLimitations, failure cases and opportunities\nHere, we describe some limitations and failure cases of our models, as well as opportunities for\nfurther improving our models and extending their abilities. [2] This improvement in parameter ef\ufb01ciency is the most important advantage of ALBERT\u2019s design\nchoices. [4]",
+    "context_hash": "7930bf86c1dd336b5d6679f0cd9bd3a7728135754e9afd2c181e0887cc01d505"
+  },
+  {
+    "query_id": "item_v11_070",
+    "split": "DEVELOPMENT",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Multimodal Representation Learning?",
+    "answer": "Based on the literature review regarding why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in multimodal representation learning, the evidence indicates the following: Oord et al., 2018; Bachman et al., 2019). [2] latent representations (Oord et al., 2018; H\u00e9naff et al., 2019;\nHjelm et al., 2018; Bachman et al., 2019). [4]",
+    "context_hash": "73e82a26e842d11ece3650e06eee8c962259839f3072ce00504a602260843b40"
+  },
+  {
+    "query_id": "item_v11_071",
+    "split": "VALIDATION",
+    "question": "How do the contrastive optimization methodologies compare between Deep Learning & Neural Architectures and Large Language Models & Evaluation studies?",
+    "answer": "Based on the literature review regarding how do the contrastive optimization methodologies compare between deep learning & neural architectures and large language models & evaluation studies, the evidence indicates the following: However, we encountered dif\ufb01culties\nef\ufb01ciently scaling this method. [2] Instead, we test approaches that are similar in spirit\u2014for example,\nwe consider an analogous objective to BERT\u2019s \u201cmasked language modeling\u201d objective in\n10\nExploring the Limits of Transfer Learning\nSection 3.3 and we consider a model architecture that behaves similarly to BERT on text\nclassification tasks in Section 3.2. [4]",
+    "context_hash": "6da056f9a86140ea55020d17ffbdfb42c2656fca4204f713b06ee4dbc857dc15"
+  },
+  {
+    "query_id": "item_v11_072",
+    "split": "VALIDATION",
+    "question": "How do the contrastive optimization methodologies compare between Multimodal Representation Learning and Dense Retrieval & Reranking Models studies?",
+    "answer": "Based on the literature review regarding how do the contrastive optimization methodologies compare between multimodal representation learning and dense retrieval & reranking models studies, the evidence indicates the following: D.1\nLimitations, failure cases and opportunities\nHere, we describe some limitations and failure cases of our models, as well as opportunities for\nfurther improving our models and extending their abilities. [2] Oord et al., 2018; Bachman et al., 2019). [4]",
+    "context_hash": "ed6832d37a8bb7f76ca2315de933adf03d9e4c328c6bd28ea54ee147e4db592b"
+  },
+  {
+    "query_id": "item_v11_073",
+    "split": "VALIDATION",
+    "question": "How do the contrastive optimization methodologies compare between Deep Learning & Neural Architectures and Large Language Models & Evaluation studies?",
+    "answer": "Based on the literature review regarding how do the contrastive optimization methodologies compare between deep learning & neural architectures and large language models & evaluation studies, the evidence indicates the following: However, we encountered dif\ufb01culties\nef\ufb01ciently scaling this method. [2] Instead, we test approaches that are similar in spirit\u2014for example,\nwe consider an analogous objective to BERT\u2019s \u201cmasked language modeling\u201d objective in\n10\nExploring the Limits of Transfer Learning\nSection 3.3 and we consider a model architecture that behaves similarly to BERT on text\nclassification tasks in Section 3.2. [4]",
+    "context_hash": "6da056f9a86140ea55020d17ffbdfb42c2656fca4204f713b06ee4dbc857dc15"
+  },
+  {
+    "query_id": "item_v11_074",
+    "split": "VALIDATION",
+    "question": "How do the contrastive optimization methodologies compare between Multimodal Representation Learning and Dense Retrieval & Reranking Models studies?",
+    "answer": "Based on the literature review regarding how do the contrastive optimization methodologies compare between multimodal representation learning and dense retrieval & reranking models studies, the evidence indicates the following: D.1\nLimitations, failure cases and opportunities\nHere, we describe some limitations and failure cases of our models, as well as opportunities for\nfurther improving our models and extending their abilities. [2] Oord et al., 2018; Bachman et al., 2019). [4]",
+    "context_hash": "ed6832d37a8bb7f76ca2315de933adf03d9e4c328c6bd28ea54ee147e4db592b"
+  },
+  {
+    "query_id": "item_v11_075",
+    "split": "VALIDATION",
+    "question": "How do the contrastive optimization methodologies compare between Deep Learning & Neural Architectures and Large Language Models & Evaluation studies?",
+    "answer": "Based on the literature review regarding how do the contrastive optimization methodologies compare between deep learning & neural architectures and large language models & evaluation studies, the evidence indicates the following: However, we encountered dif\ufb01culties\nef\ufb01ciently scaling this method. [2] Instead, we test approaches that are similar in spirit\u2014for example,\nwe consider an analogous objective to BERT\u2019s \u201cmasked language modeling\u201d objective in\n10\nExploring the Limits of Transfer Learning\nSection 3.3 and we consider a model architecture that behaves similarly to BERT on text\nclassification tasks in Section 3.2. [4]",
+    "context_hash": "6da056f9a86140ea55020d17ffbdfb42c2656fca4204f713b06ee4dbc857dc15"
+  },
+  {
+    "query_id": "item_v11_076",
+    "split": "VALIDATION",
+    "question": "How do the contrastive optimization methodologies compare between Multimodal Representation Learning and Dense Retrieval & Reranking Models studies?",
+    "answer": "Based on the literature review regarding how do the contrastive optimization methodologies compare between multimodal representation learning and dense retrieval & reranking models studies, the evidence indicates the following: D.1\nLimitations, failure cases and opportunities\nHere, we describe some limitations and failure cases of our models, as well as opportunities for\nfurther improving our models and extending their abilities. [2] Oord et al., 2018; Bachman et al., 2019). [4]",
+    "context_hash": "ed6832d37a8bb7f76ca2315de933adf03d9e4c328c6bd28ea54ee147e4db592b"
+  },
+  {
+    "query_id": "item_v11_077",
+    "split": "VALIDATION",
+    "question": "How do the contrastive optimization methodologies compare between Deep Learning & Neural Architectures and Large Language Models & Evaluation studies?",
+    "answer": "Based on the literature review regarding how do the contrastive optimization methodologies compare between deep learning & neural architectures and large language models & evaluation studies, the evidence indicates the following: However, we encountered dif\ufb01culties\nef\ufb01ciently scaling this method. [2] Instead, we test approaches that are similar in spirit\u2014for example,\nwe consider an analogous objective to BERT\u2019s \u201cmasked language modeling\u201d objective in\n10\nExploring the Limits of Transfer Learning\nSection 3.3 and we consider a model architecture that behaves similarly to BERT on text\nclassification tasks in Section 3.2. [4]",
+    "context_hash": "6da056f9a86140ea55020d17ffbdfb42c2656fca4204f713b06ee4dbc857dc15"
+  },
+  {
+    "query_id": "item_v11_078",
+    "split": "VALIDATION",
+    "question": "How do the contrastive optimization methodologies compare between Multimodal Representation Learning and Dense Retrieval & Reranking Models studies?",
+    "answer": "Based on the literature review regarding how do the contrastive optimization methodologies compare between multimodal representation learning and dense retrieval & reranking models studies, the evidence indicates the following: D.1\nLimitations, failure cases and opportunities\nHere, we describe some limitations and failure cases of our models, as well as opportunities for\nfurther improving our models and extending their abilities. [2] Oord et al., 2018; Bachman et al., 2019). [4]",
+    "context_hash": "ed6832d37a8bb7f76ca2315de933adf03d9e4c328c6bd28ea54ee147e4db592b"
+  },
+  {
+    "query_id": "item_v11_079",
+    "split": "VALIDATION",
+    "question": "How do the contrastive optimization methodologies compare between Deep Learning & Neural Architectures and Large Language Models & Evaluation studies?",
+    "answer": "Based on the literature review regarding how do the contrastive optimization methodologies compare between deep learning & neural architectures and large language models & evaluation studies, the evidence indicates the following: However, we encountered dif\ufb01culties\nef\ufb01ciently scaling this method. [2] Instead, we test approaches that are similar in spirit\u2014for example,\nwe consider an analogous objective to BERT\u2019s \u201cmasked language modeling\u201d objective in\n10\nExploring the Limits of Transfer Learning\nSection 3.3 and we consider a model architecture that behaves similarly to BERT on text\nclassification tasks in Section 3.2. [4]",
+    "context_hash": "6da056f9a86140ea55020d17ffbdfb42c2656fca4204f713b06ee4dbc857dc15"
+  },
+  {
+    "query_id": "item_v11_080",
+    "split": "VALIDATION",
+    "question": "How do the contrastive optimization methodologies compare between Multimodal Representation Learning and Dense Retrieval & Reranking Models studies?",
+    "answer": "Based on the literature review regarding how do the contrastive optimization methodologies compare between multimodal representation learning and dense retrieval & reranking models studies, the evidence indicates the following: D.1\nLimitations, failure cases and opportunities\nHere, we describe some limitations and failure cases of our models, as well as opportunities for\nfurther improving our models and extending their abilities. [2] Oord et al., 2018; Bachman et al., 2019). [4]",
+    "context_hash": "ed6832d37a8bb7f76ca2315de933adf03d9e4c328c6bd28ea54ee147e4db592b"
+  },
+  {
+    "query_id": "item_v11_081",
+    "split": "VALIDATION",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Multimodal Representation Learning.",
+    "answer": "Based on the literature review regarding synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% precision@5 in multimodal representation learning., the evidence indicates the following: we train the G to minimize Ex\u223cpdata(x)[(D(G(x)) \u22121)2]\nand train the D to minimize Ey\u223cpdata(y)[(D(y) \u22121)2] +\nEx\u223cpdata(x)[D(G(x))2]. [2] The model\nis implemented in a fully convolutional manner (using 1\u00d71\nconvolutions in place of fully connected layers). [4]",
+    "context_hash": "040eafc644c994cb7bf7da5f554e6be40d098e5119b1e3b41a25ec3c203208aa"
+  },
+  {
+    "query_id": "item_v11_082",
+    "split": "VALIDATION",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Dense Retrieval & Reranking Models.",
+    "answer": "Based on the literature review regarding synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% precision@5 in dense retrieval & reranking models., the evidence indicates the following: Query routing for retrieval-augmented generation\n aims to assign an input query to the most\nsuitable search engine. [2] In summary, sparse retrieval models achieve an optimal balance in cross-domain transfer,\nretrieval efficiency, and overall effectiveness. [4]",
+    "context_hash": "733232305bcac8d4dd4c637b83e3490e8a969f2d8886f12880357776e5707aaf"
+  },
+  {
+    "query_id": "item_v11_083",
+    "split": "VALIDATION",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Deep Learning & Neural Architectures.",
+    "answer": "Based on the literature review regarding synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% precision@5 in deep learning & neural architectures., the evidence indicates the following: This amounts to 3 teraFLOP/second per GPU which is about 50% of peak\ntheoretical performance. [2] For any domain involving complex, structured, or high-dimensional\ndata, deep learning has rapidly become the dominant approach for\ntraining classifiers. [4]",
+    "context_hash": "8491bcefba79dc09276d39c5d7e26f4b8c387d8c4093d0f40cb91adcb9301fd0"
+  },
+  {
+    "query_id": "item_v11_084",
+    "split": "VALIDATION",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Large Language Models & Evaluation.",
+    "answer": "Based on the literature review regarding synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% precision@5 in large language models & evaluation., the evidence indicates the following: This sets a constant learning rate of 0.01 for the first 104 steps,\nthen exponentially decays the learning rate until pre-training is over. [2] These models have nearly 8 times the amount of computation per data example as\nthe models in Deep Speech 1 making fast optimization and computation critical. [4]",
+    "context_hash": "63ec76780a7a4cb8a67d0d139fcc69f1882d2fc45c1418323a4deee7b5856c4f"
+  },
+  {
+    "query_id": "item_v11_085",
+    "split": "VALIDATION",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Multimodal Representation Learning.",
+    "answer": "Based on the literature review regarding synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% precision@5 in multimodal representation learning., the evidence indicates the following: we train the G to minimize Ex\u223cpdata(x)[(D(G(x)) \u22121)2]\nand train the D to minimize Ey\u223cpdata(y)[(D(y) \u22121)2] +\nEx\u223cpdata(x)[D(G(x))2]. [2] The model\nis implemented in a fully convolutional manner (using 1\u00d71\nconvolutions in place of fully connected layers). [4]",
+    "context_hash": "040eafc644c994cb7bf7da5f554e6be40d098e5119b1e3b41a25ec3c203208aa"
+  },
+  {
+    "query_id": "item_v11_086",
+    "split": "TEST",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Dense Retrieval & Reranking Models.",
+    "answer": "Based on the literature review regarding synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% precision@5 in dense retrieval & reranking models., the evidence indicates the following: Query routing for retrieval-augmented generation\n aims to assign an input query to the most\nsuitable search engine. [2] In summary, sparse retrieval models achieve an optimal balance in cross-domain transfer,\nretrieval efficiency, and overall effectiveness. [4]",
+    "context_hash": "733232305bcac8d4dd4c637b83e3490e8a969f2d8886f12880357776e5707aaf"
+  },
+  {
+    "query_id": "item_v11_087",
+    "split": "TEST",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Deep Learning & Neural Architectures.",
+    "answer": "Based on the literature review regarding synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% precision@5 in deep learning & neural architectures., the evidence indicates the following: This amounts to 3 teraFLOP/second per GPU which is about 50% of peak\ntheoretical performance. [2] For any domain involving complex, structured, or high-dimensional\ndata, deep learning has rapidly become the dominant approach for\ntraining classifiers. [4]",
+    "context_hash": "8491bcefba79dc09276d39c5d7e26f4b8c387d8c4093d0f40cb91adcb9301fd0"
+  },
+  {
+    "query_id": "item_v11_088",
+    "split": "TEST",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Large Language Models & Evaluation.",
+    "answer": "Based on the literature review regarding synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% precision@5 in large language models & evaluation., the evidence indicates the following: This sets a constant learning rate of 0.01 for the first 104 steps,\nthen exponentially decays the learning rate until pre-training is over. [2] These models have nearly 8 times the amount of computation per data example as\nthe models in Deep Speech 1 making fast optimization and computation critical. [4]",
+    "context_hash": "63ec76780a7a4cb8a67d0d139fcc69f1882d2fc45c1418323a4deee7b5856c4f"
+  },
+  {
+    "query_id": "item_v11_089",
+    "split": "TEST",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Multimodal Representation Learning.",
+    "answer": "Based on the literature review regarding synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% precision@5 in multimodal representation learning., the evidence indicates the following: we train the G to minimize Ex\u223cpdata(x)[(D(G(x)) \u22121)2]\nand train the D to minimize Ey\u223cpdata(y)[(D(y) \u22121)2] +\nEx\u223cpdata(x)[D(G(x))2]. [2] The model\nis implemented in a fully convolutional manner (using 1\u00d71\nconvolutions in place of fully connected layers). [4]",
+    "context_hash": "040eafc644c994cb7bf7da5f554e6be40d098e5119b1e3b41a25ec3c203208aa"
+  },
+  {
+    "query_id": "item_v11_090",
+    "split": "TEST",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Dense Retrieval & Reranking Models.",
+    "answer": "Based on the literature review regarding synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% precision@5 in dense retrieval & reranking models., the evidence indicates the following: Query routing for retrieval-augmented generation\n aims to assign an input query to the most\nsuitable search engine. [2] In summary, sparse retrieval models achieve an optimal balance in cross-domain transfer,\nretrieval efficiency, and overall effectiveness. [4]",
+    "context_hash": "733232305bcac8d4dd4c637b83e3490e8a969f2d8886f12880357776e5707aaf"
+  },
+  {
+    "query_id": "item_v11_091",
+    "split": "TEST",
+    "question": "Does the study on Dense Retrieval & Reranking Models claim a 99.9% accuracy score with zero latency overhead?",
+    "answer": "Based on the literature review regarding does the study on dense retrieval & reranking models claim a 99.9% accuracy score with zero latency overhead, the evidence indicates the following: We randomly select 10M\ninstances as training set and use the rest as evaluation set. [2] In summary, sparse retrieval models achieve an optimal balance in cross-domain transfer,\nretrieval efficiency, and overall effectiveness. [4]",
+    "context_hash": "eb8386a67dc41ea048eb3ca6d2e84340c6698d5db58e47be06036defa4f5cd74"
+  },
+  {
+    "query_id": "item_v11_092",
+    "split": "TEST",
+    "question": "Does the study on Deep Learning & Neural Architectures claim a 99.9% accuracy score with zero latency overhead?",
+    "answer": "Based on the literature review regarding does the study on deep learning & neural architectures claim a 99.9% accuracy score with zero latency overhead, the evidence indicates the following: The Shuf\ufb02eNet\nmodel achieves \u223c13\u00d7 actual speedup (theoretical speedup\nis 18\u00d7) over AlexNet [21] while maintaining comparable\naccuracy. [2] Its error rates of 3.46% on C10+ and 17.18% on\nC100+ are signi\ufb01cantly lower than the error rates achieved\nby wide ResNet architecture [42]. [4]",
+    "context_hash": "491a0ae20a63a38eb162ef0decf044d58d73e29b51ab8191abebbd0c0c75f26c"
+  },
+  {
+    "query_id": "item_v11_093",
+    "split": "TEST",
+    "question": "Does the study on Large Language Models & Evaluation claim a 99.9% accuracy score with zero latency overhead?",
+    "answer": "Based on the literature review regarding does the study on large language models & evaluation claim a 99.9% accuracy score with zero latency overhead, the evidence indicates the following: The GLUE webpage notes that there are issues\nwith the construction of this dataset, 15 and every\ntrained system that\u2019s been submitted to GLUE has\nperformed worse than the 65.1 baseline accuracy\nof predicting the majority class. [2] A useful metric for measuring the\nperformance of acoustic models is frame accuracy, which is measured at each st for all timesteps\nt. [4]",
+    "context_hash": "c44e23b65e09b7e98b66d429d6025dd2738c30dec7036fc3be0c2476b1749760"
+  },
+  {
+    "query_id": "item_v11_094",
+    "split": "TEST",
+    "question": "Does the study on Multimodal Representation Learning claim a 99.9% accuracy score with zero latency overhead?",
+    "answer": "Based on the literature review regarding does the study on multimodal representation learning claim a 99.9% accuracy score with zero latency overhead, the evidence indicates the following: \u2013\nLearned: Unified multimodal embeddings, Cross-modal representations (e.g., CLIP, SAM). [2] To evaluate\n the learned representations, we follow the widely used\nlinear evaluation protocol (Zhang et al., 2016; Oord et al.,\n2018; Bachman et al., 2019; Kolesnikov et al., 2019), where\na linear classi\ufb01er is trained on top of the frozen base network\n, and test accuracy is used as a proxy for representation\nquality. [4]",
+    "context_hash": "513d75447686d3d73dd7949a7d1c1881223e9a64465e1465d16351774a87bfc1"
+  },
+  {
+    "query_id": "item_v11_095",
+    "split": "TEST",
+    "question": "Does the study on Dense Retrieval & Reranking Models claim a 99.9% accuracy score with zero latency overhead?",
+    "answer": "Based on the literature review regarding does the study on dense retrieval & reranking models claim a 99.9% accuracy score with zero latency overhead, the evidence indicates the following: We randomly select 10M\ninstances as training set and use the rest as evaluation set. [2] In summary, sparse retrieval models achieve an optimal balance in cross-domain transfer,\nretrieval efficiency, and overall effectiveness. [4]",
+    "context_hash": "eb8386a67dc41ea048eb3ca6d2e84340c6698d5db58e47be06036defa4f5cd74"
+  },
+  {
+    "query_id": "item_v11_096",
+    "split": "TEST",
+    "question": "What non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors?",
+    "answer": "Based on the literature review regarding what non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors, the evidence indicates the following: Davis, Blip\nglitches in Advanced LIGO data, Classical and Quantum Gravity 36, 15,\np. [2] (2.30)\n1\n2g2(\u00b5)\n=\n1\n2g2 + 2(1 \u2212d \u22122\n8\n)(\u03a0P \u2212\u03a0NP) \u22122(1 \u2212d \u22122\n8\n)(\u00b52)\u2212\u01eb\n(4\u03c0)\nd\n2\n1\n\u01eb\n=\n1\n2g2 + 3\n2\n1\n(4\u03c0)2\n\u0014\n\u2212\u03b3 \u2212\nZ 1\n0\ndx ln x(1 \u2212x) p2\n\u00b52\n\u0015\n\u22123\n2\u03a0NP. [4]",
+    "context_hash": "72f3a5a29320476d71f9736b1da8a0d60ba007721eece97bd4609b0a947031fc"
+  },
+  {
+    "query_id": "item_v11_097",
+    "split": "TEST",
+    "question": "What non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors?",
+    "answer": "Based on the literature review regarding what non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors, the evidence indicates the following: Davis, Blip\nglitches in Advanced LIGO data, Classical and Quantum Gravity 36, 15,\np. [2] (2.30)\n1\n2g2(\u00b5)\n=\n1\n2g2 + 2(1 \u2212d \u22122\n8\n)(\u03a0P \u2212\u03a0NP) \u22122(1 \u2212d \u22122\n8\n)(\u00b52)\u2212\u01eb\n(4\u03c0)\nd\n2\n1\n\u01eb\n=\n1\n2g2 + 3\n2\n1\n(4\u03c0)2\n\u0014\n\u2212\u03b3 \u2212\nZ 1\n0\ndx ln x(1 \u2212x) p2\n\u00b52\n\u0015\n\u22123\n2\u03a0NP. [4]",
+    "context_hash": "72f3a5a29320476d71f9736b1da8a0d60ba007721eece97bd4609b0a947031fc"
+  },
+  {
+    "query_id": "item_v11_098",
+    "split": "TEST",
+    "question": "What non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors?",
+    "answer": "Based on the literature review regarding what non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors, the evidence indicates the following: Davis, Blip\nglitches in Advanced LIGO data, Classical and Quantum Gravity 36, 15,\np. [2] (2.30)\n1\n2g2(\u00b5)\n=\n1\n2g2 + 2(1 \u2212d \u22122\n8\n)(\u03a0P \u2212\u03a0NP) \u22122(1 \u2212d \u22122\n8\n)(\u00b52)\u2212\u01eb\n(4\u03c0)\nd\n2\n1\n\u01eb\n=\n1\n2g2 + 3\n2\n1\n(4\u03c0)2\n\u0014\n\u2212\u03b3 \u2212\nZ 1\n0\ndx ln x(1 \u2212x) p2\n\u00b52\n\u0015\n\u22123\n2\u03a0NP. [4]",
+    "context_hash": "72f3a5a29320476d71f9736b1da8a0d60ba007721eece97bd4609b0a947031fc"
+  },
+  {
+    "query_id": "item_v11_099",
+    "split": "TEST",
+    "question": "What non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors?",
+    "answer": "Based on the literature review regarding what non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors, the evidence indicates the following: Davis, Blip\nglitches in Advanced LIGO data, Classical and Quantum Gravity 36, 15,\np. [2] (2.30)\n1\n2g2(\u00b5)\n=\n1\n2g2 + 2(1 \u2212d \u22122\n8\n)(\u03a0P \u2212\u03a0NP) \u22122(1 \u2212d \u22122\n8\n)(\u00b52)\u2212\u01eb\n(4\u03c0)\nd\n2\n1\n\u01eb\n=\n1\n2g2 + 3\n2\n1\n(4\u03c0)2\n\u0014\n\u2212\u03b3 \u2212\nZ 1\n0\ndx ln x(1 \u2212x) p2\n\u00b52\n\u0015\n\u22123\n2\u03a0NP. [4]",
+    "context_hash": "72f3a5a29320476d71f9736b1da8a0d60ba007721eece97bd4609b0a947031fc"
+  },
+  {
+    "query_id": "item_v11_100",
+    "split": "TEST",
+    "question": "What non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors?",
+    "answer": "Based on the literature review regarding what non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors, the evidence indicates the following: Davis, Blip\nglitches in Advanced LIGO data, Classical and Quantum Gravity 36, 15,\np. [2] (2.30)\n1\n2g2(\u00b5)\n=\n1\n2g2 + 2(1 \u2212d \u22122\n8\n)(\u03a0P \u2212\u03a0NP) \u22122(1 \u2212d \u22122\n8\n)(\u00b52)\u2212\u01eb\n(4\u03c0)\nd\n2\n1\n\u01eb\n=\n1\n2g2 + 3\n2\n1\n(4\u03c0)2\n\u0014\n\u2212\u03b3 \u2212\nZ 1\n0\ndx ln x(1 \u2212x) p2\n\u00b52\n\u0015\n\u22123\n2\u03a0NP. [4]",
+    "context_hash": "72f3a5a29320476d71f9736b1da8a0d60ba007721eece97bd4609b0a947031fc"
+  }
+]

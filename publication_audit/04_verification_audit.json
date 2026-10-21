@@ -1,0 +1,50 @@
+{
+  "verification_audit": {
+    "ground_truth_status": "VERIFIED",
+    "pipeline_stages": {
+      "claim_extraction": {
+        "file": "backend/app/services/assistant/claim_extractor.py",
+        "method": "Splits generated response into sentences via regex [.!?], categorizes claims into 'numerical' (contains digits/%) or 'factual_general', and pairs each claim with citation markers like [1], [2].",
+        "status": "VERIFIED"
+      },
+      "stage_a_deterministic": {
+        "file": "backend/app/services/assistant/claim_verifier.py",
+        "method": "Executes rule-based checks: (1) Numerical mismatch: verifies if numbers in claim exist in cited evidence chunk; (2) Polarity/negation check: detects mismatch in negation terms ('not', 'never', 'failed to') between claim and evidence.",
+        "status": "VERIFIED"
+      },
+      "stage_b_nli_entailment": {
+        "file": "backend/app/services/assistant/claim_verifier.py",
+        "method": "Prompts Gemini 2.5 Flash to act as a strict scientific claim verifier using ONLY cited evidence context with zero outside knowledge. Returns STATUS (SUPPORTED, PARTIALLY_SUPPORTED, INSUFFICIENT_EVIDENCE, UNSUPPORTED) and REASON.",
+        "status": "VERIFIED"
+      },
+      "citation_validation": {
+        "file": "backend/app/services/assistant/enhanced_rag.py",
+        "method": "Checks whether cited numeric indices in text exist in the citation_map. Returns valid_citations, invalid_citations, and citation_integrity boolean.",
+        "status": "VERIFIED"
+      },
+      "citation_repair": {
+        "file": "backend/app/services/assistant/citation_repair.py",
+        "method": "Iterates over un-cited or unsupported claims and checks against available_evidence chunks for unambiguous substring or numerical+keyword overlap. If exactly ONE match is found in available_evidence, repairs citation_ids and sets citation_repaired=True.",
+        "status": "VERIFIED"
+      }
+    },
+    "citation_repair_leakage_audit": {
+      "question": "Can citation repair accidentally introduce sources that were not present in the retrieved evidence?",
+      "verdict": "NO (VERIFIED)",
+      "explanation": "CitationRepair.repair_citations receives available_evidence, which is bounded by deduplicated_evidence or current_evidence in EnhancedRAG / IterativeRAG. It only matches against chunks already in available_evidence. However, if available_evidence contains retrieved chunks that were NOT cited in the draft answer, citation repair can assign a citation to a retrieved chunk that the LLM draft omitted. It cannot introduce outside database chunks not present in available_evidence."
+    },
+    "all_possible_verification_statuses": [
+      "SUPPORTED",
+      "PARTIALLY_SUPPORTED",
+      "INSUFFICIENT_EVIDENCE",
+      "UNSUPPORTED",
+      "VERIFICATION_UNAVAILABLE"
+    ],
+    "verification_method_identifiers": [
+      "stage_a_deterministic",
+      "stage_b_semantic",
+      "conservative_repair",
+      "fallback"
+    ]
+  }
+}

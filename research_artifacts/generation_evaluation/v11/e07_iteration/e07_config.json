@@ -1,0 +1,17 @@
+{
+  "experiment": "E07",
+  "title": "Authoritative Iterative Refinement Evaluation",
+  "status": "VALID",
+  "dataset": "ds_nexus_v11",
+  "total_queries": 100,
+  "splits": {
+    "DEV": 70,
+    "VAL": 15,
+    "TEST": 15
+  },
+  "model": "gemini-3.5-flash-lite",
+  "temperature": 0.0,
+  "max_refinement_cycles": 2,
+  "context_source": "B3_Hybrid_RRF k=20 live canonical context",
+  "bootstrap_resamples": 1000
+}

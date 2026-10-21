@@ -1,0 +1,8 @@
+{
+  "total_queries": 100,
+  "exact_set_matches": 100,
+  "exact_order_matches": 100,
+  "mismatches": 0,
+  "percentage_exact_match": 100.0,
+  "controlled_intervention_status": "CONTROLLED_INTERVENTION_VALIDATED_INDEPENDENTLY"
+}

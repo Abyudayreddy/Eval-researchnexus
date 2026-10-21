@@ -1,0 +1,56 @@
+{
+  "benchmark_audit": {
+    "ground_truth_status": "PARTIAL",
+    "dataset_identifier": "ds_nexus_v10",
+    "name": "ResearchNexus Scientific Retrieval Benchmark v1.0",
+    "version": "v1.0",
+    "total_records": 100,
+    "splits": {
+      "DEVELOPMENT": 70,
+      "VALIDATION": 15,
+      "TEST": 15
+    },
+    "question_category_distribution": {
+      "SINGLE_PAPER": 15,
+      "MULTI_PAPER": 15,
+      "METHODOLOGY": 15,
+      "RESULTS": 10,
+      "EVIDENCE": 10,
+      "COMPARISON": 10,
+      "SYNTHESIS": 10,
+      "UNANSWERABLE": 10,
+      "ADVERSARIAL": 5
+    },
+    "gold_annotations": {
+      "gold_papers": "JSON list in expected_paper_ids per EvaluationItem record",
+      "gold_evidence": "JSON list in expected_evidence_ids per EvaluationItem record",
+      "reference_answers": "Populated in reference_answer column",
+      "gold_claims": "JSON list in gold_claims column",
+      "gold_verification_status": "100% gold verified (gold_verified = 'TRUE')"
+    },
+    "metadata_fields": [
+      "item_id",
+      "dataset_id",
+      "split",
+      "question",
+      "question_type",
+      "domain",
+      "difficulty",
+      "expected_paper_ids",
+      "expected_evidence_ids",
+      "reference_answer",
+      "gold_claims",
+      "gold_verified",
+      "annotation_origin"
+    ],
+    "frozen_status": {
+      "is_frozen": "TRUE",
+      "status": "READY",
+      "frozen_item_ids_range": "item_v10_001 to item_v10_100"
+    },
+    "raw_artifact_traceability_audit": {
+      "traced_to_raw_artifacts": "PARTIAL",
+      "findings": "While raw markdown evaluation reports (E01, E02, E03, E04) exist in root with figure-ready JSON snippets, the backend evaluation_service.py executes mock simulation functions (_simulate_retriever) rather than querying SQLite/PostgreSQL EvaluationItem DB records directly. Therefore, running benchmark API calls produces simulated results rather than executing live evaluations against ds_nexus_v10 DB records."
+    }
+  }
+}

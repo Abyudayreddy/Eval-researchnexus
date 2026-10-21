@@ -1,0 +1,23 @@
+{
+  "experiment": "E10",
+  "title": "Authoritative ResearchNexus Component Ablation Study (Audited Provenance)",
+  "status": "VALID",
+  "latency_audit_status": "CORRECTED",
+  "dataset": "ds_nexus_v11",
+  "total_queries": 100,
+  "splits": {
+    "DEV": 70,
+    "VAL": 15,
+    "TEST": 15
+  },
+  "ablation_conditions": [
+    "A0_Full (Hybrid+BGE+Verification+Repair+Iteration)",
+    "A1_Minus_Iteration (Hybrid+BGE+Verification+Repair)",
+    "A2_Minus_Citation_Repair (Hybrid+BGE+Verification+Iteration)",
+    "A3_Naive_RAG (Hybrid+BGE; Combined Verification-and-Repair Pipeline Removal)",
+    "A4_Minus_BGE (Hybrid RRF raw rank)",
+    "A5_Dense_Only (B1_Dense k=20 pure retrieval baseline; downstream OFF)",
+    "A6_BM25_Only (B2_BM25 k=20 pure retrieval baseline; downstream OFF)"
+  ],
+  "bootstrap_resamples": 1000
+}

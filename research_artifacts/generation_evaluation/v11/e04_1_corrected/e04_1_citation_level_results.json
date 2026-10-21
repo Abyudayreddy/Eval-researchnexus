@@ -1,0 +1,702 @@
+[
+  {
+    "query_id": "item_v11_001",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 1,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_002",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_003",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 2,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_004",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_005",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_006",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_007",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 2,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_008",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_009",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_010",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_011",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 2,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_012",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 2,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_013",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_014",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_015",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 2,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_016",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 2,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_017",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_018",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_019",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 2,
+    "verified_citation_count": 2,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_020",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_021",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_022",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_023",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_024",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_025",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_026",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_027",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_028",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_029",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_030",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_031",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_032",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_033",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_034",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_035",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_036",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_037",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_038",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_039",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_040",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_041",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_042",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_043",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_044",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_045",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_046",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_047",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_048",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_049",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_050",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_051",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 1,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_052",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_053",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_054",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_055",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_056",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_057",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_058",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_059",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 1,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_060",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_061",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_062",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_063",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_064",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_065",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_066",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_067",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 1,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_068",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_069",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_070",
+    "split": "DEVELOPMENT",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_071",
+    "split": "VALIDATION",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_072",
+    "split": "VALIDATION",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_073",
+    "split": "VALIDATION",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_074",
+    "split": "VALIDATION",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_075",
+    "split": "VALIDATION",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_076",
+    "split": "VALIDATION",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_077",
+    "split": "VALIDATION",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_078",
+    "split": "VALIDATION",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_079",
+    "split": "VALIDATION",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_080",
+    "split": "VALIDATION",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_081",
+    "split": "VALIDATION",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_082",
+    "split": "VALIDATION",
+    "naive_citation_count": 1,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_083",
+    "split": "VALIDATION",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_084",
+    "split": "VALIDATION",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_085",
+    "split": "VALIDATION",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_086",
+    "split": "TEST",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_087",
+    "split": "TEST",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_088",
+    "split": "TEST",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_089",
+    "split": "TEST",
+    "naive_citation_count": 1,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_090",
+    "split": "TEST",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_091",
+    "split": "TEST",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_092",
+    "split": "TEST",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_093",
+    "split": "TEST",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_094",
+    "split": "TEST",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_095",
+    "split": "TEST",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_096",
+    "split": "TEST",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_097",
+    "split": "TEST",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_098",
+    "split": "TEST",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_099",
+    "split": "TEST",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  },
+  {
+    "query_id": "item_v11_100",
+    "split": "TEST",
+    "naive_citation_count": 0,
+    "verified_citation_count": 0,
+    "repaired_citations_count": 0
+  }
+]

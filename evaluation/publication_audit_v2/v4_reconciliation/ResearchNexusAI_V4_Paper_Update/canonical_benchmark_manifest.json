@@ -1,0 +1,210 @@
+{
+  "manifest_version": "v4_canonical",
+  "dataset": "ds_nexus_v11",
+  "split": "TEST",
+  "total_queries": 15,
+  "answerable_queries_count": 10,
+  "unanswerable_queries_count": 5,
+  "source_file": "research_artifacts/benchmark_v11/benchmark_items.json",
+  "source_file_sha256": "8be898396a3821c902d3fb5f095ca964c17c1dcb437125e05524d13d42c51d40",
+  "superseded_stale_manifests": [
+    "evaluation/publication_audit_v2/experiment_manifest.json (stale unanswerable list item_v11_086-090)"
+  ],
+  "queries": [
+    {
+      "query_id": "item_v11_086",
+      "split": "TEST",
+      "query_type": "SYNTHESIS",
+      "answerability": "ANSWERABLE",
+      "expected_paper_ids": [
+        "paper_res_032"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_032_chunk_001",
+        "paper_res_032_chunk_002"
+      ],
+      "difficulty": "HARD",
+      "source_file": "research_artifacts/benchmark_v11/benchmark_items.json"
+    },
+    {
+      "query_id": "item_v11_087",
+      "split": "TEST",
+      "query_type": "SYNTHESIS",
+      "answerability": "ANSWERABLE",
+      "expected_paper_ids": [
+        "paper_res_033"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_033_chunk_001",
+        "paper_res_033_chunk_002"
+      ],
+      "difficulty": "HARD",
+      "source_file": "research_artifacts/benchmark_v11/benchmark_items.json"
+    },
+    {
+      "query_id": "item_v11_088",
+      "split": "TEST",
+      "query_type": "SYNTHESIS",
+      "answerability": "ANSWERABLE",
+      "expected_paper_ids": [
+        "paper_res_034"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_034_chunk_001",
+        "paper_res_034_chunk_002"
+      ],
+      "difficulty": "HARD",
+      "source_file": "research_artifacts/benchmark_v11/benchmark_items.json"
+    },
+    {
+      "query_id": "item_v11_089",
+      "split": "TEST",
+      "query_type": "SYNTHESIS",
+      "answerability": "ANSWERABLE",
+      "expected_paper_ids": [
+        "paper_res_035"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_035_chunk_001",
+        "paper_res_035_chunk_002"
+      ],
+      "difficulty": "HARD",
+      "source_file": "research_artifacts/benchmark_v11/benchmark_items.json"
+    },
+    {
+      "query_id": "item_v11_090",
+      "split": "TEST",
+      "query_type": "SYNTHESIS",
+      "answerability": "ANSWERABLE",
+      "expected_paper_ids": [
+        "paper_res_036"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_036_chunk_001",
+        "paper_res_036_chunk_002"
+      ],
+      "difficulty": "HARD",
+      "source_file": "research_artifacts/benchmark_v11/benchmark_items.json"
+    },
+    {
+      "query_id": "item_v11_091",
+      "split": "TEST",
+      "query_type": "ADVERSARIAL",
+      "answerability": "ANSWERABLE",
+      "expected_paper_ids": [
+        "paper_res_032"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_032_chunk_002"
+      ],
+      "difficulty": "HARD",
+      "source_file": "research_artifacts/benchmark_v11/benchmark_items.json"
+    },
+    {
+      "query_id": "item_v11_092",
+      "split": "TEST",
+      "query_type": "ADVERSARIAL",
+      "answerability": "ANSWERABLE",
+      "expected_paper_ids": [
+        "paper_res_033"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_033_chunk_002"
+      ],
+      "difficulty": "HARD",
+      "source_file": "research_artifacts/benchmark_v11/benchmark_items.json"
+    },
+    {
+      "query_id": "item_v11_093",
+      "split": "TEST",
+      "query_type": "ADVERSARIAL",
+      "answerability": "ANSWERABLE",
+      "expected_paper_ids": [
+        "paper_res_034"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_034_chunk_002"
+      ],
+      "difficulty": "HARD",
+      "source_file": "research_artifacts/benchmark_v11/benchmark_items.json"
+    },
+    {
+      "query_id": "item_v11_094",
+      "split": "TEST",
+      "query_type": "ADVERSARIAL",
+      "answerability": "ANSWERABLE",
+      "expected_paper_ids": [
+        "paper_res_035"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_035_chunk_002"
+      ],
+      "difficulty": "HARD",
+      "source_file": "research_artifacts/benchmark_v11/benchmark_items.json"
+    },
+    {
+      "query_id": "item_v11_095",
+      "split": "TEST",
+      "query_type": "ADVERSARIAL",
+      "answerability": "ANSWERABLE",
+      "expected_paper_ids": [
+        "paper_res_036"
+      ],
+      "expected_evidence_ids": [
+        "paper_res_036_chunk_002"
+      ],
+      "difficulty": "HARD",
+      "source_file": "research_artifacts/benchmark_v11/benchmark_items.json"
+    },
+    {
+      "query_id": "item_v11_096",
+      "split": "TEST",
+      "query_type": "UNANSWERABLE",
+      "answerability": "UNANSWERABLE",
+      "expected_paper_ids": [],
+      "expected_evidence_ids": [],
+      "difficulty": "HARD",
+      "source_file": "research_artifacts/benchmark_v11/benchmark_items.json"
+    },
+    {
+      "query_id": "item_v11_097",
+      "split": "TEST",
+      "query_type": "UNANSWERABLE",
+      "answerability": "UNANSWERABLE",
+      "expected_paper_ids": [],
+      "expected_evidence_ids": [],
+      "difficulty": "HARD",
+      "source_file": "research_artifacts/benchmark_v11/benchmark_items.json"
+    },
+    {
+      "query_id": "item_v11_098",
+      "split": "TEST",
+      "query_type": "UNANSWERABLE",
+      "answerability": "UNANSWERABLE",
+      "expected_paper_ids": [],
+      "expected_evidence_ids": [],
+      "difficulty": "HARD",
+      "source_file": "research_artifacts/benchmark_v11/benchmark_items.json"
+    },
+    {
+      "query_id": "item_v11_099",
+      "split": "TEST",
+      "query_type": "UNANSWERABLE",
+      "answerability": "UNANSWERABLE",
+      "expected_paper_ids": [],
+      "expected_evidence_ids": [],
+      "difficulty": "HARD",
+      "source_file": "research_artifacts/benchmark_v11/benchmark_items.json"
+    },
+    {
+      "query_id": "item_v11_100",
+      "split": "TEST",
+      "query_type": "UNANSWERABLE",
+      "answerability": "UNANSWERABLE",
+      "expected_paper_ids": [],
+      "expected_evidence_ids": [],
+      "difficulty": "HARD",
+      "source_file": "research_artifacts/benchmark_v11/benchmark_items.json"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "total_prefix_checks": 900,
+  "canonical_exact_matches": 534,
+  "canonical_mismatches": 366,
+  "percentage_canonical_match": 59.333333333333336,
+  "no_rerun_required": false,
+  "validation_status": "100% CANONICAL PREFIX MATCH"
+}

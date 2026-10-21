@@ -1,0 +1,32 @@
+{
+  "execution_state_audit": {
+    "ground_truth_status": "PARTIAL",
+    "backend_state_machine": {
+      "file": "backend/app/api/papers.py",
+      "model": "backend/app/models/search_experiment.py",
+      "status": "VERIFIED",
+      "authoritative_states": [
+        "INITIALIZING",
+        "LOCAL_RETRIEVING",
+        "ONLINE_RETRIEVING",
+        "MERGING",
+        "RERANKING",
+        "EVIDENCE_ASSEMBLY",
+        "COMPLETED_WITH_RESULTS",
+        "COMPLETED_NO_RESULTS",
+        "DEGRADED",
+        "FAILED"
+      ],
+      "terminal_flag_support": {
+        "status": "VERIFIED",
+        "field": "terminal (boolean)",
+        "terminal_states": ["COMPLETED_WITH_RESULTS", "COMPLETED_NO_RESULTS", "DEGRADED", "FAILED"]
+      }
+    },
+    "frontend_ui_state_alignment_audit": {
+      "status": "PARTIAL",
+      "issue_detected": "While backend/app/api/papers.py updates SearchExperiment status through all 10 authoritative states, some frontend search handlers (e.g. in HybridSearchPage.tsx or LocalProgressPanel.tsx) check results.length === 0 before polling reaches terminal=true. This can briefly trigger a false '0 results' banner while retrieval status is still MERGING or RERANKING."
+    },
+    "required_ui_guard": "Frontend must check terminal === true AND (status === 'COMPLETED_NO_RESULTS' || status === 'FAILED') before rendering empty result UI."
+  }
+}

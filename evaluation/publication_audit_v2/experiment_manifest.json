@@ -1,0 +1,41 @@
+{
+  "audit_version": "publication_audit_v2",
+  "timestamp": "2026-10-17T05:40:00Z",
+  "benchmark": {
+    "name": "ds_nexus_v11",
+    "total_queries": 100,
+    "splits": {
+      "DEV": 70,
+      "VAL": 15,
+      "TEST": 15
+    },
+    "unanswerable_queries_test": [
+      "item_v11_086",
+      "item_v11_087",
+      "item_v11_088",
+      "item_v11_089",
+      "item_v11_090"
+    ]
+  },
+  "runtime_models": {
+    "generator_llm": "gemini-2.5-flash",
+    "temperature": 0.0,
+    "embedding_dense": "BAAI/bge-base-en-v1.5",
+    "reranker_cross_encoder": "BAAI/bge-reranker-base",
+    "rrf_k": 60
+  },
+  "frozen_modules": {
+    "module_01": {
+      "domain": "Retrieval Baselines & Ablation",
+      "status": "FROZEN"
+    },
+    "module_02": {
+      "domain": "Answer Grounding & Claim Taxonomy",
+      "status": "FROZEN_REVISION_01"
+    },
+    "module_03": {
+      "domain": "Citation Validation & Repair",
+      "status": "FROZEN_REVISION_01"
+    }
+  }
+}

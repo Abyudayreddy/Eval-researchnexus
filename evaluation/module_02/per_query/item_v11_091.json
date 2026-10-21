@@ -1,0 +1,35 @@
+{
+  "query_id": "item_v11_091",
+  "split": "TEST",
+  "question": "Does the study on Dense Retrieval & Reranking Models claim a 99.9% accuracy score with zero latency overhead?",
+  "context_hash_naive": "ad30c836e1633d05344426e5b95b472b9aeef03eecc091f80c095d8383c543c4",
+  "context_hash_verified": "ad30c836e1633d05344426e5b95b472b9aeef03eecc091f80c095d8383c543c4",
+  "context_hash_match": true,
+  "evidence_count": 20,
+  "naive_metrics": {
+    "supported_claim_count": 0,
+    "partially_supported_claim_count": 0,
+    "insufficient_claim_count": 0,
+    "unsupported_claim_count": 2,
+    "citation_precision": 0.0,
+    "citation_coverage": 0.0,
+    "claim_support_rate": 0.0,
+    "unsupported_claim_rate": 1.0
+  },
+  "verified_metrics": {
+    "supported_claim_count": 0,
+    "partially_supported_claim_count": 0,
+    "insufficient_claim_count": 0,
+    "unsupported_claim_count": 3,
+    "citation_precision": 0.0,
+    "citation_coverage": 0.0,
+    "claim_support_rate": 0.0,
+    "unsupported_claim_rate": 1.0
+  },
+  "naive_has_unsupported": true,
+  "verified_has_unsupported": true,
+  "naive_latency_ms": 5294.33,
+  "verified_latency_ms": 7081.15,
+  "snapshot_hash": "ad30c836e1633d05344426e5b95b472b9aeef03eecc091f80c095d8383c543c4",
+  "hash_verified": true
+}

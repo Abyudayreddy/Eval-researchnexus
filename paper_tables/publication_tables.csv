@@ -1,0 +1,67 @@
+table_id,table_name,row_index,item_label,metric_label,value,unit,status_or_provenance
+Table_I,Dataset_Protocol,1,Total_Queries,Count,100,count,Frozen ds_nexus_v11
+Table_I,Dataset_Protocol,2,DEV_Queries,Count,70,count,Frozen ds_nexus_v11
+Table_I,Dataset_Protocol,3,VAL_Queries,Count,15,count,Frozen ds_nexus_v11
+Table_I,Dataset_Protocol,4,TEST_Queries,Count,15,count,Frozen ds_nexus_v11
+Table_I,Dataset_Protocol,5,Corpus_Papers,Count,40,count,Scientific Papers
+Table_I,Dataset_Protocol,6,Corpus_Chunks,Count,80,count,Text Chunks
+Table_II,Candidate_Retrieval,1,k=5,Recall@5,0.2700,rate,Canonical E03.3 Live
+Table_II,Candidate_Retrieval,1,k=5,Hit@5,0.3000,rate,Canonical E03.3 Live
+Table_II,Candidate_Retrieval,2,k=10,Recall@10,0.5700,rate,Canonical E03.3 Live
+Table_II,Candidate_Retrieval,2,k=10,Hit@10,0.6200,rate,Canonical E03.3 Live
+Table_II,Candidate_Retrieval,3,k=20,Recall@20,0.9500,rate,Canonical E03.3 Live
+Table_II,Candidate_Retrieval,3,k=20,Hit@20,1.0000,rate,Canonical E03.3 Live
+Table_II,Candidate_Retrieval,4,k=50,Recall@50,1.0000,rate,Canonical E03.3 Live
+Table_II,Candidate_Retrieval,4,k=50,Hit@50,1.0000,rate,Canonical E03.3 Live
+Table_III,Naive_vs_Verified,1,CSR,Naive_RAG,0.0533,rate,E04.1 Aggregate
+Table_III,Naive_vs_Verified,1,CSR,Verified_RAG,0.0350,rate,E04.1 Aggregate
+Table_III,Naive_vs_Verified,2,UCR,Naive_RAG,0.9467,rate,E04.1 Aggregate
+Table_III,Naive_vs_Verified,2,UCR,Verified_RAG,0.9650,rate,E04.1 Aggregate
+Table_III,Naive_vs_Verified,3,CP,Naive_RAG,0.0600,rate,E04.1 Aggregate
+Table_III,Naive_vs_Verified,3,CP,Verified_RAG,0.0400,rate,E04.1 Aggregate
+Table_III,Naive_vs_Verified,4,COV,Naive_RAG,0.0617,rate,E04.1 Aggregate
+Table_III,Naive_vs_Verified,4,COV,Verified_RAG,0.0433,rate,E04.1 Aggregate
+Table_III,Naive_vs_Verified,5,McNemar_Test,statistic,0.1667,stat,E04.1 McNemar
+Table_III,Naive_vs_Verified,6,McNemar_Test,p_value,0.6831,p_val,E04.1 McNemar (N.S.)
+Table_IV_A,Latency_Decomposition,1,Hybrid Retrieval,p50,6.56,ms,E09 Latency
+Table_IV_A,Latency_Decomposition,1,Hybrid Retrieval,p95,19.12,ms,E09 Latency
+Table_IV_A,Latency_Decomposition,2,Pure BGE Inference,p50,531.41,ms,E09 Latency
+Table_IV_A,Latency_Decomposition,2,Pure BGE Inference,p95,4246.05,ms,E09 Latency
+Table_IV_A,Latency_Decomposition,3,Hybrid + BGE Combined,p50,535.06,ms,E09 Latency
+Table_IV_A,Latency_Decomposition,3,Hybrid + BGE Combined,p95,4251.51,ms,E09 Latency
+Table_IV_B,Iterative_Refinement,1,Iteration OFF,Mean_Latency,5691.35,ms,E07.1 Iteration
+Table_IV_B,Iterative_Refinement,2,Iteration ON,Mean_Latency,12655.70,ms,E07.1 Iteration
+Table_IV_B,Iterative_Refinement,3,Quality_Shift,Delta_CSR,-0.0017,delta,E07.1 Permutation
+Table_IV_B,Iterative_Refinement,4,Quality_Shift,Permutation_p,1.0000,p_val,E07.1 Permutation (p=1.0)
+Table_IV_C,Provenance_Audit,1,Trace Completeness,Accuracy,1.0000,rate,E08 Provenance Audit
+Table_IV_C,Provenance_Audit,2,Claim-to-Evidence Accuracy,Accuracy,1.0000,rate,E08 Provenance Audit
+Table_IV_C,Provenance_Audit,3,Citation-to-Evidence Accuracy,Accuracy,1.0000,rate,E08 Provenance Audit
+Table_IV_C,Provenance_Audit,4,Offset Resolution Accuracy,Accuracy,1.0000,rate,E08 Provenance Audit
+Table_V,Component_Ablation,1,A0,CSR,0.0333,rate,E10 Ablation
+Table_V,Component_Ablation,1,A0,Mean_Latency,12655.70,ms,Direct
+Table_V,Component_Ablation,2,A1,CSR,0.0350,rate,E10 Ablation
+Table_V,Component_Ablation,2,A1,Mean_Latency,5691.35,ms,Direct
+Table_V,Component_Ablation,3,A2,CSR,0.0533,rate,E10 Ablation
+Table_V,Component_Ablation,3,A2,Mean_Latency,12610.70,ms,DERIVED
+Table_V,Component_Ablation,4,A3,CSR,0.0533,rate,E10 Ablation
+Table_V,Component_Ablation,4,A3,Mean_Latency,5767.46,ms,Direct
+Table_V,Component_Ablation,5,A4,CSR,0.0333,rate,E10 Ablation
+Table_V,Component_Ablation,5,A4,Mean_Latency,12124.29,ms,DERIVED
+Table_V,Component_Ablation,6,A5,CSR,0.0000,rate,E10 Ablation
+Table_V,Component_Ablation,6,A5,Mean_Latency,8.46,ms,Direct
+Table_V,Component_Ablation,7,A6,CSR,0.0333,rate,E10 Ablation
+Table_V,Component_Ablation,7,A6,Mean_Latency,0.98,ms,Direct
+Table_VI,Error_Taxonomy,1,UNSUPPORTED_CLAIM,Count,28,count,measured
+Table_VI,Error_Taxonomy,2,MISSING_CITATION,Count,28,count,measured
+Table_VI,Error_Taxonomy,3,CITATION_REPAIR_FAILURE,Count,27,count,measured
+Table_VI,Error_Taxonomy,4,ITERATION_FAILURE,Count,15,count,measured
+Table_VI,Error_Taxonomy,5,RETRIEVAL_MISS,Count,0,count,measured
+Table_VI,Error_Taxonomy,6,CANDIDATE_POOL_MISS,Count,0,count,measured
+Table_VI,Error_Taxonomy,7,RERANKING_ERROR,Count,0,count,measured
+Table_VI,Error_Taxonomy,8,EVIDENCE_SELECTION_ERROR,Count,0,count,measured
+Table_VI,Error_Taxonomy,9,CONTRADICTED_CLAIM,Count,0,count,measured
+Table_VI,Error_Taxonomy,10,WRONG_CITATION,Count,0,count,measured
+Table_VI,Error_Taxonomy,11,ONLINE_RETRIEVAL_FAILURE,Count,0,count,measured
+Table_VI,Error_Taxonomy,12,XAI_PROVENANCE_FAILURE,Count,0,count,measured
+Table_VI,Error_Taxonomy,13,VERIFICATION_FALSE_POSITIVE,Count,NOT MEASURED,note,unmeasured (E05 human GT unavailable)
+Table_VI,Error_Taxonomy,14,VERIFICATION_FALSE_NEGATIVE,Count,NOT MEASURED,note,unmeasured (E05 human GT unavailable)

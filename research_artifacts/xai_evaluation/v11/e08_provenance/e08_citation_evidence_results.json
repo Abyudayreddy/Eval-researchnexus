@@ -1,0 +1,92 @@
+[
+  {
+    "query_id": "item_v11_001",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_02",
+    "citation_id": "[1]",
+    "mapped_chunk_id": "paper_res_001_chunk_001",
+    "mapped_paper_id": "paper_res_001",
+    "status": "VALID",
+    "reason": "Citation marker correctly maps to retrieved evidence chunk."
+  },
+  {
+    "query_id": "item_v11_012",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_01",
+    "citation_id": "[1]",
+    "mapped_chunk_id": "paper_res_004_chunk_001",
+    "mapped_paper_id": "paper_res_004",
+    "status": "VALID",
+    "reason": "Citation marker correctly maps to retrieved evidence chunk."
+  },
+  {
+    "query_id": "item_v11_012",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_02",
+    "citation_id": "[1]",
+    "mapped_chunk_id": "paper_res_004_chunk_001",
+    "mapped_paper_id": "paper_res_004",
+    "status": "VALID",
+    "reason": "Citation marker correctly maps to retrieved evidence chunk."
+  },
+  {
+    "query_id": "item_v11_015",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_01",
+    "citation_id": "[1]",
+    "mapped_chunk_id": "paper_res_003_chunk_001",
+    "mapped_paper_id": "paper_res_003",
+    "status": "VALID",
+    "reason": "Citation marker correctly maps to retrieved evidence chunk."
+  },
+  {
+    "query_id": "item_v11_015",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_02",
+    "citation_id": "[1]",
+    "mapped_chunk_id": "paper_res_003_chunk_001",
+    "mapped_paper_id": "paper_res_003",
+    "status": "VALID",
+    "reason": "Citation marker correctly maps to retrieved evidence chunk."
+  },
+  {
+    "query_id": "item_v11_019",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_01",
+    "citation_id": "[1]",
+    "mapped_chunk_id": "paper_res_003_chunk_001",
+    "mapped_paper_id": "paper_res_003",
+    "status": "VALID",
+    "reason": "Citation marker correctly maps to retrieved evidence chunk."
+  },
+  {
+    "query_id": "item_v11_019",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_02",
+    "citation_id": "[1]",
+    "mapped_chunk_id": "paper_res_003_chunk_001",
+    "mapped_paper_id": "paper_res_003",
+    "status": "VALID",
+    "reason": "Citation marker correctly maps to retrieved evidence chunk."
+  },
+  {
+    "query_id": "item_v11_051",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_02",
+    "citation_id": "[1]",
+    "mapped_chunk_id": "paper_res_002_chunk_001",
+    "mapped_paper_id": "paper_res_002",
+    "status": "VALID",
+    "reason": "Citation marker correctly maps to retrieved evidence chunk."
+  },
+  {
+    "query_id": "item_v11_059",
+    "split": "DEVELOPMENT",
+    "claim_id": "claim_01",
+    "citation_id": "[1]",
+    "mapped_chunk_id": "paper_res_004_chunk_001",
+    "mapped_paper_id": "paper_res_004",
+    "status": "VALID",
+    "reason": "Citation marker correctly maps to retrieved evidence chunk."
+  }
+]

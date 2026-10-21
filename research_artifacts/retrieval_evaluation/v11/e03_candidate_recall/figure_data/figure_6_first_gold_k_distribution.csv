@@ -1,0 +1,16 @@
+config,first_gold_k,count,percentage
+B1_Dense,5,0,0.0
+B1_Dense,10,0,0.0
+B1_Dense,20,0,0.0
+B1_Dense,50,0,0.0
+B1_Dense,never,100,100.0
+B2_BM25,5,52,52.0
+B2_BM25,10,38,38.0
+B2_BM25,20,5,5.0
+B2_BM25,50,0,0.0
+B2_BM25,never,5,5.0
+B3_Hybrid_RRF,5,22,22.0
+B3_Hybrid_RRF,10,30,30.0
+B3_Hybrid_RRF,20,38,38.0
+B3_Hybrid_RRF,50,5,5.0
+B3_Hybrid_RRF,never,5,5.0

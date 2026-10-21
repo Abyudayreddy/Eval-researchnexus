@@ -1,0 +1,545 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", "Inter", "sans-serif";
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-background: var(--bg-main, #FFFFFF);
+  --color-foreground: var(--text-main, #0F172A);
+
+  --color-card: var(--bg-card, #FFFFFF);
+  --color-card-foreground: var(--text-main, #0F172A);
+
+  --color-popover: var(--bg-card, #FFFFFF);
+  --color-popover-foreground: var(--text-main, #0F172A);
+
+  --color-primary: var(--accent-primary, #10B981);
+  --color-primary-foreground: #FFFFFF;
+
+  --color-secondary: var(--accent-secondary, #059669);
+  --color-secondary-foreground: #FFFFFF;
+
+  --color-muted: var(--bg-subtle, #F7F8F6);
+  --color-muted-foreground: var(--text-muted, #64748B);
+
+  --color-accent: var(--accent-soft, #ECFDF5);
+  --color-accent-foreground: var(--accent-primary, #065F46);
+
+  --color-destructive: #EF4444;
+  --color-destructive-foreground: #FFFFFF;
+
+  --color-border: var(--border-color, #E8ECE9);
+  --color-input: var(--border-color, #E2E8F0);
+  --color-ring: var(--accent-primary, #10B981);
+
+  --radius-xl: 1.25rem;
+  --radius-lg: 1rem;
+  --radius-md: calc(1rem - 2px);
+  --radius-sm: calc(1rem - 4px);
+}
+
+/* ==========================================================================
+   CANONICAL GLOBAL THEME TOKENS: LIGHT, TRUE BLACK DARK, DUSK LAVENDER RELAX
+   ========================================================================== */
+
+/* 1. LIGHT MODE — Clean Academic Research Platform */
+:root,
+.theme-light {
+  --bg-main: #FFFFFF;
+  --bg-surface: #F7F8F6;
+  --bg-elevated: #FFFFFF;
+  --bg-subtle: #F1F4F1;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F9FAF9;
+  --bg-input: #FFFFFF;
+  --bg-overlay: rgba(15, 23, 42, 0.45);
+
+  --text-main: #14171A;
+  --text-sub: #3B434D;
+  --text-muted: #657786;
+  --text-inverse: #FFFFFF;
+
+  --border-color: #E2E8F0;
+  --border-subtle: #EDF2ED;
+
+  --accent-primary: #10B981;
+  --accent-secondary: #059669;
+  --accent-soft: #ECFDF5;
+
+  --success: #10B981;
+  --warning: #F59E0B;
+  --error: #EF4444;
+  --info: #3B82F6;
+
+  --card-shadow: 0 4px 20px -2px rgba(148, 163, 184, 0.08);
+  --modal-backdrop: rgba(15, 23, 42, 0.45);
+
+  /* Evidence & Result Card Tokens */
+  --evidence-bg: #F0FDF4;
+  --evidence-border: #DCFCE7;
+  --evidence-label: #059669;
+  --evidence-text: #374151;
+  --ask-ai-bg: #F5F3FF;
+  --ask-ai-text: #6D28D9;
+  --ask-ai-border: #DDD6FE;
+  --ask-ai-hover: #EDE9FE;
+  --ask-ai-icon: #7C3AED;
+
+  /* Scientific Animation Atmosphere Variables */
+  --animation-grid: rgba(51, 65, 85, 0.06);
+  --animation-grid-dot: rgba(51, 65, 85, 0.08);
+  --animation-primary: rgba(110, 80, 200, 0.16);
+  --animation-secondary: rgba(16, 185, 129, 0.15);
+  --animation-accent: rgba(139, 111, 247, 0.14);
+  --animation-warm: rgba(233, 122, 90, 0.14);
+  --animation-opacity: 0.55;
+  --animation-dot-opacity: 0.6;
+  --animation-line-opacity: 0.4;
+}
+
+/* 2. DARK MODE — True Black / OLED Minimal Academic Night Interface */
+.dark,
+.theme-dark {
+  --bg-main: #000000;
+  --bg-surface: #080808;
+  --bg-elevated: #0D0D0D;
+  --bg-subtle: #0D0D0D;
+  --bg-card: #111111;
+  --bg-card-hover: #171717;
+  --bg-input: #0D0D0D;
+  --bg-overlay: rgba(0, 0, 0, 0.72);
+
+  --text-main: #F5F5F5;
+  --text-sub: #D4D4D4;
+  --text-muted: #8A8A8A;
+  --text-inverse: #000000;
+
+  --border-color: #242424;
+  --border-subtle: #1A1A1A;
+
+  --accent-primary: #8BE28B;
+  --accent-secondary: #6FCF97;
+  --accent-soft: rgba(139, 226, 139, 0.12);
+
+  --success: #8BE28B;
+  --warning: #FBBF24;
+  --error: #F87171;
+  --info: #60A5FA;
+
+  --card-shadow: 0 8px 30px rgba(0, 0, 0, 0.65);
+  --modal-backdrop: rgba(0, 0, 0, 0.85);
+
+  /* Evidence & Result Card Tokens (Dark Mode) */
+  --evidence-bg: #151A17;
+  --evidence-border: rgba(139, 226, 139, 0.28);
+  --evidence-label: #8BE28B;
+  --evidence-text: #D7DED9;
+  --evidence-muted: #8A938D;
+  --ask-ai-bg: rgba(139, 121, 168, 0.14);
+  --ask-ai-text: #D9CCEA;
+  --ask-ai-border: rgba(169, 151, 194, 0.35);
+  --ask-ai-hover: rgba(139, 121, 168, 0.22);
+  --ask-ai-icon: #B9A6D4;
+
+  /* Scientific Animation Atmosphere Variables */
+  --animation-grid: rgba(255, 255, 255, 0.035);
+  --animation-grid-dot: rgba(255, 255, 255, 0.025);
+  --animation-primary: rgba(139, 121, 168, 0.22);
+  --animation-secondary: rgba(139, 226, 139, 0.18);
+  --animation-accent: rgba(139, 121, 168, 0.16);
+  --animation-warm: rgba(180, 110, 75, 0.16);
+  --animation-opacity: 0.35;
+  --animation-dot-opacity: 0.30;
+  --animation-line-opacity: 0.20;
+}
+
+/* 3. RELAX MODE — Soft Dusk Lavender / Muted Violet / Warm Neutral Reading Room */
+.theme-relax {
+  --bg-main: #F3F1F7;
+  --bg-surface: #ECE9F1;
+  --bg-elevated: #F1EEF5;
+  --bg-subtle: #E5E1EC;
+  --bg-card: #FAF9FC;
+  --bg-card-hover: #F5F2F9;
+  --bg-input: #F8F6FA;
+  --bg-overlay: rgba(41, 39, 53, 0.55);
+
+  --text-main: #292735;
+  --text-sub: #595568;
+  --text-muted: #858091;
+  --text-inverse: #FFFFFF;
+
+  --border-color: #DDD8E5;
+  --border-subtle: #E8E4ED;
+
+  --accent-primary: #8A79A8;
+  --accent-secondary: #A997C2;
+  --accent-soft: #E7E0F0;
+
+  --success: #789D8A;
+  --warning: #D9A066;
+  --error: #D07070;
+  --info: #7B8BA6;
+
+  --card-shadow: 0 8px 28px rgba(73, 61, 91, 0.08);
+  --modal-backdrop: rgba(41, 39, 53, 0.55);
+
+  /* Evidence & Result Card Tokens (Relax Mode) */
+  --evidence-bg: #EAE6F2;
+  --evidence-border: #DDD8E5;
+  --evidence-label: #726090;
+  --evidence-text: #292735;
+  --evidence-muted: #858091;
+  --ask-ai-bg: #ECE8F4;
+  --ask-ai-text: #63527D;
+  --ask-ai-border: #DDD8E5;
+  --ask-ai-hover: #E4DEF0;
+  --ask-ai-icon: #8A79A8;
+
+  /* Scientific Animation Atmosphere Variables */
+  --animation-grid: rgba(90, 75, 110, 0.045);
+  --animation-grid-dot: rgba(90, 75, 110, 0.05);
+  --animation-primary: rgba(138, 121, 168, 0.18);
+  --animation-secondary: rgba(169, 151, 194, 0.20);
+  --animation-accent: rgba(138, 121, 168, 0.14);
+  --animation-warm: rgba(170, 130, 120, 0.12);
+  --animation-opacity: 0.40;
+  --animation-dot-opacity: 0.25;
+  --animation-line-opacity: 0.18;
+}
+
+/* Base Body Application */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.theme-dark,
+.dark {
+  color-scheme: dark;
+}
+
+.theme-relax {
+  color-scheme: light;
+}
+
+/* ==========================================================================
+   GLOBAL SURFACE, CARD, AND TEXT NORMALIZATION ACROSS ALL COMPONENTS
+   ========================================================================== */
+
+/* 1. Global Cards and Surfaces */
+.theme-dark .bg-white,
+.theme-dark .bg-white\/80,
+.theme-dark .bg-white\/90,
+.theme-dark .bg-white\/60,
+.dark .bg-white,
+.dark .bg-white\/80,
+.dark .bg-white\/90,
+.dark .bg-white\/60 {
+  background-color: var(--bg-card) !important;
+  color: var(--text-main) !important;
+}
+
+.theme-relax .bg-white,
+.theme-relax .bg-white\/80,
+.theme-relax .bg-white\/90,
+.theme-relax .bg-white\/60 {
+  background-color: var(--bg-card) !important;
+  color: var(--text-main) !important;
+}
+
+.theme-dark .bg-slate-50,
+.theme-dark .bg-slate-50\/50,
+.theme-dark .bg-slate-50\/80,
+.theme-dark .bg-slate-100,
+.theme-dark .bg-slate-100\/80,
+.theme-dark .bg-\[\#FBFDFB\],
+.theme-dark .bg-\[\#F8FAFC\],
+.theme-dark .bg-gray-50,
+.theme-dark .bg-gray-100,
+.dark .bg-slate-50,
+.dark .bg-slate-50\/50,
+.dark .bg-slate-50\/80,
+.dark .bg-slate-100,
+.dark .bg-slate-100\/80,
+.dark .bg-\[\#FBFDFB\],
+.dark .bg-\[\#F8FAFC\],
+.dark .bg-gray-50,
+.dark .bg-gray-100 {
+  background-color: var(--bg-surface) !important;
+}
+
+.theme-relax .bg-slate-50,
+.theme-relax .bg-slate-50\/50,
+.theme-relax .bg-slate-50\/80,
+.theme-relax .bg-slate-100,
+.theme-relax .bg-slate-100\/80,
+.theme-relax .bg-\[\#FBFDFB\],
+.theme-relax .bg-\[\#F8FAFC\],
+.theme-relax .bg-gray-50,
+.theme-relax .bg-gray-100 {
+  background-color: var(--bg-surface) !important;
+}
+
+/* Hover States */
+.theme-dark .hover\:bg-slate-50:hover,
+.theme-dark .hover\:bg-slate-100:hover,
+.dark .hover\:bg-slate-50:hover,
+.dark .hover\:bg-slate-100:hover {
+  background-color: var(--bg-card-hover) !important;
+}
+
+.theme-relax .hover\:bg-slate-50:hover,
+.theme-relax .hover\:bg-slate-100:hover {
+  background-color: var(--bg-card-hover) !important;
+}
+
+/* 2. Global Borders */
+.theme-dark .border-slate-100,
+.theme-dark .border-slate-200,
+.theme-dark .border-slate-300,
+.dark .border-slate-100,
+.dark .border-slate-200,
+.dark .border-slate-300 {
+  border-color: var(--border-color) !important;
+}
+
+.theme-relax .border-slate-100,
+.theme-relax .border-slate-200,
+.theme-relax .border-slate-300 {
+  border-color: var(--border-color) !important;
+}
+
+/* 3. Global Typography Contrast */
+.theme-dark .text-slate-900,
+.theme-dark .text-slate-800,
+.dark .text-slate-900,
+.dark .text-slate-800 {
+  color: var(--text-main) !important;
+}
+
+.theme-relax .text-slate-900,
+.theme-relax .text-slate-800 {
+  color: var(--text-main) !important;
+}
+
+.theme-dark .text-slate-700,
+.theme-dark .text-slate-600,
+.dark .text-slate-700,
+.dark .text-slate-600 {
+  color: var(--text-sub) !important;
+}
+
+.theme-relax .text-slate-700,
+.theme-relax .text-slate-600 {
+  color: var(--text-sub) !important;
+}
+
+.theme-dark .text-slate-500,
+.theme-dark .text-slate-400,
+.dark .text-slate-500,
+.dark .text-slate-400 {
+  color: var(--text-muted) !important;
+}
+
+.theme-relax .text-slate-500,
+.theme-relax .text-slate-400 {
+  color: var(--text-muted) !important;
+}
+
+/* 4. Form Inputs & Textareas */
+.theme-dark input,
+.theme-dark textarea,
+.theme-dark select,
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #080808 !important;
+  color: var(--text-main) !important;
+  border-color: var(--border-color) !important;
+}
+
+.theme-relax input,
+.theme-relax textarea,
+.theme-relax select {
+  background-color: #FAF9FC !important;
+  color: var(--text-main) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* 5. Prose and Markdown */
+.theme-dark .prose,
+.dark .prose {
+  color: var(--text-sub) !important;
+}
+.theme-dark .prose strong,
+.theme-dark .prose h1,
+.theme-dark .prose h2,
+.theme-dark .prose h3,
+.theme-dark .prose h4,
+.dark .prose strong,
+.dark .prose h1,
+.dark .prose h2,
+.dark .prose h3,
+.dark .prose h4 {
+  color: var(--text-main) !important;
+}
+.theme-dark .prose code,
+.dark .prose code {
+  color: #8BE28B !important;
+  background-color: #171717 !important;
+}
+.theme-dark .prose pre,
+.dark .prose pre {
+  background-color: #080808 !important;
+  border: 1px solid var(--border-color) !important;
+  color: #F5F5F5 !important;
+}
+
+.theme-relax .prose {
+  color: var(--text-sub) !important;
+}
+.theme-relax .prose strong,
+.theme-relax .prose h1,
+.theme-relax .prose h2,
+.theme-relax .prose h3,
+.theme-relax .prose h4 {
+  color: var(--text-main) !important;
+}
+.theme-relax .prose code {
+  color: #7B6899 !important;
+  background-color: #ECE9F1 !important;
+}
+.theme-relax .prose pre {
+  background-color: #ECE9F1 !important;
+  border: 1px solid var(--border-color) !important;
+  color: #292735 !important;
+}
+
+/* 6. Semantic Status Badges & Indicators */
+.theme-dark .bg-emerald-50,
+.dark .bg-emerald-50 {
+  background-color: rgba(139, 226, 139, 0.12) !important;
+  border-color: rgba(139, 226, 139, 0.28) !important;
+  color: #8BE28B !important;
+}
+
+.theme-relax .bg-emerald-50 {
+  background-color: #E7E0F0 !important;
+  border-color: #DDD8E5 !important;
+  color: #6C5887 !important;
+}
+
+.theme-dark .bg-emerald-500,
+.dark .bg-emerald-500 {
+  background-color: #8BE28B !important;
+  color: #000000 !important;
+}
+
+.theme-relax .bg-emerald-500 {
+  background-color: #8A79A8 !important;
+  color: #FFFFFF !important;
+}
+
+.theme-dark .text-emerald-600,
+.theme-dark .text-emerald-700,
+.theme-dark .text-emerald-800,
+.dark .text-emerald-600,
+.dark .text-emerald-700,
+.dark .text-emerald-800 {
+  color: #8BE28B !important;
+}
+
+.theme-relax .text-emerald-600,
+.theme-relax .text-emerald-700,
+.theme-relax .text-emerald-800 {
+  color: #6C5887 !important;
+}
+
+/* Category & Cross-Domain Badges in Relax Mode */
+.theme-relax span[class*="text-blue-700"] {
+  color: #5A7498 !important;
+  background-color: #E8EEF5 !important;
+  border-color: #D2DCE8 !important;
+}
+.theme-relax span[class*="text-emerald-700"] {
+  color: #4D7A68 !important;
+  background-color: #E5EFEA !important;
+  border-color: #CFDFD7 !important;
+}
+.theme-relax span[class*="text-indigo-700"] {
+  color: #655E94 !important;
+  background-color: #EDEAF5 !important;
+  border-color: #DAD5EB !important;
+}
+.theme-relax span[class*="text-purple-700"] {
+  color: #7A5B94 !important;
+  background-color: #F0EAF5 !important;
+  border-color: #E0D3EB !important;
+}
+
+/* Active navigation pill */
+.theme-dark .nav-active,
+.dark .nav-active {
+  background-color: rgba(139, 226, 139, 0.15) !important;
+  color: #8BE28B !important;
+}
+.theme-dark .nav-active svg,
+.dark .nav-active svg {
+  color: #8BE28B !important;
+}
+
+.theme-relax .nav-active {
+  background-color: #E7E0F0 !important;
+  color: #5D4978 !important;
+}
+.theme-relax .nav-active svg {
+  color: #8A79A8 !important;
+}
+
+/* Theme Utility Classes */
+.bg-main { background-color: var(--bg-main) !important; }
+.bg-surface { background-color: var(--bg-surface) !important; }
+.bg-card { background-color: var(--bg-card) !important; }
+.bg-card-hover { background-color: var(--bg-card-hover) !important; }
+.bg-elevated { background-color: var(--bg-elevated) !important; }
+
+.text-main { color: var(--text-main) !important; }
+.text-sub { color: var(--text-sub) !important; }
+.text-muted { color: var(--text-muted) !important; }
+
+.border-theme { border-color: var(--border-color) !important; }
+.border-theme-hover { border-color: var(--border-subtle) !important; }
+
+/* Utilities */
+@layer utilities {
+  .apple-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .apple-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--card-shadow);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+

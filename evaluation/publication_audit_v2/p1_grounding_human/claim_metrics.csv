@@ -1,0 +1,6 @@
+split,metric_name,value,unit,definition
+TEST,Total Evaluated Sentences,56,count,Total sentences parsed across 15 test query responses
+TEST,Epistemic Abstentions,51,count,Sentences indicating lack of evidence or scope limitations
+TEST,Factual Assertions,5,count,Sentences asserting factual scientific propositions
+TEST,Factual Claim Precision,1.0,ratio,Proportion of factual assertions fully supported by retrieved evidence
+TEST,Epistemic Refusal Precision,1.0,ratio,Proportion of unanswerable queries correctly producing epistemic abstention

@@ -1,0 +1,56 @@
+{
+  "total_queries": 100,
+  "observed_failure_taxonomy": {
+    "A0_Full": {
+      "unsupported_claims": 195,
+      "contradicted_claims": 0,
+      "missing_citations": 0,
+      "retrieval_misses": 0
+    },
+    "A1_Minus_Iteration": {
+      "unsupported_claims": 195,
+      "contradicted_claims": 0,
+      "missing_citations": 0,
+      "retrieval_misses": 0
+    },
+    "A2_Minus_Citation_Repair": {
+      "unsupported_claims": 190,
+      "contradicted_claims": 0,
+      "missing_citations": 190,
+      "retrieval_misses": 0
+    },
+    "A3_Naive_RAG": {
+      "unsupported_claims": 190,
+      "contradicted_claims": 0,
+      "missing_citations": 190,
+      "retrieval_misses": 0
+    },
+    "A4_Minus_BGE": {
+      "unsupported_claims": 195,
+      "contradicted_claims": 0,
+      "missing_citations": 0,
+      "retrieval_misses": 0
+    },
+    "A5_Dense_Only": {
+      "unsupported_claims": 200,
+      "contradicted_claims": 0,
+      "missing_citations": 0,
+      "retrieval_misses": 95
+    },
+    "A6_BM25_Only": {
+      "unsupported_claims": 195,
+      "contradicted_claims": 0,
+      "missing_citations": 0,
+      "retrieval_misses": 0
+    }
+  },
+  "provenance_and_latency_audit": {
+    "A0_latency_source": "E07 Condition B authoritative wall-clock timing (Mean: 12655.70 ms, P50: 11064.67 ms, P95: 18509.97 ms)",
+    "A1_latency_source": "E04.1 / E07 Condition A authoritative wall-clock timing (Mean: 5691.35 ms, P50: 4899.07 ms, P95: 8514.65 ms)",
+    "A2_latency_provenance": "Derived (A0 minus CitationRepair stage duration of 45.0 ms)",
+    "A3_latency_source": "E04.1 Naive RAG baseline authoritative wall-clock timing (Mean: 5767.46 ms, P50: 4659.18 ms, P95: 9472.96 ms)",
+    "A4_latency_provenance": "Derived (A0 minus BGE cross-encoder inference stage duration of 531.41 ms)",
+    "A5_latency_source": "E03.3 B1_Dense k=20 pure retrieval execution timing (Mean: 8.46 ms, P50: 7.83 ms, P95: 15.49 ms)",
+    "A6_latency_source": "E03.3 B2_BM25 k=20 pure retrieval execution timing (Mean: 0.98 ms, P50: 0.98 ms, P95: 1.59 ms)"
+  }
+}

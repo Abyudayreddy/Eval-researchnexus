@@ -1,0 +1,122 @@
+PaperQA to provide evidence-backed answers from scientific 
+PDFs. Zheng et al. [10] proposed OpenResearcher, and 
+Agarwal et al. [11] developed LitLLM to streamline scientific 
+review authoring. While these systems demonstrate the utility 
+of scientific RAG, they typically lack formal sentence-level 
+verification and verifiable provenance audits. 
+E. Citation Verification and Revision 
+Ensuring that generated statements accurately reflect their 
+cited sources is an active area of investigation. Menick et al. 
+[5] emphasized supporting generative claims with verifiable 
+quotes. Liu et al. [3] discovered that over 30% of generated 
+claims in search engines lacked verifiable citation support. 
+Gao et al. [12] introduced RARR to revise unsupported 
+claims. Asai et al. [13] introduced Self-RAG, and 
+subsequently developed OpenScholar [14] for scientific 
+synthesis. ResearchNexus AI advances this lineage by 
+implementing a modular pipeline combining deterministic 
+chunk verification, semantic inference, conservative citation 
+repair, and full provenance tracing. 
+III. METHODOLOGY AND SYSTEM 
+ARCHITECTURE 
+ResearchNexus AI is structured as an auditable, multi-
+stage pipeline designed to enforce evidentiary grounding at 
+every step. The architecture incorporates seven discrete 
+stages: corpus chunking and dual indexing, hybrid candidate 
+retrieval, neural reranking, context-bounded generation, two-
+stage claim verification, conservative citation repair, and 
+cryptographic provenance logging. 
+A. Corpus Ingestion and Dual Indexing 
+Scientific publications are parsed from full-text PDF 
+documents. Text is segmented into semantic passages of 300 
+to 500 tokens with an overlap of 50 tokens to prevent 
+information loss across chunk boundaries. The evaluation 
+corpus 
+comprises 
+26,259 
+passages 
+indexed 
+in 
+ResearchMind_LocalKB. Each passage is indexed across two 
+complementary representations: an Inverted Index for BM25 
+term matching, and a persistent ChromaDB vector store 
+embedded using sentence-transformers/all-MiniLM-L6-v2. 
+B. Hybrid First-Stage Retrieval via RRF 
+Given query Q, BM25 computes relevance score for 
+document D: 
+Score_BM25(D, Q) = ∑_{q∈Q} IDF(q) · [f(q, D) · 2.5] / [f(q, D) 
++ 1.5 · (0.25 + 0.75 · |D| / avgdl)]    (1) 
+Concurrently, dense semantic retrieval computes cosine 
+similarity: 
+Sim_Dense(D, Q) = (v_Q · v_D) / (||v_Q|| · ||v_D||)    (2) 
+Ranked lists R_BM25 and R_Dense are fused via 
+Reciprocal Rank Fusion: 
+RRF(d) = ∑_{m ∈ {BM25, Dense}} 1 / [60 + r_m(d)]    (3) 
+where r_m(d) is the 1-based rank of passage d in system 
+m. The top k=20 candidates are retained for neural reranking. 
+C. Neural Cross-Encoder Reranking 
+The candidate pool is reranked using BAAI/bge-reranker-
+base. The model evaluates bidirectional cross-attention across 
+all query and passage tokens. Passages are ordered by logit 
+scores to form the prioritized evidence context C = [e₁, e₂, ..., 
+e_k]. 
+D. Context-Bounded Synthesis 
+The sorted evidence is provided to gemini-3.5-flash-lite 
+under strict prompts requiring the model to rely exclusively 
+on the provided context. Factual assertions must cite numeric 
+markers [1], [2]. Sampling temperature is set to τ = 0.0 to 
+eliminate speculative extrapolation. 
+E. Two-Stage Claim Verification and Repair 
+The answer is parsed into atomic claims {c₁, c₂, ..., c_n}. 
+Verification proceeds across two stages: Stage A evaluates 
+deterministic token overlap (threshold θ_det = 0.80); 
+unresolved claims undergo Stage B natural language 
+inference. If a claim lacks support, Citation Repair searches 
+remaining retrieved chunks for exact substring or high-
+confidence entailment matches. 
+F. Self-Feedback and Bounded Iterative Refinement 
+Persisting unsupported assertions trigger structured 
+critique prompts reinvoking the generator with prior draft and 
+identified gaps, bounded to M=2 cycles. 
+G. Provenance Ledger 
+Every claim is logged to an immutable JSON ledger with 
+citation indices, chunk IDs, retrieval ranks, RRF scores, 
+reranking logits, and SHA256 context hashes. 
+IV. EXPERIMENTAL RESULTS AND DISCUSSIONS 
+All experiments were conducted on the frozen benchmark 
+ds_nexus_v11 (N=100 queries: 70 DEV, 15 VAL, 15 TEST; 
+26,259 corpus chunks) using gemini-3.5-flash-lite at τ = 0.0. 
+A. First-Stage Retrieval Performance 
+Table I displays retrieval metrics on ds_nexus_v11. 
+Standalone BM25 and ChromaDB fail on fine-grained 
+passage retrieval on the TEST split (Hit@5 = 0.0000). 
+Conversely, hybrid RRF achieves candidate Recall@20 of 
+0.9500 and Hit@20 of 1.0000 across all 100 queries, 
+capturing all relevant evidence within top-20 on TEST 
+(Hit@20 = 1.0000) in 7.83 ms median latency. 
+TABLE I: FIRST-STAGE RETRIEVAL PERFORMANCE ON 
+DS_NEXUS_V11 
+Method 
+Split 
+R@5 
+R@20 
+Hit@20 
+p50 (ms) 
+BM25 
+TEST 
+0.0000 
+0.0000 
+0.0667 
+0.69 
+Dense 
+TEST 
+0.0000 
+0.0000 
+0.0000 
+13.51 
+RRF 
+DEV 
+0.2857 
+0.9429 
+1.0000 
+6.51 

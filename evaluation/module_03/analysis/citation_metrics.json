@@ -1,0 +1,28 @@
+{
+  "n_queries": 15,
+  "split": "TEST",
+  "total_claims_extracted": 28,
+  "eligible_factual_claims": 5,
+  "C0_baseline_unverified": {
+    "total_citations_present": 1,
+    "cited_factual_claims": 1,
+    "citation_coverage": 0.2,
+    "citation_precision_assumed": 1.0
+  },
+  "C1_validation_only": {
+    "total_citations_evaluated": 1,
+    "valid_citations": 1,
+    "invalid_citations": 0,
+    "citation_precision": 1.0,
+    "citation_error_rate": 0.0,
+    "citation_coverage": 0.2,
+    "partial_citation_rate": 0.0
+  },
+  "C2_validation_and_repair": {
+    "total_citations_post_repair": 1,
+    "valid_citations": 1,
+    "citation_precision": 1.0,
+    "citation_coverage": 0.2,
+    "coverage_gain_over_c0": 0.0
+  }
+}

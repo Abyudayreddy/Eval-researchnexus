@@ -1,0 +1,130 @@
+{
+  "ALL": {
+    "n_queries": 100,
+    "bootstrap_95ci": {
+      "naive_claim_support_rate": {
+        "mean": 0.33,
+        "ci_lower": 0.28,
+        "ci_upper": 0.375
+      },
+      "verified_claim_support_rate": {
+        "mean": 0.33,
+        "ci_lower": 0.28,
+        "ci_upper": 0.375
+      },
+      "naive_unsupported_claim_rate": {
+        "mean": 0.67,
+        "ci_lower": 0.625,
+        "ci_upper": 0.72
+      },
+      "verified_unsupported_claim_rate": {
+        "mean": 0.67,
+        "ci_lower": 0.625,
+        "ci_upper": 0.72
+      }
+    },
+    "mcnemar_test_has_unsupported": {
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "b_naive_worse": 0,
+      "c_verified_worse": 0,
+      "significant": false
+    }
+  },
+  "DEV": {
+    "n_queries": 70,
+    "bootstrap_95ci": {
+      "naive_claim_support_rate": {
+        "mean": 0.3714,
+        "ci_lower": 0.3214,
+        "ci_upper": 0.4214
+      },
+      "verified_claim_support_rate": {
+        "mean": 0.3714,
+        "ci_lower": 0.3214,
+        "ci_upper": 0.4214
+      },
+      "naive_unsupported_claim_rate": {
+        "mean": 0.6286,
+        "ci_lower": 0.5786,
+        "ci_upper": 0.6786
+      },
+      "verified_unsupported_claim_rate": {
+        "mean": 0.6286,
+        "ci_lower": 0.5786,
+        "ci_upper": 0.6786
+      }
+    },
+    "mcnemar_test_has_unsupported": {
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "b_naive_worse": 0,
+      "c_verified_worse": 0,
+      "significant": false
+    }
+  },
+  "VAL": {
+    "n_queries": 15,
+    "bootstrap_95ci": {
+      "naive_claim_support_rate": {
+        "mean": 0.2333,
+        "ci_lower": 0.1,
+        "ci_upper": 0.3667
+      },
+      "verified_claim_support_rate": {
+        "mean": 0.2333,
+        "ci_lower": 0.1,
+        "ci_upper": 0.3667
+      },
+      "naive_unsupported_claim_rate": {
+        "mean": 0.7667,
+        "ci_lower": 0.6333,
+        "ci_upper": 0.9
+      },
+      "verified_unsupported_claim_rate": {
+        "mean": 0.7667,
+        "ci_lower": 0.6333,
+        "ci_upper": 0.9
+      }
+    },
+    "mcnemar_test_has_unsupported": {
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "b_naive_worse": 0,
+      "c_verified_worse": 0,
+      "significant": false
+    }
+  },
+  "TEST": {
+    "n_queries": 15,
+    "bootstrap_95ci": {
+      "naive_claim_support_rate": {
+        "mean": 0.2333,
+        "ci_lower": 0.1,
+        "ci_upper": 0.3667
+      },
+      "verified_claim_support_rate": {
+        "mean": 0.2333,
+        "ci_lower": 0.1,
+        "ci_upper": 0.3667
+      },
+      "naive_unsupported_claim_rate": {
+        "mean": 0.7667,
+        "ci_lower": 0.6333,
+        "ci_upper": 0.9
+      },
+      "verified_unsupported_claim_rate": {
+        "mean": 0.7667,
+        "ci_lower": 0.6333,
+        "ci_upper": 0.9
+      }
+    },
+    "mcnemar_test_has_unsupported": {
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "b_naive_worse": 0,
+      "c_verified_worse": 0,
+      "significant": false
+    }
+  }
+}

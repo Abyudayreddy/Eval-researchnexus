@@ -1,0 +1,51 @@
+[
+  {
+    "claim_id": "CLM-001",
+    "claim": "ResearchNexus provides complete and correct local provenance tracing from generated claims back to exact source text chunks.",
+    "evidence": "E08 automated provenance audit evaluated 202 claims across 100 queries, achieving 100% Trace Completeness, Claim-to-Evidence Accuracy, and Citation-to-Evidence Accuracy.",
+    "status": "SUPPORTED_WITH_LIMITATION",
+    "limitations": "Valid under automated audit protocol verification; does not establish subjective human interpretability."
+  },
+  {
+    "claim_id": "CLM-002",
+    "claim": "Verified RAG significantly outperforms Naive RAG in claim factual grounding and citation precision.",
+    "evidence": "E04.1 measured Naive CSR=0.0533 vs Verified CSR=0.0350 (McNemar p=0.6831). Differences are not statistically significant.",
+    "status": "INVALID_DO_NOT_USE",
+    "limitations": "Empirically refuted on ds_nexus_v11. Paper must state that Verified RAG did not demonstrate significant grounding improvement over Naive RAG."
+  },
+  {
+    "claim_id": "CLM-003",
+    "claim": "Iterative refinement substantially improves answer factual accuracy over single-pass generation.",
+    "evidence": "E07.1 evaluated 100 queries: 1 improved, 98 unchanged, 1 degraded (permutation test p=1.000).",
+    "status": "INVALID_DO_NOT_USE",
+    "limitations": "Empirically refuted on ds_nexus_v11. Iteration added 2.2x latency without factual quality recovery."
+  },
+  {
+    "claim_id": "CLM-004",
+    "claim": "BGE Cross-Encoder reranking executes genuinely across all queries without bypass.",
+    "evidence": "E02 and E09 verified 100/100 genuine BGE cross-encoder invocations with p50 latency of 531.41 ms (p95 of 4,246.05 ms).",
+    "status": "SUPPORTED",
+    "limitations": "Reranking operates within candidate context pools; lower-ranked gold documents amid distractors challenge generative synthesis."
+  },
+  {
+    "claim_id": "CLM-005",
+    "claim": "Citation repair universally fails across all retrieval settings.",
+    "evidence": "E06.1 observed 191 repair attempts with 0 successful repairs on ds_nexus_v11.",
+    "status": "SUPPORTED_WITH_LIMITATION",
+    "limitations": "Finding is specific to evaluated context pool and conservative exact matching policy; do not claim universal failure across all domains."
+  },
+  {
+    "claim_id": "CLM-006",
+    "claim": "Automated claim verifier achieves 95%+ precision against human expert annotators.",
+    "evidence": "Experiment E05 is blocked due to lack of human ground-truth annotations.",
+    "status": "NOT_MEASURED",
+    "limitations": "Human evaluation was not conducted. No human agreement or verifier F1 metrics exist."
+  },
+  {
+    "claim_id": "CLM-007",
+    "claim": "Downstream RAG generation failures predominantly follow a context-distraction and grounding-deficit propagation pattern.",
+    "evidence": "E11 multi-label error taxonomy analysis revealed that despite Hit@20=1.0 at candidate level, lower ranking placement (ranks 15-17) resulted in 28 unsupported claims, 28 missing citations, 27 repair failures, and 15 iteration exhaustions.",
+    "status": "SUPPORTED",
+    "limitations": "Characterizes observed empirical propagation across components; not a claim of universal deterministic causality."
+  }
+]

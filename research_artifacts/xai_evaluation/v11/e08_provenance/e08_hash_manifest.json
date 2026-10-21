@@ -1,0 +1,14 @@
+{
+  "e08_citation_evidence_results.json": "9be53945528526be37f3df1785c70fbc5793a12a5908e919cfe36fe11bc22c9e",
+  "e08_claim_evidence_results.json": "af695bc97a6c51b5dda7bc8e5a68c9aef47c0d9a6ec81509017d908b25948ba8",
+  "e08_config.json": "5f59e1f66b1b11b1221b2a16cb83383091852c87fb1dff02e354c2a7321a4302",
+  "e08_error_records.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "e08_integrity_report.json": "b6fb65e50f4dfd66b0a507888f03e39c002db6198c64d0778d71f7365e9e9562",
+  "e08_local_provenance_results.json": "6a6806e1b0f99cba7dbda60185cb229753e52b95d0bc1708c701febae00db626",
+  "e08_metrics.json": "0dc61700916ff6534af722e08fe8d50dd3fe7a10d782e65babfdb0a46434a16b",
+  "e08_offset_validation.json": "3d1bb96199d28cfebd38b21b46cdc49598d59c332d5ef6193383445b833b66fc",
+  "e08_online_provenance_results.json": "7390886e138a8d794b1655b610abca460e423f5d4b74c5590575f72428e32061",
+  "e08_per_claim_traces.json": "e9ec75faefd3a712b19cdb267a19b476808a073ec7a0e71a6fc7867630eef9ff",
+  "e08_summary_report.md": "77a327645d0b77b7acb83ab4485764d884e4b697b5f6de8da57ffcce4e450cb7",
+  "e08_trace_completeness.json": "6fc2eb287eeff635e7dfb1929c38803f520f6446ffe4b998c4548f252d14721c"
+}

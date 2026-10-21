@@ -1,0 +1,199 @@
+% =========================================================================
+% ResearchNexus IEEE Conference Publication Tables
+% Target: IEEEtran.cls / IEEE Conference Proceedings
+% =========================================================================
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{amsmath}
+
+% -------------------------------------------------------------------------
+% TABLE I: DATASET SPECIFICATION AND EVALUATION PROTOCOL
+% -------------------------------------------------------------------------
+\begin{table}[t]
+\caption{Dataset Specification and Evaluation Protocol}
+\label{tab:dataset_protocol}
+\centering
+\small
+\begin{tabularx}{\columnwidth}{lX}
+\toprule
+\textbf{Property} & \textbf{Specification / Configuration} \\
+\midrule
+Benchmark Dataset & \texttt{ds\_nexus\_v11} ($N=100$ total queries) \\
+Split Partition & DEV: 70, VAL: 15, TEST: 15 queries \\
+Target Corpus & 40 scientific papers, 80 extracted passages \\
+Corpus Domains & AI, NLP, Computer Vision, Information Retrieval \\
+Query Types & Factual (20), Methodological (20), Numerical (15), Causal (15), Comparative (10), Synthesis (10), Adversarial (5), Probe (5) \\
+\midrule
+\multicolumn{2}{l}{\textbf{Empirical Evaluation Stages}} \\
+Retrieval (E03.3) & Hybrid RRF ($k=60$) over Lexical (BM25) and Dense Chroma \\
+Generation (E04.1) & Naive RAG vs. Verified RAG using Gemini 2.5 Flash \\
+Human Ground Truth (E05) & \textit{NOT MEASURED} (Human ground truth unavailable) \\
+Citation Repair (E06.1) & Deterministic substring matching (191 opportunities) \\
+Refinement (E07.1) & Iterative feedback loop (1--2 resynthesis passes) \\
+Provenance (E08) & Automated bidirectional audit of links and offsets ($N=202$) \\
+Latency (E09) & Disaggregated profiling ($p50$, $p95$) of pipeline stages \\
+Ablation (E10) & Single-factor component deletions ($A0$--$A6$) \\
+Taxonomy (E11) & 14-category multi-label error audit on TEST ($N=15$) \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% -------------------------------------------------------------------------
+% TABLE II: CANDIDATE RETRIEVAL PERFORMANCE
+% -------------------------------------------------------------------------
+\begin{table}[t]
+\caption{Candidate Context Retrieval Performance}
+\label{tab:candidate_retrieval}
+\centering
+\small
+\begin{tabular}{ccc}
+\toprule
+\textbf{Candidate Pool ($k$)} & \textbf{Recall@$k$} & \textbf{Hit@$k$} \\
+\midrule
+5  & 0.2700 & 0.3000 \\
+10 & 0.5700 & 0.6200 \\
+20 & 0.9500 & 1.0000 \\
+50 & 1.0000 & 1.0000 \\
+\bottomrule
+\end{tabular}
+\vspace{1ex}
+\begin{minipage}{\columnwidth}
+\footnotesize
+\textit{Note}: Hybrid RRF candidate-context retrieval evaluated on ALL $N=100$ queries. On the TEST partition ($N=15$), all 10 answerable targets are present within the canonical $k=20$ pool; 5 additional TEST queries are unanswerable probe queries.
+\end{minipage}
+\end{table}
+
+% -------------------------------------------------------------------------
+% TABLE III: NAIVE VS. VERIFIED RAG
+% -------------------------------------------------------------------------
+\begin{table}[t]
+\caption{Generation Grounding Comparison: Naive vs. Verified RAG}
+\label{tab:naive_vs_verified}
+\centering
+\small
+\begin{tabular}{lccc}
+\toprule
+\textbf{Metric} & \textbf{Naive RAG} & \textbf{Verified RAG} & \textbf{Direction} \\
+\midrule
+Claim Support Ratio (CSR)         & 0.0533 & 0.0350 & $\uparrow$ better \\
+Unsupported Claim Ratio (UCR)     & 0.9467 & 0.9650 & $\downarrow$ better \\
+Citation Precision (CP)           & 0.0600 & 0.0400 & $\uparrow$ better \\
+Citation Coverage (COV)            & 0.0617 & 0.0433 & $\uparrow$ better \\
+\bottomrule
+\end{tabular}
+\vspace{1ex}
+\begin{minipage}{\columnwidth}
+\footnotesize
+\textit{Statistical Test}: McNemar paired test statistic = 0.1667, $p = 0.6831$. No statistically significant grounding improvement was observed on the evaluated benchmark.
+\end{minipage}
+\end{table}
+
+% -------------------------------------------------------------------------
+% TABLE IV: LATENCY, REFINEMENT, AND PROVENANCE
+% -------------------------------------------------------------------------
+\begin{table}[t]
+\caption{System Latency, Refinement Tradeoff, and Provenance}
+\label{tab:latency_refinement_provenance}
+\centering
+\small
+\begin{tabularx}{\columnwidth}{lrr}
+\toprule
+\multicolumn{3}{l}{\textbf{Part A: Pre-Generation Latency Breakdown (E09, $N=100$)}} \\
+\textbf{Processing Stage} & \textbf{$p50$ (ms)} & \textbf{$p95$ (ms)} \\
+\midrule
+Hybrid Retrieval (BM25 + Dense) & 6.56   & 19.12 \\
+Pure BGE Cross-Encoder Inference & 531.41 & 4246.05 \\
+Hybrid + BGE Combined Stage      & 535.06 & 4251.51 \\
+\midrule
+\multicolumn{3}{l}{\textbf{Part B: Iterative Refinement Tradeoff (E07.1, $N=100$)}} \\
+\textbf{Configuration} & \textbf{Mean Latency} & \textbf{Outcomes (Imp / Unch / Deg)} \\
+\midrule
+Iteration OFF (Single Pass) & 5691.35 ms & --- \\
+Iteration ON (Refined Loop) & 12655.70 ms & 1 improved / 98 unchanged / 1 degraded \\
+\multicolumn{3}{l}{\footnotesize $\Delta\text{CSR} = -0.0017$, exact permutation $p = 1.0000$, $2.22\times$ latency multiplier.} \\
+\midrule
+\multicolumn{3}{l}{\textbf{Part C: Automated XAI Provenance Integrity (E08, $N=202$ Claims)}} \\
+\textbf{Verification Criterion} & \multicolumn{2}{r}{\textbf{Audit Adherence Rate}} \\
+\midrule
+Trace Completeness             & \multicolumn{2}{r}{1.0000 (100.0\%)} \\
+Claim-to-Evidence Accuracy     & \multicolumn{2}{r}{1.0000 (100.0\%)} \\
+Citation-to-Evidence Accuracy  & \multicolumn{2}{r}{1.0000 (100.0\%)} \\
+Offset Resolution Accuracy     & \multicolumn{2}{r}{1.0000 (100.0\%)} \\
+\bottomrule
+\end{tabularx}
+\vspace{1ex}
+\begin{minipage}{\columnwidth}
+\footnotesize
+\textit{Note}: Part C reflects automated provenance-audit verification across 202 algorithmic trace links, not human subject explainability measures.
+\end{minipage}
+\end{table}
+
+% -------------------------------------------------------------------------
+% TABLE V: COMPONENT ABLATION STUDY
+% -------------------------------------------------------------------------
+\begin{table}[t]
+\caption{Architectural Component Ablation Study ($N=100$)}
+\label{tab:ablation}
+\centering
+\small
+\begin{tabular}{llcc}
+\toprule
+\textbf{ID} & \textbf{Ablation Configuration} & \textbf{CSR} & \textbf{Mean Latency (ms)} \\
+\midrule
+A0 & Full Pipeline                         & 0.0333 & 12655.70 \\
+A1 & Minus Iteration                       & 0.0350 & 5691.35 \\
+A2 & Minus Citation Repair$^*$             & 0.0533 & 12610.70$^*$ \\
+A3 & Naive RAG Baseline                    & 0.0533 & 5767.46 \\
+A4 & Minus BGE Cross-Encoder$^*$           & 0.0333 & 12124.29$^*$ \\
+A5 & Dense Only Baseline                   & 0.0000 & 8.46 \\
+A6 & BM25 Only Baseline                    & 0.0333 & 0.98 \\
+\bottomrule
+\end{tabular}
+\vspace{1ex}
+\begin{minipage}{\columnwidth}
+\footnotesize
+$^*$A2 and A4 latency values are mathematically derived component decompositions rather than independent end-to-end wall-clock runs.
+\end{minipage}
+\end{table}
+
+% -------------------------------------------------------------------------
+% TABLE VI: ERROR TAXONOMY ANALYSIS
+% -------------------------------------------------------------------------
+\begin{table}[t]
+\caption{Error Taxonomy Distribution on TEST Split (E11)}
+\label{tab:error_taxonomy}
+\centering
+\small
+\begin{tabular}{lccl}
+\toprule
+\textbf{Category} & \textbf{Count} & \textbf{Level} & \textbf{Status / Interpretation} \\
+\midrule
+\multicolumn{4}{l}{\textit{Measured Failure Categories}} \\
+UNSUPPORTED\_CLAIM          & 28 & Claim    & 100.0\% of TEST claims (28/28) \\
+MISSING\_CITATION           & 28 & Claim    & 100.0\% of TEST claims (28/28) \\
+CITATION\_REPAIR\_FAILURE   & 27 & Citation & 100.0\% of repair attempts (27/27) \\
+ITERATION\_FAILURE          & 15 & Query    & 100.0\% of TEST queries (15/15) \\
+\midrule
+\multicolumn{4}{l}{\textit{Zero Measured Categories ($0$ occurrences at canonical $k=20$)}} \\
+RETRIEVAL\_MISS             & 0  & Query    & 0 misses ($Hit@20=1.00$) \\
+CANDIDATE\_POOL\_MISS       & 0  & Query    & 0 pool misses ($Hit@20=1.00$) \\
+RERANKING\_ERROR            & 0  & Query    & Top-20 context preserved \\
+EVIDENCE\_SELECTION\_ERROR  & 0  & Query    & Verified selection \\
+CONTRADICTED\_CLAIM         & 0  & Claim    & No direct contradictions \\
+WRONG\_CITATION             & 0  & Claim    & 0 incorrect pointer links \\
+ONLINE\_RETRIEVAL\_FAILURE  & 0  & Query    & Local corpus execution \\
+XAI\_PROVENANCE\_FAILURE    & 0  & Claim    & Complete deterministic trace \\
+\midrule
+\multicolumn{4}{l}{\textit{Unmeasured Categories}} \\
+VERIFICATION\_FALSE\_POS    & \multicolumn{2}{c}{\textit{NOT MEASURED}} & E05 human GT unavailable \\
+VERIFICATION\_FALSE\_NEG    & \multicolumn{2}{c}{\textit{NOT MEASURED}} & E05 human GT unavailable \\
+\bottomrule
+\end{tabular}
+\vspace{1ex}
+\begin{minipage}{\columnwidth}
+\footnotesize
+\textit{Note}: Evaluated on the TEST partition ($N=15$ queries, 28 synthesized claims; 98 total multi-label events).
+\end{minipage}
+\end{table}

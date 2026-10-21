@@ -1,0 +1,24 @@
+{
+  "dataset_version": "v1.1",
+  "test_item_count": 15,
+  "test_item_ids": [
+    "item_v11_086",
+    "item_v11_087",
+    "item_v11_088",
+    "item_v11_089",
+    "item_v11_090",
+    "item_v11_091",
+    "item_v11_092",
+    "item_v11_093",
+    "item_v11_094",
+    "item_v11_095",
+    "item_v11_096",
+    "item_v11_097",
+    "item_v11_098",
+    "item_v11_099",
+    "item_v11_100"
+  ],
+  "gold_hash": "5c7684d44d890a4b6c8860ec2be222b4aed9412ee31611f0e19feb0b2e1bde0f",
+  "creation_timestamp": "2026-09-26T13:19:00+00:00",
+  "is_frozen": true
+}

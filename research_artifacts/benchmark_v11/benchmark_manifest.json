@@ -1,0 +1,23 @@
+{
+  "dataset_id": "ds_nexus_v11",
+  "version": "v1.1",
+  "total_items": 100,
+  "question_types": {
+    "FACTUAL": 20,
+    "METHODOLOGICAL": 20,
+    "NUMERICAL": 15,
+    "CAUSAL": 15,
+    "COMPARATIVE": 10,
+    "SYNTHESIS": 10,
+    "ADVERSARIAL": 5,
+    "UNANSWERABLE": 5
+  },
+  "splits": {
+    "DEVELOPMENT": 68,
+    "VALIDATION": 14,
+    "TEST": 18
+  },
+  "retriever_independent": true,
+  "is_frozen": true,
+  "timestamp": "2026-09-23T06:15:00+00:00"
+}

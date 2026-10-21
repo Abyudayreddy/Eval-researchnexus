@@ -1,0 +1,302 @@
+{
+  "A0_vs_A1_Minus_Iteration": {
+    "claim_support_rate": {
+      "mean_delta": -0.0017,
+      "median_delta": 0.0,
+      "ci_95": [
+        -0.015,
+        0.01
+      ],
+      "statistical_test": "Exact Paired Binomial Sign Test",
+      "statistic": 0.5,
+      "p_value": 1.0,
+      "significant": false
+    },
+    "unsupported_claim_rate": {
+      "mean_delta": 0.0017,
+      "median_delta": 0.0,
+      "ci_95": [
+        -0.01,
+        0.015
+      ],
+      "statistical_test": "Exact Paired Binomial Sign Test",
+      "statistic": 0.5,
+      "p_value": 1.0,
+      "significant": false
+    },
+    "citation_precision": {
+      "mean_delta": 0.0,
+      "median_delta": 0.0,
+      "ci_95": [
+        -0.03,
+        0.03
+      ],
+      "statistical_test": "Exact Paired Binomial Sign Test",
+      "statistic": 0.5,
+      "p_value": 1.0,
+      "significant": false
+    },
+    "citation_coverage": {
+      "mean_delta": -0.01,
+      "median_delta": 0.0,
+      "ci_95": [
+        -0.0283,
+        0.005
+      ],
+      "statistical_test": "Exact Paired Binomial Sign Test",
+      "statistic": 0.25,
+      "p_value": 0.625,
+      "significant": false
+    }
+  },
+  "A0_vs_A2_Minus_Citation_Repair": {
+    "claim_support_rate": {
+      "mean_delta": -0.02,
+      "median_delta": 0.0,
+      "ci_95": [
+        -0.07,
+        0.0267
+      ],
+      "statistical_test": "Wilcoxon signed-rank test",
+      "statistic": 12.5,
+      "p_value": 0.419921,
+      "significant": false
+    },
+    "unsupported_claim_rate": {
+      "mean_delta": 0.02,
+      "median_delta": 0.0,
+      "ci_95": [
+        -0.0267,
+        0.07
+      ],
+      "statistical_test": "Wilcoxon signed-rank test",
+      "statistic": 12.5,
+      "p_value": 0.419921,
+      "significant": false
+    },
+    "citation_precision": {
+      "mean_delta": -0.02,
+      "median_delta": 0.0,
+      "ci_95": [
+        -0.08,
+        0.03
+      ],
+      "statistical_test": "Wilcoxon signed-rank test",
+      "statistic": 13.5,
+      "p_value": 0.4795,
+      "significant": false
+    },
+    "citation_coverage": {
+      "mean_delta": -0.0283,
+      "median_delta": 0.0,
+      "ci_95": [
+        -0.0783,
+        0.02
+      ],
+      "statistical_test": "Wilcoxon signed-rank test",
+      "statistic": 17.0,
+      "p_value": 0.272013,
+      "significant": false
+    }
+  },
+  "A0_vs_A3_Naive_RAG": {
+    "claim_support_rate": {
+      "mean_delta": -0.02,
+      "median_delta": 0.0,
+      "ci_95": [
+        -0.07,
+        0.0267
+      ],
+      "statistical_test": "Wilcoxon signed-rank test",
+      "statistic": 12.5,
+      "p_value": 0.419921,
+      "significant": false
+    },
+    "unsupported_claim_rate": {
+      "mean_delta": 0.02,
+      "median_delta": 0.0,
+      "ci_95": [
+        -0.0267,
+        0.07
+      ],
+      "statistical_test": "Wilcoxon signed-rank test",
+      "statistic": 12.5,
+      "p_value": 0.419921,
+      "significant": false
+    },
+    "citation_precision": {
+      "mean_delta": -0.02,
+      "median_delta": 0.0,
+      "ci_95": [
+        -0.08,
+        0.03
+      ],
+      "statistical_test": "Wilcoxon signed-rank test",
+      "statistic": 13.5,
+      "p_value": 0.4795,
+      "significant": false
+    },
+    "citation_coverage": {
+      "mean_delta": -0.0283,
+      "median_delta": 0.0,
+      "ci_95": [
+        -0.0783,
+        0.02
+      ],
+      "statistical_test": "Wilcoxon signed-rank test",
+      "statistic": 17.0,
+      "p_value": 0.272013,
+      "significant": false
+    }
+  },
+  "A0_vs_A4_Minus_BGE": {
+    "claim_support_rate": {
+      "mean_delta": 0.0,
+      "median_delta": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "statistical_test": "Exact Paired Test (0 discordant pairs)",
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "significant": false
+    },
+    "unsupported_claim_rate": {
+      "mean_delta": 0.0,
+      "median_delta": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "statistical_test": "Exact Paired Test (0 discordant pairs)",
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "significant": false
+    },
+    "citation_precision": {
+      "mean_delta": 0.0,
+      "median_delta": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "statistical_test": "Exact Paired Test (0 discordant pairs)",
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "significant": false
+    },
+    "citation_coverage": {
+      "mean_delta": 0.0,
+      "median_delta": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "statistical_test": "Exact Paired Test (0 discordant pairs)",
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "significant": false
+    }
+  },
+  "A0_vs_A5_Dense_Only": {
+    "claim_support_rate": {
+      "mean_delta": 0.0333,
+      "median_delta": 0.0,
+      "ci_95": [
+        0.0067,
+        0.0733
+      ],
+      "statistical_test": "Exact Paired Binomial Sign Test",
+      "statistic": 1.0,
+      "p_value": 0.125,
+      "significant": true
+    },
+    "unsupported_claim_rate": {
+      "mean_delta": -0.0333,
+      "median_delta": 0.0,
+      "ci_95": [
+        -0.0733,
+        -0.0067
+      ],
+      "statistical_test": "Exact Paired Binomial Sign Test",
+      "statistic": 0.0,
+      "p_value": 0.125,
+      "significant": true
+    },
+    "citation_precision": {
+      "mean_delta": 0.04,
+      "median_delta": 0.0,
+      "ci_95": [
+        0.01,
+        0.08
+      ],
+      "statistical_test": "Exact Paired Binomial Sign Test",
+      "statistic": 1.0,
+      "p_value": 0.125,
+      "significant": true
+    },
+    "citation_coverage": {
+      "mean_delta": 0.0333,
+      "median_delta": 0.0,
+      "ci_95": [
+        0.0067,
+        0.0733
+      ],
+      "statistical_test": "Exact Paired Binomial Sign Test",
+      "statistic": 1.0,
+      "p_value": 0.125,
+      "significant": true
+    }
+  },
+  "A0_vs_A6_BM25_Only": {
+    "claim_support_rate": {
+      "mean_delta": 0.0,
+      "median_delta": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "statistical_test": "Exact Paired Test (0 discordant pairs)",
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "significant": false
+    },
+    "unsupported_claim_rate": {
+      "mean_delta": 0.0,
+      "median_delta": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "statistical_test": "Exact Paired Test (0 discordant pairs)",
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "significant": false
+    },
+    "citation_precision": {
+      "mean_delta": 0.0,
+      "median_delta": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "statistical_test": "Exact Paired Test (0 discordant pairs)",
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "significant": false
+    },
+    "citation_coverage": {
+      "mean_delta": 0.0,
+      "median_delta": 0.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "statistical_test": "Exact Paired Test (0 discordant pairs)",
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "significant": false
+    }
+  }
+}

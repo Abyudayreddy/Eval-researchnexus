@@ -1,0 +1,187 @@
+{
+  "status": "CONSISTENT_AND_VERIFIED",
+  "query_counts": {
+    "ALL": 100,
+    "DEVELOPMENT": 70,
+    "VALIDATION": 15,
+    "TEST": 15,
+    "sum_of_splits_check": true
+  },
+  "outcome_partition_check": {
+    "quality_improved": 1,
+    "quality_unchanged": 98,
+    "quality_degraded": 1,
+    "sum": 100,
+    "valid": true
+  },
+  "reconciliation_of_77_metric": {
+    "metric_interpretation": "The value 77 represents queries where text rephrasing occurred during refinement, creating surface-level string differences in unsupported sentences.",
+    "correct_categorization": {
+      "iteration_changed_queries": 100,
+      "quality_improved_queries": 1,
+      "quality_unchanged_queries": 98,
+      "quality_degraded_queries": 1,
+      "genuine_quality_regressions": 1
+    }
+  },
+  "fine_grained_regression_breakdown": {
+    "new_unsupported_claim_queries": 22,
+    "new_contradicted_claim_queries": 0,
+    "lost_supported_claim_queries": 1,
+    "citation_precision_regression_queries": 1
+  },
+  "split_aggregate_metrics": {
+    "ALL": {
+      "N": 100,
+      "no_iteration": {
+        "claim_support_rate": 0.035,
+        "unsupported_claim_rate": 0.965,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.04,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0433
+      },
+      "with_iteration": {
+        "claim_support_rate": 0.0333,
+        "unsupported_claim_rate": 0.9667,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.04,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0333
+      },
+      "delta": {
+        "claim_support_rate": -0.0017,
+        "unsupported_claim_rate": 0.0017,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 0.0,
+        "citation_coverage": -0.01
+      },
+      "counts": {
+        "iteration_changed_queries": 100,
+        "quality_improved_queries": 1,
+        "quality_unchanged_queries": 98,
+        "quality_degraded_queries": 1,
+        "genuine_quality_regressions": 1,
+        "legacy_string_level_regressions": 77
+      }
+    },
+    "DEVELOPMENT": {
+      "N": 70,
+      "no_iteration": {
+        "claim_support_rate": 0.05,
+        "unsupported_claim_rate": 0.95,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0571,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0619
+      },
+      "with_iteration": {
+        "claim_support_rate": 0.0476,
+        "unsupported_claim_rate": 0.9524,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0571,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0476
+      },
+      "delta": {
+        "claim_support_rate": -0.0024,
+        "unsupported_claim_rate": 0.0024,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 0.0,
+        "citation_coverage": -0.0143
+      },
+      "counts": {
+        "iteration_changed_queries": 70,
+        "quality_improved_queries": 1,
+        "quality_unchanged_queries": 68,
+        "quality_degraded_queries": 1,
+        "genuine_quality_regressions": 1,
+        "legacy_string_level_regressions": 54
+      }
+    },
+    "VALIDATION": {
+      "N": 15,
+      "no_iteration": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0
+      },
+      "with_iteration": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0
+      },
+      "delta": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 0.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 0.0,
+        "citation_coverage": 0.0
+      },
+      "counts": {
+        "iteration_changed_queries": 15,
+        "quality_improved_queries": 0,
+        "quality_unchanged_queries": 15,
+        "quality_degraded_queries": 0,
+        "genuine_quality_regressions": 0,
+        "legacy_string_level_regressions": 14
+      }
+    },
+    "TEST": {
+      "N": 15,
+      "no_iteration": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0
+      },
+      "with_iteration": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0
+      },
+      "delta": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 0.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 0.0,
+        "citation_coverage": 0.0
+      },
+      "counts": {
+        "iteration_changed_queries": 15,
+        "quality_improved_queries": 0,
+        "quality_unchanged_queries": 15,
+        "quality_degraded_queries": 0,
+        "genuine_quality_regressions": 0,
+        "legacy_string_level_regressions": 9
+      }
+    }
+  },
+  "convergence": {
+    "min_iterations": 0,
+    "max_iterations": 2,
+    "mean_iterations": 1.23,
+    "median_iterations": 1.0,
+    "termination_breakdown": {
+      "successful_refinement": 0,
+      "no_further_change": 3,
+      "anti_oscillation": 71,
+      "maximum_iteration_limit": 26
+    }
+  }
+}

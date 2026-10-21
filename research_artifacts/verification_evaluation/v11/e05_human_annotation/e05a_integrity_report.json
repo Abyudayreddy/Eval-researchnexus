@@ -1,0 +1,17 @@
+{
+  "check_exactly_15_val_queries": true,
+  "check_exactly_15_test_queries": true,
+  "check_exactly_30_total_queries": true,
+  "check_all_claims_from_validated_e04_1": true,
+  "check_evidence_text_preserved": true,
+  "check_evidence_ids_preserved": true,
+  "check_query_ids_preserved": true,
+  "check_no_labels_assigned_automatically": true,
+  "check_no_verifier_prediction_exposed": true,
+  "check_no_synthetic_claims": true,
+  "check_no_synthetic_evidence": true,
+  "check_no_duplicate_query_ids_in_set": true,
+  "check_annotator_packages_blinded": true,
+  "check_adjudication_template_initially_empty": true,
+  "overall_integrity_passed": true
+}

@@ -1,0 +1,16 @@
+query_id,expected_paper_id,expected_evidence_id,canonical_db_paper_id,bm25_doc_id_representation,dense_doc_id_representation,prefix_mismatch,zero_padding_mismatch,stale_index_mismatch,contract_status
+item_v11_086,"[""paper_res_032""]","[""paper_res_032_chunk_001"", ""paper_res_032_chunk_002""]",paper_res_032,paper_res_032,paper_res_032,False,False,False,VERIFIED_EXACT_MATCH
+item_v11_087,"[""paper_res_033""]","[""paper_res_033_chunk_001"", ""paper_res_033_chunk_002""]",paper_res_033,paper_res_033,paper_res_033,False,False,False,VERIFIED_EXACT_MATCH
+item_v11_088,"[""paper_res_034""]","[""paper_res_034_chunk_001"", ""paper_res_034_chunk_002""]",paper_res_034,paper_res_034,paper_res_034,False,False,False,VERIFIED_EXACT_MATCH
+item_v11_089,"[""paper_res_035""]","[""paper_res_035_chunk_001"", ""paper_res_035_chunk_002""]",paper_res_035,paper_res_035,paper_res_035,False,False,False,VERIFIED_EXACT_MATCH
+item_v11_090,"[""paper_res_036""]","[""paper_res_036_chunk_001"", ""paper_res_036_chunk_002""]",paper_res_036,paper_res_036,paper_res_036,False,False,False,VERIFIED_EXACT_MATCH
+item_v11_091,"[""paper_res_032""]","[""paper_res_032_chunk_002""]",paper_res_032,paper_res_032,paper_res_032,False,False,False,VERIFIED_EXACT_MATCH
+item_v11_092,"[""paper_res_033""]","[""paper_res_033_chunk_002""]",paper_res_033,paper_res_033,paper_res_033,False,False,False,VERIFIED_EXACT_MATCH
+item_v11_093,"[""paper_res_034""]","[""paper_res_034_chunk_002""]",paper_res_034,paper_res_034,paper_res_034,False,False,False,VERIFIED_EXACT_MATCH
+item_v11_094,"[""paper_res_035""]","[""paper_res_035_chunk_002""]",paper_res_035,paper_res_035,paper_res_035,False,False,False,VERIFIED_EXACT_MATCH
+item_v11_095,"[""paper_res_036""]","[""paper_res_036_chunk_002""]",paper_res_036,paper_res_036,paper_res_036,False,False,False,VERIFIED_EXACT_MATCH
+item_v11_096,[],[],N/A,N/A,N/A,False,False,False,VERIFIED_EXACT_MATCH
+item_v11_097,[],[],N/A,N/A,N/A,False,False,False,VERIFIED_EXACT_MATCH
+item_v11_098,[],[],N/A,N/A,N/A,False,False,False,VERIFIED_EXACT_MATCH
+item_v11_099,[],[],N/A,N/A,N/A,False,False,False,VERIFIED_EXACT_MATCH
+item_v11_100,[],[],N/A,N/A,N/A,False,False,False,VERIFIED_EXACT_MATCH

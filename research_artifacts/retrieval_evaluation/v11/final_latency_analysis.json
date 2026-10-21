@@ -1,0 +1,17 @@
+{
+  "A_hybrid_retrieval_latency": {
+    "p50_ms": 6.557464599609375,
+    "p95_ms": 19.117820262908932
+  },
+  "B_pure_bge_inference_latency": {
+    "classification": "GENUINE_BGE_INFERENCE_LATENCY",
+    "called_count": 100,
+    "p50_ms": 531.4058065414429,
+    "p95_ms": 4246.046030521393,
+    "historical_bypass_note": "The previous ~0.004 ms bypass result is permanently classified as INVALID_BYPASS_LATENCY."
+  },
+  "C_total_hybrid_bge_stage_latency": {
+    "p50_ms": 535.0629091262817,
+    "p95_ms": 4251.50762796402
+  }
+}

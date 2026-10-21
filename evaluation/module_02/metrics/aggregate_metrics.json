@@ -1,0 +1,29 @@
+{
+  "n_queries": 15,
+  "split": "TEST",
+  "answerable_queries": 10,
+  "unanswerable_queries": 5,
+  "naive_rag": {
+    "mean_claim_support_rate": 0.0222,
+    "mean_unsupported_claim_rate": 0.9778,
+    "mean_citation_precision": 0.0667,
+    "mean_citation_coverage": 0.0222,
+    "unanswerable_abstention_rate": 1.0,
+    "mean_latency_ms": 4821.81
+  },
+  "verified_rag": {
+    "mean_claim_support_rate": 0.0,
+    "mean_unsupported_claim_rate": 1.0,
+    "mean_citation_precision": 0.0,
+    "mean_citation_coverage": 0.0,
+    "unanswerable_abstention_rate": 1.0,
+    "mean_latency_ms": 4649.18
+  },
+  "deltas": {
+    "delta_claim_support_rate": -0.0222,
+    "delta_unsupported_claim_rate": 0.0222,
+    "delta_citation_precision": -0.0667,
+    "delta_citation_coverage": -0.0222,
+    "delta_latency_ms": -172.63
+  }
+}

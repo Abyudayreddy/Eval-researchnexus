@@ -1,0 +1,26 @@
+module_id: "module_02"
+module_name: "Controlled Answer Grounding & Claim Verification Evaluation"
+benchmark: "ds_nexus_v11"
+split: "TEST"
+n_queries: 15
+answerable_queries: 10
+unanswerable_queries: 5
+retrieval_source: "evaluation/module_01/raw/B3_rrf.jsonl"
+retrieval_configuration: "B3_Hybrid_RRF"
+candidate_cutoff_k: 20
+llm_model: "gemini-2.5-flash"
+llm_temperature: 0.0
+max_output_tokens: 1024
+conditions:
+  - condition_id: "A"
+    name: "NAIVE_RAG"
+    description: "Context-bounded generation without claim verification feedback or citation repair"
+  - condition_id: "B"
+    name: "VERIFIED_RAG"
+    description: "Context-bounded generation with claim extraction, Stage A deterministic check, Stage B NLI semantic verification, and conservative citation repair"
+evaluation_protocol:
+  context_hash_equivalence: true
+  bootstrap_resamples: 1000
+  confidence_interval: 0.95
+  significance_alpha: 0.05
+human_annotation_status: "HUMAN_VALIDATION_BLOCKED"

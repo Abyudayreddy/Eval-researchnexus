@@ -1,0 +1,17 @@
+{
+  "consistency_audit_decision": "PASS",
+  "reconciliation_summary": {
+    "total_claims": 28,
+    "total_repairs": 28,
+    "total_citations": 1,
+    "total_provenance_chains": 1
+  },
+  "checks": {
+    "claim_units_match_repair_units": true,
+    "citation_units_match_provenance_units": true,
+    "no_ghost_citations": true,
+    "evidence_ids_exist_in_context": true,
+    "paper_ids_consistent_with_evidence": true,
+    "zero_fabrications": true
+  }
+}

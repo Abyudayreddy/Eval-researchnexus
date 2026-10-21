@@ -1,0 +1,14 @@
+{
+  "e11_category_counts.json": "816a6213c9b429853ca33bb210f3b20385e94d4ce785bc65a15b055f44a26879",
+  "e11_category_percentages.json": "4801cfba06e777196c634a50e9f8d30bfa2f05ba09629d6dec77cda1eab494e2",
+  "e11_citation_level_classification.json": "f94cd6db405b7cab8b08253f377e60f9566047ebed9f286d13874e6f8cbef823",
+  "e11_claim_level_classification.json": "d26d9ef641d79b4d071458b6262e5ebe91d2726caaf8e3b7775ef98e6603c17c",
+  "e11_config.json": "78f46ca2a404c0776a1ba193c3fd0ec1089a8f452dbe8111d7a5b6bec1ebf0b4",
+  "e11_error_events.json": "61d20f4e763093577533d718ef7355eaa9b5bf9459f6b17407539c194b9783f2",
+  "e11_failure_trace.json": "63cdcc27a642edd8c31f89039fadfcd3ec97db6081822ec809c20a5deb45f5aa",
+  "e11_integrity_report.json": "412abf477c48f3dcb4d1a66353f318c4752d5e6d2e21cca7b6c9f4b7bb3f1fe6",
+  "e11_query_level_classification.json": "9abf467b530de2bf3afcba8d7b2902ed59e195ca705d94feb7feeff1bd986704",
+  "e11_statistics.json": "d29309d32bf5cd480e03fee7a198a0cc20e738174bc6a24000f349d2de6adab5",
+  "e11_summary_report.md": "f99a7077b56ab4428ea2ad490f4869ed82f49fd674ffb170f12a0731c14ba2c2",
+  "e11_test_items.json": "cf4fe90454b5b8dd0240d79976648743c9e33683512892b04e32353149c09564"
+}

@@ -1,0 +1,31 @@
+module_id: "module_03"
+module_name: "Controlled Citation Validation, Repair & Provenance Evaluation"
+benchmark: "ds_nexus_v11"
+split: "TEST"
+n_queries: 15
+answerable_queries: 10
+unanswerable_queries: 5
+retrieval_source: "evaluation/module_01/raw/B3_rrf.jsonl"
+retrieval_configuration: "B3_Hybrid_RRF"
+candidate_cutoff_k: 20
+llm_model: "gemini-2.5-flash"
+llm_temperature: 0.0
+max_output_tokens: 1024
+conditions:
+  - condition_id: "C0"
+    name: "BASELINE_UNVERIFIED"
+    description: "Frozen generated answer without citation validation or citation repair"
+  - condition_id: "C1"
+    name: "VALIDATION_ONLY"
+    description: "Claim extraction and Stage A/B citation validation without repair"
+  - condition_id: "C2"
+    name: "VALIDATION_AND_CONSERVATIVE_REPAIR"
+    description: "Citation validation followed by conservative CitationRepair and post-repair reverification"
+preregistered_hypotheses:
+  H1: "Citation validation improves citation precision relative to unverified baseline."
+  H2: "Citation validation improves citation coverage for eligible factual claims."
+  H3: "Conservative citation repair successfully repairs a measurable fraction of eligible missing citations."
+  H4: "Citation repair does not introduce a substantial rate of incorrect citations."
+  H5: "The complete provenance chain remains intact for validated citations."
+  H6: "Citation validation and repair introduce measurable computational overhead."
+human_validation_status: "HUMAN_VALIDATION_BLOCKED"

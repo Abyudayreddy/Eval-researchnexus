@@ -1,0 +1,72 @@
+{
+  "csr": {
+    "metric": "CSR",
+    "sample_size": 100,
+    "mean_delta": -0.0017,
+    "median_delta": 0.0,
+    "ci_95": [
+      -0.015,
+      0.01
+    ],
+    "statistical_test": "Exact Paired Binomial Sign Test (discordants=2, pos=1, neg=1)",
+    "statistic": 0.5,
+    "p_value": 1.0,
+    "statistically_significant": false
+  },
+  "ucr": {
+    "metric": "UCR",
+    "sample_size": 100,
+    "mean_delta": 0.0017,
+    "median_delta": 0.0,
+    "ci_95": [
+      -0.01,
+      0.015
+    ],
+    "statistical_test": "Exact Paired Binomial Sign Test (discordants=2, pos=1, neg=1)",
+    "statistic": 0.5,
+    "p_value": 1.0,
+    "statistically_significant": false
+  },
+  "cp": {
+    "metric": "CP",
+    "sample_size": 100,
+    "mean_delta": 0.0,
+    "median_delta": 0.0,
+    "ci_95": [
+      -0.03,
+      0.03
+    ],
+    "statistical_test": "Exact Paired Binomial Sign Test (discordants=2, pos=1, neg=1)",
+    "statistic": 0.5,
+    "p_value": 1.0,
+    "statistically_significant": false
+  },
+  "cc": {
+    "metric": "CC",
+    "sample_size": 100,
+    "mean_delta": 0.0,
+    "median_delta": 0.0,
+    "ci_95": [
+      0.0,
+      0.0
+    ],
+    "statistical_test": "Exact Paired Test (0 discordant pairs)",
+    "statistic": 0.0,
+    "p_value": 1.0,
+    "statistically_significant": false
+  },
+  "cov": {
+    "metric": "COV",
+    "sample_size": 100,
+    "mean_delta": -0.01,
+    "median_delta": 0.0,
+    "ci_95": [
+      -0.0283,
+      0.005
+    ],
+    "statistical_test": "Exact Paired Binomial Sign Test (discordants=4, pos=1, neg=3)",
+    "statistic": 0.25,
+    "p_value": 0.625,
+    "statistically_significant": false
+  }
+}

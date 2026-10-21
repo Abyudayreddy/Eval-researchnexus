@@ -1,0 +1,9 @@
+{
+  "stage": "E05-B",
+  "status": "BLOCKED_INCOMPLETE_HUMAN_ANNOTATION",
+  "dataset": "ds_nexus_v11",
+  "artifact_hashes": {
+    "e05b_integrity_report.json": "3192b7ba5a8e6f457dc8c4c84af8c7f97ec3ff0e9cc1613485fb3cf1947780cc",
+    "e05b_summary_report.md": "c3a4ff45050f8d035559bc638e56744a3857f5001bd715fa56e8ba9f4fa8b40f"
+  }
+}

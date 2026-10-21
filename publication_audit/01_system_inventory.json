@@ -1,0 +1,130 @@
+{
+  "audit_metadata": {
+    "project": "ResearchNexus AI",
+    "audit_date": "2026-09-22",
+    "auditor": "Senior AI/IR Research Engineer & Publication Architect",
+    "target_directory": "publication_audit"
+  },
+  "component_classifications": {
+    "frontend_routes_and_workspaces": {
+      "research_explorer_hybrid_search": {
+        "status": "PARTIALLY_IMPLEMENTED",
+        "file": "src/pages/HybridSearchPage.tsx",
+        "ground_truth": "PARTIAL",
+        "notes": "Renders search UI, domain pills, and progress panels. Backend API calls are implemented, but poll-based state transitions can trigger false zero-result flashes before completion."
+      },
+      "ai_assistant_ask_workspace": {
+        "status": "VERIFIED_IMPLEMENTED",
+        "file": "src/components/assistant/AskWorkspace.tsx",
+        "ground_truth": "VERIFIED",
+        "notes": "Fully hooked to backend /api/ai/ask endpoint with support for hybrid/semantic search modes and structured context selection."
+      },
+      "compare_workspace": {
+        "status": "VERIFIED_IMPLEMENTED",
+        "file": "src/components/assistant/CompareWorkspace.tsx",
+        "ground_truth": "VERIFIED",
+        "notes": "Invokes MultiPaperComparisonEngine via /api/ai/ask (mode='compare') for 2-5 papers."
+      },
+      "synthesis_workspace": {
+        "status": "VERIFIED_IMPLEMENTED",
+        "file": "src/components/assistant/SynthesisWorkspace.tsx",
+        "ground_truth": "VERIFIED",
+        "notes": "Invokes LiteratureSynthesisEngine via /api/ai/ask (mode='synthesis') across selected scope."
+      },
+      "xai_trace_inspector": {
+        "status": "PARTIALLY_IMPLEMENTED",
+        "file": "src/pages/XaiPage.tsx",
+        "ground_truth": "PARTIAL",
+        "notes": "Renders static trace logs (trace_dump.json / status_dump.json). Dedicated backend endpoint /api/ai/explain is an un-implemented stub returning hardcoded JSON."
+      },
+      "evaluation_console": {
+        "status": "BROKEN",
+        "file": "src/components/evaluation/EvaluationConsole.tsx",
+        "ground_truth": "BROKEN",
+        "notes": "Renders evaluation dashboards and metrics tables, but backend evaluation_service.py uses mock simulated functions (_simulate_retriever) instead of real retrieval and LLM calls."
+      },
+      "personal_research_corpus": {
+        "status": "VERIFIED_IMPLEMENTED",
+        "file": "src/components/assistant/PersonalResearchCorpus.tsx",
+        "ground_truth": "VERIFIED",
+        "notes": "Supports PDF ingestion, PyMuPDF extraction, semantic chunking, and isolated ChromaDB vector indexing."
+      }
+    },
+    "backend_services_and_apis": {
+      "ai_api_router": {
+        "status": "VERIFIED_IMPLEMENTED",
+        "file": "backend/app/api/ai.py",
+        "ground_truth": "VERIFIED",
+        "notes": "Dispatches ask, compare, synthesis, and iterative RAG requests to core assistant engines."
+      },
+      "papers_search_api": {
+        "status": "VERIFIED_IMPLEMENTED",
+        "file": "backend/app/api/papers.py",
+        "ground_truth": "VERIFIED",
+        "notes": "Executes background search, polls LocalEvidenceRetriever and dynamic online connectors (arXiv, PMC, OpenAlex, NASA ADS, Crossref)."
+      },
+      "retrieval_engine_chroma_bm25_rrf": {
+        "status": "VERIFIED_IMPLEMENTED",
+        "file": "backend/app/services/retrieval.py",
+        "ground_truth": "VERIFIED",
+        "notes": "Implements BM25Okapi, ChromaDB vector querying, Reciprocal Rank Fusion (k=60), and BGE CrossEncoder reranking."
+      },
+      "local_evidence_retriever": {
+        "status": "VERIFIED_IMPLEMENTED",
+        "file": "backend/app/services/local_evidence.py",
+        "ground_truth": "VERIFIED",
+        "notes": "Provides high-throughput hybrid retrieval with detailed provenance trace data over local KB (670 papers, 14,850 chunks)."
+      },
+      "context_manager": {
+        "status": "VERIFIED_IMPLEMENTED",
+        "file": "backend/app/services/assistant/context_manager.py",
+        "ground_truth": "VERIFIED",
+        "notes": "Validates mode/scope combinations, enforces single-paper/compare constraints, and computes SHA-256 context_hash."
+      },
+      "enhanced_rag_service": {
+        "status": "VERIFIED_IMPLEMENTED",
+        "file": "backend/app/services/assistant/enhanced_rag.py",
+        "ground_truth": "VERIFIED",
+        "notes": "Executes bounded evidence construction, deduplication, Gemini 2.5 Flash generation, and structural citation validation."
+      },
+      "claim_verifier_and_repair": {
+        "status": "VERIFIED_IMPLEMENTED",
+        "file": "backend/app/services/assistant/claim_verifier.py",
+        "ground_truth": "VERIFIED",
+        "notes": "Two-stage verification (Stage A regex/numerical check, Stage B Gemini entailment classification) plus conservative citation repair."
+      },
+      "iterative_rag_service": {
+        "status": "VERIFIED_IMPLEMENTED",
+        "file": "backend/app/services/assistant/iterative_rag.py",
+        "ground_truth": "VERIFIED",
+        "notes": "Executes up to 2 refinement cycles based on self-feedback taxonomy and targeted re-retrieval."
+      },
+      "evaluation_service": {
+        "status": "BROKEN",
+        "file": "backend/app/services/evaluation_service.py",
+        "ground_truth": "BROKEN",
+        "notes": "Evaluation service relies on simulated retriever outputs (_simulate_retriever) and hardcoded metric approximations rather than real execution over ds_nexus_v10."
+      }
+    },
+    "database_and_storage_layer": {
+      "sqlite_postgres_models": {
+        "status": "VERIFIED_IMPLEMENTED",
+        "file": "backend/app/models/",
+        "ground_truth": "VERIFIED",
+        "notes": "Database models for Paper, PaperChunk, SearchExperiment, EvaluationDataset, EvaluationItem, EvaluationExperiment, ResearchSession."
+      },
+      "chroma_vector_store": {
+        "status": "VERIFIED_IMPLEMENTED",
+        "file": "chroma_db/",
+        "ground_truth": "VERIFIED",
+        "notes": "Persistent Chroma collection researchnexus_local_v1_bgebase containing 14,850 768-dim BGE embeddings."
+      },
+      "bm25_serialized_index": {
+        "status": "VERIFIED_IMPLEMENTED",
+        "file": "ResearchMind_LocalKB/indexes/bm25_index.pkl",
+        "ground_truth": "VERIFIED",
+        "notes": "Serialized BM25Okapi index and mapping dict for local KB chunks."
+      }
+    }
+  }
+}

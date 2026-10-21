@@ -1,0 +1,65 @@
+{
+  "dataset_id": "ds_nexus_v11",
+  "created_at_utc": "2026-10-03T09:17:32.353425+00:00",
+  "val_item_ids": [
+    "item_v11_071",
+    "item_v11_072",
+    "item_v11_073",
+    "item_v11_074",
+    "item_v11_075",
+    "item_v11_076",
+    "item_v11_077",
+    "item_v11_078",
+    "item_v11_079",
+    "item_v11_080",
+    "item_v11_081",
+    "item_v11_082",
+    "item_v11_083",
+    "item_v11_084",
+    "item_v11_085"
+  ],
+  "test_item_ids": [
+    "item_v11_086",
+    "item_v11_087",
+    "item_v11_088",
+    "item_v11_089",
+    "item_v11_090",
+    "item_v11_091",
+    "item_v11_092",
+    "item_v11_093",
+    "item_v11_094",
+    "item_v11_095",
+    "item_v11_096",
+    "item_v11_097",
+    "item_v11_098",
+    "item_v11_099",
+    "item_v11_100"
+  ],
+  "total_queries_count": 30,
+  "val_claims_count": 80,
+  "test_claims_count": 56,
+  "total_claims_count": 136,
+  "label_taxonomy": [
+    "SUPPORTED",
+    "PARTIALLY_SUPPORTED",
+    "UNSUPPORTED",
+    "CONTRADICTED"
+  ],
+  "e04_1_source_hashes": {
+    "e04_1_per_query_results.json": "561fa035d1244c6fbac4aa8b1131af90d1c2494ebf34c4ab6617e160f372c428",
+    "e04_1_claim_level_results.json": "29b77c4f196d4a0dd2de731b603986125eca8cf041b9bffe2c24167d77f49faf",
+    "e04_1_verified_answers.json": "6955d05237df960ce01941f6ea1a7ec5e3e50294affb449c090f2053101d4222",
+    "e04_1_naive_answers.json": "43d495a625b056a53818e5a9cad8538a7a84df1869c229e3fae70a29444b076a"
+  },
+  "package_artifact_hashes": {
+    "e05a_config.json": "a4ba7e56c91690558f60c270a6db0f2dec644f3f4c4868b6b1f0b551aea0074e",
+    "e05a_annotation_items.json": "1d8c1bbad44848065df28be7e83911f6b3a86574a7f0d26ea53091828e223742",
+    "e05a_annotator_1_template.csv": "e08a53af611132a5655cb89273f03042bc4f270fb0e1289a17327a925b30eed9",
+    "e05a_annotator_2_template.csv": "e08a53af611132a5655cb89273f03042bc4f270fb0e1289a17327a925b30eed9",
+    "e05a_annotator_1_template.json": "b156df9d0a982d49f8530fc1c853b82f34c198ecad10a2323f28cd2dcc58c99a",
+    "e05a_annotator_2_template.json": "b156df9d0a982d49f8530fc1c853b82f34c198ecad10a2323f28cd2dcc58c99a",
+    "e05a_adjudication_template.csv": "65f36d1c96048282fb5004fbe48fb0553909d9ef72477b53eba481a229b67aff",
+    "e05a_adjudication_template.json": "8bae8e121650c8c748d841fe04185e5f39232c308eb289b8ce9ac7b5388f62af",
+    "e05a_annotation_guidelines.md": "405bd853aa9b3f647f98c6df007a112ecbb0eaf4f87bcf6590629b27aa2862fe"
+  }
+}

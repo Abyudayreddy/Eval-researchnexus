@@ -1,0 +1,9 @@
+figure_id,figure_title,paper_section,primary_source_artifact,sample_size,validation_status,audit_notes
+fig01,ResearchNexus Multi-Stage Architecture,Section III,software_architecture,N/A,VALID,Clean L-to-R layout; explicit distinction between Explorer and Ask AI (no second retrieval); separate XAI provenance layer
+fig02,Candidate Context Retrieval Performance,Section IV-B,e03_3_canonical_results_live.json,N=100 (DEV=70 VAL=15 TEST=15),VALID,Recall and Hit at k in [5 10 20 50]; TEST N=15 annotation at k=20
+fig03,Grounding Comparison Naive vs Verified,Section IV-D,e04_1_aggregate_metrics.json,N=100,VALID,Three aligned panels (CSR UCR CP); McNemar paired test p=0.6831
+fig04,Disaggregated Latency Profiles,Section IV-C,table_latency.csv,N=100,VALID,Log-scale p50 and p95; BGE dominates pre-generation reranking
+fig05,Refinement Tradeoff: Quality vs Latency,Section IV-G,e07_statistics.json,N=100,VALID,Neutral wording; exact permutation p=1.0000; 2.2x latency cost
+fig06,Architectural Component Ablation,Section IV-I,e10_aggregate_metrics.json,N=100,VALID,Log-scale ms latency; A2 and A4 marked as [DERIVED]
+fig07,Error Taxonomy on TEST Split,Section IV-J,e11_summary_report.md,N=15 TEST (28 claims),VALID,Measured categories only plotted; unmeasured E05 labeled in note; 0 miss at k=20
+fig08,Automated XAI Provenance Audit,Section IV-H,e08_metrics.json,N=202 claims,VALID,100% compliance across automated hash and offset links

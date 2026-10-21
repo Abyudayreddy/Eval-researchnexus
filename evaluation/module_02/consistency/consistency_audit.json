@@ -1,0 +1,9 @@
+{
+  "consistency_status": "PASS",
+  "benchmark": "ds_nexus_v11",
+  "split": "TEST",
+  "query_ids_match_module_01": true,
+  "evidence_pools_match_module_01_b3": true,
+  "citation_mapping_canonical": true,
+  "n_evaluated": 15
+}

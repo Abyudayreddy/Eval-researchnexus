@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "reconciliation_status": "CORRECTED_AGAINST_CANONICAL_E03_3",
+  "test_n_exact_15": true,
+  "frozen_item_ids_preserved": true,
+  "multi_label_policy_documented": true,
+  "reconciliation_invariants": {
+    "claims_invariant": true,
+    "repairs_invariant": true,
+    "traces_invariant": true,
+    "event_sum_invariant": true
+  },
+  "e05_status": "BLOCKED_PRESERVED",
+  "zero_synthetic_labels": true,
+  "source_artifacts_verified": true
+}

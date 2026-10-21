@@ -1,0 +1,20 @@
+{
+  "dataset": "ds_nexus_v11",
+  "evaluation_stage": "E05A",
+  "title": "Human Annotation Package Generation",
+  "val_queries_count": 15,
+  "test_queries_count": 15,
+  "total_queries_count": 30,
+  "val_claims_count": 80,
+  "test_claims_count": 56,
+  "total_claims_count": 136,
+  "label_taxonomy": [
+    "SUPPORTED",
+    "PARTIALLY_SUPPORTED",
+    "UNSUPPORTED",
+    "CONTRADICTED"
+  ],
+  "blinded": true,
+  "synthetic_labels_generated": false,
+  "source_generation_artifacts": "research_artifacts/generation_evaluation/v11/e04_1_corrected/"
+}

@@ -1,0 +1,30 @@
+{
+  "xai_audit": {
+    "ground_truth_status": "PARTIAL",
+    "trace_capabilities": {
+      "part_a_paper_retrieval_explanation": {
+        "status": "VERIFIED",
+        "description": "Explains why a paper was retrieved/reranked, including BM25 rank, dense rank, RRF score, and BGE reranker score."
+      },
+      "part_b_claim_citation_explanation": {
+        "status": "PARTIAL",
+        "description": "Explains claim verification status (SUPPORTED/UNSUPPORTED), Stage A/B method, and cited chunk_id. However, explicit end-to-end linking from final claim to BGE rank/RRF score is fragmented across separate UI stores."
+      }
+    },
+    "conceptual_trace_chain": {
+      "chain_spec": "FINAL CLAIM -> CITATION -> EVIDENCE BLOCK -> PAPER -> BGE RANK -> RRF -> BM25/DENSE ORIGIN",
+      "implementation_status": "PARTIAL",
+      "gap": "The frontend XAI modal (XAIModal.tsx) displays paper-level retrieval scores (BM25, dense, RRF, BGE), while ClaimProofDrawer.tsx displays claim-to-evidence verification. The unified end-to-end chain connecting a specific final claim back to its paper's BGE rank and BM25/dense origin is split between two separate components."
+    },
+    "xai_history_reexecution_audit": {
+      "question": "Does opening old XAI history rerun search, BM25, dense retrieval, BGE, or Gemini?",
+      "verdict": "VERIFIED (NO RERUN)",
+      "explanation": "Opening old XAI history loads stored trace JSON artifacts (status_dump.json, trace_dump.json, or SQLite SearchExperiment.results). It renders cached execution traces without re-triggering search, BM25, dense vector search, BGE reranking, or Gemini inference."
+    },
+    "api_endpoint_audit": {
+      "endpoint": "/api/explain in backend/app/api/ai.py",
+      "status": "BROKEN / UNIMPLEMENTED",
+      "detail": "Line 305 of ai.py defines @router.get('/explain') returning {'message': 'AI Explain endpoint'}, which is a stub rather than a dynamic API."
+    }
+  }
+}

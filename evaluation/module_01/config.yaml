@@ -1,0 +1,76 @@
+dataset:
+  benchmark: ds_nexus_v11
+  corpus_version: ResearchMind_LocalKB_v1
+  corpus_total_chunks: 26179
+  corpus_total_papers: 739
+  split: TEST
+  test_query_count: 15
+  test_query_ids:
+    - item_v11_086
+    - item_v11_087
+    - item_v11_088
+    - item_v11_089
+    - item_v11_090
+    - item_v11_091
+    - item_v11_092
+    - item_v11_093
+    - item_v11_094
+    - item_v11_095
+    - item_v11_096
+    - item_v11_097
+    - item_v11_098
+    - item_v11_099
+    - item_v11_100
+  relevance_levels:
+    paper: expected_paper_ids
+    evidence: expected_evidence_ids
+
+retrieval:
+  candidate_cutoffs:
+    - 5
+    - 10
+    - 20
+    - 50
+
+bm25:
+  library: rank_bm25
+  algorithm: BM25Okapi
+  tokenizer: clean_token (regex alphanumeric lowercased split)
+  k1: 1.5
+  b: 0.75
+  index_path: ResearchMind_LocalKB/indexes/bm25_index.pkl
+  mapping_path: ResearchMind_LocalKB/indexes/bm25_mapping.json
+
+dense:
+  embedding_model: BAAI/bge-base-en-v1.5
+  embedding_dimension: 768
+  similarity: cosine
+  normalize_embeddings: true
+  collection: researchnexus_local_v1_bgebase
+  chroma_path: ResearchMind_LocalKB/indexes/chroma
+
+rrf:
+  enabled: true
+  k: 60
+  formula: sum(1 / (60 + rank))
+  input_sources:
+    - bm25
+    - dense
+
+bge:
+  model: BAAI/bge-reranker-base
+  parameters: 110M
+  input_source: B3 candidate pool
+  candidate_depth: 20
+  output_cutoffs:
+    - 5
+    - 10
+    - 20
+
+execution:
+  warmup_runs: 1
+  repetitions: 1
+  concurrency: 1 (sequential)
+  cache_policy: no_query_cache
+  random_seed: 42
+  environment: local_cpu

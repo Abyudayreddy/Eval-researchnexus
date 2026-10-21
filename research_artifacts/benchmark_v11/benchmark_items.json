@@ -1,0 +1,1512 @@
+[
+  {
+    "item_id": "item_v11_001",
+    "question": "What specific scaling challenges and problem formulation are discussed in Deep Learning & Neural Architectures research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "EASY",
+    "expected_paper_ids": [
+      "paper_res_001"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_001_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Deep Learning & Neural Architectures.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_002",
+    "question": "What specific scaling challenges and problem formulation are discussed in Large Language Models & Evaluation research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "EASY",
+    "expected_paper_ids": [
+      "paper_res_002"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_002_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Large Language Models & Evaluation.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_003",
+    "question": "What specific scaling challenges and problem formulation are discussed in Multimodal Representation Learning research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "EASY",
+    "expected_paper_ids": [
+      "paper_res_003"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_003_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Multimodal Representation Learning.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_004",
+    "question": "What specific scaling challenges and problem formulation are discussed in Dense Retrieval & Reranking Models research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "EASY",
+    "expected_paper_ids": [
+      "paper_res_004"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_004_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Dense Retrieval & Reranking Models.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_005",
+    "question": "What specific scaling challenges and problem formulation are discussed in Deep Learning & Neural Architectures research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "EASY",
+    "expected_paper_ids": [
+      "paper_res_005"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_005_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Deep Learning & Neural Architectures.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_006",
+    "question": "What specific scaling challenges and problem formulation are discussed in Large Language Models & Evaluation research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "EASY",
+    "expected_paper_ids": [
+      "paper_res_006"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_006_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Large Language Models & Evaluation.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_007",
+    "question": "What specific scaling challenges and problem formulation are discussed in Multimodal Representation Learning research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "EASY",
+    "expected_paper_ids": [
+      "paper_res_007"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_007_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Multimodal Representation Learning.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_008",
+    "question": "What specific scaling challenges and problem formulation are discussed in Dense Retrieval & Reranking Models research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "EASY",
+    "expected_paper_ids": [
+      "paper_res_008"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_008_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Dense Retrieval & Reranking Models.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_009",
+    "question": "What specific scaling challenges and problem formulation are discussed in Deep Learning & Neural Architectures research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "EASY",
+    "expected_paper_ids": [
+      "paper_res_009"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_009_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Deep Learning & Neural Architectures.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_010",
+    "question": "What specific scaling challenges and problem formulation are discussed in Large Language Models & Evaluation research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "EASY",
+    "expected_paper_ids": [
+      "paper_res_010"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_010_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Large Language Models & Evaluation.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_011",
+    "question": "What specific scaling challenges and problem formulation are discussed in Multimodal Representation Learning research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_011"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_011_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Multimodal Representation Learning.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_012",
+    "question": "What specific scaling challenges and problem formulation are discussed in Dense Retrieval & Reranking Models research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_012"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_012_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Dense Retrieval & Reranking Models.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_013",
+    "question": "What specific scaling challenges and problem formulation are discussed in Deep Learning & Neural Architectures research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_013"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_013_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Deep Learning & Neural Architectures.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_014",
+    "question": "What specific scaling challenges and problem formulation are discussed in Large Language Models & Evaluation research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_014"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_014_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Large Language Models & Evaluation.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_015",
+    "question": "What specific scaling challenges and problem formulation are discussed in Multimodal Representation Learning research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_015"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_015_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Multimodal Representation Learning.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_016",
+    "question": "What specific scaling challenges and problem formulation are discussed in Dense Retrieval & Reranking Models research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_016"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_016_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Dense Retrieval & Reranking Models.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_017",
+    "question": "What specific scaling challenges and problem formulation are discussed in Deep Learning & Neural Architectures research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_017"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_017_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Deep Learning & Neural Architectures.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_018",
+    "question": "What specific scaling challenges and problem formulation are discussed in Large Language Models & Evaluation research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_018"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_018_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Large Language Models & Evaluation.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_019",
+    "question": "What specific scaling challenges and problem formulation are discussed in Multimodal Representation Learning research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_019"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_019_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Multimodal Representation Learning.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_020",
+    "question": "What specific scaling challenges and problem formulation are discussed in Dense Retrieval & Reranking Models research?",
+    "type": "FACTUAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_020"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_020_chunk_001"
+    ],
+    "reference_answer": "Formulates adaptive scaling and contrastive loss optimization for Dense Retrieval & Reranking Models.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_021",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Multimodal Representation Learning?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_007"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_007_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_022",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Dense Retrieval & Reranking Models?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_008"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_008_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_023",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Deep Learning & Neural Architectures?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_009"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_009_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_024",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Large Language Models & Evaluation?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_010"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_010_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_025",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Multimodal Representation Learning?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_011"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_011_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_026",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Dense Retrieval & Reranking Models?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_012"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_012_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_027",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Deep Learning & Neural Architectures?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_013"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_013_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_028",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Large Language Models & Evaluation?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_014"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_014_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_029",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Multimodal Representation Learning?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_015"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_015_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_030",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Dense Retrieval & Reranking Models?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_016"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_016_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_031",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Deep Learning & Neural Architectures?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_017"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_017_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_032",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Large Language Models & Evaluation?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_018"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_018_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_033",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Multimodal Representation Learning?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_019"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_019_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_034",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Dense Retrieval & Reranking Models?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_020"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_020_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_035",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Deep Learning & Neural Architectures?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_021"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_021_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_036",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Large Language Models & Evaluation?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_022"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_022_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_037",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Multimodal Representation Learning?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_023"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_023_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_038",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Dense Retrieval & Reranking Models?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_024"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_024_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_039",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Deep Learning & Neural Architectures?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_025"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_025_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_040",
+    "question": "What optimization technique and loss function parameters are combined for contrastive optimization in Large Language Models & Evaluation?",
+    "type": "METHODOLOGICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_026"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_026_chunk_001"
+    ],
+    "reference_answer": "Combines contrastive optimization and adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_041",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Dense Retrieval & Reranking Models?",
+    "type": "NUMERICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_012"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_012_chunk_002"
+    ],
+    "reference_answer": "Achieves 92.4% Precision@5 and 15.4% error rate reduction across 5 benchmark datasets.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_042",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Deep Learning & Neural Architectures?",
+    "type": "NUMERICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_013"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_013_chunk_002"
+    ],
+    "reference_answer": "Achieves 92.4% Precision@5 and 15.4% error rate reduction across 5 benchmark datasets.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_043",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Large Language Models & Evaluation?",
+    "type": "NUMERICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_014"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_014_chunk_002"
+    ],
+    "reference_answer": "Achieves 92.4% Precision@5 and 15.4% error rate reduction across 5 benchmark datasets.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_044",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Multimodal Representation Learning?",
+    "type": "NUMERICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_015"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_015_chunk_002"
+    ],
+    "reference_answer": "Achieves 92.4% Precision@5 and 15.4% error rate reduction across 5 benchmark datasets.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_045",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Dense Retrieval & Reranking Models?",
+    "type": "NUMERICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_016"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_016_chunk_002"
+    ],
+    "reference_answer": "Achieves 92.4% Precision@5 and 15.4% error rate reduction across 5 benchmark datasets.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_046",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Deep Learning & Neural Architectures?",
+    "type": "NUMERICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_017"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_017_chunk_002"
+    ],
+    "reference_answer": "Achieves 92.4% Precision@5 and 15.4% error rate reduction across 5 benchmark datasets.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_047",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Large Language Models & Evaluation?",
+    "type": "NUMERICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_018"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_018_chunk_002"
+    ],
+    "reference_answer": "Achieves 92.4% Precision@5 and 15.4% error rate reduction across 5 benchmark datasets.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_048",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Multimodal Representation Learning?",
+    "type": "NUMERICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_019"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_019_chunk_002"
+    ],
+    "reference_answer": "Achieves 92.4% Precision@5 and 15.4% error rate reduction across 5 benchmark datasets.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_049",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Dense Retrieval & Reranking Models?",
+    "type": "NUMERICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_020"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_020_chunk_002"
+    ],
+    "reference_answer": "Achieves 92.4% Precision@5 and 15.4% error rate reduction across 5 benchmark datasets.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_050",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Deep Learning & Neural Architectures?",
+    "type": "NUMERICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_021"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_021_chunk_002"
+    ],
+    "reference_answer": "Achieves 92.4% Precision@5 and 15.4% error rate reduction across 5 benchmark datasets.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_051",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Large Language Models & Evaluation?",
+    "type": "NUMERICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_022"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_022_chunk_002"
+    ],
+    "reference_answer": "Achieves 92.4% Precision@5 and 15.4% error rate reduction across 5 benchmark datasets.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_052",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Multimodal Representation Learning?",
+    "type": "NUMERICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_023"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_023_chunk_002"
+    ],
+    "reference_answer": "Achieves 92.4% Precision@5 and 15.4% error rate reduction across 5 benchmark datasets.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_053",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Dense Retrieval & Reranking Models?",
+    "type": "NUMERICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_024"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_024_chunk_002"
+    ],
+    "reference_answer": "Achieves 92.4% Precision@5 and 15.4% error rate reduction across 5 benchmark datasets.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_054",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Deep Learning & Neural Architectures?",
+    "type": "NUMERICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_025"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_025_chunk_002"
+    ],
+    "reference_answer": "Achieves 92.4% Precision@5 and 15.4% error rate reduction across 5 benchmark datasets.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_055",
+    "question": "What specific quantitative Precision@5 score and percentage error rate reduction are achieved in empirical benchmark comparisons for Large Language Models & Evaluation?",
+    "type": "NUMERICAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_026"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_026_chunk_002"
+    ],
+    "reference_answer": "Achieves 92.4% Precision@5 and 15.4% error rate reduction across 5 benchmark datasets.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_056",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Deep Learning & Neural Architectures?",
+    "type": "CAUSAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_017"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_017_chunk_002"
+    ],
+    "reference_answer": "Reduces error rate by stabilizing adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_057",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Large Language Models & Evaluation?",
+    "type": "CAUSAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_018"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_018_chunk_002"
+    ],
+    "reference_answer": "Reduces error rate by stabilizing adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_058",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Multimodal Representation Learning?",
+    "type": "CAUSAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_019"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_019_chunk_002"
+    ],
+    "reference_answer": "Reduces error rate by stabilizing adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_059",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Dense Retrieval & Reranking Models?",
+    "type": "CAUSAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_020"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_020_chunk_002"
+    ],
+    "reference_answer": "Reduces error rate by stabilizing adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_060",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Deep Learning & Neural Architectures?",
+    "type": "CAUSAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_021"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_021_chunk_002"
+    ],
+    "reference_answer": "Reduces error rate by stabilizing adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_061",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Large Language Models & Evaluation?",
+    "type": "CAUSAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_022"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_022_chunk_002"
+    ],
+    "reference_answer": "Reduces error rate by stabilizing adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_062",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Multimodal Representation Learning?",
+    "type": "CAUSAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_023"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_023_chunk_002"
+    ],
+    "reference_answer": "Reduces error rate by stabilizing adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_063",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Dense Retrieval & Reranking Models?",
+    "type": "CAUSAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_024"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_024_chunk_002"
+    ],
+    "reference_answer": "Reduces error rate by stabilizing adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_064",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Deep Learning & Neural Architectures?",
+    "type": "CAUSAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_025"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_025_chunk_002"
+    ],
+    "reference_answer": "Reduces error rate by stabilizing adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_065",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Large Language Models & Evaluation?",
+    "type": "CAUSAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_026"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_026_chunk_002"
+    ],
+    "reference_answer": "Reduces error rate by stabilizing adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_066",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Multimodal Representation Learning?",
+    "type": "CAUSAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_027"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_027_chunk_002"
+    ],
+    "reference_answer": "Reduces error rate by stabilizing adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_067",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Dense Retrieval & Reranking Models?",
+    "type": "CAUSAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_028"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_028_chunk_002"
+    ],
+    "reference_answer": "Reduces error rate by stabilizing adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_068",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Deep Learning & Neural Architectures?",
+    "type": "CAUSAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_029"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_029_chunk_002"
+    ],
+    "reference_answer": "Reduces error rate by stabilizing adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_069",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Large Language Models & Evaluation?",
+    "type": "CAUSAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_030"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_030_chunk_002"
+    ],
+    "reference_answer": "Reduces error rate by stabilizing adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_070",
+    "question": "Why does the proposed contrastive optimization technique result in error rate reduction compared to standard baselines in Multimodal Representation Learning?",
+    "type": "CAUSAL",
+    "split": "DEVELOPMENT",
+    "difficulty": "MEDIUM",
+    "expected_paper_ids": [
+      "paper_res_031"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_031_chunk_002"
+    ],
+    "reference_answer": "Reduces error rate by stabilizing adaptive gradient scheduling.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_071",
+    "question": "How do the contrastive optimization methodologies compare between Deep Learning & Neural Architectures and Large Language Models & Evaluation studies?",
+    "type": "COMPARATIVE",
+    "split": "VALIDATION",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_001",
+      "paper_res_002"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_001_chunk_001",
+      "paper_res_002_chunk_001"
+    ],
+    "reference_answer": "Both studies leverage contrastive loss optimization but target distinct subdomain challenges.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_072",
+    "question": "How do the contrastive optimization methodologies compare between Multimodal Representation Learning and Dense Retrieval & Reranking Models studies?",
+    "type": "COMPARATIVE",
+    "split": "VALIDATION",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_003",
+      "paper_res_004"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_003_chunk_001",
+      "paper_res_004_chunk_001"
+    ],
+    "reference_answer": "Both studies leverage contrastive loss optimization but target distinct subdomain challenges.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_073",
+    "question": "How do the contrastive optimization methodologies compare between Deep Learning & Neural Architectures and Large Language Models & Evaluation studies?",
+    "type": "COMPARATIVE",
+    "split": "VALIDATION",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_005",
+      "paper_res_006"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_005_chunk_001",
+      "paper_res_006_chunk_001"
+    ],
+    "reference_answer": "Both studies leverage contrastive loss optimization but target distinct subdomain challenges.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_074",
+    "question": "How do the contrastive optimization methodologies compare between Multimodal Representation Learning and Dense Retrieval & Reranking Models studies?",
+    "type": "COMPARATIVE",
+    "split": "VALIDATION",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_007",
+      "paper_res_008"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_007_chunk_001",
+      "paper_res_008_chunk_001"
+    ],
+    "reference_answer": "Both studies leverage contrastive loss optimization but target distinct subdomain challenges.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_075",
+    "question": "How do the contrastive optimization methodologies compare between Deep Learning & Neural Architectures and Large Language Models & Evaluation studies?",
+    "type": "COMPARATIVE",
+    "split": "VALIDATION",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_009",
+      "paper_res_010"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_009_chunk_001",
+      "paper_res_010_chunk_001"
+    ],
+    "reference_answer": "Both studies leverage contrastive loss optimization but target distinct subdomain challenges.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_076",
+    "question": "How do the contrastive optimization methodologies compare between Multimodal Representation Learning and Dense Retrieval & Reranking Models studies?",
+    "type": "COMPARATIVE",
+    "split": "VALIDATION",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_011",
+      "paper_res_012"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_011_chunk_001",
+      "paper_res_012_chunk_001"
+    ],
+    "reference_answer": "Both studies leverage contrastive loss optimization but target distinct subdomain challenges.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_077",
+    "question": "How do the contrastive optimization methodologies compare between Deep Learning & Neural Architectures and Large Language Models & Evaluation studies?",
+    "type": "COMPARATIVE",
+    "split": "VALIDATION",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_013",
+      "paper_res_014"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_013_chunk_001",
+      "paper_res_014_chunk_001"
+    ],
+    "reference_answer": "Both studies leverage contrastive loss optimization but target distinct subdomain challenges.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_078",
+    "question": "How do the contrastive optimization methodologies compare between Multimodal Representation Learning and Dense Retrieval & Reranking Models studies?",
+    "type": "COMPARATIVE",
+    "split": "VALIDATION",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_015",
+      "paper_res_016"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_015_chunk_001",
+      "paper_res_016_chunk_001"
+    ],
+    "reference_answer": "Both studies leverage contrastive loss optimization but target distinct subdomain challenges.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_079",
+    "question": "How do the contrastive optimization methodologies compare between Deep Learning & Neural Architectures and Large Language Models & Evaluation studies?",
+    "type": "COMPARATIVE",
+    "split": "VALIDATION",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_017",
+      "paper_res_018"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_017_chunk_001",
+      "paper_res_018_chunk_001"
+    ],
+    "reference_answer": "Both studies leverage contrastive loss optimization but target distinct subdomain challenges.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_080",
+    "question": "How do the contrastive optimization methodologies compare between Multimodal Representation Learning and Dense Retrieval & Reranking Models studies?",
+    "type": "COMPARATIVE",
+    "split": "VALIDATION",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_019",
+      "paper_res_020"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_019_chunk_001",
+      "paper_res_020_chunk_001"
+    ],
+    "reference_answer": "Both studies leverage contrastive loss optimization but target distinct subdomain challenges.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_081",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Multimodal Representation Learning.",
+    "type": "SYNTHESIS",
+    "split": "VALIDATION",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_027"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_027_chunk_001",
+      "paper_res_027_chunk_002"
+    ],
+    "reference_answer": "Adaptive gradient scheduling directly enables high precision empirical convergence.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_082",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Dense Retrieval & Reranking Models.",
+    "type": "SYNTHESIS",
+    "split": "VALIDATION",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_028"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_028_chunk_001",
+      "paper_res_028_chunk_002"
+    ],
+    "reference_answer": "Adaptive gradient scheduling directly enables high precision empirical convergence.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_083",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Deep Learning & Neural Architectures.",
+    "type": "SYNTHESIS",
+    "split": "VALIDATION",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_029"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_029_chunk_001",
+      "paper_res_029_chunk_002"
+    ],
+    "reference_answer": "Adaptive gradient scheduling directly enables high precision empirical convergence.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_084",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Large Language Models & Evaluation.",
+    "type": "SYNTHESIS",
+    "split": "VALIDATION",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_030"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_030_chunk_001",
+      "paper_res_030_chunk_002"
+    ],
+    "reference_answer": "Adaptive gradient scheduling directly enables high precision empirical convergence.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_085",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Multimodal Representation Learning.",
+    "type": "SYNTHESIS",
+    "split": "VALIDATION",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_031"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_031_chunk_001",
+      "paper_res_031_chunk_002"
+    ],
+    "reference_answer": "Adaptive gradient scheduling directly enables high precision empirical convergence.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_086",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Dense Retrieval & Reranking Models.",
+    "type": "SYNTHESIS",
+    "split": "TEST",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_032"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_032_chunk_001",
+      "paper_res_032_chunk_002"
+    ],
+    "reference_answer": "Adaptive gradient scheduling directly enables high precision empirical convergence.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_087",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Deep Learning & Neural Architectures.",
+    "type": "SYNTHESIS",
+    "split": "TEST",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_033"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_033_chunk_001",
+      "paper_res_033_chunk_002"
+    ],
+    "reference_answer": "Adaptive gradient scheduling directly enables high precision empirical convergence.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_088",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Large Language Models & Evaluation.",
+    "type": "SYNTHESIS",
+    "split": "TEST",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_034"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_034_chunk_001",
+      "paper_res_034_chunk_002"
+    ],
+    "reference_answer": "Adaptive gradient scheduling directly enables high precision empirical convergence.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_089",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Multimodal Representation Learning.",
+    "type": "SYNTHESIS",
+    "split": "TEST",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_035"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_035_chunk_001",
+      "paper_res_035_chunk_002"
+    ],
+    "reference_answer": "Adaptive gradient scheduling directly enables high precision empirical convergence.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_090",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Dense Retrieval & Reranking Models.",
+    "type": "SYNTHESIS",
+    "split": "TEST",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_036"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_036_chunk_001",
+      "paper_res_036_chunk_002"
+    ],
+    "reference_answer": "Adaptive gradient scheduling directly enables high precision empirical convergence.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_091",
+    "question": "Does the study on Dense Retrieval & Reranking Models claim a 99.9% accuracy score with zero latency overhead?",
+    "type": "ADVERSARIAL",
+    "split": "TEST",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_032"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_032_chunk_002"
+    ],
+    "reference_answer": "No, the reported empirical score is 92.4% Precision@5 with a 15.4% error reduction.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_092",
+    "question": "Does the study on Deep Learning & Neural Architectures claim a 99.9% accuracy score with zero latency overhead?",
+    "type": "ADVERSARIAL",
+    "split": "TEST",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_033"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_033_chunk_002"
+    ],
+    "reference_answer": "No, the reported empirical score is 92.4% Precision@5 with a 15.4% error reduction.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_093",
+    "question": "Does the study on Large Language Models & Evaluation claim a 99.9% accuracy score with zero latency overhead?",
+    "type": "ADVERSARIAL",
+    "split": "TEST",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_034"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_034_chunk_002"
+    ],
+    "reference_answer": "No, the reported empirical score is 92.4% Precision@5 with a 15.4% error reduction.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_094",
+    "question": "Does the study on Multimodal Representation Learning claim a 99.9% accuracy score with zero latency overhead?",
+    "type": "ADVERSARIAL",
+    "split": "TEST",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_035"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_035_chunk_002"
+    ],
+    "reference_answer": "No, the reported empirical score is 92.4% Precision@5 with a 15.4% error reduction.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_095",
+    "question": "Does the study on Dense Retrieval & Reranking Models claim a 99.9% accuracy score with zero latency overhead?",
+    "type": "ADVERSARIAL",
+    "split": "TEST",
+    "difficulty": "HARD",
+    "expected_paper_ids": [
+      "paper_res_036"
+    ],
+    "expected_evidence_ids": [
+      "paper_res_036_chunk_002"
+    ],
+    "reference_answer": "No, the reported empirical score is 92.4% Precision@5 with a 15.4% error reduction.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_096",
+    "question": "What non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors?",
+    "type": "UNANSWERABLE",
+    "split": "TEST",
+    "difficulty": "HARD",
+    "expected_paper_ids": [],
+    "expected_evidence_ids": [],
+    "reference_answer": "UNANSWERABLE: Unsupported by corpus.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_097",
+    "question": "What non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors?",
+    "type": "UNANSWERABLE",
+    "split": "TEST",
+    "difficulty": "HARD",
+    "expected_paper_ids": [],
+    "expected_evidence_ids": [],
+    "reference_answer": "UNANSWERABLE: Unsupported by corpus.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_098",
+    "question": "What non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors?",
+    "type": "UNANSWERABLE",
+    "split": "TEST",
+    "difficulty": "HARD",
+    "expected_paper_ids": [],
+    "expected_evidence_ids": [],
+    "reference_answer": "UNANSWERABLE: Unsupported by corpus.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_099",
+    "question": "What non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors?",
+    "type": "UNANSWERABLE",
+    "split": "TEST",
+    "difficulty": "HARD",
+    "expected_paper_ids": [],
+    "expected_evidence_ids": [],
+    "reference_answer": "UNANSWERABLE: Unsupported by corpus.",
+    "gold_evidence_text": ""
+  },
+  {
+    "item_id": "item_v11_100",
+    "question": "What non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors?",
+    "type": "UNANSWERABLE",
+    "split": "TEST",
+    "difficulty": "HARD",
+    "expected_paper_ids": [],
+    "expected_evidence_ids": [],
+    "reference_answer": "UNANSWERABLE: Unsupported by corpus.",
+    "gold_evidence_text": ""
+  }
+]

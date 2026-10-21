@@ -1,0 +1,21 @@
+{
+  "experiment_id": "E04.1",
+  "description": "Corrected Authoritative Controlled Comparison of Naive RAG vs. ResearchNexus Verified RAG",
+  "dataset": "ds_nexus_v11",
+  "total_queries": 100,
+  "split_counts": {
+    "ALL": 100,
+    "DEV": 70,
+    "VAL": 15,
+    "TEST": 15
+  },
+  "retrieval_source": "research_artifacts/retrieval_evaluation/v11/e03_candidate_recall/e03_2_canonical/e03_3_canonical_results_live.json",
+  "retrieval_config": "B3_Hybrid_RRF",
+  "k": 20,
+  "temperature": 0.0,
+  "max_output_tokens": 1024,
+  "llm_model": "gemini-3.5-flash-lite",
+  "llm_provider": "gemini",
+  "refinement_mode": "single_pass_with_repair",
+  "execution_timestamp": "2026-10-02 18:25:13"
+}

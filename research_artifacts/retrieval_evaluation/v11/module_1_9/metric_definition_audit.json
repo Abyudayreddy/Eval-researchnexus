@@ -1,0 +1,71 @@
+{
+  "metrics": {
+    "Hit@1": {
+      "cutoff": 1,
+      "unit": "paper_ids",
+      "relevance_definition": "Binary hit if any top-1 retrieved paper_id is in expected_paper_ids",
+      "duplicates_removed": true,
+      "mrr_cutoff_limited": false,
+      "ndcg_cutoff_limited": false,
+      "handling_no_relevant": "Returns 0.0 for answerable items, 1.0 if gold is empty and top-1 empty",
+      "handling_multiple_relevant": "Any match in gold set yields Hit@1 = 1.0",
+      "mathematically_consistent": "YES"
+    },
+    "Hit@5": {
+      "cutoff": 5,
+      "unit": "paper_ids",
+      "relevance_definition": "Binary hit if any top-5 retrieved paper_id is in expected_paper_ids",
+      "duplicates_removed": true,
+      "mrr_cutoff_limited": false,
+      "ndcg_cutoff_limited": false,
+      "handling_no_relevant": "Returns 0.0",
+      "handling_multiple_relevant": "Any match in top-5 yields Hit@5 = 1.0",
+      "mathematically_consistent": "YES"
+    },
+    "Recall@5": {
+      "cutoff": 5,
+      "unit": "paper_ids",
+      "relevance_definition": "Ratio of unique retrieved gold paper_ids in top-5 to total gold paper_ids",
+      "duplicates_removed": true,
+      "mrr_cutoff_limited": false,
+      "ndcg_cutoff_limited": false,
+      "handling_no_relevant": "Returns 0.0",
+      "handling_multiple_relevant": "Fraction = |hits in top 5| / |gold set|",
+      "mathematically_consistent": "YES"
+    },
+    "Precision@5": {
+      "cutoff": 5,
+      "unit": "paper_ids",
+      "relevance_definition": "Ratio of unique retrieved gold paper_ids in top-5 to 5.0",
+      "duplicates_removed": true,
+      "mrr_cutoff_limited": false,
+      "ndcg_cutoff_limited": false,
+      "handling_no_relevant": "Returns 0.0",
+      "handling_multiple_relevant": "Fraction = |hits in top 5| / 5.0",
+      "mathematically_consistent": "YES"
+    },
+    "MRR": {
+      "cutoff": null,
+      "unit": "paper_ids",
+      "relevance_definition": "Reciprocal of 1-based rank of first matching paper_id across full returned list",
+      "duplicates_removed": true,
+      "mrr_cutoff_limited": false,
+      "ndcg_cutoff_limited": false,
+      "handling_no_relevant": "Returns 0.0",
+      "handling_multiple_relevant": "First hit rank determines reciprocal rank",
+      "mathematically_consistent": "YES"
+    },
+    "NDCG@5": {
+      "cutoff": 5,
+      "unit": "paper_ids",
+      "relevance_definition": "Discounted Cumulative Gain normalized by Ideal DCG for top-5 positions using binary relevance",
+      "duplicates_removed": true,
+      "mrr_cutoff_limited": false,
+      "ndcg_cutoff_limited": true,
+      "handling_no_relevant": "Returns 0.0",
+      "handling_multiple_relevant": "Binary relevance at each position log2(rank+1)",
+      "mathematically_consistent": "YES"
+    }
+  },
+  "overall_audit_verdict": "YES_MATHEMATICALLY_CONSISTENT"
+}

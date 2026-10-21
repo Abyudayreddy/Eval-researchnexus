@@ -1,0 +1,408 @@
+import { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { 
+  CheckCircle2, ChevronRight, FileText, LayoutList, BrainCircuit, 
+  Download, CheckSquare, Square, FolderPlus, Tag, ExternalLink
+} from 'lucide-react';
+import { cn } from '../utils/cn';
+import { api } from '../utils/api';
+import { useResearchSessionStore } from '../store/researchSessionStore';
+
+const STEPS = [
+  { id: 'select', title: 'Select', number: 1 },
+  { id: 'organize', title: 'Organize', number: 2 },
+  { id: 'synthesize', title: 'Synthesize', number: 3 },
+  { id: 'review', title: 'Review', number: 4 }
+];
+
+export default function LiteratureReviewPage() {
+  const [currentStep, setCurrentStep] = useState(1);
+  const [bookmarks, setBookmarks] = useState<any[]>([]);
+  const [selectedPaperIds, setSelectedPaperIds] = useState<Set<string>>(new Set());
+  const [isLoading, setIsLoading] = useState(true);
+  
+  const [synthesisState, setSynthesisState] = useState({
+    status: 'idle', // idle, loading, success, error, insufficient_evidence
+    review: '',
+    sources: [] as any[],
+    trace: null as any
+  });
+  
+  const navigate = useNavigate();
+  const location = useLocation();
+  const projectId = location.state?.projectId;
+  // const searchId = normalizeSearchId(location.state?.search_id);
+  const initialPapers = location.state?.selected_papers;
+  
+  const { activeTopicId, topics } = useResearchSessionStore();
+  const activeTopic = activeTopicId ? topics[activeTopicId] : null;
+
+  useEffect(() => {
+    if (initialPapers && initialPapers.length > 0) {
+      // If we arrived from a search with pre-selected papers, use them directly
+      // Mapping them to look like bookmark objects so the rest of the UI works
+      setBookmarks(initialPapers.map((p: any) => ({ paper: p })));
+      setSelectedPaperIds(new Set(initialPapers.map((p: any) => p.id)));
+      setIsLoading(false);
+    } else {
+      loadBookmarks();
+    }
+  }, [initialPapers]);
+
+  const loadBookmarks = async () => {
+    setIsLoading(true);
+    try {
+      if (projectId) {
+        const data = await api.projects.getPapers(projectId);
+        setBookmarks(data);
+      } else {
+        const data = await api.bookmarks.getAll();
+        setBookmarks(data);
+      }
+    } catch (err) {
+      console.error("Failed to load papers", err);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const togglePaperSelection = (paperId: string) => {
+    const next = new Set(selectedPaperIds);
+    if (next.has(paperId)) {
+      next.delete(paperId);
+    } else {
+      next.add(paperId);
+    }
+    setSelectedPaperIds(next);
+  };
+
+  const selectedPapers = bookmarks.filter(b => selectedPaperIds.has(b.paper.id));
+
+  const generateSynthesis = async () => {
+    if (selectedPaperIds.size === 0) return;
+    
+    setSynthesisState(prev => ({ ...prev, status: 'loading' }));
+    
+    try {
+      const paperIds = Array.from(selectedPaperIds);
+      const res = await api.literatureReview.synthesize(paperIds);
+      
+      setSynthesisState({
+        status: res.generation_status === 'insufficient_evidence' ? 'insufficient_evidence' : (res.generation_status === 'generation_failed' || res.generation_status === 'quota_exceeded' ? 'error' : 'success'),
+        review: res.review,
+        sources: res.sources,
+        trace: res.evidence_trace
+      });
+    } catch (err) {
+      setSynthesisState(prev => ({ ...prev, status: 'error' }));
+    }
+  };
+
+  const nextStep = () => {
+    if (currentStep === 2 && synthesisState.status === 'idle') {
+      generateSynthesis();
+    }
+    setCurrentStep(prev => Math.min(prev + 1, 4));
+  };
+  const prevStep = () => setCurrentStep(prev => Math.max(prev - 1, 1));
+
+  return (
+    <div className="h-full flex flex-col bg-[#FBFDFB] font-sans overflow-hidden relative rounded-xl border border-slate-200">
+      {/* HEADER & STEPPER */}
+      <header className="px-6 py-4 border-b border-slate-200 bg-white shrink-0 z-10">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-center justify-between mb-6">
+            <div>
+              <h1 className="text-xl font-black text-slate-900 flex items-center gap-2">
+                <LayoutList className="w-5 h-5 text-emerald-600" /> Literature Review
+              </h1>
+              <p className="text-xs font-medium text-slate-500 mt-0.5">{activeTopic?.title || 'General Research'}</p>
+            </div>
+            {currentStep === 4 && synthesisState.status === 'success' && (
+              <button className="px-4 py-2 bg-slate-900 text-white rounded-lg text-sm font-bold flex items-center gap-2 hover:bg-slate-800 transition-colors">
+                <Download className="w-4 h-4" /> Export
+              </button>
+            )}
+          </div>
+          
+          <div className="flex items-center justify-between relative">
+            <div className="absolute left-0 top-1/2 -translate-y-1/2 w-full h-0.5 bg-slate-100 -z-10"></div>
+            <div className="absolute left-0 top-1/2 -translate-y-1/2 h-0.5 bg-emerald-500 transition-all duration-300 -z-10" style={{ width: `${((currentStep - 1) / 3) * 100}%` }}></div>
+            
+            {STEPS.map((step) => (
+              <div key={step.id} className="flex flex-col items-center gap-2 bg-white px-2">
+                <div className={cn(
+                  "w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold transition-colors border-2",
+                  currentStep > step.number 
+                    ? "bg-emerald-500 border-emerald-500 text-white" 
+                    : currentStep === step.number
+                      ? "bg-white border-emerald-500 text-emerald-600"
+                      : "bg-white border-slate-200 text-slate-400"
+                )}>
+                  {currentStep > step.number ? <CheckCircle2 className="w-4 h-4" /> : step.number}
+                </div>
+                <span className={cn(
+                  "text-[10px] font-bold uppercase tracking-widest",
+                  currentStep >= step.number ? "text-slate-700" : "text-slate-400"
+                )}>{step.title}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </header>
+
+      {/* MAIN CONTENT AREA */}
+      <div className="flex-1 overflow-y-auto bg-slate-50/50 p-6 md:p-8 min-h-0">
+        <div className="max-w-4xl mx-auto h-full flex flex-col">
+          {currentStep === 1 && (
+             <div className="flex-1 animate-in slide-in-from-right-4 duration-300 flex flex-col">
+               <h2 className="text-lg font-black text-slate-900 mb-2">Select Papers</h2>
+               <p className="text-sm text-slate-500 mb-6">Choose papers from your library to include in this review.</p>
+               
+               {isLoading ? (
+                 <div className="flex justify-center p-12">
+                   <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-emerald-500"></div>
+                 </div>
+               ) : bookmarks.length === 0 ? (
+                 <div className="bg-white border border-slate-200 rounded-xl p-12 text-center shadow-sm my-auto">
+                   <FileText className="w-12 h-12 text-slate-300 mx-auto mb-4" />
+                   <h3 className="text-lg font-bold text-slate-700 mb-2">No papers selected yet.</h3>
+                   <p className="text-sm text-slate-500 mb-6">You need to bookmark some papers before starting a literature review.</p>
+                   <button 
+                     onClick={() => navigate('/paper-library')}
+                     className="px-6 py-2.5 bg-emerald-600 text-white rounded-lg text-sm font-bold hover:bg-emerald-700 transition-colors inline-block"
+                   >
+                     Go to Paper Library
+                   </button>
+                 </div>
+               ) : (
+                 <div className="grid grid-cols-1 gap-3">
+                   {bookmarks.map((b) => {
+                     const isSelected = selectedPaperIds.has(b.paper.id);
+                     return (
+                       <div 
+                         key={b.id}
+                         onClick={() => togglePaperSelection(b.paper.id)}
+                         className={cn(
+                           "bg-white border rounded-xl p-4 shadow-sm cursor-pointer transition-all flex items-start gap-4",
+                           isSelected ? "border-emerald-500 bg-emerald-50/30" : "border-slate-200 hover:border-emerald-300"
+                         )}
+                       >
+                         <div className="mt-0.5">
+                           {isSelected ? <CheckSquare className="w-5 h-5 text-emerald-600" /> : <Square className="w-5 h-5 text-slate-300" />}
+                         </div>
+                         <div className="flex-1 min-w-0">
+                           <h4 className="text-[15px] font-bold text-slate-900 leading-tight mb-1 truncate">{b.paper.title}</h4>
+                           <div className="flex items-center gap-2 text-[11px] font-bold text-slate-500">
+                             <span className="truncate max-w-[200px] text-emerald-600">{b.paper.authors || 'Unknown Authors'}</span>
+                             <span>•</span>
+                             <span>{b.paper.published ? b.paper.published.substring(0, 4) : 'Unknown Year'}</span>
+                           </div>
+                         </div>
+                       </div>
+                     );
+                   })}
+                 </div>
+               )}
+             </div>
+          )}
+
+          {currentStep === 2 && (
+             <div className="flex-1 animate-in slide-in-from-right-4 duration-300">
+               <h2 className="text-lg font-black text-slate-900 mb-2">Organize Themes</h2>
+               <p className="text-sm text-slate-500 mb-6">Assign your selected papers into logical groups or thematic categories.</p>
+               
+               {selectedPapers.length === 0 ? (
+                 <div className="bg-white border border-slate-200 rounded-xl p-8 text-center shadow-sm">
+                   <p className="text-sm text-slate-500 font-medium">Please select at least one paper in Step 1 to organize.</p>
+                 </div>
+               ) : (
+                 <div className="space-y-4">
+                   {selectedPapers.map(b => (
+                     <div key={b.paper.id} className="bg-white border border-slate-200 rounded-xl p-4 shadow-sm flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+                       <div className="flex-1 min-w-0">
+                         <h4 className="text-sm font-bold text-slate-900 truncate mb-1">{b.paper.title}</h4>
+                         <p className="text-[11px] text-slate-500 font-bold truncate">{b.paper.authors}</p>
+                       </div>
+                       <div className="flex items-center gap-2 shrink-0 w-full sm:w-auto">
+                         <Tag className="w-4 h-4 text-slate-400" />
+                         <input 
+                           type="text" 
+                           placeholder="Assign Theme..."
+                           className="bg-slate-50 border border-slate-200 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:border-emerald-400 w-full sm:w-40"
+                         />
+                       </div>
+                     </div>
+                   ))}
+                   <div className="pt-4 flex justify-center">
+                     <button className="text-xs font-bold text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-1">
+                       <FolderPlus className="w-4 h-4" /> Add Custom Group
+                     </button>
+                   </div>
+                 </div>
+               )}
+             </div>
+          )}
+
+          {currentStep === 3 && (
+             <div className="flex-1 animate-in slide-in-from-right-4 duration-300 flex flex-col">
+               <h2 className="text-lg font-black text-slate-900 mb-6">Synthesize Evidence</h2>
+               
+               {synthesisState.status === 'idle' || synthesisState.status === 'loading' ? (
+                 <div className="bg-slate-50 border border-slate-200 rounded-xl p-8 text-center shadow-sm my-auto">
+                   <BrainCircuit className={cn("w-12 h-12 mx-auto mb-4", synthesisState.status === 'loading' ? "text-emerald-500 animate-pulse" : "text-slate-300")} />
+                   <h3 className="text-lg font-bold text-slate-900 mb-2">{synthesisState.status === 'loading' ? 'Synthesizing Literature...' : 'Ready to Synthesize'}</h3>
+                   <p className="text-sm text-slate-500 font-medium max-w-md mx-auto mb-6">
+                     {synthesisState.status === 'loading' 
+                       ? 'Extracting evidence from selected papers and generating a structured review.'
+                       : 'Generate a structured literature review based on the evidence from your selected papers.'}
+                   </p>
+                   {synthesisState.status === 'idle' && (
+                     <button onClick={generateSynthesis} className="px-6 py-2 bg-emerald-600 text-white rounded-lg text-sm font-bold hover:bg-emerald-700 transition-colors">
+                       Generate Synthesis
+                     </button>
+                   )}
+                 </div>
+               ) : synthesisState.status === 'insufficient_evidence' ? (
+                 <div className="bg-amber-50 border border-amber-200 rounded-xl p-8 text-center shadow-sm my-auto">
+                   <FileText className="w-12 h-12 text-amber-400 mx-auto mb-4" />
+                   <h3 className="text-lg font-bold text-amber-900 mb-2">Insufficient Evidence</h3>
+                   <p className="text-sm text-amber-700 font-medium max-w-md mx-auto mb-6">
+                     I couldn't generate a grounded literature synthesis because the selected papers do not contain sufficient research evidence (e.g., missing abstracts).
+                   </p>
+                   <button onClick={() => setCurrentStep(1)} className="px-6 py-2 bg-white border border-amber-300 text-amber-700 rounded-lg text-sm font-bold hover:bg-amber-100 transition-colors">
+                     Go Back to Selection
+                   </button>
+                 </div>
+               ) : synthesisState.status === 'error' ? (
+                 <div className="bg-red-50 border border-red-200 rounded-xl p-8 text-center shadow-sm my-auto">
+                   <BrainCircuit className="w-12 h-12 text-red-400 mx-auto mb-4" />
+                   <h3 className="text-lg font-bold text-red-900 mb-2">Generation Failed</h3>
+                   <p className="text-sm text-red-700 font-medium max-w-md mx-auto mb-6">
+                     Your selected research was retrieved, but the literature synthesis could not be generated. Please try again.
+                   </p>
+                   <button onClick={generateSynthesis} className="px-6 py-2 bg-white border border-red-300 text-red-700 rounded-lg text-sm font-bold hover:bg-red-100 transition-colors">
+                     Retry Synthesis
+                   </button>
+                 </div>
+               ) : (
+                 <div className="flex flex-col h-full space-y-6">
+                   <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                     <div className="flex items-center justify-between mb-4">
+                       <div>
+                         <h3 className="text-sm font-bold text-slate-900">Synthesis Complete</h3>
+                         <div className="flex items-center gap-2 mt-1">
+                           <span className="text-[11px] font-bold text-slate-500 uppercase tracking-widest bg-slate-100 px-2 py-0.5 rounded-full">
+                             Grounded by {synthesisState.trace?.provider === 'gemini' ? 'Gemini' : 'Local AI'}
+                           </span>
+                           <span className="text-[11px] font-bold text-emerald-600 uppercase tracking-widest bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-100">
+                             {synthesisState.trace?.evidence_ready_count} Evidence Sources
+                           </span>
+                         </div>
+                       </div>
+                       <button onClick={generateSynthesis} className="px-3 py-1.5 text-xs font-bold text-slate-500 border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors">
+                         Regenerate
+                       </button>
+                     </div>
+                     <p className="text-sm text-slate-500 font-medium">
+                       Selected Papers: {synthesisState.trace?.selected_count} • Evidence Ready: {synthesisState.trace?.evidence_ready_count} • Metadata Only: {synthesisState.trace?.metadata_only_count}
+                     </p>
+                   </div>
+                   
+                   <div className="bg-white border border-slate-200 rounded-xl shadow-sm p-8 prose prose-slate prose-sm max-w-none overflow-y-auto">
+                     <div dangerouslySetInnerHTML={{ __html: synthesisState.review.replace(/\n/g, '<br/>').replace(/### (.*?)\<br\/\>/g, '<h3>$1</h3>') }} />
+                   </div>
+
+                   {synthesisState.trace?.metadata_only_count > 0 && (
+                     <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 shadow-sm">
+                       <h4 className="text-xs font-bold text-slate-600 uppercase tracking-widest mb-2">Metadata only — not used for synthesis</h4>
+                       <ul className="list-disc pl-4 text-xs text-slate-500 space-y-1">
+                         {synthesisState.sources.filter(s => s.evidence_status === 'metadata_only').map((s: any) => (
+                           <li key={s.paper_id}>{s.title}</li>
+                         ))}
+                       </ul>
+                     </div>
+                   )}
+                 </div>
+               )}
+             </div>
+          )}
+
+          {currentStep === 4 && (
+             <div className="flex-1 animate-in slide-in-from-right-4 duration-300">
+               <h2 className="text-lg font-black text-slate-900 mb-6">Final Review</h2>
+               
+               <div className="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden flex flex-col min-h-[500px]">
+                 <div className="p-8 flex-1">
+                   <h1 className="text-3xl font-black text-slate-900 mb-2 placeholder-slate-300 outline-none" contentEditable data-placeholder="Review Title...">
+                     {activeTopic?.title ? `Literature Review: ${activeTopic.title}` : 'Untitled Literature Review'}
+                   </h1>
+                   <p className="text-sm text-slate-500 font-medium mb-8">
+                     Draft generated from {synthesisState.trace?.evidence_ready_count || 0} selected sources.
+                   </p>
+                   
+                   {selectedPapers.length === 0 ? (
+                     <p className="text-sm leading-relaxed text-slate-400 italic">No papers selected for review.</p>
+                   ) : (
+                     <div className="space-y-8 mt-8">
+                       <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 pb-2">Selected Evidence</h3>
+                       
+                       {synthesisState.sources.filter(s => s.evidence_status === 'evidence_ready').map(s => {
+                         const b = bookmarks.find(bm => bm.paper.id === s.paper_id);
+                         if (!b) return null;
+                         return (
+                           <div key={b.paper.id} className="text-sm flex gap-3">
+                             <div className="font-bold text-emerald-600 mt-0.5">[{s.citation_index}]</div>
+                             <div>
+                               <div className="font-bold text-slate-800 mb-1 leading-snug">{b.paper.title}</div>
+                               <div className="text-slate-600 mb-1">{b.paper.authors} ({b.paper.published ? b.paper.published.substring(0, 4) : 'n.d.'})</div>
+                               <a 
+                                 href={b.paper.url} 
+                                 target="_blank" 
+                                 rel="noreferrer"
+                                 className="text-emerald-600 hover:text-emerald-700 font-medium flex items-center gap-1 text-xs"
+                               >
+                                 View Source <ExternalLink className="w-3 h-3" />
+                               </a>
+                             </div>
+                           </div>
+                         );
+                       })}
+                       
+                       <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 border-b border-slate-100 pb-2 mt-12">Synthesis</h3>
+                       {synthesisState.review ? (
+                         <div className="prose prose-slate prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: synthesisState.review.replace(/\n/g, '<br/>').replace(/### (.*?)\<br\/\>/g, '<h3>$1</h3>') }} />
+                       ) : (
+                         <p className="text-sm text-slate-500 italic">
+                           No synthesis generated yet.
+                         </p>
+                       )}
+                     </div>
+                   )}
+                 </div>
+               </div>
+             </div>
+          )}
+
+          {/* BOTTOM NAVIGATION */}
+          <div className="mt-8 flex items-center justify-between pt-6 border-t border-slate-200 shrink-0">
+            <button 
+              onClick={prevStep}
+              disabled={currentStep === 1}
+              className="px-4 py-2 text-sm font-bold text-slate-600 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-200 rounded-lg transition-colors"
+            >
+              Back
+            </button>
+            <button 
+              onClick={nextStep}
+              disabled={currentStep === 4}
+              className="px-6 py-2 bg-emerald-600 text-white rounded-lg text-sm font-bold hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center gap-2"
+            >
+              Next Step <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

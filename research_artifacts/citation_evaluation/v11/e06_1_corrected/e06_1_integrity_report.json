@@ -1,0 +1,15 @@
+{
+  "exact_retrieved_chunk_ids_used": true,
+  "exact_rank_ordering_preserved": true,
+  "exact_evidence_text_hydrated": true,
+  "context_hash_match_100_percent": true,
+  "real_citation_repair_used": true,
+  "no_synthetic_repair_cases": true,
+  "no_synthetic_labels": true,
+  "exact_e04_1_claims_used": true,
+  "failed_repairs_preserved": true,
+  "real_latency_recorded": true,
+  "dev_val_test_preserved": true,
+  "bootstrap_resamples_1000": true,
+  "overall_integrity_passed": true
+}

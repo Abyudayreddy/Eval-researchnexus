@@ -1,0 +1,42 @@
+[
+  {
+    "sample_id": "sample_01",
+    "query_id": "item_v11_086",
+    "condition": "A",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Dense Retrieval & Reranking Models.",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, there is no mention of a \"92.4% Precision@5\" metric associated with adaptive gradient scheduling in Dense Retrieval & Reranking Models.",
+    "epistemic_type": "INSUFFICIENT_EVIDENCE_FINDING",
+    "human_label": null
+  },
+  {
+    "sample_id": "sample_02",
+    "query_id": "item_v11_086",
+    "condition": "B",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Dense Retrieval & Reranking Models.",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, there is no mention of a \"92.4% Precision@5\" metric related to adaptive gradient scheduling or Dense Retrieval & Reranking Models.",
+    "epistemic_type": "INSUFFICIENT_EVIDENCE_FINDING",
+    "human_label": null
+  },
+  {
+    "sample_id": "sample_03",
+    "query_id": "item_v11_089",
+    "condition": "A",
+    "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Multimodal Representation Learning.",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, the documents mention that recent advances in Multimodal Representation Learning face scaling challenges and formulate a novel loss function combining contrastive optimization and adaptive gradient scheduling .",
+    "epistemic_type": "SUPPORTED_FACTUAL_CLAIM",
+    "human_label": null
+  },
+  {
+    "sample_id": "sample_04",
+    "query_id": "item_v11_096",
+    "condition": "A",
+    "question": "What non-existent quantum gravity calibration constant was verified in 10,000 qubit superconductors?",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, there is no mention of a \"non-existent quantum gravity calibration constant\" or \"10,000 qubit superconductors.\" Therefore, you cannot answer this question based on the retrieved documents.",
+    "epistemic_type": "APPROPRIATE_ABSTENTION",
+    "human_label": null
+  }
+]

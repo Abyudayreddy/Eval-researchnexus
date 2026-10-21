@@ -1,0 +1,153 @@
+{
+  "provenance_status": "PROVENANCE_CONFIRMED",
+  "total_compared": 10,
+  "identical_artifact_count": 0,
+  "distinct_artifact_count": 10,
+  "real_execution_evidence": {
+    "real_llm_inference": true,
+    "model_used": "gemini-3.5-flash-lite",
+    "mean_naive_latency_ms": 5767.46,
+    "mean_verified_latency_ms": 5691.35,
+    "actual_nli_verifier_used": true,
+    "context_hash_match_rate": "100/100",
+    "benchmark_dataset": "ds_nexus_v11",
+    "sample_counts": {
+      "ALL": 100,
+      "DEV": 70,
+      "VAL": 15,
+      "TEST": 15
+    }
+  },
+  "comparison_records": [
+    {
+      "artifact_e04": "e04_config.json",
+      "artifact_e04_1": "e04_1_config.json",
+      "e04_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_naive_vs_verified\\e04_config.json",
+      "e04_1_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_1_corrected\\e04_1_config.json",
+      "e04_size_bytes": 678,
+      "e04_1_size_bytes": 704,
+      "e04_sha256": "32a9b5dbceb96f41ba9d78bf554442027c7601bdf51f9e9428c6099ec6b804f4",
+      "e04_1_sha256": "34ea6aae636b5a6ec5fefb74f9a963ed4cf88202062af562e384f03da840dc73",
+      "e04_mtime": "Tue Sep 29 16:21:01 2026",
+      "e04_1_mtime": "Fri Oct  2 18:25:13 2026",
+      "is_byte_identical": false
+    },
+    {
+      "artifact_e04": "e04_per_query_results.json",
+      "artifact_e04_1": "e04_1_per_query_results.json",
+      "e04_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_naive_vs_verified\\e04_per_query_results.json",
+      "e04_1_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_1_corrected\\e04_1_per_query_results.json",
+      "e04_size_bytes": 137915,
+      "e04_1_size_bytes": 128455,
+      "e04_sha256": "16861c4688903092691bab88d4f8c203f2c9d8c2aacc6697d631050af0e81eec",
+      "e04_1_sha256": "561fa035d1244c6fbac4aa8b1131af90d1c2494ebf34c4ab6617e160f372c428",
+      "e04_mtime": "Tue Sep 29 16:20:56 2026",
+      "e04_1_mtime": "Fri Oct  2 18:25:06 2026",
+      "is_byte_identical": false
+    },
+    {
+      "artifact_e04": "e04_claim_level_results.json",
+      "artifact_e04_1": "e04_1_claim_level_results.json",
+      "e04_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_naive_vs_verified\\e04_claim_level_results.json",
+      "e04_1_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_1_corrected\\e04_1_claim_level_results.json",
+      "e04_size_bytes": 277703,
+      "e04_1_size_bytes": 217746,
+      "e04_sha256": "60f88232d9f2d51b41b6f5b557f937fd10162addd1052923b2d10c54b1f73d94",
+      "e04_1_sha256": "29b77c4f196d4a0dd2de731b603986125eca8cf041b9bffe2c24167d77f49faf",
+      "e04_mtime": "Tue Sep 29 16:20:56 2026",
+      "e04_1_mtime": "Fri Oct  2 18:25:06 2026",
+      "is_byte_identical": false
+    },
+    {
+      "artifact_e04": "e04_citation_level_results.json",
+      "artifact_e04_1": "e04_1_citation_level_results.json",
+      "e04_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_naive_vs_verified\\e04_citation_level_results.json",
+      "e04_1_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_1_corrected\\e04_1_citation_level_results.json",
+      "e04_size_bytes": 16783,
+      "e04_1_size_bytes": 17383,
+      "e04_sha256": "d346077ca07bde16c4661f0ecd995c68a94563da565a4d951dd2196ff4bbaa84",
+      "e04_1_sha256": "ad214a1256c26a6113da473dd5311546f56c5f5b5fc82a02f63fbf83d6d7c1c0",
+      "e04_mtime": "Tue Sep 29 16:20:56 2026",
+      "e04_1_mtime": "Fri Oct  2 18:25:06 2026",
+      "is_byte_identical": false
+    },
+    {
+      "artifact_e04": "e04_latency_results.json",
+      "artifact_e04_1": "e04_1_latency_results.json",
+      "e04_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_naive_vs_verified\\e04_latency_results.json",
+      "e04_1_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_1_corrected\\e04_1_latency_results.json",
+      "e04_size_bytes": 26343,
+      "e04_1_size_bytes": 32333,
+      "e04_sha256": "caef4dee58efca317ad4b362baa7d1d256a201d049d122607c0f945ea6154a7a",
+      "e04_1_sha256": "1a0b06e7953370488517dda869203f4954b4787005bf75de30d7ca5337fb8d04",
+      "e04_mtime": "Tue Sep 29 16:20:56 2026",
+      "e04_1_mtime": "Fri Oct  2 18:25:06 2026",
+      "is_byte_identical": false
+    },
+    {
+      "artifact_e04": "e04_aggregate_metrics.json",
+      "artifact_e04_1": "e04_1_aggregate_metrics.json",
+      "e04_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_naive_vs_verified\\e04_aggregate_metrics.json",
+      "e04_1_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_1_corrected\\e04_1_aggregate_metrics.json",
+      "e04_size_bytes": 3074,
+      "e04_1_size_bytes": 3172,
+      "e04_sha256": "ea4d3987e6aa704b1d8e2591cf0d1a57d1435936102c5d392e715e1ebbae35f4",
+      "e04_1_sha256": "45ca376046124da32e61ffc491d7091e5e4a7bea75ded8072ae09a421a67c612",
+      "e04_mtime": "Tue Sep 29 16:21:01 2026",
+      "e04_1_mtime": "Fri Oct  2 18:25:13 2026",
+      "is_byte_identical": false
+    },
+    {
+      "artifact_e04": "e04_statistical_tests.json",
+      "artifact_e04_1": "e04_1_statistical_tests.json",
+      "e04_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_naive_vs_verified\\e04_statistical_tests.json",
+      "e04_1_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_1_corrected\\e04_1_statistical_tests.json",
+      "e04_size_bytes": 3085,
+      "e04_1_size_bytes": 3067,
+      "e04_sha256": "3457708c89fcc0a9f62f416069ee5d45ba059c9607f82015ff07717fa8e8e9e4",
+      "e04_1_sha256": "4c03d8a3ff6ba5dffd4a67ed59106fea78595e1af4c5ef1205f6c9abfa80c83d",
+      "e04_mtime": "Tue Sep 29 16:21:01 2026",
+      "e04_1_mtime": "Fri Oct  2 18:25:13 2026",
+      "is_byte_identical": false
+    },
+    {
+      "artifact_e04": "e04_naive_answers.json",
+      "artifact_e04_1": "e04_1_naive_answers.json",
+      "e04_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_naive_vs_verified\\e04_naive_answers.json",
+      "e04_1_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_1_corrected\\e04_1_naive_answers.json",
+      "e04_size_bytes": 91098,
+      "e04_1_size_bytes": 70121,
+      "e04_sha256": "33a8397ebdae88e75c3b61615d0c491c250d4d06fb2dfda075f7ba9f3bb97956",
+      "e04_1_sha256": "43d495a625b056a53818e5a9cad8538a7a84df1869c229e3fae70a29444b076a",
+      "e04_mtime": "Tue Sep 29 16:20:56 2026",
+      "e04_1_mtime": "Fri Oct  2 18:25:06 2026",
+      "is_byte_identical": false
+    },
+    {
+      "artifact_e04": "e04_verified_answers.json",
+      "artifact_e04_1": "e04_1_verified_answers.json",
+      "e04_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_naive_vs_verified\\e04_verified_answers.json",
+      "e04_1_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_1_corrected\\e04_1_verified_answers.json",
+      "e04_size_bytes": 112672,
+      "e04_1_size_bytes": 108510,
+      "e04_sha256": "57b540c0f5a44aadd9d590dee57fffbc75ceb71bd59247c0db4358697738d59f",
+      "e04_1_sha256": "6955d05237df960ce01941f6ea1a7ec5e3e50294affb449c090f2053101d4222",
+      "e04_mtime": "Tue Sep 29 16:20:56 2026",
+      "e04_1_mtime": "Fri Oct  2 18:25:06 2026",
+      "is_byte_identical": false
+    },
+    {
+      "artifact_e04": "e04_summary_report.md",
+      "artifact_e04_1": "e04_1_summary_report.md",
+      "e04_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_naive_vs_verified\\e04_summary_report.md",
+      "e04_1_path": "C:\\Users\\Abyureddy\\OneDrive\\Desktop\\SDC2\\research_artifacts\\generation_evaluation\\v11\\e04_1_corrected\\e04_1_summary_report.md",
+      "e04_size_bytes": 3119,
+      "e04_1_size_bytes": 3777,
+      "e04_sha256": "3f4308cb82e366dbe00851ea4826f6ec8a4ab938f9d698960de2f5bf6dee007d",
+      "e04_1_sha256": "05076471c70f0b25cc983207ec8ca54c0d00134d4d3430438b7af821cdbbf732",
+      "e04_mtime": "Tue Sep 29 16:21:01 2026",
+      "e04_1_mtime": "Fri Oct  2 18:25:13 2026",
+      "is_byte_identical": false
+    }
+  ]
+}

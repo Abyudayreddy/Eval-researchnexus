@@ -1,0 +1,25 @@
+{
+  "experiment": "E05",
+  "title": "Claim Verifier Accuracy Evaluation",
+  "status": "BLOCKED_MISSING_HUMAN_REFERENCE",
+  "dataset": "ds_nexus_v11",
+  "pre_check": {
+    "human_annotator_1_labels_exist": false,
+    "human_annotator_2_labels_exist": false,
+    "senior_adjudication_exists": false,
+    "annotation_to_query_mapping_exists": false,
+    "claim_to_evidence_mapping_exists": true,
+    "frozen_label_taxonomy_available": true
+  },
+  "blocker_detail": "Pre-check failed. Authoritative multi-annotator human reference labels (Annotator 1, Annotator 2, Senior Adjudicator) for ds_nexus_v11 (N=30: VAL=15, TEST=15) are missing from repository artifacts.",
+  "protocol_references": [
+    "research_artifacts/paper_experiment_protocol/DATA_ANNOTATION_PROTOCOL.md",
+    "research_artifacts/paper_experiment_protocol/CLAIM_VERIFICATION_PROTOCOL.md"
+  ],
+  "frozen_label_taxonomy": [
+    "SUPPORTED",
+    "PARTIALLY_SUPPORTED",
+    "UNSUPPORTED",
+    "CONTRADICTED"
+  ]
+}

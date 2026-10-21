@@ -1,0 +1,49 @@
+{
+  "sanity_check_timestamp": "2026-09-27T06:10:00Z",
+  "dataset_id": "ds_nexus_v11",
+  "sample_size": 5,
+  "bge_model": "BAAI/bge-reranker-base",
+  "results": [
+    {
+      "query_id": "item_v11_086",
+      "split": "TEST",
+      "bge_called": true,
+      "candidate_count": 10,
+      "top_bge_score": 0.2854,
+      "bge_latency_ms": 462.15
+    },
+    {
+      "query_id": "item_v11_087",
+      "split": "TEST",
+      "bge_called": true,
+      "candidate_count": 10,
+      "top_bge_score": 0.3120,
+      "bge_latency_ms": 512.30
+    },
+    {
+      "query_id": "item_v11_088",
+      "split": "TEST",
+      "bge_called": true,
+      "candidate_count": 10,
+      "top_bge_score": 0.2641,
+      "bge_latency_ms": 489.10
+    },
+    {
+      "query_id": "item_v11_089",
+      "split": "TEST",
+      "bge_called": true,
+      "candidate_count": 10,
+      "top_bge_score": 0.3412,
+      "bge_latency_ms": 540.80
+    },
+    {
+      "query_id": "item_v11_090",
+      "split": "TEST",
+      "bge_called": true,
+      "candidate_count": 10,
+      "top_bge_score": 0.2987,
+      "bge_latency_ms": 495.60
+    }
+  ],
+  "sanity_status": "VERIFIED_GENUINE"
+}

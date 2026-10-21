@@ -1,0 +1,9 @@
+{
+  "unsupported_claim_breakdown": {
+    "total_unsupported_naive": 27,
+    "total_unsupported_verified": 28,
+    "missing_citation_marker": "In 27 out of 28 claims, answers stated negative findings (e.g., 'no mention of 92.4% Precision@5 found') without tagging a specific chunk citation [i]. Claim extractor strictly categorized claims lacking citations as UNSUPPORTED.",
+    "unanswerable_refusal_categorization": "Queries 96-100 are adversarial unanswerable questions. The model correctly abstained by declaring no mention was found, but because abstention sentences carry no chunk citation [i], the deterministic verifier marked them UNSUPPORTED.",
+    "citation_repair_opportunity": "Citation repair correctly operated conservatively and did not hallucinate citation bindings onto explicit refusal/abstention statements."
+  }
+}

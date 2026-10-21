@@ -1,0 +1,38 @@
+{
+  "n_queries": 15,
+  "bootstrap_95ci": {
+    "naive_claim_support_rate": {
+      "mean": 0.0222,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0667
+    },
+    "verified_claim_support_rate": {
+      "mean": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0
+    },
+    "naive_unsupported_claim_rate": {
+      "mean": 0.9778,
+      "ci_lower": 0.9333,
+      "ci_upper": 1.0
+    },
+    "verified_unsupported_claim_rate": {
+      "mean": 1.0,
+      "ci_lower": 1.0,
+      "ci_upper": 1.0
+    },
+    "delta_claim_support_rate": {
+      "mean": -0.0222,
+      "ci_lower": -0.0667,
+      "ci_upper": 0.0
+    }
+  },
+  "mcnemar_test": {
+    "statistic": 0.0,
+    "p_value": 1.0,
+    "b_naive_worse": 0,
+    "c_verified_worse": 0,
+    "significant": false
+  },
+  "conclusion": "No statistically significant difference between Naive RAG and Verified RAG grounding on frozen test set (p=1.000)."
+}

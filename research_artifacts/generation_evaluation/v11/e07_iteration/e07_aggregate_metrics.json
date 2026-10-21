@@ -1,0 +1,134 @@
+{
+  "ALL": {
+    "N": 100,
+    "no_iteration": {
+      "claim_support_rate": 0.035,
+      "unsupported_claim_rate": 0.965,
+      "contradicted_claim_rate": 0.0,
+      "citation_precision": 0.04,
+      "citation_completeness": 1.0,
+      "citation_coverage": 0.0433
+    },
+    "with_iteration": {
+      "claim_support_rate": 0.0333,
+      "unsupported_claim_rate": 0.9667,
+      "contradicted_claim_rate": 0.0,
+      "citation_precision": 0.04,
+      "citation_completeness": 1.0,
+      "citation_coverage": 0.0333
+    },
+    "delta": {
+      "claim_support_rate": -0.0017,
+      "unsupported_claim_rate": 0.0017,
+      "contradicted_claim_rate": 0.0,
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_coverage": -0.01
+    },
+    "outcomes": {
+      "improved": 1,
+      "unchanged": 98,
+      "degraded": 1,
+      "regressions": 77
+    }
+  },
+  "DEVELOPMENT": {
+    "N": 70,
+    "no_iteration": {
+      "claim_support_rate": 0.05,
+      "unsupported_claim_rate": 0.95,
+      "contradicted_claim_rate": 0.0,
+      "citation_precision": 0.0571,
+      "citation_completeness": 1.0,
+      "citation_coverage": 0.0619
+    },
+    "with_iteration": {
+      "claim_support_rate": 0.0476,
+      "unsupported_claim_rate": 0.9524,
+      "contradicted_claim_rate": 0.0,
+      "citation_precision": 0.0571,
+      "citation_completeness": 1.0,
+      "citation_coverage": 0.0476
+    },
+    "delta": {
+      "claim_support_rate": -0.0024,
+      "unsupported_claim_rate": 0.0024,
+      "contradicted_claim_rate": 0.0,
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_coverage": -0.0143
+    },
+    "outcomes": {
+      "improved": 1,
+      "unchanged": 68,
+      "degraded": 1,
+      "regressions": 54
+    }
+  },
+  "VALIDATION": {
+    "N": 15,
+    "no_iteration": {
+      "claim_support_rate": 0.0,
+      "unsupported_claim_rate": 1.0,
+      "contradicted_claim_rate": 0.0,
+      "citation_precision": 0.0,
+      "citation_completeness": 1.0,
+      "citation_coverage": 0.0
+    },
+    "with_iteration": {
+      "claim_support_rate": 0.0,
+      "unsupported_claim_rate": 1.0,
+      "contradicted_claim_rate": 0.0,
+      "citation_precision": 0.0,
+      "citation_completeness": 1.0,
+      "citation_coverage": 0.0
+    },
+    "delta": {
+      "claim_support_rate": 0.0,
+      "unsupported_claim_rate": 0.0,
+      "contradicted_claim_rate": 0.0,
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_coverage": 0.0
+    },
+    "outcomes": {
+      "improved": 0,
+      "unchanged": 15,
+      "degraded": 0,
+      "regressions": 14
+    }
+  },
+  "TEST": {
+    "N": 15,
+    "no_iteration": {
+      "claim_support_rate": 0.0,
+      "unsupported_claim_rate": 1.0,
+      "contradicted_claim_rate": 0.0,
+      "citation_precision": 0.0,
+      "citation_completeness": 1.0,
+      "citation_coverage": 0.0
+    },
+    "with_iteration": {
+      "claim_support_rate": 0.0,
+      "unsupported_claim_rate": 1.0,
+      "contradicted_claim_rate": 0.0,
+      "citation_precision": 0.0,
+      "citation_completeness": 1.0,
+      "citation_coverage": 0.0
+    },
+    "delta": {
+      "claim_support_rate": 0.0,
+      "unsupported_claim_rate": 0.0,
+      "contradicted_claim_rate": 0.0,
+      "citation_precision": 0.0,
+      "citation_completeness": 0.0,
+      "citation_coverage": 0.0
+    },
+    "outcomes": {
+      "improved": 0,
+      "unchanged": 15,
+      "degraded": 0,
+      "regressions": 9
+    }
+  }
+}

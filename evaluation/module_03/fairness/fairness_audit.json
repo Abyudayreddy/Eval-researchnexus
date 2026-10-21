@@ -1,0 +1,129 @@
+{
+  "fairness_audit_decision": "PASS",
+  "n_queries_evaluated": 15,
+  "context_immutability": true,
+  "single_generation_branching": true,
+  "zero_extra_evidence_leakage": true,
+  "per_query_audit": [
+    {
+      "query_id": "item_v11_086",
+      "context_hash_match": true,
+      "answer_shared_across_conditions": true,
+      "evidence_order_preserved": true,
+      "parameters_identical": true,
+      "fairness_status": "PASS"
+    },
+    {
+      "query_id": "item_v11_087",
+      "context_hash_match": true,
+      "answer_shared_across_conditions": true,
+      "evidence_order_preserved": true,
+      "parameters_identical": true,
+      "fairness_status": "PASS"
+    },
+    {
+      "query_id": "item_v11_088",
+      "context_hash_match": true,
+      "answer_shared_across_conditions": true,
+      "evidence_order_preserved": true,
+      "parameters_identical": true,
+      "fairness_status": "PASS"
+    },
+    {
+      "query_id": "item_v11_089",
+      "context_hash_match": true,
+      "answer_shared_across_conditions": true,
+      "evidence_order_preserved": true,
+      "parameters_identical": true,
+      "fairness_status": "PASS"
+    },
+    {
+      "query_id": "item_v11_090",
+      "context_hash_match": true,
+      "answer_shared_across_conditions": true,
+      "evidence_order_preserved": true,
+      "parameters_identical": true,
+      "fairness_status": "PASS"
+    },
+    {
+      "query_id": "item_v11_091",
+      "context_hash_match": true,
+      "answer_shared_across_conditions": true,
+      "evidence_order_preserved": true,
+      "parameters_identical": true,
+      "fairness_status": "PASS"
+    },
+    {
+      "query_id": "item_v11_092",
+      "context_hash_match": true,
+      "answer_shared_across_conditions": true,
+      "evidence_order_preserved": true,
+      "parameters_identical": true,
+      "fairness_status": "PASS"
+    },
+    {
+      "query_id": "item_v11_093",
+      "context_hash_match": true,
+      "answer_shared_across_conditions": true,
+      "evidence_order_preserved": true,
+      "parameters_identical": true,
+      "fairness_status": "PASS"
+    },
+    {
+      "query_id": "item_v11_094",
+      "context_hash_match": true,
+      "answer_shared_across_conditions": true,
+      "evidence_order_preserved": true,
+      "parameters_identical": true,
+      "fairness_status": "PASS"
+    },
+    {
+      "query_id": "item_v11_095",
+      "context_hash_match": true,
+      "answer_shared_across_conditions": true,
+      "evidence_order_preserved": true,
+      "parameters_identical": true,
+      "fairness_status": "PASS"
+    },
+    {
+      "query_id": "item_v11_096",
+      "context_hash_match": true,
+      "answer_shared_across_conditions": true,
+      "evidence_order_preserved": true,
+      "parameters_identical": true,
+      "fairness_status": "PASS"
+    },
+    {
+      "query_id": "item_v11_097",
+      "context_hash_match": true,
+      "answer_shared_across_conditions": true,
+      "evidence_order_preserved": true,
+      "parameters_identical": true,
+      "fairness_status": "PASS"
+    },
+    {
+      "query_id": "item_v11_098",
+      "context_hash_match": true,
+      "answer_shared_across_conditions": true,
+      "evidence_order_preserved": true,
+      "parameters_identical": true,
+      "fairness_status": "PASS"
+    },
+    {
+      "query_id": "item_v11_099",
+      "context_hash_match": true,
+      "answer_shared_across_conditions": true,
+      "evidence_order_preserved": true,
+      "parameters_identical": true,
+      "fairness_status": "PASS"
+    },
+    {
+      "query_id": "item_v11_100",
+      "context_hash_match": true,
+      "answer_shared_across_conditions": true,
+      "evidence_order_preserved": true,
+      "parameters_identical": true,
+      "fairness_status": "PASS"
+    }
+  ]
+}

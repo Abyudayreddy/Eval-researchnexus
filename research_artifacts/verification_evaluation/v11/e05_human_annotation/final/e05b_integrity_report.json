@@ -1,0 +1,25 @@
+{
+  "stage": "E05-B",
+  "status": "BLOCKED_INCOMPLETE_HUMAN_ANNOTATION",
+  "reason": "Human annotation templates are unpopulated (0/136 labels filled for Annotator 1, Annotator 2, and Adjudicator). Awaiting completion by human annotators.",
+  "dataset": "ds_nexus_v11",
+  "pre_check_results": {
+    "total_records": 136,
+    "val_claims": 80,
+    "test_claims": 56,
+    "val_queries": 15,
+    "test_queries": 15,
+    "all_claim_ids_match": true,
+    "no_duplicate_claim_ids": true,
+    "annotator_1_labels_present": false,
+    "annotator_2_labels_present": false,
+    "adjudicated_labels_present": false,
+    "annotator_1_filled_count": 0,
+    "annotator_2_filled_count": 0,
+    "adjudicator_filled_count": 0
+  },
+  "protocol_compliance": {
+    "no_synthetic_labels_injected": true,
+    "no_automatic_repairs": true
+  }
+}

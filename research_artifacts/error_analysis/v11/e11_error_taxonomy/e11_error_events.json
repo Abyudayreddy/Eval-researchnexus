@@ -1,0 +1,869 @@
+[
+  {
+    "event_id": "EV_item_v11_086_claim_01_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_086",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Based on the provided evidence, there is no mention of a \"92.4% Precision@5\" met...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_086_claim_01_MISSING_CITATION",
+    "query_id": "item_v11_086",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Based on the provided evidence, there is no mention of a \"92.4% Precision@5\" met...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_086_claim_02_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_086",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Therefore, I cannot answer the research query based on the retrieved documents....' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_086_claim_02_MISSING_CITATION",
+    "query_id": "item_v11_086",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Therefore, I cannot answer the research query based on the retrieved documents....' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_086_claim_01_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_086",
+    "claim_id": "claim_01",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_01 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_086_claim_02_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_086",
+    "claim_id": "claim_02",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_02 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_086_ITERATION_FAILURE",
+    "query_id": "item_v11_086",
+    "level": "query_level",
+    "category": "ITERATION_FAILURE",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e07_iteration/e07_per_query_results.json",
+    "description": "Iterative refinement completed feedback passes (anti_oscillation) without improving factual grounding (CSR remained 0.0)."
+  },
+  {
+    "event_id": "EV_item_v11_087_claim_01_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_087",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Based on the provided evidence, there is no mention of \"92.4% Precision@5\" or an...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_087_claim_01_MISSING_CITATION",
+    "query_id": "item_v11_087",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Based on the provided evidence, there is no mention of \"92.4% Precision@5\" or an...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_087_claim_02_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_087",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Therefore, I cannot answer the query based on the retrieved documents....' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_087_claim_02_MISSING_CITATION",
+    "query_id": "item_v11_087",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Therefore, I cannot answer the query based on the retrieved documents....' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_087_claim_01_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_087",
+    "claim_id": "claim_01",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_01 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_087_claim_02_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_087",
+    "claim_id": "claim_02",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_02 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_087_ITERATION_FAILURE",
+    "query_id": "item_v11_087",
+    "level": "query_level",
+    "category": "ITERATION_FAILURE",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e07_iteration/e07_per_query_results.json",
+    "description": "Iterative refinement completed feedback passes (anti_oscillation) without improving factual grounding (CSR remained 0.0)."
+  },
+  {
+    "event_id": "EV_item_v11_088_claim_01_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_088",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Based on the provided evidence, there is no mention of a \"92.4% Precision@5\" met...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_088_claim_01_MISSING_CITATION",
+    "query_id": "item_v11_088",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Based on the provided evidence, there is no mention of a \"92.4% Precision@5\" met...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_088_claim_02_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_088",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Therefore, I cannot answer the research query based on the retrieved documents....' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_088_claim_02_MISSING_CITATION",
+    "query_id": "item_v11_088",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Therefore, I cannot answer the research query based on the retrieved documents....' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_088_claim_01_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_088",
+    "claim_id": "claim_01",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_01 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_088_claim_02_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_088",
+    "claim_id": "claim_02",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_02 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_088_ITERATION_FAILURE",
+    "query_id": "item_v11_088",
+    "level": "query_level",
+    "category": "ITERATION_FAILURE",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e07_iteration/e07_per_query_results.json",
+    "description": "Iterative refinement completed feedback passes (anti_oscillation) without improving factual grounding (CSR remained 0.0)."
+  },
+  {
+    "event_id": "EV_item_v11_089_claim_01_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_089",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Based on the provided evidence, there is no mention of a \"92.4% Precision@5\" or ...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_089_claim_01_MISSING_CITATION",
+    "query_id": "item_v11_089",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Based on the provided evidence, there is no mention of a \"92.4% Precision@5\" or ...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_089_claim_02_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_089",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'While the evidence notes that multimodal representation learning research formul...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_089_claim_02_MISSING_CITATION",
+    "query_id": "item_v11_089",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'While the evidence notes that multimodal representation learning research formul...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_089_claim_03_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_089",
+    "claim_id": "claim_03",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Therefore, I cannot answer this query based on the retrieved documents....' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_089_claim_03_MISSING_CITATION",
+    "query_id": "item_v11_089",
+    "claim_id": "claim_03",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Therefore, I cannot answer this query based on the retrieved documents....' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_089_claim_02_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_089",
+    "claim_id": "claim_02",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_02 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_089_claim_03_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_089",
+    "claim_id": "claim_03",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_03 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_089_ITERATION_FAILURE",
+    "query_id": "item_v11_089",
+    "level": "query_level",
+    "category": "ITERATION_FAILURE",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e07_iteration/e07_per_query_results.json",
+    "description": "Iterative refinement completed feedback passes (anti_oscillation) without improving factual grounding (CSR remained 0.0)."
+  },
+  {
+    "event_id": "EV_item_v11_090_claim_01_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_090",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Based on the provided evidence, there is no mention of a \"92.4% Precision@5\" met...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_090_claim_01_MISSING_CITATION",
+    "query_id": "item_v11_090",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Based on the provided evidence, there is no mention of a \"92.4% Precision@5\" met...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_090_claim_02_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_090",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Therefore, I cannot answer the research query based on the retrieved documents....' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_090_claim_02_MISSING_CITATION",
+    "query_id": "item_v11_090",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Therefore, I cannot answer the research query based on the retrieved documents....' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_090_claim_01_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_090",
+    "claim_id": "claim_01",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_01 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_090_claim_02_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_090",
+    "claim_id": "claim_02",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_02 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_090_claim_03_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_090",
+    "claim_id": "claim_03",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_03 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_090_ITERATION_FAILURE",
+    "query_id": "item_v11_090",
+    "level": "query_level",
+    "category": "ITERATION_FAILURE",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e07_iteration/e07_per_query_results.json",
+    "description": "Iterative refinement completed feedback passes (anti_oscillation) without improving factual grounding (CSR remained 0.0)."
+  },
+  {
+    "event_id": "EV_item_v11_091_claim_01_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_091",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Based on the provided evidence, the studies on Dense Retrieval & Reranking Model...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_091_claim_01_MISSING_CITATION",
+    "query_id": "item_v11_091",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Based on the provided evidence, the studies on Dense Retrieval & Reranking Model...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_091_claim_02_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_091",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'The evidence does not contain any claims regarding a 99.9% accuracy score or zer...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_091_claim_02_MISSING_CITATION",
+    "query_id": "item_v11_091",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'The evidence does not contain any claims regarding a 99.9% accuracy score or zer...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_091_claim_03_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_091",
+    "claim_id": "claim_03",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Therefore, I cannot answer this query based on the retrieved documents....' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_091_claim_03_MISSING_CITATION",
+    "query_id": "item_v11_091",
+    "claim_id": "claim_03",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Therefore, I cannot answer this query based on the retrieved documents....' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_091_claim_01_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_091",
+    "claim_id": "claim_01",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_01 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_091_claim_02_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_091",
+    "claim_id": "claim_02",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_02 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_091_ITERATION_FAILURE",
+    "query_id": "item_v11_091",
+    "level": "query_level",
+    "category": "ITERATION_FAILURE",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e07_iteration/e07_per_query_results.json",
+    "description": "Iterative refinement completed feedback passes (anti_oscillation) without improving factual grounding (CSR remained 0.0)."
+  },
+  {
+    "event_id": "EV_item_v11_092_claim_01_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_092",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Based on the provided evidence, there is no mention of a 99.9% accuracy score wi...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_092_claim_01_MISSING_CITATION",
+    "query_id": "item_v11_092",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Based on the provided evidence, there is no mention of a 99.9% accuracy score wi...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_092_claim_02_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_092",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Therefore, I cannot answer the query based on the retrieved documents....' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_092_claim_02_MISSING_CITATION",
+    "query_id": "item_v11_092",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Therefore, I cannot answer the query based on the retrieved documents....' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_092_claim_01_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_092",
+    "claim_id": "claim_01",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_01 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_092_claim_02_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_092",
+    "claim_id": "claim_02",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_02 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_092_ITERATION_FAILURE",
+    "query_id": "item_v11_092",
+    "level": "query_level",
+    "category": "ITERATION_FAILURE",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e07_iteration/e07_per_query_results.json",
+    "description": "Iterative refinement completed feedback passes (anti_oscillation) without improving factual grounding (CSR remained 0.0)."
+  },
+  {
+    "event_id": "EV_item_v11_093_claim_01_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_093",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Based on the provided evidence, the retrieved documents for the studies on Large...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_093_claim_01_MISSING_CITATION",
+    "query_id": "item_v11_093",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Based on the provided evidence, the retrieved documents for the studies on Large...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_093_claim_02_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_093",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'The evidence does not contain any claims regarding a 99.9% accuracy score or zer...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_093_claim_02_MISSING_CITATION",
+    "query_id": "item_v11_093",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'The evidence does not contain any claims regarding a 99.9% accuracy score or zer...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_093_claim_03_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_093",
+    "claim_id": "claim_03",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Therefore, I cannot answer this query based on the provided documents....' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_093_claim_03_MISSING_CITATION",
+    "query_id": "item_v11_093",
+    "claim_id": "claim_03",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Therefore, I cannot answer this query based on the provided documents....' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_093_claim_01_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_093",
+    "claim_id": "claim_01",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_01 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_093_claim_02_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_093",
+    "claim_id": "claim_02",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_02 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_093_ITERATION_FAILURE",
+    "query_id": "item_v11_093",
+    "level": "query_level",
+    "category": "ITERATION_FAILURE",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e07_iteration/e07_per_query_results.json",
+    "description": "Iterative refinement completed feedback passes (anti_oscillation) without improving factual grounding (CSR remained 0.0)."
+  },
+  {
+    "event_id": "EV_item_v11_094_claim_01_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_094",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Based on the provided evidence, the retrieved documents do not contain any claim...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_094_claim_01_MISSING_CITATION",
+    "query_id": "item_v11_094",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Based on the provided evidence, the retrieved documents do not contain any claim...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_094_claim_02_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_094",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Therefore, I cannot answer the query based on the retrieved documents....' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_094_claim_02_MISSING_CITATION",
+    "query_id": "item_v11_094",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Therefore, I cannot answer the query based on the retrieved documents....' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_094_claim_01_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_094",
+    "claim_id": "claim_01",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_01 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_094_claim_02_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_094",
+    "claim_id": "claim_02",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_02 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_094_ITERATION_FAILURE",
+    "query_id": "item_v11_094",
+    "level": "query_level",
+    "category": "ITERATION_FAILURE",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e07_iteration/e07_per_query_results.json",
+    "description": "Iterative refinement completed feedback passes (anti_oscillation) without improving factual grounding (CSR remained 0.0)."
+  },
+  {
+    "event_id": "EV_item_v11_095_claim_01_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_095",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Based on the provided evidence, the studies on Dense Retrieval & Reranking Model...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_095_claim_01_MISSING_CITATION",
+    "query_id": "item_v11_095",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Based on the provided evidence, the studies on Dense Retrieval & Reranking Model...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_095_claim_02_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_095",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'The retrieved documents do not contain any claims regarding a \"99.9% accuracy sc...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_095_claim_02_MISSING_CITATION",
+    "query_id": "item_v11_095",
+    "claim_id": "claim_02",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'The retrieved documents do not contain any claims regarding a \"99.9% accuracy sc...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_095_claim_01_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_095",
+    "claim_id": "claim_01",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_01 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_095_claim_02_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_095",
+    "claim_id": "claim_02",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_02 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_095_claim_03_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_095",
+    "claim_id": "claim_03",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_03 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_095_ITERATION_FAILURE",
+    "query_id": "item_v11_095",
+    "level": "query_level",
+    "category": "ITERATION_FAILURE",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e07_iteration/e07_per_query_results.json",
+    "description": "Iterative refinement completed feedback passes (anti_oscillation) without improving factual grounding (CSR remained 0.0)."
+  },
+  {
+    "event_id": "EV_item_v11_096_claim_01_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_096",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Based on the provided evidence, there is no mention of a \"non-existent quantum g...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_096_claim_01_MISSING_CITATION",
+    "query_id": "item_v11_096",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Based on the provided evidence, there is no mention of a \"non-existent quantum g...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_096_claim_01_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_096",
+    "claim_id": "claim_01",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_01 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_096_ITERATION_FAILURE",
+    "query_id": "item_v11_096",
+    "level": "query_level",
+    "category": "ITERATION_FAILURE",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e07_iteration/e07_per_query_results.json",
+    "description": "Iterative refinement completed feedback passes (anti_oscillation) without improving factual grounding (CSR remained 0.0)."
+  },
+  {
+    "event_id": "EV_item_v11_097_claim_01_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_097",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Based on the provided evidence, there is no mention of a \"non-existent quantum g...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_097_claim_01_MISSING_CITATION",
+    "query_id": "item_v11_097",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Based on the provided evidence, there is no mention of a \"non-existent quantum g...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_097_claim_01_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_097",
+    "claim_id": "claim_01",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_01 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_097_ITERATION_FAILURE",
+    "query_id": "item_v11_097",
+    "level": "query_level",
+    "category": "ITERATION_FAILURE",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e07_iteration/e07_per_query_results.json",
+    "description": "Iterative refinement completed feedback passes (anti_oscillation) without improving factual grounding (CSR remained 0.0)."
+  },
+  {
+    "event_id": "EV_item_v11_098_claim_01_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_098",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Based on the provided evidence, there is no mention of a \"non-existent quantum g...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_098_claim_01_MISSING_CITATION",
+    "query_id": "item_v11_098",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Based on the provided evidence, there is no mention of a \"non-existent quantum g...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_098_claim_01_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_098",
+    "claim_id": "claim_01",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_01 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_098_ITERATION_FAILURE",
+    "query_id": "item_v11_098",
+    "level": "query_level",
+    "category": "ITERATION_FAILURE",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e07_iteration/e07_per_query_results.json",
+    "description": "Iterative refinement completed feedback passes (anti_oscillation) without improving factual grounding (CSR remained 0.0)."
+  },
+  {
+    "event_id": "EV_item_v11_099_claim_01_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_099",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Based on the provided evidence, there is no mention of a \"non-existent quantum g...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_099_claim_01_MISSING_CITATION",
+    "query_id": "item_v11_099",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Based on the provided evidence, there is no mention of a \"non-existent quantum g...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_099_claim_01_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_099",
+    "claim_id": "claim_01",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_01 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_099_ITERATION_FAILURE",
+    "query_id": "item_v11_099",
+    "level": "query_level",
+    "category": "ITERATION_FAILURE",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e07_iteration/e07_per_query_results.json",
+    "description": "Iterative refinement completed feedback passes (anti_oscillation) without improving factual grounding (CSR remained 0.0)."
+  },
+  {
+    "event_id": "EV_item_v11_100_claim_01_UNSUPPORTED_CLAIM",
+    "query_id": "item_v11_100",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "UNSUPPORTED_CLAIM",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Verified claim 'Based on the provided evidence, there is no mention of a \"non-existent quantum g...' lacked sufficient grounding in candidate context and was verified as UNSUPPORTED."
+  },
+  {
+    "event_id": "EV_item_v11_100_claim_01_MISSING_CITATION",
+    "query_id": "item_v11_100",
+    "claim_id": "claim_01",
+    "level": "claim_level",
+    "category": "MISSING_CITATION",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e04_1_corrected/e04_1_claim_level_results.json",
+    "description": "Factual assertion 'Based on the provided evidence, there is no mention of a \"non-existent quantum g...' lacks an inline citation marker."
+  },
+  {
+    "event_id": "EV_item_v11_100_claim_01_CITATION_REPAIR_FAILURE",
+    "query_id": "item_v11_100",
+    "claim_id": "claim_01",
+    "level": "citation_level",
+    "category": "CITATION_REPAIR_FAILURE",
+    "source_artifact": "research_artifacts/citation_evaluation/v11/e06_1_corrected/e06_1_per_repair_results.json",
+    "description": "CitationRepair attempted to resolve missing citation for claim_01 but failed under conservative matching policy."
+  },
+  {
+    "event_id": "EV_item_v11_100_ITERATION_FAILURE",
+    "query_id": "item_v11_100",
+    "level": "query_level",
+    "category": "ITERATION_FAILURE",
+    "source_artifact": "research_artifacts/generation_evaluation/v11/e07_iteration/e07_per_query_results.json",
+    "description": "Iterative refinement completed feedback passes (anti_oscillation) without improving factual grounding (CSR remained 0.0)."
+  }
+]

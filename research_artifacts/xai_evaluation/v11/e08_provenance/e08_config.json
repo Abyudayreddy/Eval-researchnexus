@@ -1,0 +1,18 @@
+{
+  "experiment": "E08",
+  "title": "Authoritative Explainable AI (XAI) / Provenance Evaluation",
+  "status": "VALID",
+  "dataset": "ds_nexus_v11",
+  "total_queries": 100,
+  "total_claims": 202,
+  "splits": {
+    "DEV": 70,
+    "VAL": 15,
+    "TEST": 15
+  },
+  "retrieval_source_of_truth": "E03.3 B3_Hybrid_RRF k=20 live context",
+  "evaluated_conditions": [
+    "E04.1 Verified RAG",
+    "E07 Verified RAG"
+  ]
+}

@@ -1,0 +1,442 @@
+{
+  "ALL": {
+    "N": 100,
+    "conditions": {
+      "A0_Full": {
+        "claim_support_rate": 0.0333,
+        "unsupported_claim_rate": 0.9667,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.04,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0333,
+        "latency": {
+          "mean_ms": 12655.7,
+          "p50_ms": 10911.94,
+          "p95_ms": 18650.01,
+          "min_ms": 9364.99,
+          "max_ms": 21894.71
+        }
+      },
+      "A1_Minus_Iteration": {
+        "claim_support_rate": 0.035,
+        "unsupported_claim_rate": 0.965,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.04,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0433,
+        "latency": {
+          "mean_ms": 5691.35,
+          "p50_ms": 4899.07,
+          "p95_ms": 8514.65,
+          "min_ms": 3702.94,
+          "max_ms": 21893.99
+        }
+      },
+      "A2_Minus_Citation_Repair": {
+        "claim_support_rate": 0.0533,
+        "unsupported_claim_rate": 0.9467,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.06,
+        "citation_completeness": 0.05,
+        "citation_coverage": 0.0617,
+        "latency": {
+          "mean_ms": 12610.7,
+          "p50_ms": 10866.94,
+          "p95_ms": 18605.01,
+          "min_ms": 9319.99,
+          "max_ms": 21849.71
+        }
+      },
+      "A3_Naive_RAG": {
+        "claim_support_rate": 0.0533,
+        "unsupported_claim_rate": 0.9467,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.06,
+        "citation_completeness": 0.05,
+        "citation_coverage": 0.0617,
+        "latency": {
+          "mean_ms": 5767.46,
+          "p50_ms": 4659.18,
+          "p95_ms": 9472.96,
+          "min_ms": 3547.85,
+          "max_ms": 22605.09
+        }
+      },
+      "A4_Minus_BGE": {
+        "claim_support_rate": 0.0333,
+        "unsupported_claim_rate": 0.9667,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.04,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0333,
+        "latency": {
+          "mean_ms": 12124.29,
+          "p50_ms": 10380.53,
+          "p95_ms": 18118.6,
+          "min_ms": 8833.58,
+          "max_ms": 21363.3
+        }
+      },
+      "A5_Dense_Only": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0,
+        "latency": {
+          "mean_ms": 8.46,
+          "p50_ms": 7.83,
+          "p95_ms": 15.49,
+          "min_ms": 3.29,
+          "max_ms": 21.15
+        }
+      },
+      "A6_BM25_Only": {
+        "claim_support_rate": 0.0333,
+        "unsupported_claim_rate": 0.9667,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.04,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0333,
+        "latency": {
+          "mean_ms": 0.98,
+          "p50_ms": 0.98,
+          "p95_ms": 1.59,
+          "min_ms": 0.4,
+          "max_ms": 2.34
+        }
+      }
+    }
+  },
+  "DEVELOPMENT": {
+    "N": 70,
+    "conditions": {
+      "A0_Full": {
+        "claim_support_rate": 0.0476,
+        "unsupported_claim_rate": 0.9524,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0571,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0476,
+        "latency": {
+          "mean_ms": 13428.25,
+          "p50_ms": 12333.42,
+          "p95_ms": 19433.88,
+          "min_ms": 9524.7,
+          "max_ms": 21894.71
+        }
+      },
+      "A1_Minus_Iteration": {
+        "claim_support_rate": 0.05,
+        "unsupported_claim_rate": 0.95,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0571,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0619,
+        "latency": {
+          "mean_ms": 6148.43,
+          "p50_ms": 5137.76,
+          "p95_ms": 9552.31,
+          "min_ms": 3862.65,
+          "max_ms": 21893.99
+        }
+      },
+      "A2_Minus_Citation_Repair": {
+        "claim_support_rate": 0.0714,
+        "unsupported_claim_rate": 0.9286,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0714,
+        "citation_completeness": 0.05,
+        "citation_coverage": 0.0786,
+        "latency": {
+          "mean_ms": 13383.25,
+          "p50_ms": 12288.42,
+          "p95_ms": 19388.88,
+          "min_ms": 9479.7,
+          "max_ms": 21849.71
+        }
+      },
+      "A3_Naive_RAG": {
+        "claim_support_rate": 0.0714,
+        "unsupported_claim_rate": 0.9286,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0714,
+        "citation_completeness": 0.05,
+        "citation_coverage": 0.0786,
+        "latency": {
+          "mean_ms": 6242.9,
+          "p50_ms": 4992.67,
+          "p95_ms": 15268.46,
+          "min_ms": 3547.85,
+          "max_ms": 22605.09
+        }
+      },
+      "A4_Minus_BGE": {
+        "claim_support_rate": 0.0476,
+        "unsupported_claim_rate": 0.9524,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0571,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0476,
+        "latency": {
+          "mean_ms": 12896.84,
+          "p50_ms": 11802.01,
+          "p95_ms": 18902.47,
+          "min_ms": 8993.29,
+          "max_ms": 21363.3
+        }
+      },
+      "A5_Dense_Only": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0,
+        "latency": {
+          "mean_ms": 8.19,
+          "p50_ms": 7.42,
+          "p95_ms": 15.35,
+          "min_ms": 3.29,
+          "max_ms": 21.15
+        }
+      },
+      "A6_BM25_Only": {
+        "claim_support_rate": 0.0476,
+        "unsupported_claim_rate": 0.9524,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0571,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0476,
+        "latency": {
+          "mean_ms": 0.99,
+          "p50_ms": 0.98,
+          "p95_ms": 1.69,
+          "min_ms": 0.4,
+          "max_ms": 2.34
+        }
+      }
+    }
+  },
+  "VALIDATION": {
+    "N": 15,
+    "conditions": {
+      "A0_Full": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0,
+        "latency": {
+          "mean_ms": 11394.91,
+          "p50_ms": 10577.41,
+          "p95_ms": 15978.76,
+          "min_ms": 9586.25,
+          "max_ms": 16087.43
+        }
+      },
+      "A1_Minus_Iteration": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0,
+        "latency": {
+          "mean_ms": 4600.45,
+          "p50_ms": 4608.18,
+          "p95_ms": 5223.71,
+          "min_ms": 3924.19,
+          "max_ms": 5465.59
+        }
+      },
+      "A2_Minus_Citation_Repair": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 0.05,
+        "citation_coverage": 0.0222,
+        "latency": {
+          "mean_ms": 11349.91,
+          "p50_ms": 10532.41,
+          "p95_ms": 15933.76,
+          "min_ms": 9541.25,
+          "max_ms": 16042.43
+        }
+      },
+      "A3_Naive_RAG": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 0.05,
+        "citation_coverage": 0.0222,
+        "latency": {
+          "mean_ms": 4494.37,
+          "p50_ms": 4315.24,
+          "p95_ms": 5726.45,
+          "min_ms": 3690.23,
+          "max_ms": 6580.75
+        }
+      },
+      "A4_Minus_BGE": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0,
+        "latency": {
+          "mean_ms": 10863.5,
+          "p50_ms": 10046.0,
+          "p95_ms": 15447.35,
+          "min_ms": 9054.84,
+          "max_ms": 15556.02
+        }
+      },
+      "A5_Dense_Only": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0,
+        "latency": {
+          "mean_ms": 9.72,
+          "p50_ms": 9.48,
+          "p95_ms": 16.69,
+          "min_ms": 6.05,
+          "max_ms": 16.79
+        }
+      },
+      "A6_BM25_Only": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0,
+        "latency": {
+          "mean_ms": 1.01,
+          "p50_ms": 1.03,
+          "p95_ms": 1.4,
+          "min_ms": 0.46,
+          "max_ms": 1.59
+        }
+      }
+    }
+  },
+  "TEST": {
+    "N": 15,
+    "conditions": {
+      "A0_Full": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0,
+        "latency": {
+          "mean_ms": 10311.26,
+          "p50_ms": 10195.58,
+          "p95_ms": 11719.1,
+          "min_ms": 9364.99,
+          "max_ms": 12743.31
+        }
+      },
+      "A1_Minus_Iteration": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0,
+        "latency": {
+          "mean_ms": 4649.18,
+          "p50_ms": 4533.5,
+          "p95_ms": 6056.97,
+          "min_ms": 3702.94,
+          "max_ms": 7081.15
+        }
+      },
+      "A2_Minus_Citation_Repair": {
+        "claim_support_rate": 0.0222,
+        "unsupported_claim_rate": 0.9778,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0667,
+        "citation_completeness": 0.05,
+        "citation_coverage": 0.0222,
+        "latency": {
+          "mean_ms": 10266.26,
+          "p50_ms": 10150.58,
+          "p95_ms": 11674.1,
+          "min_ms": 9319.99,
+          "max_ms": 12698.31
+        }
+      },
+      "A3_Naive_RAG": {
+        "claim_support_rate": 0.0222,
+        "unsupported_claim_rate": 0.9778,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0667,
+        "citation_completeness": 0.05,
+        "citation_coverage": 0.0222,
+        "latency": {
+          "mean_ms": 4821.81,
+          "p50_ms": 4366.37,
+          "p95_ms": 7094.45,
+          "min_ms": 3926.12,
+          "max_ms": 7472.32
+        }
+      },
+      "A4_Minus_BGE": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0,
+        "latency": {
+          "mean_ms": 9779.85,
+          "p50_ms": 9664.17,
+          "p95_ms": 11187.69,
+          "min_ms": 8833.58,
+          "max_ms": 12211.9
+        }
+      },
+      "A5_Dense_Only": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0,
+        "latency": {
+          "mean_ms": 8.5,
+          "p50_ms": 8.11,
+          "p95_ms": 11.44,
+          "min_ms": 4.57,
+          "max_ms": 13.45
+        }
+      },
+      "A6_BM25_Only": {
+        "claim_support_rate": 0.0,
+        "unsupported_claim_rate": 1.0,
+        "contradicted_claim_rate": 0.0,
+        "citation_precision": 0.0,
+        "citation_completeness": 1.0,
+        "citation_coverage": 0.0,
+        "latency": {
+          "mean_ms": 0.87,
+          "p50_ms": 0.96,
+          "p95_ms": 1.11,
+          "min_ms": 0.45,
+          "max_ms": 1.11
+        }
+      }
+    }
+  }
+}

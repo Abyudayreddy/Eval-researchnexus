@@ -1,0 +1,17 @@
+{
+  "total_benchmark_queries": 100,
+  "total_bge_invocations": 100,
+  "successful_bge_invocations": 100,
+  "bypasses": 0,
+  "exceptions": 0,
+  "empty_candidate_cases": 0,
+  "verification_checks": {
+    "candidate_text_supplied": true,
+    "query_text_supplied": true,
+    "model_inference_occurred": true,
+    "scores_returned": true,
+    "output_ranking_updated": true
+  },
+  "historical_bypass_classification": "PERMANENTLY_INVALID_BYPASS",
+  "bge_execution_status": "VERIFIED_GENUINE_BGE"
+}

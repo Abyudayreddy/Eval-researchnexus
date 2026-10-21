@@ -1,0 +1,18 @@
+{
+  "experiment_id": "E11",
+  "experiment_name": "Authoritative Error Taxonomy Analysis",
+  "dataset": "ds_nexus_v11",
+  "scope": "TEST",
+  "test_n": 15,
+  "total_claims_analyzed": 28,
+  "total_repairs_analyzed": 28,
+  "total_repair_attempts": 27,
+  "total_repair_successes": 0,
+  "total_repair_failures": 27,
+  "total_repairs_not_attempted": 1,
+  "total_traces_analyzed": 28,
+  "total_categorized_events": 98,
+  "multi_label_categorization": true,
+  "reconciliation_status": "CORRECTED_AGAINST_CANONICAL_E03_3",
+  "note": "Reconciled with canonical E03.3 live candidate context (k=20 Hit@20=1.0000 on TEST)."
+}

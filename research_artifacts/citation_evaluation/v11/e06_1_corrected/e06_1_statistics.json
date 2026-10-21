@@ -1,0 +1,26 @@
+{
+  "CP": {
+    "mean_delta": 0.0,
+    "ci_95": [
+      0.0,
+      0.0
+    ],
+    "statistically_significant": false
+  },
+  "COV": {
+    "mean_delta": 0.0,
+    "ci_95": [
+      0.0,
+      0.0
+    ],
+    "statistically_significant": false
+  },
+  "CC": {
+    "mean_delta": 0.0,
+    "ci_95": [
+      0.0,
+      0.0
+    ],
+    "statistically_significant": false
+  }
+}

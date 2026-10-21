@@ -1,0 +1,14 @@
+{
+  "e10_aggregate_metrics.json": "d0b6c13536def526d675efe0de6506aa70dd8b4f3dea0e74a568097e4e9f29bd",
+  "e10_citation_level_results.json": "6eb25c1deb2acf96c3c551a3e6c9d97b1f2714fe87448aeec19869a8ff807d49",
+  "e10_claim_level_results.json": "8809b2b8fe556ec567002dec1e0e96b3b994f3f7ff8fe12d08e2fac0c1e1d1a9",
+  "e10_component_deltas.json": "13d604bfa37fd5b3bf925898ab1e0e21eea875633a46989b4574f64eb6501661",
+  "e10_config.json": "5962ec729d41bdf6db464320450061c28a72e3723fc9310c9a4cbf887697a740",
+  "e10_error_analysis.json": "98b9aa34e23e01501362093c89a7ea9bcfa1bc3f78a5c070c26928a474c19de7",
+  "e10_integrity_report.json": "8dc5a8fa7110fd371ee47ccb1811354728c829070ede7d026e9bf1a5f20ac324",
+  "e10_latency_results.json": "4724dd0ec98e840fdd8fb79ecea913bc78d120daf2a6a16a76de0649b9f075c9",
+  "e10_per_query_results.json": "8956b80c6c797c47e45f0483c99c609df6ebf7b8bd860e3a27318dc2d73f744c",
+  "e10_retrieval_results.json": "f6909ea41b0cb6dca2b0d75fdbfd7f399f972ab76bf536e20389c44f0d98a1d4",
+  "e10_statistics.json": "fda081392adb0056fcb636a8b32b3ea73e6e1a3780e8d62e45e9b32de77a854c",
+  "e10_summary_report.md": "ec895523c2f1566e089872d1668f9232236f7c9e8e3191e0dd4c1cd74850a6a3"
+}

@@ -1,0 +1,18 @@
+{
+  "experiment": "E06",
+  "title": "Authoritative Citation Repair Evaluation",
+  "status": "COMPLETED",
+  "dataset": "ds_nexus_v11",
+  "artifact_hashes": {
+    "e06_config.json": "515faf08599501efe1241da38404c6465905575002eb8d0e204f353aff99a4a8",
+    "e06_per_repair_results.json": "fbbaa012ef41a60cb9aec8f2a8a14ffe985bda31662ebddecdaba2fb85ac5980",
+    "e06_before_metrics.json": "cd0606f4719e7ae703f8c700ee375e58106d69f8bc0d06e901cdd97d2bfb1003",
+    "e06_after_metrics.json": "cd0606f4719e7ae703f8c700ee375e58106d69f8bc0d06e901cdd97d2bfb1003",
+    "e06_query_level_results.json": "82df606eaa68ac0893ef6fb6c7f0889f778730efa5ba805f7ba98efb77963383",
+    "e06_statistics.json": "16a366e5954375a9ce92fec91462d3b4c70988d2c7b4c6debf551cb58becae98",
+    "e06_latency_results.json": "65a7a5abef70606af888ae8fa32c90e9f547dcb644a969c3c1a20c457ad5fcbc",
+    "e06_error_analysis.json": "8434b48e72a81b2b013289f569697633e0f63a259f248e175ce7cef6c5f51a26",
+    "e06_integrity_report.json": "e8d0eb8b5f4ef57e07c1bdde888de7285704d76beee1463fb36a1e8dfefa411c",
+    "e06_summary_report.md": "eb9cdf29e17805d92c579f0a71c6b36604b12a13ebf8ece2541d714e7d7f9b2c"
+  }
+}

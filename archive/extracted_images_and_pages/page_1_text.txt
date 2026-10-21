@@ -1,0 +1,106 @@
+ResearchNexus AI: An Explainable Multi-Stage Retrieval-
+Augmented Generation Framework for Scientific Literature 
+Synthesis 
+Kumbham Bhargavi 
+Dept. of Computer Science and Engineering 
+Keshav Memorial Institute of Technology 
+Hyderabad, India 
+bhargavikumbham@kmit.in 
+Hema Sree Guddanti 
+Dept. of Artificial Intelligence and ML 
+Keshav Memorial Institute of Technology 
+Hyderabad, India 
+hemasree.guddanti@gmail.com 
+Praneeth Venkata Reddy Kallam 
+Dept. of Artificial Intelligence and ML 
+Keshav Memorial Institute of Technology 
+Hyderabad, India 
+praneetkallam@gmail.com 
+Yadaboyina Rishitha 
+Dept. of Artificial Intelligence and ML 
+Keshav Memorial Institute of Technology 
+Hyderabad, India 
+19rishitha@gmail.com 
+Desetty Kavya sri 
+Dept. of Artificial Intelligence and ML 
+Keshav Memorial Institute of Technology 
+Hyderabad, India 
+desettykavyasri@gmail.com 
+Krishna sai Gangishetty 
+Dept. of Artificial Intelligence and ML 
+Keshav Memorial Institute of Technology 
+Hyderabad, India 
+krishnasaigangishetty@gmail.com 
+ 
+Abstract—The continuous acceleration of scientific publishing makes comprehensive literature synthesis increasingly 
+demanding for researchers across all technical disciplines. While Large Language Models (LLMs) can generate fluent 
+summaries, their application to specialized scholarly inquiry is undermined by ungrounded assertions, hallucinations, 
+and inaccurate citation attribution. To overcome these limitations, this paper presents ResearchNexus AI, an 
+explainable, multi-stage Retrieval-Augmented Generation (RAG) framework engineered specifically for verified 
+scientific literature synthesis. The architecture incorporates: (1) a hybrid first-stage retrieval system combining BM25 
+lexical search and dense semantic vector retrieval via Reciprocal Rank Fusion (RRF); (2) neural cross-encoder 
+reranking using BGE-Reranker to prioritize fine-grained evidence passages; (3) a context-bounded generation module 
+that constrains generative responses strictly to retrieved source passages at temperature zero; (4) a two-stage claim 
+verification engine executing deterministic overlap and semantic consistency checks; (5) a conservative citation repair 
+mechanism; (6) a self-feedback engine enabling bounded iterative refinement; and (7) an automated provenance graph 
+maintaining full auditability from generated claims back to exact source chunks. We evaluate ResearchNexus AI on the 
+frozen benchmark ds_nexus_v11 (N=100 complex scientific queries across 26,259 corpus chunks). Hybrid RRF 
+demonstrates high candidate recall (Recall@20 = 0.9500, Hit@20 = 1.0000 on test queries), markedly outperforming 
+single-retriever baselines. Neural reranking reliably enriches relevant passages with a median latency of 531.41 ms. The 
+framework guarantees 100% end-to-end provenance integrity across all 202 evaluated claims. Furthermore, our 
+empirical analysis of iterative refinement reveals critical engineering trade-offs: multiple refinement passes double 
+pipeline latency (12,656 ms vs. 5,691 ms) without proportional grounding recovery when relevant evidence is positioned 
+among distractors. These findings provide actionable, transparent design principles for deploying robust, audit-ready 
+AI research assistants. 
+Index Terms—Retrieval-Augmented Generation, Scientific Literature Synthesis, Hybrid Retrieval, Neural Reranking, Claim 
+Verification, Citation Provenance, Explainable AI, Iterative Refinement. 
+I. INTRODUCTION 
+Scientific literature is expanding at an unprecedented rate 
+across global academic institutions. In disciplines ranging 
+from computational biology to semiconductor engineering, 
+researchers are inundated with thousands of newly published 
+papers each month [1]. Navigating this vast corpus to answer 
+cross-cutting research questions requires more than simple 
+keyword search; it demands synthesizing experimental 
+outcomes 
+across 
+disparate 
+manuscripts, 
+reconciling 
+conflicting baselines, and maintaining strict evidentiary 
+provenance. Traditional scholarly search engines, such as 
+PubMed and IEEE Xplore, rely heavily on inverted term 
+indexes. While effective for exact terminology, lexical 
+engines inevitably miss conceptually identical findings 
+phrased in alternate technical vocabulary [2]. 
+Large 
+Language 
+Models 
+(LLMs) 
+have 
+achieved 
+remarkable progress in natural language synthesis, yet their 
+application in academic research remains fraught with risk 
+[3]. 
+Operating 
+solely 
+on 
+static 
+internal 
+parametric 
+representations, 
+generative 
+models 
+frequently 
+invent 
+plausible citations, conflate distinct benchmarks, and 
+synthesize claims that have no basis in the underlying 
+literature. Retrieval-Augmented Generation (RAG) offers a 
+principled path forward by grounding neural generation in 
+externally retrieved literature snippets [1]. However, 
+deploying naive RAG pipelines in rigorous academic 
+environments reveals four fundamental vulnerabilities: 
+1) Single-Retriever Failure Modes: Sparse lexical search 
+algorithms (BM25) excel at exact keyword matches but 
+fail on conceptual paraphrases; conversely, dense vector 
+embeddings frequently overlook exact mathematical 

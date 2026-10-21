@@ -1,0 +1,35 @@
+{
+  "query_id": "item_v11_090",
+  "split": "TEST",
+  "question": "Synthesize the relationship between adaptive gradient scheduling formulation and the resulting 92.4% Precision@5 in Dense Retrieval & Reranking Models.",
+  "context_hash_naive": "53d1a5eaa4a295263964e33a64469a50270405958c81e002cf59fce3befa8056",
+  "context_hash_verified": "53d1a5eaa4a295263964e33a64469a50270405958c81e002cf59fce3befa8056",
+  "context_hash_match": true,
+  "evidence_count": 20,
+  "naive_metrics": {
+    "supported_claim_count": 0,
+    "partially_supported_claim_count": 0,
+    "insufficient_claim_count": 0,
+    "unsupported_claim_count": 3,
+    "citation_precision": 0.0,
+    "citation_coverage": 0.0,
+    "claim_support_rate": 0.0,
+    "unsupported_claim_rate": 1.0
+  },
+  "verified_metrics": {
+    "supported_claim_count": 0,
+    "partially_supported_claim_count": 0,
+    "insufficient_claim_count": 0,
+    "unsupported_claim_count": 2,
+    "citation_precision": 0.0,
+    "citation_coverage": 0.0,
+    "claim_support_rate": 0.0,
+    "unsupported_claim_rate": 1.0
+  },
+  "naive_has_unsupported": true,
+  "verified_has_unsupported": true,
+  "naive_latency_ms": 3961.1,
+  "verified_latency_ms": 4184.28,
+  "snapshot_hash": "53d1a5eaa4a295263964e33a64469a50270405958c81e002cf59fce3befa8056",
+  "hash_verified": true
+}

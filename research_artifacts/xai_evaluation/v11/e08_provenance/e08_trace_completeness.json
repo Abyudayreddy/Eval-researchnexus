@@ -1,0 +1,14 @@
+{
+  "total_claims": 202,
+  "complete_traces": 202,
+  "incomplete_traces": 0,
+  "trace_completeness_rate": 1.0,
+  "missing_links_by_type": {
+    "missing_citation_link": 0,
+    "missing_evidence_link": 0,
+    "wrong_chunk": 0,
+    "wrong_paper": 0,
+    "wrong_retrieval_rank": 0,
+    "offset_resolution_failure": 0
+  }
+}

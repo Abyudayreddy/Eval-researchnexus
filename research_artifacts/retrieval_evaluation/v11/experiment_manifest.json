@@ -1,0 +1,13 @@
+{
+  "experiment_id": "MODULE_1_7_CLEAN_BASELINE_EVALUATION",
+  "dataset_version": "ds_nexus_v11",
+  "dataset_status": "READY",
+  "is_frozen": true,
+  "test_manifest_hash": "5c7684d44d890a4b6c8860ec2be222b4aed9412ee31611f0e19feb0b2e1bde0f",
+  "retriever": "LocalEvidenceRetriever",
+  "embedding_model": "BAAI/bge-base-en-v1.5",
+  "reranker_model": "BAAI/bge-reranker-base",
+  "rrf_k": 60,
+  "top_k": 10,
+  "timestamp": "2026-09-27T05:43:00+00:00"
+}

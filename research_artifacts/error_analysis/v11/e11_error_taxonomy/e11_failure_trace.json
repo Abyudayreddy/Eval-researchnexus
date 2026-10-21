@@ -1,0 +1,62 @@
+{
+  "observed_failure_pattern": "Observed failures predominantly followed a synthesis-to-grounding propagation pattern.",
+  "narrative": "Under the authoritative canonical E03.3 candidate pool (k=20), all 15 TEST queries achieve Hit@20 = 1.0000 (gold documents are present at ranks 15-17 for items 86-95, and items 96-100 are unanswerable probe queries). Thus, initial candidate pool and retrieval misses at k=20 are 0. However, because target gold chunks were ranked lower in the 20-chunk context (ranks 15-17) and distractors dominated the top ranks, the downstream generator failed to synthesize supported answers and abstained or made ungrounded statements. All 28 verified claims lacked inline citations (MISSING_CITATION=28) and were verified as ungrounded (UNSUPPORTED_CLAIM=28). CitationRepair attempted 27 replacements but could not locate supporting chunks under conservative matching (CITATION_REPAIR_FAILURE=27), and Iterative Refinement terminated without improving factual grounding (ITERATION_FAILURE=15). XAI provenance chains remained perfectly intact (0 provenance errors).",
+  "detailed_steps": [
+    {
+      "step": 1,
+      "stage": "Candidate Pooling (k=20)",
+      "category": "CANDIDATE_POOL_MISS",
+      "count": 0,
+      "denominator": "15 TEST queries"
+    },
+    {
+      "step": 2,
+      "stage": "Retrieval Top-k (k=20)",
+      "category": "RETRIEVAL_MISS",
+      "count": 0,
+      "denominator": "15 TEST queries"
+    },
+    {
+      "step": 3,
+      "stage": "Reranking",
+      "category": "RERANKING_ERROR",
+      "count": 0,
+      "denominator": "15 TEST queries"
+    },
+    {
+      "step": 4,
+      "stage": "Generation Grounding",
+      "category": "UNSUPPORTED_CLAIM",
+      "count": 28,
+      "denominator": "28 claims"
+    },
+    {
+      "step": 5,
+      "stage": "Inline Citation State",
+      "category": "MISSING_CITATION",
+      "count": 28,
+      "denominator": "28 claims"
+    },
+    {
+      "step": 6,
+      "stage": "Citation Repair",
+      "category": "CITATION_REPAIR_FAILURE",
+      "count": 27,
+      "denominator": "27 attempts"
+    },
+    {
+      "step": 7,
+      "stage": "Iterative Refinement",
+      "category": "ITERATION_FAILURE",
+      "count": 15,
+      "denominator": "15 TEST queries"
+    },
+    {
+      "step": 8,
+      "stage": "Provenance Trace",
+      "category": "XAI_PROVENANCE_FAILURE",
+      "count": 0,
+      "denominator": "28 traces"
+    }
+  ]
+}

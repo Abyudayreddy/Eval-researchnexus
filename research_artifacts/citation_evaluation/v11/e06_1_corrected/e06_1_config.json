@@ -1,0 +1,13 @@
+{
+  "experiment": "E06.1",
+  "title": "Citation Repair Provenance and Exact Context Validation",
+  "status": "VALIDATED_AFTER_CORRECTION",
+  "dataset": "ds_nexus_v11",
+  "exact_retrieval_source": "E03.3 B3_Hybrid_RRF k=20 exact hydrated chunks",
+  "context_hash_match_rate": "100/100 (100.0%)",
+  "source_claims": "E04.1 Naive RAG claims (N=100 queries, 202 claims)",
+  "repair_implementation": "backend/app/services/assistant/citation_repair.py:CitationRepair",
+  "verifier_implementation": "backend/app/services/assistant/claim_verifier.py:ClaimVerifier",
+  "bootstrap_resamples": 1000,
+  "random_seed": 42
+}

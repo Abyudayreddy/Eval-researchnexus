@@ -1,0 +1,100 @@
+variables, chemical compounds, and proper author names 
+[4]. 
+2) Context Distraction: Supplying generative models 
+with unranked context pools creates attention dispersion. 
+When gold evidence passages are placed at lower retrieval 
+ranks, generative models fail to synthesize them, 
+defaulting 
+to 
+ungrounded 
+refusals 
+or 
+hallucinated 
+statements. 
+3) Lack of Sentence-Level Provenance: Commercial 
+academic 
+chatbots 
+output 
+uninterrupted 
+paragraphs 
+accompanied by broad reference links, leaving readers 
+with no mechanism to audit whether individual claims are 
+genuinely supported [5]. 
+4) Ineffective Iterative Refinement: While feedback-
+driven self-correction is theoretically appealing, its real-
+world computational latency overhead and factual 
+grounding benefits have remained largely unmeasured in 
+closed-context academic setups. 
+To resolve these challenges, we introduce ResearchNexus 
+AI, 
+an 
+explainable, 
+multi-stage 
+retrieval-augmented 
+generation framework engineered for rigorous literature 
+synthesis. ResearchNexus AI pairs sparse BM25 and dense 
+ChromaDB retrieval via Reciprocal Rank Fusion (RRF), 
+refines retrieved candidates using a BGE cross-encoder, 
+enforces context-bounded generation, executes two-stage 
+claim verification, applies conservative citation repair, and 
+maintains an auditable provenance graph connecting every 
+claim to source chunks with SHA256 integrity. 
+The primary contributions of this paper are as follows: 
+• Hybrid Multi-Stage Retrieval: We combine BM25 and 
+dense embeddings via Reciprocal Rank Fusion, achieving 
+candidate Recall@20 of 0.9500 and Hit@20 of 1.0000 on 
+test queries, substantially surpassing single-retriever 
+baselines. 
+• Granular Two-Stage Verification: We introduce a 
+modular verification pipeline coupling deterministic n-
+gram containment with deep semantic natural language 
+inference, isolating ungrounded assertions prior to 
+delivery. 
+• Empirical Analysis of Iterative Refinement: Using real 
+LLM inference on the frozen benchmark ds_nexus_v11, 
+we demonstrate that iterative revision doubles latency 
+(2.2x) without statistically significant grounding gains 
+(p=1.000) when gold context is surrounded by distractors. 
+• 100% Auditable Provenance: We establish an 
+automated provenance ledger achieving 100% link validity 
+(202/202 claims) with SHA256 cryptographic tracking, 
+providing complete transparency for academic workflows. 
+ 
+Fig. 1. End-to-end multi-stage architecture of ResearchNexus AI. 
+II. LITERATURE SURVEY 
+A. Retrieval-Augmented Generation Foundations 
+Lewis et al. [1] formulated Retrieval-Augmented 
+Generation (RAG) to overcome the parametric limitations of 
+neural models in knowledge-intensive tasks. By coupling a 
+pre-trained sequence-to-sequence model with a dense passage 
+retriever, RAG grounds text generation in externally retrieved 
+knowledge. While highly effective for general-domain open 
+question answering, scientific literature synthesis poses 
+distinct challenges: academic statements require precise 
+evidentiary attribution, and minor factual hallucinations can 
+invalidate an entire research synthesis. 
+B. Dense and Hybrid Information Retrieval 
+Dense Passage Retrieval (DPR), introduced by Karpukhin 
+et al. [2], showed that dual-encoder dense representations 
+capture semantic intent far better than keyword matching. 
+Nonetheless, Robertson and Zaragoza [4] demonstrated that 
+term-frequency models like BM25 remain unmatched for 
+exact term matches and rare symbols. Cormack et al. [6] 
+established that Reciprocal Rank Fusion (RRF) effectively 
+merges disparate ranked lists without requiring score 
+normalization. ResearchNexus AI uses RRF to combine 
+sparse and dense signals, capturing both terminology and 
+conceptual meaning. 
+C. Neural Passage Reranking 
+First-stage candidate retrieval often includes partially 
+relevant passages. Nogueira and Cho [7] demonstrated that 
+BERT cross-encoders significantly enhance ranking quality 
+by computing full cross-attention across all query and 
+document tokens. Modern open-source cross-encoders, such 
+as the BAAI General Embedding (BGE) reranker, offer top-
+tier reranking performance. We adopt a BGE cross-encoder 
+to refine the candidate context before generative synthesis. 
+D. Specialized Scientific Synthesis Systems 
+Several recent systems target automated scientific inquiry. 
+Lo et al. [8] released S2ORC, providing structured access to 
+millions of research papers. Lala et al. [9] developed 

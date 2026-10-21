@@ -1,0 +1,110 @@
+{
+  "ALL": {
+    "n_queries": 100,
+    "naive_rag": {
+      "claim_support_rate": 0.0533,
+      "unsupported_claim_rate": 0.9467,
+      "citation_precision": 0.06,
+      "citation_coverage": 0.0617,
+      "mean_latency_ms": 5767.46,
+      "p50_latency_ms": 4659.18,
+      "p95_latency_ms": 9472.96
+    },
+    "verified_rag": {
+      "claim_support_rate": 0.035,
+      "unsupported_claim_rate": 0.965,
+      "citation_precision": 0.04,
+      "citation_coverage": 0.0433,
+      "mean_latency_ms": 5691.35,
+      "p50_latency_ms": 4899.07,
+      "p95_latency_ms": 8514.65
+    },
+    "deltas": {
+      "delta_claim_support_rate": -0.0183,
+      "delta_unsupported_claim_rate": 0.0183,
+      "delta_citation_precision": -0.02,
+      "delta_citation_coverage": -0.0183
+    }
+  },
+  "DEV": {
+    "n_queries": 70,
+    "naive_rag": {
+      "claim_support_rate": 0.0714,
+      "unsupported_claim_rate": 0.9286,
+      "citation_precision": 0.0714,
+      "citation_coverage": 0.0786,
+      "mean_latency_ms": 6242.9,
+      "p50_latency_ms": 4992.67,
+      "p95_latency_ms": 15268.46
+    },
+    "verified_rag": {
+      "claim_support_rate": 0.05,
+      "unsupported_claim_rate": 0.95,
+      "citation_precision": 0.0571,
+      "citation_coverage": 0.0619,
+      "mean_latency_ms": 6148.43,
+      "p50_latency_ms": 5137.76,
+      "p95_latency_ms": 9552.31
+    },
+    "deltas": {
+      "delta_claim_support_rate": -0.0214,
+      "delta_unsupported_claim_rate": 0.0214,
+      "delta_citation_precision": -0.0143,
+      "delta_citation_coverage": -0.0167
+    }
+  },
+  "VAL": {
+    "n_queries": 15,
+    "naive_rag": {
+      "claim_support_rate": 0.0,
+      "unsupported_claim_rate": 1.0,
+      "citation_precision": 0.0,
+      "citation_coverage": 0.0222,
+      "mean_latency_ms": 4494.37,
+      "p50_latency_ms": 4315.24,
+      "p95_latency_ms": 5726.45
+    },
+    "verified_rag": {
+      "claim_support_rate": 0.0,
+      "unsupported_claim_rate": 1.0,
+      "citation_precision": 0.0,
+      "citation_coverage": 0.0,
+      "mean_latency_ms": 4600.45,
+      "p50_latency_ms": 4608.18,
+      "p95_latency_ms": 5223.71
+    },
+    "deltas": {
+      "delta_claim_support_rate": 0.0,
+      "delta_unsupported_claim_rate": 0.0,
+      "delta_citation_precision": 0.0,
+      "delta_citation_coverage": -0.0222
+    }
+  },
+  "TEST": {
+    "n_queries": 15,
+    "naive_rag": {
+      "claim_support_rate": 0.0222,
+      "unsupported_claim_rate": 0.9778,
+      "citation_precision": 0.0667,
+      "citation_coverage": 0.0222,
+      "mean_latency_ms": 4821.81,
+      "p50_latency_ms": 4366.37,
+      "p95_latency_ms": 7094.45
+    },
+    "verified_rag": {
+      "claim_support_rate": 0.0,
+      "unsupported_claim_rate": 1.0,
+      "citation_precision": 0.0,
+      "citation_coverage": 0.0,
+      "mean_latency_ms": 4649.18,
+      "p50_latency_ms": 4533.5,
+      "p95_latency_ms": 6056.97
+    },
+    "deltas": {
+      "delta_claim_support_rate": -0.0222,
+      "delta_unsupported_claim_rate": 0.0222,
+      "delta_citation_precision": -0.0667,
+      "delta_citation_coverage": -0.0222
+    }
+  }
+}

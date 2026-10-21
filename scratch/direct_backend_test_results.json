@@ -1,0 +1,52 @@
+{
+  "bm25_test": {
+    "status": "PARTIAL",
+    "count": 0,
+    "top_scores": []
+  },
+  "rrf_test": {
+    "status": "FAIL",
+    "k_configured": 60,
+    "count": 0,
+    "top_score": null
+  },
+  "bge_rerank_test": {
+    "status": "FAIL",
+    "count": 0,
+    "model_name": "BAAI/bge-reranker-base",
+    "top_score": null
+  },
+  "claim_verifier_stage_a": {
+    "status": "PARTIAL",
+    "note": "Overlap method private/custom"
+  },
+  "comparison_dimensions": {
+    "status": "PASS",
+    "count": 10,
+    "dimensions": [
+      "Research Goal / Problem",
+      "Core Methodology & Architecture",
+      "Datasets & Experimental Setup",
+      "Primary Performance Metrics",
+      "Computational Efficiency / Latency",
+      "Limitations & Edge Cases",
+      "Theoretical Assumptions",
+      "Hardware / Deployment Bounds",
+      "Novel Contribution Claim",
+      "Reproducibility & Open Artifacts"
+    ]
+  },
+  "chromadb_collections": {
+    "status": "PASS",
+    "collections": [
+      {
+        "name": "papers",
+        "count": 80
+      },
+      {
+        "name": "researchnexus_uploaded_v1_bgebase",
+        "count": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "query_id": "item_v11_089",
+    "claim_id": "claim_01",
+    "citation_marker": "[1]",
+    "provenance_chain": {
+      "claim_id": "claim_01",
+      "citation_marker": "[1]",
+      "evidence_id": "paper_res_003_chunk_001",
+      "paper_id": "paper_res_003",
+      "source_type": "local",
+      "title": "Paper 003: Advanced Study on Multimodal Representation Learning and Empirical Validation",
+      "evidence_text": "Title: Paper 003: Advanced Study on Multimodal Representation Learning and Empirical Validation. Section 1: Introduction and Problem Formulation. Recent advances in Multimodal Representation Learning face scaling challenges. We formulate a novel loss function combining contrastive optimization and adaptive gradient scheduling."
+    },
+    "chain_status": "PROVENANCE_VALID"
+  }
+]

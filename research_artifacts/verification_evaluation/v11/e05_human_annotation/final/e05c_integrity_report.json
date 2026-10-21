@@ -1,0 +1,26 @@
+{
+  "stage": "E05-C",
+  "status": "BLOCKED_INCOMPLETE_HUMAN_ANNOTATION",
+  "reason": "Validation failed: 0/136 human labels present across Annotator 1, Annotator 2, and Adjudication files. Awaiting completion of human annotation.",
+  "dataset": "ds_nexus_v11",
+  "claim_counts": {
+    "val_claims": 80,
+    "test_claims": 56,
+    "total_claims": 136
+  },
+  "first_check_results": {
+    "annotator_1_labels_count": 0,
+    "annotator_2_labels_count": 0,
+    "adjudicated_labels_count": 0,
+    "annotator_1_complete": false,
+    "annotator_2_complete": false,
+    "adjudication_complete": false,
+    "no_duplicate_claims": true,
+    "all_expected_claims_present": true
+  },
+  "protocol_compliance": {
+    "no_synthetic_labels_injected": true,
+    "no_automatic_repair": true,
+    "claim_verifier_blocked": true
+  }
+}

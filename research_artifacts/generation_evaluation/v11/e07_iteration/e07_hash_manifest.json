@@ -1,0 +1,16 @@
+{
+  "e07_aggregate_metrics.json": "31f6fdeb958cf8144d3b8528e284c5ad3bba1fda129f8b713a12e70abf73c23b",
+  "e07_citation_level_results.json": "b29bec3c552159b33a7b8e04a1f81516019b4430777842e6e5a6b9bac7b42db0",
+  "e07_claim_level_results.json": "8809b2b8fe556ec567002dec1e0e96b3b994f3f7ff8fe12d08e2fac0c1e1d1a9",
+  "e07_config.json": "2c00c6cd26ba9be0c36ce8ae59ed8deeee4eadfc848930f62d695c7a53fb00a2",
+  "e07_initial_answers.json": "242780664eb0578575452dcf546b2109d04509759a71aae0e7801f5adc6034da",
+  "e07_integrity_report.json": "ad7b7c457563fe434eb82addeaeb9a77da53f0d7b06ab7e86a7ff1fe4d36e4ee",
+  "e07_iteration_answers.json": "0f715b8158d9b0f3fdf9f128764180ce835b0e95e4be93e63a398a2fa878d4ba",
+  "e07_iteration_changes.json": "28a77376685c76801d36b40457225aad67cee5b31bfae6c6c05fb3082253f17b",
+  "e07_latency_results.json": "f296e7ac6eac409db5c8360d88f470692ae994d90051fd8e496639b301eee83d",
+  "e07_no_iteration_answers.json": "50f8dbec93da5fb2f95f214c4fcc2f17bee2b2732582f0c682ddb7aea15ab431",
+  "e07_per_query_results.json": "b7f947bf150cdcef2df2dbe289258eea6473a75ed0e4f40518ca2038ff3714d5",
+  "e07_regression_analysis.json": "dabb1a8d4f7cfc901e8f65b3a58771910a51a26269aa96ead531487a27d2864d",
+  "e07_statistics.json": "5914ad8da263e8b501975d07c3827587f7a3cb57c6c6d4179bad706e302104cb",
+  "e07_summary_report.md": "86a76a0fa4e748bfeac1c2a5cb7ed9da716437a9ed0e8544e13df9295376ca5d"
+}

@@ -1,0 +1,36 @@
+{
+  "TEST_N15": {
+    "sample_size": 15,
+    "status": "ALL_ZERO_DIFFERENCE",
+    "limitation": "All 15 TEST queries had 0 recall in top-10 hybrid RRF candidates. Deltas across all metrics are identically 0. Paired t-test/Wilcoxon cannot be computed due to zero variance."
+  },
+  "DEVELOPMENT_N70": {
+    "sample_size": 70,
+    "mrr": {
+      "b3_mean": 0.16131519274376416,
+      "b4_mean": 0.33785714285714286,
+      "delta": 0.1765419501133787,
+      "paired_ttest": {
+        "t_statistic": 3.8363262013494963,
+        "p_value": 0.00027320274494252716
+      },
+      "wilcoxon": {
+        "w_statistic": 146.0,
+        "p_value": 2.698310290262279e-05
+      }
+    },
+    "ndcg_at_5": {
+      "b3_mean": 0.1497382180730125,
+      "b4_mean": 0.41945600092070456,
+      "delta": 0.2697177828476921,
+      "paired_ttest": {
+        "t_statistic": 5.628773710362826,
+        "p_value": 3.6128326086658976e-07
+      },
+      "wilcoxon": {
+        "w_statistic": 116.0,
+        "p_value": 5.531610963015195e-06
+      }
+    }
+  }
+}

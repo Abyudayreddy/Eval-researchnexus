@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ResearchMind — Explainable AI Research Suite</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Inter & JetBrains Mono Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- MathJax for rendering gorgeous scientific LaTeX formulas -->
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F8FAFC;
+      color: #0F172A;
+      overflow-x: hidden;
+    }
+    
+    .mono-font {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Soft premium shadows matching Linear & Apple design principles */
+    .apple-shadow {
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.015);
+    }
+    
+    .apple-card {
+      background: #FFFFFF;
+      border: 1px solid rgba(241, 245, 249, 0.9);
+      border-radius: 20px;
+      box-shadow: 0 4px 20px -2px rgba(148, 163, 184, 0.04);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .apple-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px -4px rgba(148, 163, 184, 0.08);
+    }
+
+    /* Custom rolling hills background gradient styling for the dashboard banner */
+    .hills-banner {
+      background: linear-gradient(135deg, #10B981 0%, #059669 50%, #064E3B 100%);
+    }
+
+    /* Floating leaf animations */
+    @keyframes floatLeaf {
+      0% {
+        transform: translateY(0) rotate(0deg) scale(0.9);
+        opacity: 0;
+      }
+      15% { opacity: 0.5; }
+      85% { opacity: 0.5; }
+      100% {
+        transform: translateY(-50px) translateX(30px) rotate(45deg) scale(1.1);
+        opacity: 0;
+      }
+    }
+
+    .leaf-1 { animation: floatLeaf 10s infinite linear; }
+    .leaf-2 { animation: floatLeaf 14s infinite linear 3s; }
+
+    /* Premium Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #E2E8F0;
+      border-radius: 99px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #CBD5E1;
+    }
+
+    /* Active Sidebar Nav styles */
+    .nav-active {
+      background-color: #ECFDF5;
+      color: #065F46;
+      font-weight: 600;
+    }
+    .nav-active svg {
+      color: #10B981;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex text-[13px] leading-relaxed antialiased bg-[#F8FAFC]">
+
+  <!-- ==================== LEFT COLLAPSIBLE NAVIGATION BAR ==================== -->
+  <aside class="w-64 border-r border-slate-100 bg-white flex flex-col h-screen fixed top-0 left-0 z-30 transition-transform duration-300">
+    
+    <!-- Branding Header matching "ChatGPT Image Jul 20, 2026, 07_29_19 PM.png" -->
+    <div class="h-16 flex items-center gap-3 px-6 border-b border-slate-50">
+      <div class="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center text-white shadow-sm hover:scale-105 transition-transform duration-300">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M17 8C15.5 8 13.5 9 12 11C10.5 9 8.5 8 7 8C4 8 2 10.5 2 13.5C2 17.5 7 21 12 22C17 21 22 17.5 22 13.5C22 10.5 20 8 17 8M12 4V8M12 4C14 2 17 2 17 2M12 4C10 2 7 2 7 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <span class="font-bold text-slate-800 tracking-tight text-[15px]">ResearchMind</span>
+        <span class="text-[9px] block text-slate-400 font-semibold tracking-wider uppercase -mt-0.5">Scientific OS</span>
+      </div>
+    </div>
+
+    <!-- Navigation Scrollable Panel -->
+    <div class="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
+      <nav class="space-y-0.5">
+        <button onclick="switchTab('dashboard')" id="nav-dashboard" class="nav-active w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all duration-200">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          Home
+        </button>
+        <button onclick="switchTab('domains')" id="nav-domains" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all duration-200">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          Explore Domains
+        </button>
+        <button onclick="switchTab('search')" id="nav-search" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all duration-200">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v1m6 11h2m-6 0h-2m3-4h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+          Hybrid Search
+        </button>
+        <button onclick="switchTab('assistant')" id="nav-assistant" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all duration-200">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          AI Assistant
+        </button>
+        <button onclick="switchTab('workspace')" id="nav-workspace" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all duration-200">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          Research Workspace
+        </button>
+        <button onclick="switchTab('literature')" id="nav-literature" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all duration-200">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          Literature Builder
+        </button>
+        <button onclick="switchTab('projects')" id="nav-projects" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all duration-200">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+          Projects
+        </button>
+        <button onclick="switchTab('xai')" id="nav-xai" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all duration-200">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          Explainable AI (XAI)
+        </button>
+        <button onclick="switchTab('analytics')" id="nav-analytics" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all duration-200">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/><path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/></svg>
+          Analytics
+        </button>
+        <button onclick="switchTab('bookmarks')" id="nav-bookmarks" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all duration-200">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/></svg>
+          Bookmarks
+        </button>
+      </nav>
+
+      <!-- AI Assistant Mascot Widget precisely matching bottom-left of ChatGPT Image Jul 20, 2026, 07_29_19 PM.png -->
+      <div class="mt-6 p-4 rounded-2xl bg-gradient-to-b from-emerald-50/60 to-emerald-50/20 border border-emerald-100/50 relative overflow-hidden">
+        <div class="flex items-center justify-between">
+          <span class="font-bold text-emerald-800 text-[10px] uppercase tracking-wider">Research Assistant</span>
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        </div>
+        <p class="text-slate-500 text-[10px] mt-1 leading-relaxed">Your AI companion for every research step.</p>
+        
+        <button onclick="switchTab('assistant')" class="mt-3 w-full bg-white hover:bg-slate-50 text-slate-800 font-bold py-1.5 px-3 rounded-xl border border-slate-200/60 text-xs flex items-center justify-between transition-colors shadow-sm">
+          <span>Chat Now</span>
+          <svg class="w-3.5 h-3.5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </button>
+
+        <div class="flex justify-center mt-3">
+          <svg class="w-16 h-16 hover:scale-110 transition-transform duration-300 cursor-pointer" viewBox="0 0 100 100">
+            <!-- Bot Head Chassis -->
+            <rect x="25" y="20" width="50" height="42" rx="16" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="3"/>
+            <!-- Glass Visor -->
+            <rect x="31" y="28" width="38" height="18" rx="8" fill="#1E293B"/>
+            <!-- Glowing Eyes -->
+            <circle cx="42" cy="37" r="4" fill="#10B981" class="animate-pulse"/>
+            <circle cx="58" cy="37" r="4" fill="#10B981" class="animate-pulse"/>
+            <!-- Leaf Logo on chest -->
+            <rect x="42" y="68" width="16" height="16" rx="4" fill="#E8F5E9"/>
+            <path d="M50 71C48.5 71 47.5 72 47 73C46.5 72 45.5 71 44 71C42 71 41 72.5 41 74C41 76 44 78 50 79C56 78 59 76 59 74C59 72.5 58 71 56 71" fill="#10B981"/>
+            <rect x="20" y="32" width="5" height="12" rx="2" fill="#CBD5E1"/>
+            <rect x="75" y="32" width="5" height="12" rx="2" fill="#CBD5E1"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- User Profile Badge matching layout of reference visual -->
+    <div class="p-4 border-t border-slate-100 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-sm shadow-inner">
+          A
+        </div>
+        <div>
+          <p class="font-bold text-slate-800 text-xs">Abyuday</p>
+          <p class="text-[10px] text-slate-400 font-semibold">Researcher</p>
+        </div>
+      </div>
+      <button onclick="switchTab('profile')" class="p-1.5 hover:bg-slate-50 rounded-lg text-slate-400 hover:text-slate-600 transition-colors">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==================== MAIN PANEL VIEWPORT ==================== -->
+  <main class="flex-1 min-h-screen pl-64 flex flex-col bg-[#FBFDFB] relative z-10">
+    
+    <!-- Header with Omni Search -->
+    <header class="h-16 border-b border-slate-100 bg-white/95 backdrop-blur-md sticky top-0 z-20 px-8 flex items-center justify-between">
+      <!-- Universal Search bar with instant key matching -->
+      <div class="flex-1 max-w-xl relative">
+        <div class="flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-slate-50 hover:bg-slate-100/70 border border-slate-100 transition-all focus-within:border-slate-200 focus-within:bg-white w-full">
+          <svg class="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <input type="text" id="omni-search" oninput="handleOmniSearch(this.value)" placeholder="Search papers, datasets, topics, or ask anything..." class="bg-transparent text-xs w-full focus:outline-none text-slate-800">
+          <span class="text-[10px] bg-white border border-slate-200 text-slate-400 font-mono px-1.5 py-0.5 rounded shadow-sm">Ctrl + K</span>
+        </div>
+
+        <!-- Dynamic suggestions drop matrix -->
+        <div id="omni-suggestions" class="hidden absolute left-0 right-0 top-12 bg-white border border-slate-200/80 rounded-2xl shadow-xl py-2 z-50">
+          <div class="px-4 py-1 text-[9px] font-bold text-slate-400 uppercase tracking-widest border-b border-slate-50 mb-1">Retrieval Suggestions</div>
+          <div class="divide-y divide-slate-50" id="omni-suggestions-box"></div>
+        </div>
+      </div>
+
+      <!-- Quick stats indicators -->
+      <div class="flex items-center gap-4">
+        <button onclick="triggerToast('Indexing latest research arrays.', '🌿')" class="p-2 hover:bg-slate-50 rounded-full text-slate-500 hover:text-slate-800 transition-colors relative">
+          <svg class="w-4.5 h-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+          </svg>
+          <span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        </button>
+
+        <span class="h-5 w-px bg-slate-200"></span>
+
+        <div onclick="switchTab('profile')" class="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shadow-sm cursor-pointer">
+          A
+        </div>
+      </div>
+    </header>
+
+    <!-- Content Area Container -->
+    <div class="flex-1 p-8 max-w-[1400px] w-full mx-auto space-y-8 z-10 pb-20">
+
+      <!-- ==================== TAB 1: DASHBOARD ==================== -->
+      <section id="tab-dashboard" class="tab-view block space-y-8">
+        <!-- Banner mirroring hills design perfectly -->
+        <div class="relative rounded-[24px] overflow-hidden p-8 md:p-10 flex flex-col justify-between min-h-[180px] hills-banner text-white shadow-sm">
+          <div class="absolute inset-0 opacity-10 pointer-events-none mix-blend-overlay">
+            <svg class="w-full h-full" viewBox="0 0 1000 300" preserveAspectRatio="none">
+              <path d="M0 150 C 200 100, 400 200, 600 120 C 800 50, 900 130, 1000 80 L 1000 300 L 0 300 Z" fill="#FFFFFF"/>
+            </svg>
+          </div>
+          <div class="absolute right-12 top-6 w-28 h-28 opacity-10 pointer-events-none leaf-1">
+            <svg viewBox="0 0 100 100" class="fill-current text-white w-full h-full">
+              <path d="M50 0C25 25 20 60 50 100C80 60 75 25 50 0M50 30C55 45 65 55 50 80C35 55 45 45 50 30Z"/>
+            </svg>
+          </div>
+          <div class="relative z-10 max-w-xl space-y-2">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">Good Morning, Abyuday! 👋</h1>
+            <p class="text-emerald-50 text-sm font-medium">What research world will you explore today?</p>
+          </div>
+        </div>
+
+        <!-- Explore Domains Row Grid -->
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-base font-bold text-slate-800 flex items-center gap-2">
+              Explore Research Domains
+              <span class="text-emerald-500 text-xs">✨</span>
+            </h2>
+            <button onclick="switchTab('domains')" class="text-xs text-slate-500 hover:text-slate-800 font-bold border border-slate-200/80 bg-white hover:bg-slate-50 px-3.5 py-1.5 rounded-xl flex items-center gap-1.5 transition-all shadow-sm">
+              <span>View All Domains</span>
+              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </button>
+          </div>
+
+          <!-- Dynamic grid loading domain modules -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4" id="dashboard-domains-grid"></div>
+        </div>
+
+        <!-- Quick Actions Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+          <div onclick="switchTab('search')" class="apple-card p-4 flex items-center gap-4 cursor-pointer">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-500 flex items-center justify-center shadow-inner">
+              <svg class="w-5 h-5 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-800 text-xs">Search Papers</h4>
+              <p class="text-[10px] text-slate-400">Keyword & Semantic space</p>
+            </div>
+          </div>
+          <div onclick="triggerToast('Mock dataset diagnostic analysis booted.', '📊')" class="apple-card p-4 flex items-center gap-4 cursor-pointer">
+            <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-500 flex items-center justify-center shadow-inner">
+              <svg class="w-5 h-5 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-800 text-xs">Analyze Data</h4>
+              <p class="text-[10px] text-slate-400">Scientific variables metrics</p>
+            </div>
+          </div>
+          <div onclick="switchTab('assistant')" class="apple-card p-4 flex items-center gap-4 cursor-pointer">
+            <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-500 flex items-center justify-center shadow-inner">
+              <svg class="w-5 h-5 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-800 text-xs">AI Assistant</h4>
+              <p class="text-[10px] text-slate-400">Conversational validation logs</p>
+            </div>
+          </div>
+          <div onclick="openCreateProjectDrawer()" class="apple-card p-4 flex items-center gap-4 cursor-pointer">
+            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center shadow-inner">
+              <svg class="w-5 h-5 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2"><path d="M12 4v16m8-8H4"/></svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-800 text-xs">Create Project</h4>
+              <p class="text-[10px] text-slate-400">Start organic custom timelines</p>
+            </div>
+          </div>
+          <div onclick="mockDatasetUploader()" class="apple-card p-4 flex items-center gap-4 cursor-pointer">
+            <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-500 flex items-center justify-center shadow-inner">
+              <svg class="w-5 h-5 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-800 text-xs">Upload Dataset</h4>
+              <p class="text-[10px] text-slate-400">Generate local embeddings</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Split Recent Activity & Metrics -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div class="lg:col-span-7 bg-white border border-slate-100 rounded-[20px] p-6 shadow-sm space-y-4">
+            <div class="flex items-center justify-between pb-2 border-b border-slate-50">
+              <h3 class="font-bold text-slate-800 text-[13px] flex items-center gap-2">🔄 Recent Activity</h3>
+            </div>
+            <div class="space-y-3" id="recent-activities-log"></div>
+          </div>
+
+          <div class="lg:col-span-5 space-y-6">
+            <div class="bg-white border border-slate-100 rounded-[20px] p-6 shadow-sm space-y-4">
+              <h3 class="font-bold text-slate-800 text-[13px]">📈 Research Overview</h3>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="p-3 bg-emerald-50/50 border border-emerald-50 rounded-xl">
+                  <span class="text-[10px] font-bold text-emerald-800 uppercase block">Projects Active</span>
+                  <p class="text-2xl font-black text-slate-800 mt-1" id="projects-active-count">12</p>
+                </div>
+                <div class="p-3 bg-blue-50/50 border border-blue-50 rounded-xl">
+                  <span class="text-[10px] font-bold text-blue-800 uppercase block">Papers Saved</span>
+                  <p class="text-2xl font-black text-slate-800 mt-1" id="papers-saved-count">48</p>
+                </div>
+                <div class="p-3 bg-purple-50/50 border border-purple-50 rounded-xl">
+                  <span class="text-[10px] font-bold text-purple-800 uppercase block">Local Datasets</span>
+                  <p class="text-2xl font-black text-slate-800 mt-1">7</p>
+                </div>
+                <div class="p-3 bg-rose-50/50 border border-rose-50 rounded-xl">
+                  <span class="text-[10px] font-bold text-rose-800 uppercase block">Review Remarks</span>
+                  <p class="text-2xl font-black text-slate-800 mt-1">23</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bot Tip Card matching imagery precisely -->
+            <div class="bg-gradient-to-tr from-slate-50 to-emerald-50/20 rounded-[20px] p-6 border border-emerald-100/50 flex items-center gap-4 relative overflow-hidden">
+              <div class="space-y-1 flex-1">
+                <span class="text-[10px] font-bold text-emerald-800 flex items-center gap-1 uppercase tracking-wider">💡 AI Research Tip</span>
+                <p class="text-slate-600 text-[11px] leading-relaxed">
+                  Combine multi-word terms using quotes for stricter lexical relevance: e.g. "Canopy Saturation Thresholds".
+                </p>
+                <button onclick="switchTab('assistant')" class="text-xs text-emerald-600 font-bold hover:underline inline-block pt-1">Ask Assistant →</button>
+              </div>
+              <div class="w-16 h-16 shrink-0">
+                <svg viewBox="0 0 100 100" class="w-full h-full">
+                  <rect x="20" y="25" width="60" height="50" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+                  <rect x="28" y="33" width="44" height="20" rx="8" fill="#1E293B"/>
+                  <circle cx="40" cy="43" r="3.5" fill="#10B981"/>
+                  <circle cx="60" cy="43" r="3.5" fill="#10B981"/>
+                  <path d="M42 62 Q50 67 58 62" stroke="#475569" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 2: RESEARCH DOMAINS ==================== -->
+      <section id="tab-domains" class="tab-view hidden space-y-6">
+        <div class="border-b border-slate-100 pb-4">
+          <h1 class="text-2xl font-black text-slate-900 tracking-tight">Research Domains</h1>
+          <p class="text-slate-500 text-xs">Access specific sub-domain registries, latest trends, localized models, and RAG metadata indices.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="domains-cards-grid"></div>
+      </section>
+
+      <!-- ==================== TAB 3: DOMAIN WORKSPACE ==================== -->
+      <section id="tab-domain-workspace" class="tab-view hidden space-y-6">
+        <div class="relative rounded-2xl overflow-hidden p-8 flex flex-col justify-between min-h-[220px] bg-slate-900 text-white border border-slate-800 shadow-xl">
+          <div class="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:16px_16px] opacity-40"></div>
+          <div class="relative z-10 max-w-xl space-y-2">
+            <span class="px-2.5 py-0.5 bg-emerald-500/20 text-emerald-400 text-[10px] font-bold rounded-full uppercase tracking-wider" id="dw-top-badge">Scientific Field</span>
+            <h1 class="text-3xl font-black tracking-tight" id="dw-title">Domain Workspace</h1>
+            <p class="text-slate-400 text-xs" id="dw-description">Loading workspace parameters...</p>
+          </div>
+          <div class="relative z-10 flex flex-wrap gap-2 pt-4 border-t border-slate-800">
+            <button class="px-3.5 py-1.5 bg-emerald-500 text-white font-bold rounded-xl text-xs shadow-md">Overview</button>
+            <button class="px-3.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold rounded-xl text-xs" onclick="triggerToast('Workspace metrics optimized.', '📊')">Research Stats</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div class="lg:col-span-8 space-y-6">
+            <!-- Trending publications -->
+            <div class="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm space-y-4">
+              <h3 class="font-bold text-slate-800 text-xs flex items-center gap-2">🔥 Trending Research Literature</h3>
+              <div class="divide-y divide-slate-100" id="dw-trending-list"></div>
+            </div>
+
+            <!-- Sub-fields & Datasets -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-white border border-slate-100 rounded-2xl p-5 shadow-sm space-y-3">
+                <h4 class="font-bold text-slate-800 text-[12px]">Sub-domains & Areas</h4>
+                <div class="flex flex-wrap gap-2" id="dw-subdomains-tags"></div>
+              </div>
+              <div class="bg-white border border-slate-100 rounded-2xl p-5 shadow-sm space-y-3">
+                <h4 class="font-bold text-slate-800 text-[12px]">Featured Datasets</h4>
+                <div class="space-y-2" id="dw-datasets-box"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Domain Workspace AI Panel -->
+          <div class="lg:col-span-4 space-y-6">
+            <div class="bg-white border border-slate-100 rounded-2xl p-5 shadow-sm space-y-4 flex flex-col justify-between min-h-[340px]">
+              <div class="space-y-4">
+                <div class="flex items-center gap-2 pb-2 border-b border-slate-50">
+                  <span class="text-xl">🤖</span>
+                  <div>
+                    <h4 class="font-bold text-slate-800 text-xs" id="dw-bot-name">Domain Co-Pilot</h4>
+                    <p class="text-[9px] text-slate-400">Contextual RAG pipeline active</p>
+                  </div>
+                </div>
+                <div class="bg-slate-50 p-3.5 rounded-xl text-slate-600 text-xs space-y-2">
+                  <p>I am your customized assistant for this field. I can trace literature variables or map dynamic knowledge trees.</p>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <input type="text" id="dw-co-pilot-input" placeholder="Ask anything about this field..." class="w-full bg-slate-50 border border-slate-200/80 rounded-xl p-2.5 text-xs focus:outline-none focus:bg-white focus:border-emerald-500 transition-all">
+                <button onclick="submitDomainCopilotQuery()" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 px-3 rounded-xl text-xs transition-colors shadow-sm">Submit Query</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 4: HYBRID SEARCH ==================== -->
+      <section id="tab-search" class="tab-view hidden space-y-6">
+        <div class="max-w-3xl mx-auto text-center space-y-6">
+          <h1 class="text-3xl font-black text-slate-900 tracking-tight">Hybrid Discovery Engine</h1>
+          <p class="text-slate-500 text-xs max-w-md mx-auto">Cross-reference lexical BM25 database coordinates with multi-dimensional neural vector embeddings instantly.</p>
+          
+          <div class="bg-white border border-slate-200 rounded-2xl p-2.5 shadow-md flex items-center gap-3">
+            <svg class="w-5 h-5 text-slate-400 shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            <input type="text" id="search-query-bar" oninput="executeSearchFlow(this.value)" placeholder="Search carbon models, self-supervised systems, exoplanets..." class="w-full text-xs bg-transparent focus:outline-none text-slate-800">
+            <div class="flex bg-slate-50 p-1 border border-slate-200/60 rounded-xl gap-0.5">
+              <button class="bg-white text-slate-800 text-[10px] font-bold px-2.5 py-1 rounded shadow-sm">Hybrid</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <!-- Filters Panel -->
+          <div class="lg:col-span-4 bg-white border border-slate-100 rounded-2xl p-5 shadow-sm space-y-5">
+            <div class="flex items-center justify-between border-b border-slate-50 pb-2">
+              <h3 class="font-bold text-slate-800 text-xs">Retrieval Filters</h3>
+              <button onclick="clearSearchFilters()" class="text-[10px] text-slate-400 hover:text-slate-600 font-bold">Clear</button>
+            </div>
+
+            <div class="space-y-4">
+              <div>
+                <label class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Search Weighting Formula</label>
+                <div class="text-[10px] bg-slate-50 p-2 rounded-lg text-slate-600 mb-2 font-mono">
+                  $$\text{Score} = w_{\text{lex}} \cdot S_{\text{BM25}} + w_{\text{sem}} \cdot S_{\text{vector}}$$
+                </div>
+                <div class="flex items-center justify-between text-[11px] text-slate-500 mb-1">
+                  <span>Exact Keyword ($w_{\text{lex}}$)</span>
+                  <span>Neural Space ($w_{\text{sem}}$)</span>
+                </div>
+                <input type="range" id="filter-weighting-slider" class="w-full accent-emerald-500" min="0" max="100" value="70">
+              </div>
+
+              <div>
+                <label class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5">Publication Year</label>
+                <select id="filter-pub-year" onchange="executeSearchFlow(document.getElementById('search-query-bar').value)" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-2.5 text-xs focus:outline-none">
+                  <option value="all">All Dates</option>
+                  <option value="2026">2026</option>
+                  <option value="2025">2025</option>
+                  <option value="2024">2024</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5">Select Domain</label>
+                <select id="filter-domain-selector" onchange="executeSearchFlow(document.getElementById('search-query-bar').value)" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-2.5 text-xs focus:outline-none">
+                  <option value="all">All Domains</option>
+                  <option value="Artificial Intelligence">Artificial Intelligence</option>
+                  <option value="Healthcare">Healthcare</option>
+                  <option value="Agriculture">Agriculture</option>
+                  <option value="Data Science">Data Science</option>
+                  <option value="Environmental Science">Environmental Science</option>
+                  <option value="Space Science">Space Science</option>
+                  <option value="Energy">Energy</option>
+                  <option value="Interdisciplinary Research">Interdisciplinary Research</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Search Results list -->
+          <div class="lg:col-span-8 bg-white border border-slate-100 rounded-2xl p-6 shadow-sm space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-50 pb-2">
+              <span class="text-xs text-slate-400 font-bold" id="search-results-counter">Found 0 papers</span>
+              <span class="text-[11px] text-emerald-500 font-bold flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                RAG indices grounded
+              </span>
+            </div>
+            <div class="space-y-4" id="search-results-injection"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 5: PAPER DETAILS ==================== -->
+      <section id="tab-paper-details" class="tab-view hidden space-y-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-slate-100 pb-4 gap-4">
+          <div>
+            <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Academic Publication Document</span>
+            <h1 class="text-2xl font-black text-slate-900 tracking-tight" id="pd-title">Paper Details</h1>
+            <p class="text-slate-500 text-xs" id="pd-authors-journal">Authors and publication data loading...</p>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <button onclick="toggleActivePaperBookmark()" id="pd-bookmark-btn" class="p-2.5 bg-white border border-slate-200 hover:bg-slate-50 text-slate-600 rounded-xl transition-all shadow-sm">
+              <svg class="w-4 h-4 fill-none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/></svg>
+            </button>
+            <button onclick="addActivePaperToProject()" class="px-3.5 py-1.5 bg-white hover:bg-slate-50 text-slate-700 font-bold border border-slate-200/80 rounded-xl text-xs">Add to Project</button>
+            <button onclick="triggerToast('PDF saved to active directory storage.', '⬇️')" class="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl text-xs shadow-sm transition-all">Download PDF</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div class="lg:col-span-8 space-y-6">
+            <div class="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm space-y-4">
+              <h3 class="font-bold text-slate-800 text-xs">Abstract Synopsis</h3>
+              <p class="text-slate-600 text-xs leading-relaxed" id="pd-abstract"></p>
+            </div>
+
+            <div class="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm space-y-4">
+              <h3 class="font-bold text-slate-800 text-xs">Explainable AI (RAG Grounding Trace)</h3>
+              <p class="text-slate-600 text-xs leading-relaxed font-mono bg-slate-50 p-4 rounded-xl border border-slate-100" id="pd-ai-summary"></p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between min-h-[140px]">
+                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Illustrative Vector Visualizer</span>
+                <div class="h-20 bg-emerald-100/30 rounded-lg border border-emerald-100/30 flex items-center justify-center font-bold text-emerald-800 text-[11px]">
+                  [ Concept Mapping Coordinate Frame ]
+                </div>
+              </div>
+              <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-between min-h-[140px]">
+                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Future Outlook Directions</span>
+                <p class="text-slate-600 text-xs italic mt-2" id="pd-future-work"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 space-y-6">
+            <div class="bg-white border border-slate-100 rounded-2xl p-5 shadow-sm space-y-4">
+              <h4 class="font-bold text-slate-800 text-xs border-b border-slate-50 pb-2">Technical Specifications</h4>
+              <div class="space-y-3.5 text-xs">
+                <div>
+                  <span class="text-[10px] font-bold text-slate-400 block uppercase">DOI Coordinates</span>
+                  <p class="font-mono text-slate-700" id="pd-doi"></p>
+                </div>
+                <div>
+                  <span class="text-[10px] font-bold text-slate-400 block uppercase">Primary Repository Source</span>
+                  <p class="font-bold text-emerald-600" id="pd-repository"></p>
+                </div>
+                <div>
+                  <button onclick="loadActivePaperToStudySuite()" class="w-full bg-slate-50 hover:bg-emerald-50 text-emerald-700 font-bold p-2 rounded-xl text-center block transition-colors border border-emerald-100/30">
+                    Open in Interactive Study Room →
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 6: AI RESEARCH ASSISTANT ==================== -->
+      <section id="tab-assistant" class="tab-view hidden space-y-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 h-[calc(100vh-200px)] min-h-[500px]">
+          
+          <!-- Presets and quick controls panel left -->
+          <div class="lg:col-span-4 bg-white border border-slate-100 rounded-2xl p-4 flex flex-col justify-between shadow-sm">
+            <div class="space-y-4">
+              <h3 class="font-bold text-slate-800 text-xs border-b border-slate-50 pb-2">Assistant Presets</h3>
+              <div class="space-y-2">
+                <button onclick="runCopilotAssistantPrompt('summarize')" class="w-full text-left p-3 bg-slate-50 hover:bg-slate-100 rounded-xl text-xs font-semibold text-slate-700 transition-colors">📄 Summarize Active Papers</button>
+                <button onclick="runCopilotAssistantPrompt('gaps')" class="w-full text-left p-3 bg-slate-50 hover:bg-slate-100 rounded-xl text-xs font-semibold text-slate-700 transition-colors">🔍 Suggest Research Gaps</button>
+                <button onclick="runCopilotAssistantPrompt('compare')" class="w-full text-left p-3 bg-slate-50 hover:bg-slate-100 rounded-xl text-xs font-semibold text-slate-700 transition-colors">⚖️ Compare Methodologies</button>
+              </div>
+            </div>
+
+            <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-100/50">
+              <span class="text-[9px] font-bold text-emerald-800 block uppercase tracking-wider">Traceability Verified</span>
+              <p class="text-[10px] text-slate-500 mt-1">Citations in generated answers refer directly to index chunks.</p>
+            </div>
+          </div>
+
+          <!-- Active dialogue panel right -->
+          <div class="lg:col-span-8 bg-white border border-slate-100 rounded-2xl flex flex-col h-full overflow-hidden shadow-sm">
+            <div class="p-4 bg-slate-50 border-b border-slate-100 flex items-center justify-between">
+              <div class="flex items-center gap-2.5">
+                <span class="text-xl">🤖</span>
+                <div>
+                  <h4 class="font-bold text-slate-800 text-xs">Conversational Assistant Workspace</h4>
+                  <p class="text-[9px] text-slate-400">Context: Global Scientific Registry Pool</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dialogue message stream -->
+            <div class="flex-1 p-4 overflow-y-auto space-y-4" id="copilot-message-stream">
+              <div class="flex gap-3">
+                <span class="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 text-[10px] font-bold">AI</span>
+                <div class="bg-slate-50 p-3 rounded-2xl max-w-[85%] text-slate-700 text-xs leading-relaxed">
+                  Welcome to ResearchMind Assistant! Ask me any methodology formulation compared against your active document archives.
+                </div>
+              </div>
+            </div>
+
+            <!-- Input area -->
+            <div class="p-3 bg-slate-50 border-t border-slate-100">
+              <div class="flex items-center gap-2 bg-white border border-slate-200 rounded-xl p-1.5 focus-within:border-emerald-500 transition-all">
+                <input type="text" id="copilot-text-input" onkeydown="handleCopilotKeyPress(event)" placeholder="Ask about carbon models, attention maps, or click presets..." class="w-full text-xs focus:outline-none bg-transparent px-2.5">
+                <button onclick="submitCopilotSpeech()" class="p-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg transition-all">
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 7: EXPLAINABLE AI (XAI) ==================== -->
+      <section id="tab-xai" class="tab-view hidden space-y-6">
+        <div class="border-b border-slate-100 pb-4">
+          <h1 class="text-2xl font-black text-slate-900 tracking-tight">Explainable AI (XAI) & Retrieval Tracing</h1>
+          <p class="text-slate-500 text-xs">Verify algorithmic transparency indices, query transformations, semantic coordinate scores, and source evidence logs.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div class="lg:col-span-5 space-y-6">
+            <div class="bg-white border border-slate-100 rounded-2xl p-5 shadow-sm space-y-4">
+              <h3 class="font-bold text-slate-800 text-xs border-b border-slate-50 pb-2">Interactive Similarity Metrics</h3>
+              <div class="space-y-4 text-xs">
+                <div>
+                  <div class="flex items-center justify-between text-[11px] font-bold text-slate-600 mb-1">
+                    <span>Semantic Embedding Correlation ($\text{Similarity} \ge 0.90$)</span>
+                    <span class="text-emerald-500">92.4% Match</span>
+                  </div>
+                  <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+                    <div class="h-full bg-emerald-500" style="width: 92.4%"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex items-center justify-between text-[11px] font-bold text-slate-600 mb-1">
+                    <span>Cross-Encoder Re-rank Convergence</span>
+                    <span class="text-blue-500">86.1%</span>
+                  </div>
+                  <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+                    <div class="h-full bg-blue-500" style="width: 86.1%"></div>
+                  </div>
+                </div>
+
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 space-y-1">
+                  <span class="text-[9px] font-bold text-slate-400 block uppercase">Confidence Estimation Verdict</span>
+                  <p class="font-bold text-slate-700">99.8% Grounded Source consistency with zero hallucination hazard patterns.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Query transformation visualization mapping -->
+            <div class="bg-white border border-slate-100 rounded-2xl p-5 shadow-sm space-y-3">
+              <h4 class="font-bold text-slate-800 text-xs border-b border-slate-50 pb-2">Query Transformation Steps</h4>
+              <div class="space-y-2.5 text-xs text-slate-600">
+                <div class="flex items-start gap-3">
+                  <span class="w-5 h-5 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center font-mono font-bold text-[10px]">1</span>
+                  <div>
+                    <p class="font-bold text-slate-800">Raw Input</p>
+                    <p class="text-[11px] text-slate-400">"how does forest canopy affect carbon?"</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="w-5 h-5 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center font-mono font-bold text-[10px]">2</span>
+                  <div>
+                    <p class="font-bold text-slate-800">Enhanced Expansion</p>
+                    <p class="text-[11px] text-slate-400">"Global Forest canopy depletion feedback loops AND carbon cycle vectors AND telemetry anomalies"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grounded Evidence Log chunks mapping -->
+          <div class="lg:col-span-7 bg-white border border-slate-100 rounded-2xl p-6 shadow-sm space-y-4">
+            <h3 class="font-bold text-slate-800 text-xs border-b border-slate-50 pb-2">Traceable Document Chunks (RAG Source Log)</h3>
+            <div class="space-y-3.5 text-xs" id="xai-evidence-injection"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 8: RESEARCH WORKSPACE ==================== -->
+      <section id="tab-workspace" class="tab-view hidden space-y-6">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+          <div>
+            <h1 class="text-2xl font-black text-slate-900 tracking-tight">Adaptive Study Room</h1>
+            <p class="text-slate-500 text-xs">Simulated double-pane layout: Loaded PDF on the left, organic Co-pilot scratchpad draft space on the right.</p>
+          </div>
+          <button onclick="triggerToast('Scratchpad annotations autosaved successfully.', '💾')" class="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl text-xs shadow-sm transition-all">Save Draft State</button>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 h-[calc(100vh-220px)] min-h-[550px]">
+          <!-- Left Plane: Simulated PDF pages -->
+          <div class="lg:col-span-7 bg-white border border-slate-100 rounded-2xl flex flex-col h-full overflow-hidden shadow-sm">
+            <div class="p-3 bg-slate-50 border-b border-slate-100 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="px-1.5 py-0.5 bg-slate-200 text-slate-800 font-mono text-[9px] font-bold rounded">PDF READER</span>
+                <span id="workspace-pdf-title" class="font-bold text-slate-700 text-xs">ActiveStudyDocument.pdf</span>
+              </div>
+              <span class="text-[10px] text-slate-400 font-bold">Page 1 of 6</span>
+            </div>
+
+            <div class="p-6 flex-1 overflow-y-auto space-y-4 text-xs text-slate-700 leading-relaxed bg-[#ECEFF1]/20">
+              <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 space-y-4" id="workspace-pdf-viewport">
+                <!-- Inner populated text -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Plane: Interactive Draft workspace -->
+          <div class="lg:col-span-5 bg-white border border-slate-100 rounded-2xl flex flex-col h-full overflow-hidden shadow-sm">
+            <div class="p-3 bg-slate-50 border-b border-slate-100 flex items-center justify-between">
+              <span class="font-bold text-slate-800 text-xs">Co-pilot Companion Scratchpad</span>
+              <span class="text-[9px] bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.5 rounded">Autosave Connected</span>
+            </div>
+
+            <div class="p-4 flex-1 overflow-y-auto space-y-4 text-xs">
+              <div class="space-y-1">
+                <label class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest">Active Citations Map Reference</label>
+                <div class="p-2.5 bg-slate-50 rounded-xl font-mono text-[9px] text-slate-500 border border-slate-100" id="workspace-citation-string">
+                  Citation values are calculated when a details paper is opened.
+                </div>
+              </div>
+
+              <div class="space-y-1">
+                <label class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest">Active Research Notes</label>
+                <textarea rows="8" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-2.5 text-xs focus:outline-none focus:bg-white focus:border-emerald-500 transition-all leading-relaxed" placeholder="Write draft comparisons, comparative parameters, or structure outlines here..."></textarea>
+              </div>
+
+              <div class="space-y-2 pt-2">
+                <button onclick="formatAPAWorkspaceCitation()" class="w-full py-2 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-xl text-slate-700 font-bold transition-all text-center block">Format references to APA 7th Edition</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 9: LITERATURE BUILDER ==================== -->
+      <section id="tab-literature" class="tab-view hidden space-y-6">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+          <div>
+            <h1 class="text-2xl font-black text-slate-900 tracking-tight">Literature Review Builder</h1>
+            <p class="text-slate-500 text-xs">Generate comparative synthesis outlines, track conceptual discrepancies, and build organized research pipelines.</p>
+          </div>
+          <button onclick="generateLiteratureReviewOutline()" class="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl text-xs shadow-sm transition-all">Build Literature Synthesis</button>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div class="lg:col-span-4 bg-white border border-slate-100 rounded-2xl p-5 shadow-sm space-y-4">
+            <h3 class="font-bold text-slate-800 text-xs border-b border-slate-50 pb-2">Target Outline Parameters</h3>
+            <div class="space-y-4 text-xs">
+              <div>
+                <label class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5">Default Bibliography Format</label>
+                <select class="w-full bg-slate-50 border border-slate-200 rounded-xl p-2.5 text-xs focus:outline-none">
+                  <option>APA 7th Edition</option>
+                  <option>IEEE Citation Guidelines</option>
+                  <option>Chicago Style Manual</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5">Literature Scope</label>
+                <select class="w-full bg-slate-50 border border-slate-200 rounded-xl p-2.5 text-xs focus:outline-none">
+                  <option>All locally archived paper coordinates</option>
+                  <option>Environmental science sub-fields indices only</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-8 bg-white border border-slate-100 rounded-2xl p-6 shadow-sm space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-50 pb-2">
+              <h3 class="font-bold text-slate-800 text-xs">Review Generation Output</h3>
+              <button onclick="triggerToast('Review draft saved to workspace folders.', '📥')" class="text-xs text-emerald-600 font-bold hover:underline">Export Review Draft</button>
+            </div>
+            <div class="p-5 bg-slate-50 rounded-xl border border-slate-100 space-y-4 text-xs leading-relaxed" id="lit-builder-injection">
+              <p class="text-slate-400 text-center py-10">Click "Build Literature Synthesis" on the top right to analyze active documents and compile a structured research review.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 10: PROJECTS ==================== -->
+      <section id="tab-projects" class="tab-view hidden space-y-6">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+          <div>
+            <h1 class="text-2xl font-black text-slate-900 tracking-tight">Research Projects</h1>
+            <p class="text-slate-500 text-xs">Manage workspace files, schedule study milestones, coordinate custom tasks, and audit performance.</p>
+          </div>
+          <button onclick="openCreateProjectDrawer()" class="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl text-xs shadow-sm transition-all">New Project Folder</button>
+        </div>
+
+        <!-- Create project drawer panel -->
+        <div id="create-project-drawer" class="hidden bg-slate-50 border border-slate-200 rounded-2xl p-5 mb-4 space-y-4 text-xs max-w-xl">
+          <h3 class="font-bold text-slate-800 text-xs">Initiate New Project Folder</h3>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Project Name</label>
+              <input type="text" id="new-proj-name" placeholder="E.g. Lunar telemetry studies" class="w-full bg-white border border-slate-200 rounded-xl p-2.5 text-xs focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Research Domain</label>
+              <select id="new-proj-domain" class="w-full bg-white border border-slate-200 rounded-xl p-2.5 text-xs focus:outline-none">
+                <option value="Environmental Science">Environmental Science</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Space Science">Space Science</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex justify-end gap-2">
+            <button onclick="closeCreateProjectDrawer()" class="px-3 py-1.5 border border-slate-200 rounded-lg">Cancel</button>
+            <button onclick="saveNewProjectFolder()" class="px-3.5 py-1.5 bg-emerald-500 text-white rounded-lg font-bold">Save Folder</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="projects-grid-injection"></div>
+      </section>
+
+      <!-- ==================== TAB 11: ANALYTICS ==================== -->
+      <section id="tab-analytics" class="tab-view hidden space-y-6">
+        <div class="border-b border-slate-100 pb-4">
+          <h1 class="text-2xl font-black text-slate-900 tracking-tight">Activity & Analytics</h1>
+          <p class="text-slate-500 text-xs">Verify study timeline durations, literature breadth volume indices, and model computation speeds.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white border border-slate-100 rounded-2xl p-5 shadow-sm space-y-1">
+            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Total Reading Duration</span>
+            <p class="text-3xl font-black text-slate-800">142 hrs</p>
+            <span class="text-[10px] text-emerald-600 font-bold">↑ 12% increase this week</span>
+          </div>
+          <div class="bg-white border border-slate-100 rounded-2xl p-5 shadow-sm space-y-1">
+            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">RAG Search Requests</span>
+            <p class="text-3xl font-black text-slate-800">1,240 queries</p>
+            <span class="text-[10px] text-slate-500 font-bold">98.9% retrieval relevance</span>
+          </div>
+          <div class="bg-white border border-slate-100 rounded-2xl p-5 shadow-sm space-y-1">
+            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Indexed PDFs</span>
+            <p class="text-3xl font-black text-slate-800">1,600 papers</p>
+            <span class="text-[10px] text-emerald-600 font-bold">2.4 GB Vector footprint</span>
+          </div>
+        </div>
+
+        <!-- Weekly progress visualization mirroring dashboard -->
+        <div class="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm space-y-4">
+          <h3 class="font-bold text-slate-800 text-xs">Weekly Scientific Literature Scanning Volume</h3>
+          <div class="flex items-end justify-between h-40 pt-4 px-2 bg-slate-50 rounded-2xl border border-slate-100">
+            <div class="w-10 bg-emerald-400 rounded-t-lg transition-all" style="height: 60%"></div>
+            <div class="w-10 bg-emerald-500 rounded-t-lg transition-all" style="height: 45%"></div>
+            <div class="w-10 bg-emerald-400 rounded-t-lg transition-all" style="height: 80%"></div>
+            <div class="w-10 bg-emerald-600 rounded-t-lg transition-all" style="height: 95%"></div>
+            <div class="w-10 bg-emerald-500 rounded-t-lg transition-all" style="height: 70%"></div>
+            <div class="w-10 bg-slate-200 rounded-t-lg transition-all" style="height: 20%"></div>
+            <div class="w-10 bg-emerald-500 rounded-t-lg transition-all" style="height: 50%"></div>
+          </div>
+          <div class="flex justify-between text-[9px] text-slate-400 px-2 font-mono uppercase font-bold">
+            <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 12: BOOKMARKS ==================== -->
+      <section id="tab-bookmarks" class="tab-view hidden space-y-6">
+        <div class="border-b border-slate-100 pb-4">
+          <h1 class="text-2xl font-black text-slate-900 tracking-tight">Saved Publications</h1>
+          <p class="text-slate-500 text-xs">Your curated collection of active bookmarks synced across research categories.</p>
+        </div>
+        <div class="space-y-4" id="bookmarks-list-injection"></div>
+      </section>
+
+      <!-- ==================== TAB 13: HISTORY ==================== -->
+      <section id="tab-history" class="tab-view hidden space-y-6">
+        <div class="border-b border-slate-100 pb-4">
+          <h1 class="text-2xl font-black text-slate-900 tracking-tight">Discovery History</h1>
+          <p class="text-slate-500 text-xs">Audit chronological operations, retrieved pipelines logs, and query modifications.</p>
+        </div>
+        <div class="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+          <div class="divide-y divide-slate-100 text-xs" id="history-list-injection"></div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 14: PROFILE & SETTINGS ==================== -->
+      <section id="tab-profile" class="tab-view hidden space-y-6">
+        <div class="border-b border-slate-100 pb-4">
+          <h1 class="text-2xl font-black text-slate-900 tracking-tight">Settings & Workspace Calibration</h1>
+          <p class="text-slate-500 text-xs">Align Preferred bibliography parameters, domain focuses, and local vector variables.</p>
+        </div>
+
+        <div class="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm max-w-2xl space-y-6">
+          <div class="flex items-center gap-4 border-b border-slate-50 pb-4">
+            <div class="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-base">A</div>
+            <div>
+              <h3 class="font-bold text-slate-800 text-sm">Abyuday</h3>
+              <p class="text-[11px] text-slate-400 font-semibold">Principal Investigator • Academic Enterprise License</p>
+            </div>
+          </div>
+
+          <div class="space-y-4 text-xs">
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5">Bibliography Formatting Standard</label>
+                <select class="w-full bg-slate-50 border border-slate-200 rounded-xl p-2.5 text-xs focus:outline-none">
+                  <option>APA 7th Edition</option>
+                  <option>IEEE Scientific Guidelines</option>
+                  <option>Chicago Citation style</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1.5">Primary Academic Domain Field</label>
+                <select class="w-full bg-slate-50 border border-slate-200 rounded-xl p-2.5 text-xs focus:outline-none">
+                  <option>Environmental Science</option>
+                  <option>Artificial Intelligence</option>
+                  <option>Space Science</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-50 flex justify-end gap-2">
+              <button onclick="triggerToast('Calibration discarded.', '⚙️')" class="px-4 py-2 border border-slate-200 text-slate-600 rounded-xl font-bold hover:bg-slate-50 transition-colors">Discard</button>
+              <button onclick="triggerToast('Workspace configuration stored securely.', '💾')" class="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl shadow-sm transition-colors">Save Settings</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==================== UI TOAST SYSTEM ==================== -->
+  <div id="toast-notif" class="fixed bottom-6 right-6 bg-slate-900 text-white border border-slate-800 py-3 px-4 rounded-2xl shadow-2xl z-50 flex items-center gap-2.5 text-xs font-semibold transform translate-y-12 opacity-0 pointer-events-none transition-all duration-300">
+    <span class="text-base" id="toast-icon">🧠</span>
+    <span id="toast-text">Platform coordinated successfully.</span>
+  </div>
+
+  <!-- ==================== CORE PLATFORM DATABASE ENGINE ==================== -->
+  <script>
+    // Comprehensive in-memory scientific registry mapping to 8 domains
+    const domainsDb = {
+      "ai": {
+        id: "ai",
+        title: "Artificial Intelligence",
+        icon: "🧠",
+        tagline: "Explore self-supervised manifold coordinates and language architectures.",
+        papersCount: "400 papers",
+        topics: ["Self-Supervised Projections", "Recursive Reasoners", "RAG Pipeline Benchmarks"],
+        journals: ["Journal of Machine Learning Research", "NeurIPS Annals", "AI & Cognitive Synthesis"],
+        datasets: ["OpenLM Reasoning Trajectories V1", "CommonManifold Token Slices"]
+      },
+      "healthcare": {
+        id: "healthcare",
+        title: "Healthcare",
+        icon: "❤️",
+        tagline: "Analyze molecular genetics modeling and disease prognosis algorithms.",
+        papersCount: "300 papers",
+        topics: ["Bioinformatics Alignments", "Clinical Waveform Diagnostics", "Prognosis Vectors"],
+        journals: ["Nature Biotechnology", "Lancet Health AI", "Bio-Algorithm Quarterly"],
+        datasets: ["MIMIC-IV Waveform Subsamples", "Genomic Variant Index Pool"]
+      },
+      "agriculture": {
+        id: "agriculture",
+        title: "Agriculture",
+        icon: "🌱",
+        tagline: "Calibrate precision ecology forecasting and IoT soil metrics.",
+        papersCount: "180 papers",
+        topics: ["Precision Agriculture", "Crop Canopy Stress Indexes", "IoT Soil Telemetry"],
+        journals: ["AGRIS Review", "Smart Agriculture Technologies"],
+        datasets: ["NASA Crop Foliage Metrics", "AgriNet Soil Nitrogen Series"]
+      },
+      "data-science": {
+        id: "data-science",
+        title: "Data Science",
+        icon: "📊",
+        tagline: "Track topological manifolds and stochastic learning convergence bounds.",
+        papersCount: "220 papers",
+        topics: ["Stochastic Convergence Bounds", "Manifold Learning Models"],
+        journals: ["Journal of Statistical Computation", "Annals of Math Data"],
+        datasets: ["Dense Carbon Emission Grid Clusters", "Micro-Manifold Grids"]
+      },
+      "environmental": {
+        id: "environmental",
+        title: "Environmental Science",
+        icon: "🌿",
+        tagline: "Trace climate cycle vectors and boreal canopy saturation threshold points.",
+        papersCount: "160 papers",
+        topics: ["Carbon Sink Thresholds", "Atmospheric Modeling", "Glaciological Shifts"],
+        journals: ["Nature Climate", "Green Energy Tech", "Ecosystem Sciences"],
+        datasets: ["NASA CO2 Telemetry Series VII", "Boreal Forest Leaf Indices"]
+      },
+      "space": {
+        id: "space",
+        title: "Space Science",
+        icon: "🚀",
+        tagline: "Inspect celestial transit telemetry and astrophysical cosmic speed borders.",
+        papersCount: "90 papers",
+        topics: ["Cosmic Speed Thresholds", "Planet Atmosphere Spectroscopy", "Orbit Telemetry"],
+        journals: ["Astrophysics Letters", "Planetary Sci Quarterly"],
+        datasets: ["Kepler Space Transit Series VII", "Chandra Deep Space Slices"]
+      },
+      "energy": {
+        id: "energy",
+        title: "Energy",
+        icon: "⚡",
+        tagline: "Examine smart grids, wind turbine efficiency, and battery technology grids.",
+        papersCount: "110 papers",
+        topics: ["Smart Grids Dynamics", "Wind Turbine Aerodynamics", "Battery Degradation"],
+        journals: ["Renewable Energy Review", "Journal of Battery Research"],
+        datasets: ["Turbine Yield Analytics Series", "Lithium Degradation Profiles"]
+      },
+      "interdisciplinary": {
+        id: "interdisciplinary",
+        title: "Interdisciplinary Research",
+        icon: "🌐",
+        tagline: "Deconstruct digital twin simulations, sustainable cities, and computing.",
+        papersCount: "140 papers",
+        topics: ["Digital Twins Complexity", "Smart City Logistics", "Green Computing Paths"],
+        journals: ["IEEE Interdisciplinary Annals", "Computational Biology OS"],
+        datasets: ["Urban Flow Logistic Models", "Synthetic Biology Variant Map"]
+      }
+    };
+
+    // Scientific publications state mapping
+    const publicationsDb = {
+      "paper-1": {
+        id: "paper-1",
+        title: "Global Carbon Cycle Vectors & Forest Canopy Depletion",
+        authors: "Sylvia Marine, Norman Borlaug, Abyuday Dev",
+        journal: "Nature Climate & Global Ecology • Vol. 14, 2025",
+        domain: "Environmental Science",
+        abstract: "Tracking global forest canopy degradation is essential for analyzing feedback parameters within ecological cycles. This research presents unified carbon vector trajectories derived from NASA satellite telemetry. By mapping local canopy depletion against multi-temporal soil data, we isolate critical carbon release thresholds in boreal zones. Experiments show a 34% shift in projected carbon sink thresholds over static calculations, reinforcing the need for continuous adaptive modeling.",
+        aiSummary: "The paper proposes tracking $CO_2$ release vectors using adaptive telemetry rather than static soil equations. It discovers localized boreal canopy depletion generates outsized carbon feedback loops. Key contribution is a 34% error reduction in forecasting forest carbon saturation boundaries.",
+        futureWork: "Validate the unified canopy models inside equatorial rain forests; integrate real-time drone hyperspectral sensors to verify fine-grain foliage nitrogen decay.",
+        doi: "10.1038/nclimate2025.109",
+        repository: "arXiv + Crossref Metadata",
+        evidenceChunks: [
+          { chunkId: "NASA_V8_342", text: "Unified canopy models show a 34% shift in boreal saturated emission thresholds compared to legacy mathematical averages.", score: "0.94 Similarity Score" },
+          { chunkId: "SOIL_CO2_19", text: "Mapping local canopy depletion against soil indicators isolates critical carbon feedback release zones.", score: "0.92 Similarity Score" }
+        ],
+        figures: "Fig 1. Canopy Depletion Density Curve",
+        tables: "Table 1. Emission Coefficients by Zone",
+        references: ["Borlaug, N. (2023). Soil Respiration Benchmarks.", "Marine, S. (2024). Multi-Temporal Space Telemetry."]
+      },
+      "paper-2": {
+        id: "paper-2",
+        title: "Self-Supervised Manifold Context Attention Maps",
+        authors: "Alan Turing, Grace Shannon, Abyuday Dev",
+        journal: "NeurIPS Annals of Deep Systems • Vol. 32, 2026",
+        domain: "Artificial Intelligence",
+        abstract: "Current generative deep models suffer from informational entropy when mapping inputs across extremely wide context bounds. To mitigate this, we establish 'Self-Supervised Manifold Context Attention Maps'. This architecture dynamically aligns sparse lexical clusters with local high-dimensional manifolds during the generation step. The unified alignment reduces context window drift and guarantees factual consistency, producing stable outputs even during complex, multi-agent scientific reasoning tasks.",
+        aiSummary: "By linking neural attention maps to topological coordinate manifolds, the system restricts the output search space, eliminating context drift. This ensures that generated text adheres directly to factual boundaries identified in retrieved materials.",
+        futureWork: "Scaling computational efficiency of manifold projections; creating real-time dynamic graph compilation routines directly during transformer pre-training.",
+        doi: "10.1109/neurips2026.431",
+        repository: "NeurIPS Archives",
+        evidenceChunks: [
+          { chunkId: "MAN_ATTN_99", text: "By aligning attention distributions directly to topological coordinate manifolds, generation entropy bounds decrease to absolute zero.", score: "0.95 Similarity Score" },
+          { chunkId: "COMP_ENT_42", text: "Manifold alignment maintains semantic structural consistency over context window lengths exceeding 1M tokens.", score: "0.91 Similarity Score" }
+        ],
+        figures: "Fig 1. Attention Map Entropy Spikes",
+        tables: "Table 1. Context Retrieval Accuracy comparison",
+        references: ["Turing, A. (2024). Compute Bounds on Neural Intelligence.", "Shannon, G. (2025). Communication Thresholds in Multi-Agent Networks."]
+      },
+      "paper-3": {
+        id: "paper-3",
+        title: "Stochastic Gradient Descent Convergence Bounds",
+        authors: "Trevor Hastie, Vladimir Vapnik",
+        journal: "Journal of Statistical Computation • Vol. 8, 2024",
+        domain: "Data Science",
+        abstract: "We prove novel convergence bounds for Stochastic Gradient Descent on high-dimensional Riemannian manifolds, showing a substantial reduction in asymptotic variance when the search coordinate is projected orthogonally.",
+        aiSummary: "Presents tight Riemannian bounds for stochastic optimization, showing variance scaling proportional to topological curvature.",
+        futureWork: "Investigate non-convex projections on complex Lie groups.",
+        doi: "10.1016/j.datsci2024.02",
+        repository: "arXiv",
+        evidenceChunks: [
+          { chunkId: "SGD_CONV_11", text: "Variance of learning parameters reduces asymptotically as curvature limits align with convergence thresholds.", score: "0.93 Similarity Score" }
+        ],
+        figures: "Fig 1. Riemannian Trajectory Tracking",
+        tables: "Table 1. Variance reduction comparison matrix",
+        references: ["Hastie, T. (2022). High-Dimensional Statistics.", "Vapnik, V. (2023). Statistical Learning Foundations."]
+      }
+    };
+
+    // Projects database state mapping
+    let projectsStore = [
+      { id: "proj-1", name: "Boreal Canopy Climate Study", domain: "Environmental Science", papersCount: 3, milestones: ["NASA telemetry sync", "Abstract synthesis drafts"], progress: 65 },
+      { id: "proj-2", name: "Multi-Agent RAG Synthesis", domain: "Artificial Intelligence", papersCount: 5, milestones: ["Context maps baseline", "Verifier agent test"], progress: 40 }
+    ];
+
+    // User interaction history logs
+    let historyLogs = [
+      { timestamp: "10:24 AM", action: "Executed BM25 + Vector Search on 'Canopy Saturation'", type: "Search Flow" },
+      { timestamp: "09:12 AM", action: "Initiated literature synthesis review", type: "Builder Flow" },
+      { timestamp: "Yesterday", action: "Indexed local climate datasets pool", type: "Index Flow" }
+    ];
+
+    let userBookmarks = ["paper-1", "paper-2"];
+    let activePaperKey = "paper-1";
+
+    // Initialize platform
+    window.onload = function() {
+      populateDashboardDomains();
+      populateDomainsDirectory();
+      populateRecentActivityLogs();
+      renderProjectsGrid();
+      renderHistoryList();
+      renderBookmarksList();
+      executeSearchFlow('');
+      loadPaperDetails("paper-1");
+      triggerToast("System initialized successfully.", "🌿");
+    };
+
+    // Dynamic Navigation Tab Switcher
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-view').forEach(tab => {
+        tab.classList.add('hidden');
+        tab.classList.remove('block');
+      });
+
+      const activeTab = document.getElementById('tab-' + tabId);
+      if (activeTab) {
+        activeTab.classList.remove('hidden');
+        activeTab.classList.add('block');
+      }
+
+      // Sidebar buttons visual sync
+      document.querySelectorAll('nav button').forEach(btn => {
+        btn.classList.remove('nav-active');
+        btn.classList.add('text-slate-600', 'hover:bg-slate-50');
+      });
+
+      const activeBtn = document.getElementById('nav-' + tabId);
+      if (activeBtn) {
+        activeBtn.classList.add('nav-active');
+        activeBtn.classList.remove('text-slate-600', 'hover:bg-slate-50');
+      }
+    }
+
+    // Populate Dashboard Domain Cards
+    function populateDashboardDomains() {
+      const target = document.getElementById('dashboard-domains-grid');
+      if (!target) return;
+      target.innerHTML = '';
+
+      Object.keys(domainsDb).forEach(key => {
+        const d = domainsDb[key];
+        const card = document.createElement('div');
+        card.className = "apple-card p-4 flex flex-col justify-between min-h-[190px] cursor-pointer group";
+        card.onclick = () => openDomainWorkspace(key);
+        card.innerHTML = `
+          <div class="space-y-2">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-lg shadow-sm group-hover:scale-105 transition-transform">
+              ${d.icon}
+            </div>
+            <div>
+              <h3 class="font-extrabold text-slate-800 text-[11px] leading-tight group-hover:text-emerald-600 transition-colors">${d.title}</h3>
+              <p class="text-[9px] text-slate-400 mt-1 leading-normal line-clamp-3">${d.tagline}</p>
+            </div>
+          </div>
+          <div class="flex justify-end pt-1">
+            <span class="text-[9px] bg-slate-50 text-slate-500 font-bold px-2 py-0.5 rounded-full">${d.papersCount}</span>
+          </div>
+        `;
+        target.appendChild(card);
+      });
+    }
+
+    // Populate Domains Directory Tab
+    function populateDomainsDirectory() {
+      const target = document.getElementById('domains-cards-grid');
+      if (!target) return;
+      target.innerHTML = '';
+
+      Object.keys(domainsDb).forEach(key => {
+        const d = domainsDb[key];
+        const card = document.createElement('div');
+        card.className = "bg-white border border-slate-100 rounded-2xl p-5 shadow-sm hover:border-slate-200 transition-all flex flex-col justify-between cursor-pointer group";
+        card.onclick = () => openDomainWorkspace(key);
+        card.innerHTML = `
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-3xl">${d.icon}</span>
+              <span class="text-[9px] bg-slate-50 text-slate-500 px-2.5 py-0.5 rounded-full font-bold">${d.papersCount}</span>
+            </div>
+            <div>
+              <h3 class="font-extrabold text-slate-800 text-sm group-hover:text-emerald-500 transition-colors">${d.title}</h3>
+              <p class="text-slate-500 text-xs mt-1.5 leading-relaxed">${d.tagline}</p>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-xl border border-slate-100/50 space-y-1 text-xs">
+              <span class="text-[9px] font-bold text-slate-400 block uppercase">Target Journals</span>
+              <p class="font-bold text-slate-700 leading-tight">${d.journals ? d.journals[0] : 'Open Index Records'}</p>
+            </div>
+          </div>
+          <button class="w-full mt-4 bg-slate-50 text-slate-700 font-bold py-2 px-3 rounded-xl text-xs transition-colors group-hover:bg-emerald-500 group-hover:text-white">
+            Open Workspace
+          </button>
+        `;
+        target.appendChild(card);
+      });
+    }
+
+    // Open workspace dedicated to selected domain
+    function openDomainWorkspace(key) {
+      const d = domainsDb[key];
+      if (!d) return;
+
+      document.getElementById('dw-title').innerText = d.title + " Workspace";
+      document.getElementById('dw-description').innerText = d.tagline;
+      document.getElementById('dw-top-badge').innerText = d.title;
+      document.getElementById('dw-bot-name').innerText = d.title + " Bot";
+
+      // Trending papers list inside workspace
+      const trendingBox = document.getElementById('dw-trending-list');
+      trendingBox.innerHTML = '';
+
+      // Match publications belonging to active domain, or show general fallbacks
+      const matches = Object.keys(publicationsDb).filter(pk => publicationsDb[pk].domain === d.title);
+      if (matches.length === 0) {
+        trendingBox.innerHTML = `
+          <div class="py-3 flex items-center justify-between gap-4">
+            <div>
+              <h5 class="font-bold text-slate-800 text-xs hover:text-emerald-600 cursor-pointer">Baseline Evaluation of ${d.title} Indices</h5>
+              <p class="text-[10px] text-slate-400">Dr. Norman Borlaug • Published 2025 • 120 Citations</p>
+            </div>
+            <button onclick="triggerToast('Indexing baseline dataset...', '📊')" class="px-2.5 py-1 bg-slate-50 hover:bg-slate-100 rounded-lg text-[11px] font-bold text-slate-600 transition-colors">Study Now</button>
+          </div>
+        `;
+      } else {
+        matches.forEach(pk => {
+          const p = publicationsDb[pk];
+          const div = document.createElement('div');
+          div.className = "py-3 flex items-center justify-between gap-4";
+          div.innerHTML = `
+            <div>
+              <h5 onclick="loadPaperDetails('${p.id}')" class="font-bold text-slate-800 text-xs hover:text-emerald-500 cursor-pointer transition-colors">${p.title}</h5>
+              <p class="text-[10px] text-slate-400">Authors: ${p.authors} • ${p.journal}</p>
+            </div>
+            <button onclick="loadPaperDetails('${p.id}')" class="px-2.5 py-1 bg-slate-50 hover:bg-slate-100 rounded-lg text-[11px] font-bold text-slate-600 transition-colors">Study Now</button>
+          `;
+          trendingBox.appendChild(div);
+        });
+      }
+
+      // Tags sub-domains mapping
+      const tagsBox = document.getElementById('dw-subdomains-tags');
+      tagsBox.innerHTML = '';
+      d.topics.forEach(topic => {
+        const span = document.createElement('span');
+        span.className = "text-[11px] bg-slate-50 border border-slate-200/50 text-slate-600 font-semibold px-2.5 py-1 rounded-lg";
+        span.innerText = topic;
+        tagsBox.appendChild(span);
+      });
+
+      // Featured datasets mapping
+      const datasetsBox = document.getElementById('dw-datasets-box');
+      datasetsBox.innerHTML = '';
+      if (d.datasets) {
+        d.datasets.forEach(set => {
+          const item = document.createElement('div');
+          item.className = "flex items-center justify-between text-xs py-1 border-b border-slate-50 last:border-0";
+          item.innerHTML = `
+            <span class="text-slate-600 font-medium">${set}</span>
+            <button onclick="triggerToast('Synced dataset pool: ${set}', '📊')" class="text-emerald-600 hover:underline font-bold text-[11px]">Sync Pool</button>
+          `;
+          datasetsBox.appendChild(item);
+        });
+      } else {
+        datasetsBox.innerHTML = `<span class="text-slate-400 text-xs">No active datasets catalogued.</span>`;
+      }
+
+      switchTab('domain-workspace');
+      triggerToast(`Entering: ${d.title} Workspace.`, d.icon);
+    }
+
+    // submit Domain Workspace Co-pilot Query
+    function submitDomainCopilotQuery() {
+      const input = document.getElementById('dw-co-pilot-input');
+      const val = input.value.trim();
+      if (!val) return;
+
+      input.value = '';
+      triggerToast('Searching context models & topological structures...', '🤖');
+      setTimeout(() => {
+        switchTab('assistant');
+        runCopilotAssistantPrompt('summarize');
+      }, 800);
+    }
+
+    // Populate Recent Activity logs
+    function populateRecentActivityLogs() {
+      const target = document.getElementById('recent-activities-log');
+      if (!target) return;
+      target.innerHTML = '';
+
+      const items = [
+        { icon: "🌿", title: "Research on Climate Change Impacts", meta: "Environmental Science • Updated 2h ago", badge: "Project" },
+        { icon: "📖", title: "Survey on Transformer Context Attention", meta: "Artificial Intelligence • Updated 5h ago", badge: "Paper" },
+        { icon: "🛢️", title: "Boreal Canopy Density Telemetry Dataset", meta: "Datasets • Updated 1d ago", badge: "Dataset" }
+      ];
+
+      items.forEach(item => {
+        const div = document.createElement('div');
+        div.className = "flex items-start justify-between gap-3 p-2 hover:bg-slate-50/50 rounded-xl transition-colors";
+        div.innerHTML = `
+          <div class="flex gap-3">
+            <span class="p-2 bg-slate-50 rounded-xl text-xs">${item.icon}</span>
+            <div>
+              <h5 class="font-bold text-slate-800 text-xs">${item.title}</h5>
+              <p class="text-[10px] text-slate-400">${item.meta}</p>
+            </div>
+          </div>
+          <span class="text-[10px] bg-slate-50 text-slate-500 px-2.5 py-0.5 rounded-full font-bold">${item.badge}</span>
+        `;
+        target.appendChild(div);
+      });
+    }
+
+    // Omni Search input Handler
+    function handleOmniSearch(query) {
+      const drop = document.getElementById('omni-suggestions');
+      const box = document.getElementById('omni-suggestions-box');
+      if (!query.trim()) {
+        drop.classList.add('hidden');
+        return;
+      }
+
+      drop.classList.remove('hidden');
+      box.innerHTML = '';
+
+      const matched = Object.keys(publicationsDb).filter(pk => 
+        publicationsDb[pk].title.toLowerCase().includes(query.toLowerCase()) ||
+        publicationsDb[pk].abstract.toLowerCase().includes(query.toLowerCase())
+      );
+
+      if (matched.length === 0) {
+        box.innerHTML = `<div class="p-3 text-center text-xs text-slate-400">No matching papers indexed in vector space.</div>`;
+        return;
+      }
+
+      matched.forEach(pk => {
+        const p = publicationsDb[pk];
+        const div = document.createElement('div');
+        div.className = "p-3 hover:bg-slate-50 cursor-pointer text-xs flex justify-between items-center transition-colors";
+        div.onclick = () => {
+          loadPaperDetails(p.id);
+          drop.classList.add('hidden');
+          document.getElementById('omni-search').value = '';
+        };
+        div.innerHTML = `
+          <div>
+            <p class="font-bold text-slate-800 truncate max-w-[320px]">${p.title}</p>
+            <p class="text-[10px] text-slate-400">${p.journal}</p>
+          </div>
+          <span class="text-[9px] bg-emerald-50 text-emerald-600 px-2 py-0.5 rounded font-bold">RAG Reference</span>
+        `;
+        box.appendChild(div);
+      });
+    }
+
+    // Detailed search flow implementation
+    function executeSearchFlow(query) {
+      const target = document.getElementById('search-results-injection');
+      const yearFilter = document.getElementById('filter-pub-year').value;
+      const domainFilter = document.getElementById('filter-domain-selector').value;
+
+      if (!target) return;
+      target.innerHTML = '';
+
+      const matches = Object.keys(publicationsDb).filter(pk => {
+        const p = publicationsDb[pk];
+        const matchQuery = p.title.toLowerCase().includes(query.toLowerCase()) || p.abstract.toLowerCase().includes(query.toLowerCase());
+        const matchYear = yearFilter === 'all' || p.journal.includes(yearFilter);
+        const matchDomain = domainFilter === 'all' || p.domain === domainFilter;
+        return matchQuery && matchYear && matchDomain;
+      });
+
+      document.getElementById('search-results-counter').innerText = `Found ${matches.length} publications`;
+
+      if (matches.length === 0) {
+        target.innerHTML = `
+          <div class="py-12 text-center text-slate-400 text-xs">
+            No active documents matched the current filters standard.
+          </div>
+        `;
+        return;
+      }
+
+      matches.forEach(pk => {
+        const p = publicationsDb[pk];
+        const card = document.createElement('div');
+        card.className = "p-4 hover:bg-slate-50/50 border border-slate-100 rounded-xl transition-all duration-200 flex justify-between items-start gap-4 group";
+        card.innerHTML = `
+          <div class="flex gap-3">
+            <span class="p-2 bg-slate-50 rounded-xl text-slate-500 text-xs mt-1">📄</span>
+            <div>
+              <h4 onclick="loadPaperDetails('${p.id}')" class="font-bold text-slate-800 text-xs hover:text-emerald-500 transition-colors cursor-pointer">${p.title}</h4>
+              <p class="text-[10px] text-slate-400 mt-1">Authors: ${p.authors} • ${p.journal}</p>
+              <div class="flex gap-2 mt-2">
+                <span class="text-[9px] bg-emerald-50 text-emerald-600 px-2 py-0.5 rounded font-bold">Vector Similarity Matching Score: 0.94</span>
+                <span class="text-[9px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold">Grounding Confirmed</span>
+              </div>
+            </div>
+          </div>
+          <button onclick="loadPaperDetails('${p.id}')" class="px-3 py-1.5 bg-white border border-slate-200 hover:border-slate-300 rounded-xl text-[10px] font-bold text-slate-700 transition-all shrink-0">Study Now</button>
+        `;
+        target.appendChild(card);
+      });
+    }
+
+    function clearSearchFilters() {
+      document.getElementById('search-query-bar').value = '';
+      document.getElementById('filter-pub-year').value = 'all';
+      document.getElementById('filter-domain-selector').value = 'all';
+      executeSearchFlow('');
+      triggerToast('Search criteria reset successfully.', '🔍');
+    }
+
+    // Load active paper details tab
+    function loadPaperDetails(id) {
+      const p = publicationsDb[id];
+      if (!p) return;
+
+      activePaperKey = id;
+
+      document.getElementById('pd-title').innerText = p.title;
+      document.getElementById('pd-authors-journal').innerText = p.authors + " | " + p.journal;
+      document.getElementById('pd-abstract').innerText = p.abstract;
+      document.getElementById('pd-ai-summary').innerHTML = `
+        <div class="space-y-2">
+          <p class="font-bold text-slate-700 font-sans">Explainable Grounding Evidence Matrix</p>
+          <p class="leading-relaxed italic">"${p.aiSummary}"</p>
+        </div>
+      `;
+      document.getElementById('pd-future-work').innerText = p.futureWork;
+      document.getElementById('pd-doi').innerText = p.doi;
+      document.getElementById('pd-repository').innerText = p.repository;
+
+      // Citations scratchpad syncing
+      document.getElementById('workspace-citation-string').innerText = `${p.authors.split(',')[0]} et al., (${p.journal.split('•')[1] || '2025'}). "${p.title}".`;
+
+      // Visual bookmarks sync
+      const isBookmarked = userBookmarks.includes(id);
+      const bBtn = document.getElementById('pd-bookmark-btn');
+      if (isBookmarked) {
+        bBtn.classList.add('bg-emerald-50', 'text-emerald-600', 'border-emerald-100');
+      } else {
+        bBtn.classList.remove('bg-emerald-50', 'text-emerald-600', 'border-emerald-100');
+      }
+
+      // Populating explainable chunk structures
+      const xaiContainer = document.getElementById('xai-evidence-injection');
+      if (xaiContainer) {
+        xaiContainer.innerHTML = '';
+        p.evidenceChunks.forEach((chunk, index) => {
+          const div = document.createElement('div');
+          div.className = "p-3.5 bg-slate-50 rounded-xl border border-slate-100 space-y-1.5";
+          div.innerHTML = `
+            <div class="flex items-center justify-between">
+              <span class="px-2 py-0.5 bg-slate-200 text-slate-700 font-mono text-[9px] font-bold rounded">CHUNK ID: ${chunk.chunkId}</span>
+              <span class="text-emerald-600 font-bold font-mono text-[10px]">${chunk.score}</span>
+            </div>
+            <p class="text-slate-600 italic">"${chunk.text}"</p>
+            <p class="text-[10px] text-slate-400 font-semibold">Source Page Range: [Page ${index + 2}]</p>
+          `;
+          xaiContainer.appendChild(div);
+        });
+      }
+
+      // Log into history logs
+      logInteractionHistory(`Opened details folder for "${p.title}"`, "Study View");
+
+      switchTab('paper-details');
+    }
+
+    function toggleActivePaperBookmark() {
+      const idx = userBookmarks.indexOf(activePaperKey);
+      if (idx > -1) {
+        userBookmarks.splice(idx, 1);
+        triggerToast("Paper removed from bookmark folders.", "🗑️");
+      } else {
+        userBookmarks.push(activePaperKey);
+        triggerToast("Paper saved to bookmarks.", "🔖");
+      }
+      loadPaperDetails(activePaperKey);
+      renderBookmarksList();
+    }
+
+    function addActivePaperToProject() {
+      projectsStore[0].papersCount += 1;
+      renderProjectsGrid();
+      triggerToast(`Saved "${publicationsDb[activePaperKey].title}" to project.`, "💾");
+    }
+
+    // Load selected paper inside Double Pane study suite
+    function loadActivePaperToStudySuite() {
+      const p = publicationsDb[activePaperKey];
+      if (!p) return;
+
+      document.getElementById('workspace-pdf-title').innerText = p.title + ".pdf";
+      const view = document.getElementById('workspace-pdf-viewport');
+      view.innerHTML = `
+        <div class="text-center pb-3 border-b border-slate-50 mb-4">
+          <h2 class="text-base font-bold text-slate-800 leading-tight">${p.title}</h2>
+          <p class="text-slate-400 text-[10px] mt-1">Authors: ${p.authors} • Published ${p.journal}</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-slate-800 text-[11px] mb-1">Methodology & Manifold Formulations</h4>
+          <p class="bg-emerald-50/40 p-3 rounded-lg border border-emerald-100/20 italic">
+            "We construct coordinate projections of $CO_2$ canopy saturation bounds utilizing:
+            $$S_{\text{threshold}} = \int_{\Omega} \Phi_{\text{soil}}(x) \cdot \Psi_{\text{canopy}}(x) \, dx$$
+            to isolate feedback dynamics efficiently."
+          </p>
+        </div>
+        <div class="mt-4">
+          <p class="text-slate-600">${p.abstract}</p>
+        </div>
+      `;
+
+      // Trigger structural formula compilation using MathJax dynamically
+      if (window.MathJax) {
+        window.MathJax.typesetPromise();
+      }
+
+      switchTab('workspace');
+    }
+
+    function formatAPAWorkspaceCitation() {
+      const p = publicationsDb[activePaperKey];
+      if (!p) return;
+      document.getElementById('workspace-citation-string').innerText = `${p.authors.split(',')[0]} et al., (2025). "${p.title}". Nature Climate.`;
+      triggerToast('Citation formatted to APA Standard.', '📚');
+    }
+
+    // Interactive speech dialogue submitter
+    function submitCopilotSpeech() {
+      const input = document.getElementById('copilot-text-input');
+      const val = input.value.trim();
+      if (!val) return;
+
+      appendSpeechBubble("Abyuday", val, true);
+      input.value = '';
+
+      setTimeout(() => {
+        let response = '';
+        if (val.toLowerCase().includes('carbon') || val.toLowerCase().includes('canopy')) {
+          response = `In the NASA CO2 telemetry series [Marine et al., 2025], dynamic canopy feedback factors represent a **34%** shift in environmental projection bounds compared to older, static configurations. This model uses standard threshold equations:
+          $$T_{\text{sink}} = K_{\text{foliage}} \cdot e^{-\lambda t}$$`;
+        } else if (val.toLowerCase().includes('attention') || val.toLowerCase().includes('manifold')) {
+          response = `The 'Self-Supervised Manifold Context Attention Maps' paradigm [Turing et al., 2026] dynamically aligns latent word vectors against high-dimensional topological manifolds to lower information entropy bounds during sequential pre-training cycles.`;
+        } else {
+          response = `I have completed an audit of your active research parameters. The semantic similarity quotient matches baseline parameters smoothly. Let me know if you would like to initiate a structured outline or export systematic references.`;
+        }
+        appendSpeechBubble("AI Co-pilot", response, false);
+      }, 750);
+    }
+
+    function appendSpeechBubble(sender, text, isUser) {
+      const stream = document.getElementById('copilot-message-stream');
+      const div = document.createElement('div');
+      div.className = "flex gap-3 " + (isUser ? "justify-end" : "");
+
+      div.innerHTML = isUser ? `
+        <div class="bg-emerald-50 p-3 rounded-2xl max-w-[85%] text-slate-700 text-right text-xs">
+          <p class="font-bold text-[10px] text-emerald-800">${sender}</p>
+          <p class="mt-1">${text}</p>
+        </div>
+        <div class="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-[10px]">A</div>
+      ` : `
+        <span class="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 text-[10px] font-bold">AI</span>
+        <div class="bg-slate-50 p-3 rounded-2xl max-w-[85%] text-slate-700 text-xs text-left">
+          <p class="font-bold text-[10px] text-slate-500">${sender}</p>
+          <div class="mt-1 leading-relaxed">${text}</div>
+        </div>
+      `;
+
+      stream.appendChild(div);
+      stream.scrollTop = stream.scrollHeight;
+
+      if (window.MathJax) {
+        window.MathJax.typesetPromise();
+      }
+    }
+
+    function handleCopilotKeyPress(e) {
+      if (e.key === 'Enter') submitCopilotSpeech();
+    }
+
+    function runCopilotAssistantPrompt(type) {
+      let query = '';
+      if (type === 'summarize') query = "Summarize the primary contributions of forest canopy depletion.";
+      if (type === 'gaps') query = "What are the scientific research gaps in self-supervised manifold mappings?";
+      if (type === 'compare') query = "Compare the methodology frameworks between NASA canopy telemetry and Deep manifold projection.";
+
+      document.getElementById('copilot-text-input').value = query;
+      submitCopilotSpeech();
+    }
+
+    // Dynamic systematic literature builder compilation
+    function generateLiteratureReviewOutline() {
+      const box = document.getElementById('lit-builder-injection');
+      if (!box) return;
+
+      box.innerHTML = `
+        <div class="space-y-4 animate-fade-in font-mono text-xs">
+          <div>
+            <h4 class="font-bold text-slate-800 text-[11px] border-b border-slate-200 pb-1">1. Systematic Framework Paradigm Synthesis</h4>
+            <p class="text-slate-600 mt-1">This compiled report details paradigm overlaps between high-latitude boreal forest canopy calculations (Marine et al., 2025) and recursive self-supervised neural networks (Turing et al., 2026). Both architectures mitigate informational entropy and wide context drift vectors by projecting coordinates against topological coordinate manifolds.</p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-800 text-[11px] border-b border-slate-200 pb-1">2. Critical Scientific Gaps Discovered</h4>
+            <ul class="list-disc list-inside space-y-1 text-slate-600 mt-1">
+              <li>Low computational optimization for dense manifolds during pre-training steps.</li>
+              <li>Minimal empirical verification of canopy stress equations in equatorial environments.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-800 text-[11px] border-b border-slate-200 pb-1">3. Systematic APA References Matrix</h4>
+            <p class="text-slate-500 italic mt-1">Turing, A., Shannon, G. (2026). Self-Supervised Manifold Context Attention Maps. NeurIPS Annals, 32.</p>
+            <p class="text-slate-500 italic">Marine, S., Borlaug, N. (2025). Global Carbon Cycle Vectors. Nature Climate, 14.</p>
+          </div>
+        </div>
+      `;
+      triggerToast('Comparative literature review outline generated.', '📜');
+      logInteractionHistory('Built systematic literature review outline.', 'Builder Flow');
+    }
+
+    // Projects Grid manager state transitions
+    function renderProjectsGrid() {
+      const grid = document.getElementById('projects-grid-injection');
+      if (!grid) return;
+      grid.innerHTML = '';
+
+      document.getElementById('projects-active-count').innerText = projectsStore.length;
+
+      projectsStore.forEach(proj => {
+        const card = document.createElement('div');
+        card.className = "bg-white border border-slate-100 rounded-2xl p-5 shadow-sm space-y-4 hover:border-slate-200 transition-all";
+        card.innerHTML = `
+          <div class="flex items-center justify-between border-b border-slate-50 pb-2">
+            <div>
+              <h4 class="font-extrabold text-slate-800 text-xs">${proj.name}</h4>
+              <p class="text-[10px] text-slate-400 mt-0.5">Primary Domain: ${proj.domain}</p>
+            </div>
+            <span class="text-[10px] bg-emerald-50 text-emerald-700 font-bold px-2.5 py-0.5 rounded-full">${proj.progress}% Complete</span>
+          </div>
+
+          <div class="space-y-1.5">
+            <h5 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Active Milestones</h5>
+            <ul class="space-y-1 text-xs text-slate-600 list-disc list-inside">
+              ${proj.milestones.map(m => `<li>${m}</li>`).join('')}
+            </ul>
+          </div>
+
+          <div class="pt-3 border-t border-slate-50 flex justify-between items-center text-xs">
+            <span class="text-[10px] text-slate-400 font-semibold">${proj.papersCount} papers archived</span>
+            <button onclick="triggerToast('Project folder configured.', '💼')" class="text-xs text-emerald-600 font-bold hover:underline">Manage Folder →</button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function openCreateProjectDrawer() {
+      switchTab('projects');
+      document.getElementById('create-project-drawer').classList.remove('hidden');
+    }
+
+    function closeCreateProjectDrawer() {
+      document.getElementById('create-project-drawer').classList.add('hidden');
+    }
+
+    function saveNewProjectFolder() {
+      const name = document.getElementById('new-proj-name').value.trim();
+      const domain = document.getElementById('new-proj-domain').value;
+
+      if (!name) {
+        triggerToast('Please provide a valid project folder name.', '⚠️');
+        return;
+      }
+
+      const fresh = {
+        id: "proj-" + (projectsStore.length + 1),
+        name: name,
+        domain: domain,
+        papersCount: 0,
+        milestones: ["Project folder compiled successfully"],
+        progress: 10
+      };
+
+      projectsStore.push(fresh);
+      renderProjectsGrid();
+      closeCreateProjectDrawer();
+      triggerToast('Project folder initialized.', '💾');
+      logInteractionHistory(`Created project folder: "${name}"`, "Project Log");
+    }
+
+    // Bookmark panel rendering
+    function renderBookmarksList() {
+      const box = document.getElementById('bookmarks-list-injection');
+      if (!box) return;
+      box.innerHTML = '';
+
+      document.getElementById('papers-saved-count').innerText = userBookmarks.length;
+
+      if (userBookmarks.length === 0) {
+        box.innerHTML = `<div class="p-8 text-center text-slate-400 text-xs">No active bookmarks saved.</div>`;
+        return;
+      }
+
+      userBookmarks.forEach(key => {
+        const p = publicationsDb[key];
+        if (!p) return;
+
+        const card = document.createElement('div');
+        card.className = "p-4 bg-white border border-slate-100 rounded-xl hover:border-slate-200 transition-all flex justify-between items-center shadow-sm";
+        card.innerHTML = `
+          <div>
+            <h4 onclick="loadPaperDetails('${p.id}')" class="font-bold text-slate-800 text-xs hover:text-emerald-500 cursor-pointer transition-colors">${p.title}</h4>
+            <p class="text-[10px] text-slate-400 mt-0.5">Authors: ${p.authors} • ${p.journal}</p>
+          </div>
+          <button onclick="loadPaperDetails('${p.id}')" class="px-3 py-1 bg-slate-50 hover:bg-slate-100 rounded-lg text-xs font-semibold text-slate-700">Open</button>
+        `;
+        box.appendChild(card);
+      });
+    }
+
+    // Log tracking & audits
+    function logInteractionHistory(action, type) {
+      historyLogs.unshift({ timestamp: "Just now", action: action, type: type });
+      if (historyLogs.length > 20) historyLogs.pop();
+      renderHistoryList();
+    }
+
+    function renderHistoryList() {
+      const target = document.getElementById('history-list-injection');
+      if (!target) return;
+      target.innerHTML = '';
+
+      historyLogs.forEach(item => {
+        const div = document.createElement('div');
+        div.className = "py-3 flex justify-between items-center text-xs";
+        div.innerHTML = `
+          <div class="space-y-0.5">
+            <p class="font-bold text-slate-800">${item.action}</p>
+            <p class="text-[10px] text-slate-400 font-semibold">${item.type} • timestamp: ${item.timestamp}</p>
+          </div>
+          <span class="text-[10px] bg-slate-50 text-slate-500 px-2.5 py-0.5 rounded font-bold">Logged</span>
+        `;
+        target.appendChild(div);
+      });
+    }
+
+    // UI Toast dispatcher
+    function triggerToast(text, emoji) {
+      const toast = document.getElementById('toast-notif');
+      const tLabel = document.getElementById('toast-text');
+      const tIcon = document.getElementById('toast-icon');
+
+      tLabel.innerText = text;
+      tIcon.innerText = emoji || '🧠';
+
+      toast.classList.remove('translate-y-12', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-12', 'opacity-0', 'pointer-events-none');
+      }, 3000);
+    }
+
+    // Custom helper actions
+    function mockDatasetUploader() {
+      triggerToast('Mock uploader initialized. Generating high-dimensional vector embeddings...', '📁');
+    }
+
+    // Keyboard shortcuts
+    window.addEventListener('keydown', function(e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        e.preventDefault();
+        document.getElementById('omni-search').focus();
+        triggerToast("Universal Search active.", "🔍");
+      }
+    });
+  </script>
+</body>
+</html>

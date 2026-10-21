@@ -1,0 +1,23 @@
+{
+  "check_n_equals_100": true,
+  "check_dev_70_val_15_test_15": true,
+  "check_exact_e03_3_context_used": true,
+  "check_no_retrieval_rerun": true,
+  "check_no_online_retrieval": true,
+  "check_exact_chunk_ids_retained": true,
+  "check_exact_chunk_ordering_retained": true,
+  "check_context_hashes_identical_between_A_B": true,
+  "check_initial_verified_answers_identical_between_A_B": true,
+  "check_real_llm_inference": true,
+  "check_same_model": true,
+  "check_temperature_zero": true,
+  "check_real_iterative_refinement": true,
+  "check_real_reverification": true,
+  "check_real_citation_processing": true,
+  "check_regression_analysis_completed": true,
+  "check_real_latency_measurements": true,
+  "check_bootstrap_1000_resamples": true,
+  "check_no_test_tuning": true,
+  "check_raw_outputs_preserved": true,
+  "overall_integrity_passed": true
+}

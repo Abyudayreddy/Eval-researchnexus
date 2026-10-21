@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RetrievalCandidateContractSchema",
+  "description": "JSON schema for candidates returned by retrieve_hybrid_rrf and hydrated by rerank_and_build_evidence",
+  "type": "object",
+  "properties": {
+    "chunk_id": {
+      "type": "string",
+      "pattern": "^paper_res_\\d{3}_chunk_\\d{3}$"
+    },
+    "rrf_score": {
+      "type": "number",
+      "minimum": 0.0
+    },
+    "bm25_rank": {
+      "type": ["integer", "null"]
+    },
+    "dense_rank": {
+      "type": ["integer", "null"]
+    },
+    "text": {
+      "type": "string",
+      "description": "Hydrated text chunk populated by database query before BGE inference"
+    }
+  },
+  "required": ["chunk_id", "rrf_score"]
+}

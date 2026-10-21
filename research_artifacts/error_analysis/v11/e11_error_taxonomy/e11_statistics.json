@@ -1,0 +1,205 @@
+{
+  "total_test_queries": 15,
+  "total_claims": 28,
+  "total_repairs": 28,
+  "total_repair_attempts": 27,
+  "total_repair_successes": 0,
+  "total_repair_failures": 27,
+  "total_repairs_not_attempted": 1,
+  "total_traces": 28,
+  "total_categorized_events": 98,
+  "queries_with_errors": 15,
+  "queries_without_errors": 0,
+  "category_counts": {
+    "RETRIEVAL_MISS": 0,
+    "CANDIDATE_POOL_MISS": 0,
+    "RERANKING_ERROR": 0,
+    "EVIDENCE_SELECTION_ERROR": 0,
+    "UNSUPPORTED_CLAIM": 28,
+    "CONTRADICTED_CLAIM": 0,
+    "WRONG_CITATION": 0,
+    "MISSING_CITATION": 28,
+    "VERIFICATION_FALSE_POSITIVE": 0,
+    "VERIFICATION_FALSE_NEGATIVE": 0,
+    "CITATION_REPAIR_FAILURE": 27,
+    "ITERATION_FAILURE": 15,
+    "ONLINE_RETRIEVAL_FAILURE": 0,
+    "XAI_PROVENANCE_FAILURE": 0
+  },
+  "category_percentages": {
+    "RETRIEVAL_MISS": {
+      "count": 0,
+      "denominator": 15,
+      "percentage": 0.0,
+      "level": "query_level",
+      "description": "15 TEST queries",
+      "examples": []
+    },
+    "CANDIDATE_POOL_MISS": {
+      "count": 0,
+      "denominator": 15,
+      "percentage": 0.0,
+      "level": "query_level",
+      "description": "15 TEST queries",
+      "examples": []
+    },
+    "RERANKING_ERROR": {
+      "count": 0,
+      "denominator": 15,
+      "percentage": 0.0,
+      "level": "query_level",
+      "description": "15 TEST queries",
+      "examples": []
+    },
+    "EVIDENCE_SELECTION_ERROR": {
+      "count": 0,
+      "denominator": 15,
+      "percentage": 0.0,
+      "level": "query_level",
+      "description": "15 TEST queries",
+      "examples": []
+    },
+    "UNSUPPORTED_CLAIM": {
+      "count": 28,
+      "denominator": 28,
+      "percentage": 100.0,
+      "level": "claim_level",
+      "description": "28 Verified RAG claims",
+      "examples": [
+        "item_v11_086",
+        "item_v11_086",
+        "item_v11_087"
+      ]
+    },
+    "CONTRADICTED_CLAIM": {
+      "count": 0,
+      "denominator": 28,
+      "percentage": 0.0,
+      "level": "claim_level",
+      "description": "28 Verified RAG claims",
+      "examples": []
+    },
+    "WRONG_CITATION": {
+      "count": 0,
+      "denominator": 0,
+      "percentage": 0.0,
+      "level": "citation_level",
+      "description": "0 citations in Verified RAG on TEST",
+      "examples": []
+    },
+    "MISSING_CITATION": {
+      "count": 28,
+      "denominator": 28,
+      "percentage": 100.0,
+      "level": "claim_level",
+      "description": "28 Verified RAG claims",
+      "examples": [
+        "item_v11_086",
+        "item_v11_086",
+        "item_v11_087"
+      ]
+    },
+    "VERIFICATION_FALSE_POSITIVE": {
+      "count": 0,
+      "denominator": 0,
+      "percentage": 0.0,
+      "level": "pipeline_event_level",
+      "description": "Not measurable without human ground truth (E05 blocked)",
+      "examples": []
+    },
+    "VERIFICATION_FALSE_NEGATIVE": {
+      "count": 0,
+      "denominator": 0,
+      "percentage": 0.0,
+      "level": "pipeline_event_level",
+      "description": "Not measurable without human ground truth (E05 blocked)",
+      "examples": []
+    },
+    "CITATION_REPAIR_FAILURE": {
+      "count": 27,
+      "denominator": 27,
+      "percentage": 100.0,
+      "level": "citation_level",
+      "description": "27 CitationRepair attempts",
+      "examples": [
+        "item_v11_086",
+        "item_v11_086",
+        "item_v11_087"
+      ]
+    },
+    "ITERATION_FAILURE": {
+      "count": 15,
+      "denominator": 15,
+      "percentage": 100.0,
+      "level": "query_level",
+      "description": "15 TEST queries",
+      "examples": [
+        "item_v11_086",
+        "item_v11_087",
+        "item_v11_088"
+      ]
+    },
+    "ONLINE_RETRIEVAL_FAILURE": {
+      "count": 0,
+      "denominator": 15,
+      "percentage": 0.0,
+      "level": "pipeline_event_level",
+      "description": "15 TEST queries",
+      "examples": []
+    },
+    "XAI_PROVENANCE_FAILURE": {
+      "count": 0,
+      "denominator": 28,
+      "percentage": 0.0,
+      "level": "claim_level",
+      "description": "28 XAI provenance traces",
+      "examples": []
+    }
+  },
+  "event_accounting": {
+    "multi_label_policy": "E11 uses multi-label error categorization; one query/claim/event may satisfy multiple taxonomy categories when the category definitions independently apply.",
+    "reconciliation_note": "Reconciled against canonical E03.3 live candidate recall (Hit@20 = 1.0000 on TEST). Under the canonical k=20 pool, target papers are retrieved in top-20 (ranks 15-17 for items 86-95; items 96-100 are unanswerable probes). Thus CANDIDATE_POOL_MISS=0 and RETRIEVAL_MISS=0 at k=20.",
+    "total_categorized_events": 98,
+    "by_level": {
+      "query_level": 15,
+      "claim_level": 56,
+      "citation_level": 27,
+      "pipeline_event_level": 0
+    },
+    "level_breakdown_detail": {
+      "query_level": {
+        "events_count": 15,
+        "categories": {
+          "RETRIEVAL_MISS": 0,
+          "CANDIDATE_POOL_MISS": 0,
+          "ITERATION_FAILURE": 15
+        },
+        "denominator": "15 TEST queries"
+      },
+      "claim_level": {
+        "events_count": 56,
+        "categories": {
+          "UNSUPPORTED_CLAIM": 28,
+          "MISSING_CITATION": 28
+        },
+        "denominator": "28 Verified RAG claims"
+      },
+      "citation_level": {
+        "events_count": 27,
+        "categories": {
+          "CITATION_REPAIR_FAILURE": 27
+        },
+        "denominator": "27 CitationRepair attempts"
+      },
+      "pipeline_event_level": {
+        "events_count": 0,
+        "categories": {
+          "ONLINE_RETRIEVAL_FAILURE": 0,
+          "VERIFICATION_FALSE_POSITIVE": 0,
+          "VERIFICATION_FALSE_NEGATIVE": 0
+        },
+        "denominator": "N/A"
+      }
+    }
+  }
+}

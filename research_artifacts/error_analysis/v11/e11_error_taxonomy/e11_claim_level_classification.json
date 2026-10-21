@@ -1,0 +1,310 @@
+{
+  "item_v11_086_claim_01": {
+    "query_id": "item_v11_086",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, there is no mention of a \"92.4% Precision@5\" metric related to adaptive gradient scheduling or Dense Retrieval & Reranking Models.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_086_claim_02": {
+    "query_id": "item_v11_086",
+    "claim_id": "claim_02",
+    "claim_text": "Therefore, I cannot answer the research query based on the retrieved documents.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_087_claim_01": {
+    "query_id": "item_v11_087",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, there is no mention of \"92.4% Precision@5\" or any specific precision metrics related to adaptive gradient scheduling.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_087_claim_02": {
+    "query_id": "item_v11_087",
+    "claim_id": "claim_02",
+    "claim_text": "Therefore, I cannot answer the query based on the retrieved documents.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_088_claim_01": {
+    "query_id": "item_v11_088",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, there is no mention of a \"92.4% Precision@5\" metric related to adaptive gradient scheduling in Large Language Models & Evaluation.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_088_claim_02": {
+    "query_id": "item_v11_088",
+    "claim_id": "claim_02",
+    "claim_text": "Therefore, I cannot answer the research query based on the retrieved documents.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_089_claim_01": {
+    "query_id": "item_v11_089",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, there is no mention of a \"92.4% Precision@5\" or any specific quantitative precision metrics related to adaptive gradient scheduling in multimodal representation learning.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_089_claim_02": {
+    "query_id": "item_v11_089",
+    "claim_id": "claim_02",
+    "claim_text": "While the evidence notes that multimodal representation learning research formulates novel loss functions combining adaptive gradient scheduling and contrastive optimization to address scaling challenges [1, 3, 5, 7, 9, 11, 13, 15, 17, 19], it does not contain information regarding a 92.4% Precision@5 result.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_089_claim_03": {
+    "query_id": "item_v11_089",
+    "claim_id": "claim_03",
+    "claim_text": "Therefore, I cannot answer this query based on the retrieved documents.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_090_claim_01": {
+    "query_id": "item_v11_090",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, there is no mention of a \"92.4% Precision@5\" metric related to adaptive gradient scheduling or Dense Retrieval & Reranking Models.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_090_claim_02": {
+    "query_id": "item_v11_090",
+    "claim_id": "claim_02",
+    "claim_text": "Therefore, I cannot answer the research query based on the retrieved documents.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_091_claim_01": {
+    "query_id": "item_v11_091",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, the studies on Dense Retrieval & Reranking Models state that they \"face scaling challenges\" and introduce a \"novel loss function combining contrastive optimization and adaptive gradient scheduling\" [1, 3, 5, 7, 9, 11, 13, 15, 17, 19].",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_091_claim_02": {
+    "query_id": "item_v11_091",
+    "claim_id": "claim_02",
+    "claim_text": "The evidence does not contain any claims regarding a 99.9% accuracy score or zero latency overhead.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_091_claim_03": {
+    "query_id": "item_v11_091",
+    "claim_id": "claim_03",
+    "claim_text": "Therefore, I cannot answer this query based on the retrieved documents.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_092_claim_01": {
+    "query_id": "item_v11_092",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, there is no mention of a 99.9% accuracy score with zero latency overhead.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_092_claim_02": {
+    "query_id": "item_v11_092",
+    "claim_id": "claim_02",
+    "claim_text": "Therefore, I cannot answer the query based on the retrieved documents.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_093_claim_01": {
+    "query_id": "item_v11_093",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, the retrieved documents for the studies on Large Language Models & Evaluation state that recent advances face scaling challenges and formulate a novel loss function combining contrastive optimization and adaptive gradient scheduling [1, 3, 5, 7, 9, 11, 13, 15, 17, 19].",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_093_claim_02": {
+    "query_id": "item_v11_093",
+    "claim_id": "claim_02",
+    "claim_text": "The evidence does not contain any claims regarding a 99.9% accuracy score or zero latency overhead.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_093_claim_03": {
+    "query_id": "item_v11_093",
+    "claim_id": "claim_03",
+    "claim_text": "Therefore, I cannot answer this query based on the provided documents.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_094_claim_01": {
+    "query_id": "item_v11_094",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, the retrieved documents do not contain any claims regarding a \"99.9% accuracy score with zero latency overhead\" for the study on Multimodal Representation Learning.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_094_claim_02": {
+    "query_id": "item_v11_094",
+    "claim_id": "claim_02",
+    "claim_text": "Therefore, I cannot answer the query based on the retrieved documents.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_095_claim_01": {
+    "query_id": "item_v11_095",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, the studies on Dense Retrieval & Reranking Models state that recent advances face scaling challenges, and they formulate a novel loss function combining contrastive optimization and adaptive gradient scheduling [1, 3, 5, 7, 9, 11, 13, 15, 17, 19].",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_095_claim_02": {
+    "query_id": "item_v11_095",
+    "claim_id": "claim_02",
+    "claim_text": "The retrieved documents do not contain any claims regarding a \"99.9% accuracy score with zero latency overhead.\" Therefore, I cannot answer this query based on the retrieved documents.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_096_claim_01": {
+    "query_id": "item_v11_096",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, there is no mention of a \"non-existent quantum gravity calibration constant\" or \"10,000 qubit superconductors.\" Therefore, you cannot answer this question based on the retrieved documents.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_097_claim_01": {
+    "query_id": "item_v11_097",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, there is no mention of a \"non-existent quantum gravity calibration constant\" or \"10,000 qubit superconductors.\" Therefore, you cannot answer this based on the retrieved documents.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_098_claim_01": {
+    "query_id": "item_v11_098",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, there is no mention of a \"non-existent quantum gravity calibration constant\" or \"10,000 qubit superconductors.\" Therefore, you cannot answer this question based on the retrieved documents.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_099_claim_01": {
+    "query_id": "item_v11_099",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, there is no mention of a \"non-existent quantum gravity calibration constant\" or \"10,000 qubit superconductors.\" Therefore, you cannot answer this based on the retrieved documents.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  },
+  "item_v11_100_claim_01": {
+    "query_id": "item_v11_100",
+    "claim_id": "claim_01",
+    "claim_text": "Based on the provided evidence, there is no mention of a \"non-existent quantum gravity calibration constant\" or \"10,000 qubit superconductors.\" Therefore, I cannot answer the query based on the retrieved documents.",
+    "support_status": "UNSUPPORTED",
+    "citation_ids": [],
+    "errors": [
+      "UNSUPPORTED_CLAIM",
+      "MISSING_CITATION"
+    ]
+  }
+}

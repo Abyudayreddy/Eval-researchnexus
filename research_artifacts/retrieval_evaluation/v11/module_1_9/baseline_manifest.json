@@ -1,0 +1,14 @@
+{
+  "dataset_id": "ds_nexus_v11",
+  "dataset_size": 100,
+  "split_sizes": {
+    "DEVELOPMENT": 70,
+    "VALIDATION": 15,
+    "TEST": 15
+  },
+  "test_sha256": "91a38a6314721b6453ed8f4e2878c10fced0e2239c887eb675fce4ffa01a959f",
+  "e01_raw_sha256": "6f546f96859f53f3ebfa7545436fb7c62e2c736e092184df94d64658d82cd248",
+  "e02_raw_sha256": "f0a005a570d189b3b435efee2030476b100d9a99b7aa365a946bdf068d8a9130",
+  "timestamp": "2026-09-27T06:27:00Z",
+  "repository_version": "ResearchNexus_v11_frozen"
+}

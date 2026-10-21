@@ -1,0 +1,18 @@
+{
+  "parent_protocol": "V1.0",
+  "amendment_version": "V1.1",
+  "timestamp": "2026-09-29T14:33:00Z",
+  "reason": "Protocol Integrity Amendment V1.1 (Methodological repairs for claim verification, statistics, ablation matrix, XAI, and evaluation cohorts)",
+  "modified_sections": [
+    "CLAIM_VERIFICATION_METRICS",
+    "STATISTICAL_ANALYSIS_PLAN",
+    "HUMAN_EVALUATION_SCOPE",
+    "CITATION_METRICS",
+    "ABLATION_MATRIX",
+    "XAI_PROVENANCE",
+    "GENERATION_EVALUATION_COHORTS"
+  ],
+  "frozen_dataset_id": "ds_nexus_v11",
+  "v1_0_manifest_sha256": "a1e0712cde37031f2be2d0bd60a52556b37b0b318a107af5dd2e91a609da6c8c",
+  "protocol_v1_1_status": "AMENDED_AND_READY"
+}

@@ -1,0 +1,101 @@
+query_id,split,gold_paper_id,gold_evidence_id,pre_bge_rank,post_bge_rank,rank_change,pre_bge_present,post_bge_present,movement_category
+item_v11_001,DEVELOPMENT,paper_res_001,"[""paper_res_001_chunk_001""]",1,4,-3,True,True,worsened
+item_v11_002,DEVELOPMENT,paper_res_002,"[""paper_res_002_chunk_001""]",1,3,-2,True,True,worsened
+item_v11_003,DEVELOPMENT,paper_res_003,"[""paper_res_003_chunk_001""]",1,5,-4,True,True,worsened
+item_v11_004,DEVELOPMENT,paper_res_004,"[""paper_res_004_chunk_001""]",1,3,-2,True,True,worsened
+item_v11_005,DEVELOPMENT,paper_res_005,"[""paper_res_005_chunk_001""]",3,5,-2,True,True,worsened
+item_v11_006,DEVELOPMENT,paper_res_006,"[""paper_res_006_chunk_001""]",3,2,1,True,True,improved
+item_v11_007,DEVELOPMENT,paper_res_007,"[""paper_res_007_chunk_001""]",3,4,-1,True,True,worsened
+item_v11_008,DEVELOPMENT,paper_res_008,"[""paper_res_008_chunk_001""]",3,1,2,True,True,improved
+item_v11_009,DEVELOPMENT,paper_res_009,"[""paper_res_009_chunk_001""]",5,2,3,True,True,improved
+item_v11_010,DEVELOPMENT,paper_res_010,"[""paper_res_010_chunk_001""]",5,5,0,True,True,unchanged
+item_v11_011,DEVELOPMENT,paper_res_011,"[""paper_res_011_chunk_001""]",5,3,2,True,True,improved
+item_v11_012,DEVELOPMENT,paper_res_012,"[""paper_res_012_chunk_001""]",5,5,0,True,True,unchanged
+item_v11_013,DEVELOPMENT,paper_res_013,"[""paper_res_013_chunk_001""]",7,3,4,True,True,improved
+item_v11_014,DEVELOPMENT,paper_res_014,"[""paper_res_014_chunk_001""]",7,1,6,True,True,improved
+item_v11_015,DEVELOPMENT,paper_res_015,"[""paper_res_015_chunk_001""]",7,2,5,True,True,improved
+item_v11_016,DEVELOPMENT,paper_res_016,"[""paper_res_016_chunk_001""]",7,4,3,True,True,improved
+item_v11_017,DEVELOPMENT,paper_res_017,"[""paper_res_017_chunk_001""]",9,1,8,True,True,improved
+item_v11_018,DEVELOPMENT,paper_res_018,"[""paper_res_018_chunk_001""]",9,4,5,True,True,improved
+item_v11_019,DEVELOPMENT,paper_res_019,"[""paper_res_019_chunk_001""]",9,1,8,True,True,improved
+item_v11_020,DEVELOPMENT,paper_res_020,"[""paper_res_020_chunk_001""]",9,2,7,True,True,improved
+item_v11_021,DEVELOPMENT,paper_res_007,"[""paper_res_007_chunk_001""]",3,2,1,True,True,improved
+item_v11_022,DEVELOPMENT,paper_res_008,"[""paper_res_008_chunk_001""]",3,1,2,True,True,improved
+item_v11_023,DEVELOPMENT,paper_res_009,"[""paper_res_009_chunk_001""]",5,1,4,True,True,improved
+item_v11_024,DEVELOPMENT,paper_res_010,"[""paper_res_010_chunk_001""]",5,4,1,True,True,improved
+item_v11_025,DEVELOPMENT,paper_res_011,"[""paper_res_011_chunk_001""]",5,3,2,True,True,improved
+item_v11_026,DEVELOPMENT,paper_res_012,"[""paper_res_012_chunk_001""]",5,4,1,True,True,improved
+item_v11_027,DEVELOPMENT,paper_res_013,"[""paper_res_013_chunk_001""]",7,5,2,True,True,improved
+item_v11_028,DEVELOPMENT,paper_res_014,"[""paper_res_014_chunk_001""]",7,5,2,True,True,improved
+item_v11_029,DEVELOPMENT,paper_res_015,"[""paper_res_015_chunk_001""]",7,4,3,True,True,improved
+item_v11_030,DEVELOPMENT,paper_res_016,"[""paper_res_016_chunk_001""]",7,2,5,True,True,improved
+item_v11_031,DEVELOPMENT,paper_res_017,"[""paper_res_017_chunk_001""]",9,4,5,True,True,improved
+item_v11_032,DEVELOPMENT,paper_res_018,"[""paper_res_018_chunk_001""]",9,3,6,True,True,improved
+item_v11_033,DEVELOPMENT,paper_res_019,"[""paper_res_019_chunk_001""]",9,1,8,True,True,improved
+item_v11_034,DEVELOPMENT,paper_res_020,"[""paper_res_020_chunk_001""]",9,3,6,True,True,improved
+item_v11_035,DEVELOPMENT,paper_res_021,"[""paper_res_021_chunk_001""]",null,null,0,False,False,remained_absent
+item_v11_036,DEVELOPMENT,paper_res_022,"[""paper_res_022_chunk_001""]",null,null,0,False,False,remained_absent
+item_v11_037,DEVELOPMENT,paper_res_023,"[""paper_res_023_chunk_001""]",null,null,0,False,False,remained_absent
+item_v11_038,DEVELOPMENT,paper_res_024,"[""paper_res_024_chunk_001""]",null,null,0,False,False,remained_absent
+item_v11_039,DEVELOPMENT,paper_res_025,"[""paper_res_025_chunk_001""]",null,null,0,False,False,remained_absent
+item_v11_040,DEVELOPMENT,paper_res_026,"[""paper_res_026_chunk_001""]",null,null,0,False,False,remained_absent
+item_v11_041,DEVELOPMENT,paper_res_012,"[""paper_res_012_chunk_002""]",5,1,4,True,True,improved
+item_v11_042,DEVELOPMENT,paper_res_013,"[""paper_res_013_chunk_002""]",7,4,3,True,True,improved
+item_v11_043,DEVELOPMENT,paper_res_014,"[""paper_res_014_chunk_002""]",7,4,3,True,True,improved
+item_v11_044,DEVELOPMENT,paper_res_015,"[""paper_res_015_chunk_002""]",7,3,4,True,True,improved
+item_v11_045,DEVELOPMENT,paper_res_016,"[""paper_res_016_chunk_002""]",7,3,4,True,True,improved
+item_v11_046,DEVELOPMENT,paper_res_017,"[""paper_res_017_chunk_002""]",9,5,4,True,True,improved
+item_v11_047,DEVELOPMENT,paper_res_018,"[""paper_res_018_chunk_002""]",9,1,8,True,True,improved
+item_v11_048,DEVELOPMENT,paper_res_019,"[""paper_res_019_chunk_002""]",9,1,8,True,True,improved
+item_v11_049,DEVELOPMENT,paper_res_020,"[""paper_res_020_chunk_002""]",9,2,7,True,True,improved
+item_v11_050,DEVELOPMENT,paper_res_021,"[""paper_res_021_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_051,DEVELOPMENT,paper_res_022,"[""paper_res_022_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_052,DEVELOPMENT,paper_res_023,"[""paper_res_023_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_053,DEVELOPMENT,paper_res_024,"[""paper_res_024_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_054,DEVELOPMENT,paper_res_025,"[""paper_res_025_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_055,DEVELOPMENT,paper_res_026,"[""paper_res_026_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_056,DEVELOPMENT,paper_res_017,"[""paper_res_017_chunk_002""]",9,1,8,True,True,improved
+item_v11_057,DEVELOPMENT,paper_res_018,"[""paper_res_018_chunk_002""]",9,4,5,True,True,improved
+item_v11_058,DEVELOPMENT,paper_res_019,"[""paper_res_019_chunk_002""]",9,1,8,True,True,improved
+item_v11_059,DEVELOPMENT,paper_res_020,"[""paper_res_020_chunk_002""]",9,1,8,True,True,improved
+item_v11_060,DEVELOPMENT,paper_res_021,"[""paper_res_021_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_061,DEVELOPMENT,paper_res_022,"[""paper_res_022_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_062,DEVELOPMENT,paper_res_023,"[""paper_res_023_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_063,DEVELOPMENT,paper_res_024,"[""paper_res_024_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_064,DEVELOPMENT,paper_res_025,"[""paper_res_025_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_065,DEVELOPMENT,paper_res_026,"[""paper_res_026_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_066,DEVELOPMENT,paper_res_027,"[""paper_res_027_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_067,DEVELOPMENT,paper_res_028,"[""paper_res_028_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_068,DEVELOPMENT,paper_res_029,"[""paper_res_029_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_069,DEVELOPMENT,paper_res_030,"[""paper_res_030_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_070,DEVELOPMENT,paper_res_031,"[""paper_res_031_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_071,VALIDATION,paper_res_001,"[""paper_res_001_chunk_001"", ""paper_res_002_chunk_001""]",1,5,-4,True,True,worsened
+item_v11_072,VALIDATION,paper_res_003,"[""paper_res_003_chunk_001"", ""paper_res_004_chunk_001""]",null,null,0,False,False,remained_absent
+item_v11_073,VALIDATION,paper_res_005,"[""paper_res_005_chunk_001"", ""paper_res_006_chunk_001""]",3,4,-1,True,True,worsened
+item_v11_074,VALIDATION,paper_res_007,"[""paper_res_007_chunk_001"", ""paper_res_008_chunk_001""]",null,null,0,False,False,remained_absent
+item_v11_075,VALIDATION,paper_res_009,"[""paper_res_009_chunk_001"", ""paper_res_010_chunk_001""]",5,3,2,True,True,improved
+item_v11_076,VALIDATION,paper_res_011,"[""paper_res_011_chunk_001"", ""paper_res_012_chunk_001""]",null,null,0,False,False,remained_absent
+item_v11_077,VALIDATION,paper_res_013,"[""paper_res_013_chunk_001"", ""paper_res_014_chunk_001""]",7,2,5,True,True,improved
+item_v11_078,VALIDATION,paper_res_015,"[""paper_res_015_chunk_001"", ""paper_res_016_chunk_001""]",null,null,0,False,False,remained_absent
+item_v11_079,VALIDATION,paper_res_017,"[""paper_res_017_chunk_001"", ""paper_res_018_chunk_001""]",9,1,8,True,True,improved
+item_v11_080,VALIDATION,paper_res_019,"[""paper_res_019_chunk_001"", ""paper_res_020_chunk_001""]",null,null,0,False,False,remained_absent
+item_v11_081,VALIDATION,paper_res_027,"[""paper_res_027_chunk_001"", ""paper_res_027_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_082,VALIDATION,paper_res_028,"[""paper_res_028_chunk_001"", ""paper_res_028_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_083,VALIDATION,paper_res_029,"[""paper_res_029_chunk_001"", ""paper_res_029_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_084,VALIDATION,paper_res_030,"[""paper_res_030_chunk_001"", ""paper_res_030_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_085,VALIDATION,paper_res_031,"[""paper_res_031_chunk_001"", ""paper_res_031_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_086,TEST,paper_res_032,"[""paper_res_032_chunk_001"", ""paper_res_032_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_087,TEST,paper_res_033,"[""paper_res_033_chunk_001"", ""paper_res_033_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_088,TEST,paper_res_034,"[""paper_res_034_chunk_001"", ""paper_res_034_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_089,TEST,paper_res_035,"[""paper_res_035_chunk_001"", ""paper_res_035_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_090,TEST,paper_res_036,"[""paper_res_036_chunk_001"", ""paper_res_036_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_091,TEST,paper_res_032,"[""paper_res_032_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_092,TEST,paper_res_033,"[""paper_res_033_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_093,TEST,paper_res_034,"[""paper_res_034_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_094,TEST,paper_res_035,"[""paper_res_035_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_095,TEST,paper_res_036,"[""paper_res_036_chunk_002""]",null,null,0,False,False,remained_absent
+item_v11_096,TEST,N/A,[],null,null,0,False,False,remained_absent
+item_v11_097,TEST,N/A,[],null,null,0,False,False,remained_absent
+item_v11_098,TEST,N/A,[],null,null,0,False,False,remained_absent
+item_v11_099,TEST,N/A,[],null,null,0,False,False,remained_absent
+item_v11_100,TEST,N/A,[],null,null,0,False,False,remained_absent

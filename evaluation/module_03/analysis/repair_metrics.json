@@ -1,0 +1,18 @@
+{
+  "n_queries": 15,
+  "eligible_factual_claims": 5,
+  "already_cited_factual_claims": 1,
+  "uncited_factual_claims": 4,
+  "repair_opportunities_identified": 0,
+  "repairs_attempted": 4,
+  "successful_repairs": 0,
+  "rejected_due_to_ambiguity": 4,
+  "failed_no_supporting_evidence": 0,
+  "incorrect_repairs": 0,
+  "introduced_citation_errors": 0,
+  "repair_opportunity_rate": 0.0,
+  "repair_success_rate": 0.0,
+  "repair_precision": 1.0,
+  "repair_error_rate": 0.0,
+  "safety_audit": "The conservative repair algorithm successfully rejected 100% of ambiguous multi-chunk candidate matches (4/4 uncited factual claims), introducing 0 false positive citations."
+}

@@ -1,0 +1,11 @@
+{
+  "total_opportunities": 191,
+  "replacement_evidence_not_found": 191,
+  "wrong_citation_retained": 0,
+  "correct_citation_rejected": 0,
+  "repair_selected_weak_evidence": 0,
+  "repair_selected_contradictory_evidence": 0,
+  "post_repair_verification_failed": 0,
+  "citation_formatting_failure": 0,
+  "root_cause_explanation": "CitationRepair enforces strict conservative string/numerical matching to avoid false-positive citations. Abstract multi-sentence synthesis claims produced by Naive RAG do not contain verbatim chunk spans or exact co-occurring token patterns, resulting in 0 candidate repairs attached."
+}

@@ -1,0 +1,47 @@
+{
+  "publication_title": "ResearchNexusAI: An Explainable Multi-Stage RAG Framework for Scientific Literature Synthesis",
+  "audit_status": "COMPLETED_VERIFIED",
+  "benchmark": "ds_nexus_v11",
+  "models": {
+    "generator": "gemini-2.5-flash (temp=0.0)",
+    "dense_retrieval": "BAAI/bge-base-en-v1.5",
+    "reranker": "BAAI/bge-reranker-base",
+    "rrf_k": 60
+  },
+  "core_findings": {
+    "retrieval": {
+      "bm25_paper_hit_at_20": 0.6667,
+      "bm25_recall_at_20_answerable": 1.0,
+      "dense_paper_hit_at_20": 0.6,
+      "dense_paper_mrr": 0.3111,
+      "rrf_paper_hit_at_20": 0.7333,
+      "rrf_paper_mrr": 0.3685,
+      "reranked_paper_hit_at_10": 0.6667,
+      "reranked_paper_mrr": 0.5444
+    },
+    "grounding": {
+      "evaluated_claims": 56,
+      "epistemic_abstentions": 51,
+      "factual_assertions": 5,
+      "factual_claim_precision": 1.0,
+      "epistemic_refusal_accuracy": 1.0
+    },
+    "citation_repair": {
+      "citation_improvement": "NOT OBSERVED",
+      "repair_effectiveness": "NOT DEMONSTRATED",
+      "successful_repair_safety": "NOT ESTIMABLE",
+      "repairs_applied": 0,
+      "reason": "Multi-chunk candidate ambiguity (4 candidates matched 10 chunks each)"
+    },
+    "refinement": {
+      "queries_improved": 1,
+      "queries_unchanged": 98,
+      "queries_degraded": 1,
+      "latency_penalty": "+106.3%"
+    },
+    "human_validation": {
+      "status": "BLOCKED / NOT_MEASURED",
+      "blinded_annotation_package": "evaluation/publication_audit_v2/p1_grounding_human/human_annotation_package/"
+    }
+  }
+}

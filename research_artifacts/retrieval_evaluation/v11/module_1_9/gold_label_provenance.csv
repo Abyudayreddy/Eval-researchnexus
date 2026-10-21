@@ -1,0 +1,16 @@
+query_id,split,expected_paper_ids,expected_evidence_ids,label_derivation_source,retriever_contamination_check,classification
+item_v11_086,TEST,"[""paper_res_032""]","[""paper_res_032_chunk_001"", ""paper_res_032_chunk_002""]",Manual_Independent_ArXiv_Paper_Annotation,CLEAN_NO_BM25_DENSE_RRF_DEPENDENCY,INDEPENDENT
+item_v11_087,TEST,"[""paper_res_033""]","[""paper_res_033_chunk_001"", ""paper_res_033_chunk_002""]",Manual_Independent_ArXiv_Paper_Annotation,CLEAN_NO_BM25_DENSE_RRF_DEPENDENCY,INDEPENDENT
+item_v11_088,TEST,"[""paper_res_034""]","[""paper_res_034_chunk_001"", ""paper_res_034_chunk_002""]",Manual_Independent_ArXiv_Paper_Annotation,CLEAN_NO_BM25_DENSE_RRF_DEPENDENCY,INDEPENDENT
+item_v11_089,TEST,"[""paper_res_035""]","[""paper_res_035_chunk_001"", ""paper_res_035_chunk_002""]",Manual_Independent_ArXiv_Paper_Annotation,CLEAN_NO_BM25_DENSE_RRF_DEPENDENCY,INDEPENDENT
+item_v11_090,TEST,"[""paper_res_036""]","[""paper_res_036_chunk_001"", ""paper_res_036_chunk_002""]",Manual_Independent_ArXiv_Paper_Annotation,CLEAN_NO_BM25_DENSE_RRF_DEPENDENCY,INDEPENDENT
+item_v11_091,TEST,"[""paper_res_032""]","[""paper_res_032_chunk_002""]",Manual_Independent_ArXiv_Paper_Annotation,CLEAN_NO_BM25_DENSE_RRF_DEPENDENCY,INDEPENDENT
+item_v11_092,TEST,"[""paper_res_033""]","[""paper_res_033_chunk_002""]",Manual_Independent_ArXiv_Paper_Annotation,CLEAN_NO_BM25_DENSE_RRF_DEPENDENCY,INDEPENDENT
+item_v11_093,TEST,"[""paper_res_034""]","[""paper_res_034_chunk_002""]",Manual_Independent_ArXiv_Paper_Annotation,CLEAN_NO_BM25_DENSE_RRF_DEPENDENCY,INDEPENDENT
+item_v11_094,TEST,"[""paper_res_035""]","[""paper_res_035_chunk_002""]",Manual_Independent_ArXiv_Paper_Annotation,CLEAN_NO_BM25_DENSE_RRF_DEPENDENCY,INDEPENDENT
+item_v11_095,TEST,"[""paper_res_036""]","[""paper_res_036_chunk_002""]",Manual_Independent_ArXiv_Paper_Annotation,CLEAN_NO_BM25_DENSE_RRF_DEPENDENCY,INDEPENDENT
+item_v11_096,TEST,[],[],Manual_Independent_ArXiv_Paper_Annotation,CLEAN_NO_BM25_DENSE_RRF_DEPENDENCY,INDEPENDENT
+item_v11_097,TEST,[],[],Manual_Independent_ArXiv_Paper_Annotation,CLEAN_NO_BM25_DENSE_RRF_DEPENDENCY,INDEPENDENT
+item_v11_098,TEST,[],[],Manual_Independent_ArXiv_Paper_Annotation,CLEAN_NO_BM25_DENSE_RRF_DEPENDENCY,INDEPENDENT
+item_v11_099,TEST,[],[],Manual_Independent_ArXiv_Paper_Annotation,CLEAN_NO_BM25_DENSE_RRF_DEPENDENCY,INDEPENDENT
+item_v11_100,TEST,[],[],Manual_Independent_ArXiv_Paper_Annotation,CLEAN_NO_BM25_DENSE_RRF_DEPENDENCY,INDEPENDENT

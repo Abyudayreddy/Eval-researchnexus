@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HumanGroundingAnnotationSchema",
+  "type": "object",
+  "properties": {
+    "annotator_id": { "type": "string" },
+    "submission_timestamp": { "type": "string" },
+    "annotations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sample_id": { "type": "string" },
+          "epistemic_label": {
+            "type": "string",
+            "enum": [
+              "SUPPORTED_FACTUAL_CLAIM",
+              "PARTIALLY_SUPPORTED_FACTUAL_CLAIM",
+              "CONTRADICTED_FACTUAL_CLAIM",
+              "UNSUPPORTED_FACTUAL_CLAIM",
+              "INSUFFICIENT_EVIDENCE_FINDING",
+              "APPROPRIATE_ABSTENTION",
+              "INAPPROPRIATE_ABSTENTION",
+              "NON_FACTUAL_STATEMENT"
+            ]
+          },
+          "citation_valid": { "type": ["boolean", "null"] },
+          "confidence": { "type": "integer", "minimum": 1, "maximum": 5 },
+          "notes": { "type": "string" }
+        },
+        "required": ["sample_id", "epistemic_label", "confidence"]
+      }
+    }
+  },
+  "required": ["annotator_id", "submission_timestamp", "annotations"]
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "query_id": "item_v11_086",
+    "context_hash": "53d1a5eaa4a295263964e33a64469a50270405958c81e002cf59fce3befa8056",
+    "c0_baseline_ms": 4366.14,
+    "c1_validation_ms": 4366.3,
+    "c2_validation_and_repair_ms": 4366.75,
+    "overhead_validation_ms": 0.16,
+    "overhead_repair_ms": 0.45,
+    "overhead_total_ms": 0.61
+  },
+  {
+    "query_id": "item_v11_087",
+    "context_hash": "62aabc97c2c48a0787d4162a55b18a69aa5513ea9c1b256e3b0c22b5b67725c6",
+    "c0_baseline_ms": 3925.95,
+    "c1_validation_ms": 3926.17,
+    "c2_validation_and_repair_ms": 3927.27,
+    "overhead_validation_ms": 0.22,
+    "overhead_repair_ms": 1.1,
+    "overhead_total_ms": 1.32
+  },
+  {
+    "query_id": "item_v11_088",
+    "context_hash": "9bbed0c9178bd62394dae634a29d6b7c9c38f0e2cbc27f97dbc0c13b6755b27a",
+    "c0_baseline_ms": 4330.6,
+    "c1_validation_ms": 4330.98,
+    "c2_validation_and_repair_ms": 4332.24,
+    "overhead_validation_ms": 0.38,
+    "overhead_repair_ms": 1.26,
+    "overhead_total_ms": 1.64
+  },
+  {
+    "query_id": "item_v11_089",
+    "context_hash": "2efdd22c3cd3e58665f0b7c9da588e67cc30f7bc4279aeda203b6dd84fff05e4",
+    "c0_baseline_ms": 3766.7,
+    "c1_validation_ms": 3766.87,
+    "c2_validation_and_repair_ms": 3767.65,
+    "overhead_validation_ms": 0.17,
+    "overhead_repair_ms": 0.78,
+    "overhead_total_ms": 0.95
+  },
+  {
+    "query_id": "item_v11_090",
+    "context_hash": "53d1a5eaa4a295263964e33a64469a50270405958c81e002cf59fce3befa8056",
+    "c0_baseline_ms": 3960.88,
+    "c1_validation_ms": 3961.18,
+    "c2_validation_and_repair_ms": 3966.17,
+    "overhead_validation_ms": 0.3,
+    "overhead_repair_ms": 4.99,
+    "overhead_total_ms": 5.29
+  },
+  {
+    "query_id": "item_v11_091",
+    "context_hash": "ad30c836e1633d05344426e5b95b472b9aeef03eecc091f80c095d8383c543c4",
+    "c0_baseline_ms": 5232.84,
+    "c1_validation_ms": 5234.17,
+    "c2_validation_and_repair_ms": 5235.75,
+    "overhead_validation_ms": 1.33,
+    "overhead_repair_ms": 1.58,
+    "overhead_total_ms": 2.91
+  },
+  {
+    "query_id": "item_v11_092",
+    "context_hash": "2df0030a02490aab5b2f8f72cafc86016022378ac2da2b50db52901e3daaea20",
+    "c0_baseline_ms": 6932.19,
+    "c1_validation_ms": 6932.49,
+    "c2_validation_and_repair_ms": 6952.11,
+    "overhead_validation_ms": 0.3,
+    "overhead_repair_ms": 19.62,
+    "overhead_total_ms": 19.92
+  },
+  {
+    "query_id": "item_v11_093",
+    "context_hash": "ea0c8e70b80254be7387abb4edd9442ee88ac193856be05bd31276a5cb1d9b7f",
+    "c0_baseline_ms": 5221.21,
+    "c1_validation_ms": 5221.39,
+    "c2_validation_and_repair_ms": 5221.9,
+    "overhead_validation_ms": 0.18,
+    "overhead_repair_ms": 0.51,
+    "overhead_total_ms": 0.69
+  },
+  {
+    "query_id": "item_v11_094",
+    "context_hash": "d7c80cdfa18250a93bd127f458b0aab565d6b16bdb6407a1c2b428e704172fed",
+    "c0_baseline_ms": 4226.29,
+    "c1_validation_ms": 4226.65,
+    "c2_validation_and_repair_ms": 4227.53,
+    "overhead_validation_ms": 0.36,
+    "overhead_repair_ms": 0.88,
+    "overhead_total_ms": 1.24
+  },
+  {
+    "query_id": "item_v11_095",
+    "context_hash": "ad30c836e1633d05344426e5b95b472b9aeef03eecc091f80c095d8383c543c4",
+    "c0_baseline_ms": 4555.59,
+    "c1_validation_ms": 4555.93,
+    "c2_validation_and_repair_ms": 4556.67,
+    "overhead_validation_ms": 0.34,
+    "overhead_repair_ms": 0.74,
+    "overhead_total_ms": 1.08
+  },
+  {
+    "query_id": "item_v11_096",
+    "context_hash": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+    "c0_baseline_ms": 4514.59,
+    "c1_validation_ms": 4514.88,
+    "c2_validation_and_repair_ms": 4515.7,
+    "overhead_validation_ms": 0.29,
+    "overhead_repair_ms": 0.82,
+    "overhead_total_ms": 1.11
+  },
+  {
+    "query_id": "item_v11_097",
+    "context_hash": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+    "c0_baseline_ms": 4985.42,
+    "c1_validation_ms": 4985.69,
+    "c2_validation_and_repair_ms": 4986.08,
+    "overhead_validation_ms": 0.27,
+    "overhead_repair_ms": 0.39,
+    "overhead_total_ms": 0.66
+  },
+  {
+    "query_id": "item_v11_098",
+    "context_hash": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+    "c0_baseline_ms": 4274.67,
+    "c1_validation_ms": 4274.98,
+    "c2_validation_and_repair_ms": 4275.22,
+    "overhead_validation_ms": 0.31,
+    "overhead_repair_ms": 0.24,
+    "overhead_total_ms": 0.55
+  },
+  {
+    "query_id": "item_v11_099",
+    "context_hash": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+    "c0_baseline_ms": 3986.44,
+    "c1_validation_ms": 3986.68,
+    "c2_validation_and_repair_ms": 3986.98,
+    "overhead_validation_ms": 0.24,
+    "overhead_repair_ms": 0.3,
+    "overhead_total_ms": 0.54
+  },
+  {
+    "query_id": "item_v11_100",
+    "context_hash": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+    "c0_baseline_ms": 4277.16,
+    "c1_validation_ms": 4277.43,
+    "c2_validation_and_repair_ms": 4277.87,
+    "overhead_validation_ms": 0.27,
+    "overhead_repair_ms": 0.44,
+    "overhead_total_ms": 0.71
+  }
+]

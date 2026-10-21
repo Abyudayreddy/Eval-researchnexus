@@ -1,0 +1,67 @@
+ 
+Fig. 4. Empirical iterative refinement trade-off: 2.2x latency inflation 
+without measurable grounding recovery (p=1.000). 
+F. Provenance Ledger Validation 
+The provenance graph verified 100% link integrity across 
+all 202 claims (202/202 confirmed), providing cryptographic 
+SHA256 audit trails from claims to primary literature chunks. 
+V. WEB PLATFORM IMPLEMENTATION AND USER 
+INTERFACES 
+To operationalize the multi-stage synthesis architecture 
+for academic researchers, ResearchNexus AI is deployed as a 
+full-stack web platform. The system backend is built using 
+FastAPI with asynchronous concurrency, communicating 
+with a persistent ChromaDB vector store and BM25 index. 
+The frontend is implemented in React with TypeScript and 
+Vite, delivering real-time streaming, interactive citation 
+badging, and full provenance visualization. The platform 
+comprises three core user workspaces: Literature Discovery 
+Portal, 
+Evidence-Grounded 
+Assistant 
+Workspace, 
+and 
+Explainable AI Provenance Dashboard. 
+A. Literature Discovery and Hybrid Search Portal 
+As depicted in Fig. 5, the literature discovery portal 
+provides an interactive search interface over the 26,259 
+corpus chunks. Users can enter natural language research 
+queries or domain-specific Boolean expressions. The portal 
+executes parallel BM25 and dense vector search, fusing 
+ranked results via RRF. For every candidate chunk, the 
+interface displays: (1) source publication metadata, (2) 
+individual lexical scores and dense cosine similarities, (3) 
+combined RRF ranks, and (4) BGE cross-encoder re-ordered 
+positions. Researchers can interactively inspect passage 
+snippets, verify source DOIs, and select relevant evidence 
+subsets prior to generative synthesis. 
+ 
+Fig. 5. ResearchNexus AI Literature Discovery Portal: Hybrid retrieval 
+interface displaying BM25, dense cosine, and RRF rank badges. 
+B. Evidence-Grounded Assistant Workspace 
+Fig. 6 presents the evidence-grounded generative assistant 
+workspace. Upon submitting a complex research prompt, the 
+system queries the candidate corpus, constructs the 
+prioritized evidence context, and invokes the generative 
+model with strict context constraints. The generated response 
+is formatted with interactive numeric citation pills (e.g., [1], 
+[2]). Clicking any citation badge automatically opens the 
+Evidence Inspector drawer on the right side of the screen. 
+The inspector highlights the exact sentence in the source 
+publication that substantiates the assertion, along with 
+deterministic overlap metrics and semantic NLI confidence 
+scores. This bidirectional interaction ensures that scholars 
+never have to take generative summaries on faith. 
+ 
+Fig. 6. ResearchNexus AI Assistant Workspace: Synthesized literature 
+review with interactive citation badges and real-time evidence 
+inspector. 
+C. Explainable AI and Provenance Graph Dashboard 
+Fig. 7 illustrates the Explainable AI (XAI) and 
+Provenance Dashboard. In high-stakes academic and clinical 
+research, algorithmic opacity is unacceptable. The XAI 
+dashboard provides an immutable, claim-by-claim audit 
+ledger. Each generated statement is mapped to its unique 
+claim ID, exact text snippet, assigned citation marker, 
+retrieved chunk ID, first-stage retrieval rank, cross-encoder 
+logit, and Stage A / Stage B verification status. In addition, 

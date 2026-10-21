@@ -1,0 +1,92 @@
+{
+  "experiment_id": "E01_REAL_RETRIEVAL_BASELINE",
+  "dataset_version": "ds_nexus_v10",
+  "timestamp": "2026-09-22T09:51:12.209567+00:00",
+  "full_benchmark_n100": {
+    "B1_Dense_RAG": {
+      "item_count": 100,
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.01,
+      "recall_at_5": 0.01,
+      "precision_at_5": 0.002,
+      "mrr": 0.002,
+      "ndcg_at_5": 0.004,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0,
+      "p50_latency_ms": 167.88,
+      "p95_latency_ms": 252.29
+    },
+    "B2_BM25_RAG": {
+      "item_count": 100,
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.002,
+      "ndcg_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0,
+      "p50_latency_ms": 287.74,
+      "p95_latency_ms": 341.93
+    },
+    "B3_Hybrid_RAG": {
+      "item_count": 100,
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0,
+      "p50_latency_ms": 269.68,
+      "p95_latency_ms": 333.19
+    }
+  },
+  "frozen_test_split_n15": {
+    "B1_Dense_RAG": {
+      "item_count": 15,
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0,
+      "p50_latency_ms": 160.06,
+      "p95_latency_ms": 233.95
+    },
+    "B2_BM25_RAG": {
+      "item_count": 15,
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0,
+      "p50_latency_ms": 287.9,
+      "p95_latency_ms": 333.52
+    },
+    "B3_Hybrid_RAG": {
+      "item_count": 15,
+      "hit_at_1": 0.0,
+      "hit_at_5": 0.0,
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0,
+      "ndcg_at_5": 0.0,
+      "evidence_recall_at_5": 0.0,
+      "evidence_precision_at_5": 0.0,
+      "p50_latency_ms": 272.69,
+      "p95_latency_ms": 299.22
+    }
+  },
+  "statistical_test": {
+    "comparison": "B3 Hybrid vs B1 Dense MRR",
+    "wilcoxon_p_value": 0.31731050786291415,
+    "significant": false
+  }
+}

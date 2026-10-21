@@ -1,0 +1,48 @@
+{
+  "rag_pipeline_audit": {
+    "ground_truth_status": "PARTIAL",
+    "execution_trace": {
+      "stage_1_search_result": "Search return array of papers with chunk_id, paper_id, evidence_text/abstract.",
+      "stage_2_context_resolution": "ContextManager resolves session_id, mode, scope, search_id, paper_ids, evidence_ids.",
+      "stage_3_evidence_selection": "EnhancedRAGService selects allowed_evidence_ids or executes bounded retrieval via LocalEvidenceRetriever.",
+      "stage_4_context_construction": "Formatted context string built with explicit CITATION [idx] tags, paper title, authors, source, and text.",
+      "stage_5_gemini_generation": "Gemini 2.5 Flash invoked with temperature=0.0 via LLMProviderManager.",
+      "stage_6_draft_response": "Raw text answer containing numeric citation markers like [1], [2].",
+      "stage_7_final_answer": "ClaimVerifier verifies claims and structural citation validator checks integrity before returning final payload."
+    },
+    "audit_verifications": {
+      "ask_uses_exact_explorer_execution": {
+        "status": "PARTIAL",
+        "finding": "If search_mode is a valid search_id UUID (>=32 chars), /ask fetches cached experiment results from memory _EXPERIMENTS or SearchExperiment DB table. HOWEVER, if search_mode is passed as string 'hybrid' or 'semantic' without a search_id UUID, /ask executes search_papers afresh, re-running retrieval unnecessarily!"
+      },
+      "search_rerun_prevention": {
+        "status": "PARTIAL",
+        "finding": "Prevented only when search_id is explicitly passed in search_mode or when mode (compare, synthesis, research) supplies valid context_papers/search_id. Re-run occurs when search_id is omitted."
+      },
+      "evidence_preservation": {
+        "status": "VERIFIED",
+        "finding": "Evidence objects retain paper_id, chunk_id, title, authors, evidence_text, source_type, and rank metrics."
+      },
+      "context_bounding": {
+        "status": "VERIFIED",
+        "finding": "System prompt contains explicit instructions restricting generation strictly to provided context. Deduplication caps context at top 5 evidence blocks."
+      },
+      "paper_provenance_preservation": {
+        "status": "VERIFIED",
+        "finding": "Every source item in response payload maps paper_id, retrieval_source, read_source, and chunk_id."
+      },
+      "citation_mapping_integrity": {
+        "status": "VERIFIED",
+        "finding": "Citations map numeric index [idx] to exact chunk_id and paper_id in evidence_manifest."
+      },
+      "deterministic_generation_settings": {
+        "status": "VERIFIED",
+        "finding": "LLM calls set temperature=0.0, max_output_tokens=1024."
+      },
+      "failure_distinction_from_insufficient_evidence": {
+        "status": "VERIFIED",
+        "finding": "If deduplicated evidence count is 0, generation status returns 'insufficient_evidence' without calling Gemini. If LLM quota is exhausted, status returns 'quota_exceeded' or 'generation_failed'. Distinguishability is 100% clean."
+      }
+    }
+  }
+}

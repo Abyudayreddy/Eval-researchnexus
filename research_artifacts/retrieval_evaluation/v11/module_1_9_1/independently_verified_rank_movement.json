@@ -1,0 +1,21 @@
+{
+  "total_items": 100,
+  "counts": {
+    "improved": 42,
+    "unchanged": 2,
+    "worsened": 8,
+    "entered_after_reranking": 0,
+    "remained_absent": 48
+  },
+  "percentages": {
+    "improved": 42.0,
+    "unchanged": 2.0,
+    "worsened": 8.0,
+    "entered_after_reranking": 0.0,
+    "remained_absent": 48.0
+  },
+  "test_split_n15": {
+    "remained_absent": 15,
+    "improved": 0
+  }
+}

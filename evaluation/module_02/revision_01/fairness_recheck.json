@@ -1,0 +1,171 @@
+{
+  "fairness_status": "PASS",
+  "context_hash_uniformity": true,
+  "records": [
+    {
+      "query_id": "item_v11_086",
+      "context_hash_naive": "53d1a5eaa4a295263964e33a64469a50270405958c81e002cf59fce3befa8056",
+      "context_hash_verified": "53d1a5eaa4a295263964e33a64469a50270405958c81e002cf59fce3befa8056",
+      "snapshot_hash": "53d1a5eaa4a295263964e33a64469a50270405958c81e002cf59fce3befa8056",
+      "context_hash_match": true,
+      "evidence_count": 20,
+      "llm_model": "gemini-2.5-flash",
+      "temperature": 0.0,
+      "max_tokens": 1024
+    },
+    {
+      "query_id": "item_v11_087",
+      "context_hash_naive": "62aabc97c2c48a0787d4162a55b18a69aa5513ea9c1b256e3b0c22b5b67725c6",
+      "context_hash_verified": "62aabc97c2c48a0787d4162a55b18a69aa5513ea9c1b256e3b0c22b5b67725c6",
+      "snapshot_hash": "62aabc97c2c48a0787d4162a55b18a69aa5513ea9c1b256e3b0c22b5b67725c6",
+      "context_hash_match": true,
+      "evidence_count": 20,
+      "llm_model": "gemini-2.5-flash",
+      "temperature": 0.0,
+      "max_tokens": 1024
+    },
+    {
+      "query_id": "item_v11_088",
+      "context_hash_naive": "9bbed0c9178bd62394dae634a29d6b7c9c38f0e2cbc27f97dbc0c13b6755b27a",
+      "context_hash_verified": "9bbed0c9178bd62394dae634a29d6b7c9c38f0e2cbc27f97dbc0c13b6755b27a",
+      "snapshot_hash": "9bbed0c9178bd62394dae634a29d6b7c9c38f0e2cbc27f97dbc0c13b6755b27a",
+      "context_hash_match": true,
+      "evidence_count": 20,
+      "llm_model": "gemini-2.5-flash",
+      "temperature": 0.0,
+      "max_tokens": 1024
+    },
+    {
+      "query_id": "item_v11_089",
+      "context_hash_naive": "2efdd22c3cd3e58665f0b7c9da588e67cc30f7bc4279aeda203b6dd84fff05e4",
+      "context_hash_verified": "2efdd22c3cd3e58665f0b7c9da588e67cc30f7bc4279aeda203b6dd84fff05e4",
+      "snapshot_hash": "2efdd22c3cd3e58665f0b7c9da588e67cc30f7bc4279aeda203b6dd84fff05e4",
+      "context_hash_match": true,
+      "evidence_count": 20,
+      "llm_model": "gemini-2.5-flash",
+      "temperature": 0.0,
+      "max_tokens": 1024
+    },
+    {
+      "query_id": "item_v11_090",
+      "context_hash_naive": "53d1a5eaa4a295263964e33a64469a50270405958c81e002cf59fce3befa8056",
+      "context_hash_verified": "53d1a5eaa4a295263964e33a64469a50270405958c81e002cf59fce3befa8056",
+      "snapshot_hash": "53d1a5eaa4a295263964e33a64469a50270405958c81e002cf59fce3befa8056",
+      "context_hash_match": true,
+      "evidence_count": 20,
+      "llm_model": "gemini-2.5-flash",
+      "temperature": 0.0,
+      "max_tokens": 1024
+    },
+    {
+      "query_id": "item_v11_091",
+      "context_hash_naive": "ad30c836e1633d05344426e5b95b472b9aeef03eecc091f80c095d8383c543c4",
+      "context_hash_verified": "ad30c836e1633d05344426e5b95b472b9aeef03eecc091f80c095d8383c543c4",
+      "snapshot_hash": "ad30c836e1633d05344426e5b95b472b9aeef03eecc091f80c095d8383c543c4",
+      "context_hash_match": true,
+      "evidence_count": 20,
+      "llm_model": "gemini-2.5-flash",
+      "temperature": 0.0,
+      "max_tokens": 1024
+    },
+    {
+      "query_id": "item_v11_092",
+      "context_hash_naive": "2df0030a02490aab5b2f8f72cafc86016022378ac2da2b50db52901e3daaea20",
+      "context_hash_verified": "2df0030a02490aab5b2f8f72cafc86016022378ac2da2b50db52901e3daaea20",
+      "snapshot_hash": "2df0030a02490aab5b2f8f72cafc86016022378ac2da2b50db52901e3daaea20",
+      "context_hash_match": true,
+      "evidence_count": 20,
+      "llm_model": "gemini-2.5-flash",
+      "temperature": 0.0,
+      "max_tokens": 1024
+    },
+    {
+      "query_id": "item_v11_093",
+      "context_hash_naive": "ea0c8e70b80254be7387abb4edd9442ee88ac193856be05bd31276a5cb1d9b7f",
+      "context_hash_verified": "ea0c8e70b80254be7387abb4edd9442ee88ac193856be05bd31276a5cb1d9b7f",
+      "snapshot_hash": "ea0c8e70b80254be7387abb4edd9442ee88ac193856be05bd31276a5cb1d9b7f",
+      "context_hash_match": true,
+      "evidence_count": 20,
+      "llm_model": "gemini-2.5-flash",
+      "temperature": 0.0,
+      "max_tokens": 1024
+    },
+    {
+      "query_id": "item_v11_094",
+      "context_hash_naive": "d7c80cdfa18250a93bd127f458b0aab565d6b16bdb6407a1c2b428e704172fed",
+      "context_hash_verified": "d7c80cdfa18250a93bd127f458b0aab565d6b16bdb6407a1c2b428e704172fed",
+      "snapshot_hash": "d7c80cdfa18250a93bd127f458b0aab565d6b16bdb6407a1c2b428e704172fed",
+      "context_hash_match": true,
+      "evidence_count": 20,
+      "llm_model": "gemini-2.5-flash",
+      "temperature": 0.0,
+      "max_tokens": 1024
+    },
+    {
+      "query_id": "item_v11_095",
+      "context_hash_naive": "ad30c836e1633d05344426e5b95b472b9aeef03eecc091f80c095d8383c543c4",
+      "context_hash_verified": "ad30c836e1633d05344426e5b95b472b9aeef03eecc091f80c095d8383c543c4",
+      "snapshot_hash": "ad30c836e1633d05344426e5b95b472b9aeef03eecc091f80c095d8383c543c4",
+      "context_hash_match": true,
+      "evidence_count": 20,
+      "llm_model": "gemini-2.5-flash",
+      "temperature": 0.0,
+      "max_tokens": 1024
+    },
+    {
+      "query_id": "item_v11_096",
+      "context_hash_naive": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+      "context_hash_verified": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+      "snapshot_hash": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+      "context_hash_match": true,
+      "evidence_count": 20,
+      "llm_model": "gemini-2.5-flash",
+      "temperature": 0.0,
+      "max_tokens": 1024
+    },
+    {
+      "query_id": "item_v11_097",
+      "context_hash_naive": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+      "context_hash_verified": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+      "snapshot_hash": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+      "context_hash_match": true,
+      "evidence_count": 20,
+      "llm_model": "gemini-2.5-flash",
+      "temperature": 0.0,
+      "max_tokens": 1024
+    },
+    {
+      "query_id": "item_v11_098",
+      "context_hash_naive": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+      "context_hash_verified": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+      "snapshot_hash": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+      "context_hash_match": true,
+      "evidence_count": 20,
+      "llm_model": "gemini-2.5-flash",
+      "temperature": 0.0,
+      "max_tokens": 1024
+    },
+    {
+      "query_id": "item_v11_099",
+      "context_hash_naive": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+      "context_hash_verified": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+      "snapshot_hash": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+      "context_hash_match": true,
+      "evidence_count": 20,
+      "llm_model": "gemini-2.5-flash",
+      "temperature": 0.0,
+      "max_tokens": 1024
+    },
+    {
+      "query_id": "item_v11_100",
+      "context_hash_naive": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+      "context_hash_verified": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+      "snapshot_hash": "cb67fb3cc8ec0e8e889d47df0f9a068c6edd009eafbcc30a0cb06f1c124e1303",
+      "context_hash_match": true,
+      "evidence_count": 20,
+      "llm_model": "gemini-2.5-flash",
+      "temperature": 0.0,
+      "max_tokens": 1024
+    }
+  ]
+}

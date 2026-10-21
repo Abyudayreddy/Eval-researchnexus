@@ -1,0 +1,4 @@
+query_id,unresolved_citations_found,candidate_matches_found,ambiguous_multi_matches,repairs_applied,audit_outcome
+item_v11_091,0,0,0,0,UNCHANGED_CLEAN
+item_v11_092,4,4,4,0,REPAIR_BLOCKED_AMBIGUITY
+item_v11_093-100,0,0,0,0,NO_UNRESOLVED_CITATIONS

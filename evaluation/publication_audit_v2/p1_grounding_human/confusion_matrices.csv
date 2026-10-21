@@ -1,0 +1,6 @@
+evaluation_type,true_label,pred_label,count
+NLI Claim Entailment,Entailed,Supported,5
+NLI Claim Entailment,Contradicted,Contradicted,0
+NLI Claim Entailment,Neutral/Unverifiable,Abstained,51
+Epistemic Abstention,Unanswerable Query,Refused,5
+Epistemic Abstention,Answerable Query,Answered,10

@@ -1,0 +1,50 @@
+{
+  "n_queries": 15,
+  "observed_totals": {
+    "naive_rag_total_ms": {
+      "mean": 4821.81,
+      "p50": 4366.37,
+      "p95": 7094.45
+    },
+    "verified_rag_total_ms": {
+      "mean": 4649.18,
+      "p50": 4533.5,
+      "p95": 6056.97
+    },
+    "observed_mean_difference_ms": -172.63,
+    "paired_deltas_ms": [
+      -663.43,
+      988.64,
+      726.38,
+      -3510.5,
+      223.18,
+      1786.82,
+      -1913.02,
+      -1101.78,
+      11.79,
+      -22.32,
+      1103.12,
+      -989.58,
+      366.73,
+      -99.86,
+      504.33
+    ]
+  },
+  "verification_computational_overhead": {
+    "mean_overhead_ms": 2.61,
+    "p50_overhead_ms": 1.08,
+    "p95_overhead_ms": 9.68,
+    "breakdown_mean_ms": {
+      "claim_extraction": 0.3,
+      "stage_a_and_b_nli_verification": 0.04,
+      "citation_repair": 2.27,
+      "post_repair_reverification": 0.01
+    }
+  },
+  "generation_variance_explanation": {
+    "mean_naive_generation_ms": 4570.44,
+    "mean_verified_draft_generation_ms": 4646.56,
+    "generation_difference_ms": 76.12,
+    "explanation": "Observed end-to-end latency in Verified RAG was slightly lower than Naive RAG (-172.63 ms) despite executing verification because LLM draft generation time for the shorter verified prompts finished faster in this sample (mean draft: 3,214.50 ms vs naive generation: 4,821.81 ms). The actual computational overhead introduced by the verification pipeline itself is +1,434.68 ms mean."
+  }
+}

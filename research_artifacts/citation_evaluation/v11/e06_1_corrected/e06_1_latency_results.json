@@ -1,0 +1,10 @@
+{
+  "latency_type": "CitationRepair_Component_Wall_Clock_Latency",
+  "N": 202,
+  "mean_ms": 0.3766222773697562,
+  "p50_ms": 0.16335000145772938,
+  "p95_ms": 0.4818350018467752,
+  "min_ms": 0.0022000021999701858,
+  "max_ms": 36.934600000677165,
+  "note": "Measures internal CitationRepair matching loop per claim. Excludes end-to-end LLM generation and full NLI verification."
+}

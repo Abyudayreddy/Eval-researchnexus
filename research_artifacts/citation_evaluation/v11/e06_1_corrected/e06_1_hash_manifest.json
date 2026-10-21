@@ -1,0 +1,18 @@
+{
+  "experiment": "E06.1",
+  "title": "Citation Repair Provenance and Exact Context Validation",
+  "status": "VALIDATED_AFTER_CORRECTION",
+  "dataset": "ds_nexus_v11",
+  "artifact_hashes": {
+    "e06_1_config.json": "98e5850af1e08b0bb5101e51d06b5f1f0f0807e45a8249bc63f0962c26efe3c3",
+    "e06_1_context_audit.json": "a3d10d7a26be02182a20818d44bacc8af982a3a6dc12afec1317ccb73d88a274",
+    "e06_1_per_repair_results.json": "3e5bef166f6675cb28ce4316b73d160ee70663e8d5aee404a187d36161e1e0a0",
+    "e06_1_before_metrics.json": "8e1c747038fb2600f641120cd11bf33767f95bce5f54130ae03e10d02a6303aa",
+    "e06_1_after_metrics.json": "8e1c747038fb2600f641120cd11bf33767f95bce5f54130ae03e10d02a6303aa",
+    "e06_1_statistics.json": "04dc135a983d97cdbb58b0582650f11f0b699619ac916f808ae7c2d5f80a972e",
+    "e06_1_latency_results.json": "2bfd3afeb58931bcc7fc602689cfe89b4c1e2cd63a6ff2bd4f9da8cf83d88b7f",
+    "e06_1_error_analysis.json": "86bc7e84b813eadf9ee1477fe0058c9348549369b4c7dbe61f26f9802db17035",
+    "e06_1_integrity_report.json": "c4800c8a93309fb826a7fb061271684b2db64729d0162b31a51aa393298f129f",
+    "e06_1_summary_report.md": "e1856b5bd9041f2f0ba45d52786938ec7957d9d1d889b5055f677c76664081c0"
+  }
+}

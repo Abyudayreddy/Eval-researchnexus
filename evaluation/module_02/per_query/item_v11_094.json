@@ -1,0 +1,35 @@
+{
+  "query_id": "item_v11_094",
+  "split": "TEST",
+  "question": "Does the study on Multimodal Representation Learning claim a 99.9% accuracy score with zero latency overhead?",
+  "context_hash_naive": "d7c80cdfa18250a93bd127f458b0aab565d6b16bdb6407a1c2b428e704172fed",
+  "context_hash_verified": "d7c80cdfa18250a93bd127f458b0aab565d6b16bdb6407a1c2b428e704172fed",
+  "context_hash_match": true,
+  "evidence_count": 20,
+  "naive_metrics": {
+    "supported_claim_count": 0,
+    "partially_supported_claim_count": 0,
+    "insufficient_claim_count": 0,
+    "unsupported_claim_count": 2,
+    "citation_precision": 0.0,
+    "citation_coverage": 0.0,
+    "claim_support_rate": 0.0,
+    "unsupported_claim_rate": 1.0
+  },
+  "verified_metrics": {
+    "supported_claim_count": 0,
+    "partially_supported_claim_count": 0,
+    "insufficient_claim_count": 0,
+    "unsupported_claim_count": 2,
+    "citation_precision": 0.0,
+    "citation_coverage": 0.0,
+    "claim_support_rate": 0.0,
+    "unsupported_claim_rate": 1.0
+  },
+  "naive_has_unsupported": true,
+  "verified_has_unsupported": true,
+  "naive_latency_ms": 4226.85,
+  "verified_latency_ms": 4238.64,
+  "snapshot_hash": "d7c80cdfa18250a93bd127f458b0aab565d6b16bdb6407a1c2b428e704172fed",
+  "hash_verified": true
+}
